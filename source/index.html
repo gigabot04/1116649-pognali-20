@@ -9,13 +9,19 @@
       <a href="" class="page-header__logo">
         <img src="https://via.placeholder.com/96x15" alt="Погнали?" width="96" height="15">
       </a>
-      <button class="page-header__toggle page-header__toggle--close"></button>
+      <button class="page-header__toggle page-header__toggle--close">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <div class="header-menu">
         <a class="header-menu__logo">
           <img src="https://via.placeholder.com/96x15" alt="Погнали?" width="96" height="15">
         </a>
-        <h2 class="header-menu__title">О сервисе Направления Попутчики</h2>
-        <a href="" class="header-menu__auth">Авторизация</a>
+        <div class="header-menu__title">
+          <a href="">О сервисе</a>
+          <a href="form.html">Направления</a>
+          <a href="catalog.html">Попутчики</a>
+        </div>
+        <a href="" class="header-menu__auth auth">Авторизация</a>
         <div class="feedback">
           <a href="tel:88005558628" class="feedback__tel">8 800 555-86-28</a>
           <a href="mailto:mail@htmlacademy.ru" class="feedback__mail">mail@htmlacademy.ru</a>
@@ -26,11 +32,51 @@
           <a href="" class="social-contacts__inst"></a>
         </div>
       </div>
-      <h1 class="page-header__title">В путешествие с крутыми попутчиками!</h1>
     </header>
-
     <main class="page-main">
-
+      <section class="promo">
+        <h2 class="promo__title">В путешествие с крутыми попутчиками!</h2>
+        <img class="promo__img" src="https://via.placeholder.com/320x569" alt="Фоновая картинка" width="320" height="569">
+        <div class="promo-feedback">
+          <a href="tel:88005558628" class="promo-feedback__tel">
+            <span class="visually-hidden">Позвонить по номеру 8 800 555-86-28</span>
+          </a>
+          <a href="mailto:mail@htmlacademy.ru" class="promo-feedback__mail">
+            <span class="visually-hidden">Написать письмо на почту mail@htmlacademy.ru</span>
+          </a>
+        </div>
+        <p class="promo-desc">
+          <span class="promo-desc__quote">«Лучшее приложение, что я видел в жизни!»</span>
+          <span class="promo-desc__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</span>
+        </p>
+        <div class="promo-tasks">
+          <div class="promo-task">
+            <p class="promo-task__item-text promo-text-1">Выберите направление</p>
+            <span class="promo-task__item-num">1</span>
+          </div>
+          <div class="promo-task">
+            <p class="promo-task__item-text promo-text-2">Изучите идеи путешественников</p>
+            <span class="promo-task__item-num">2</span>
+          </div>
+          <div class="promo-task">
+            <p class="promo-task__item-text promo-text-3">Находите тех, кто похож на вас</p>
+            <span class="promo-task__item-num">3</span>
+          </div>
+          <div class="promo-task">
+            <p class="promo-task__item-text promo-text-4">Путешествуйте вместе!</p>
+            <span class="promo-task__item-num">4</span>
+          </div>
+        </div>
+      </section>
+      <section class="service">
+        <h2 class="visually-hidden">О Сервисе</h2>
+        <img class="service__img" src="https://via.placeholder.com/292x353" alt="Фоновая картинка телефона" width="292" height="353">
+        <p class="service-desc">
+          <span class="service-desc__item service-item-1">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</span>
+          <span class="service-desc__item service-item-2">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</span>
+        </p>
+      </section>
+      
     </main>
 
     <footer class="page-footer">
