@@ -132,10 +132,10 @@
           </p>
           <div class="companions-cart__icons">
             <!-- Не забыть заменить на SVG -->
-            <img class="companions-cart__icon companions-cart__icon--true" src="https://via.placeholder.com/20.83x21.12" alt="На самолете">
-            <img class="companions-cart__icon" src="https://via.placeholder.com/17.04x19.2" alt="На автобусе">
-            <img class="companions-cart__icon" src="https://via.placeholder.com/23.63x24" alt="На велосипеде">
-            <img class="companions-cart__icon" src="https://via.placeholder.com/20.65x23.04" alt="Бегом">
+            <img class="companions-cart__icon companions-cart__icon--true" src="https://via.placeholder.com/20.83x21.12" alt="На самолете" width="20" height="20">
+            <img class="companions-cart__icon" src="https://via.placeholder.com/17.04x19.2" alt="На автобусе" width="20" height="20">
+            <img class="companions-cart__icon" src="https://via.placeholder.com/23.63x24" alt="На велосипеде" width="20" height="20">
+            <img class="companions-cart__icon" src="https://via.placeholder.com/20.65x23.04" alt="Бегом" width="20" height="20">
           </div>
         </div>
         <div class="companions-cart">
@@ -154,10 +154,10 @@
           </p>
           <div class="companions-cart__icons">
             <!-- Не забыть заменить на SVG -->
-            <img class="companions-cart__icon companions-cart__icon--true" src="https://via.placeholder.com/20.83x21.12" alt="На самолете">
-            <img class="companions-cart__icon" src="https://via.placeholder.com/17.04x19.2" alt="На автобусе">
-            <img class="companions-cart__icon" src="https://via.placeholder.com/23.63x24" alt="На велосипеде">
-            <img class="companions-cart__icon" src="https://via.placeholder.com/20.65x23.04" alt="Бегом">
+            <img class="companions-cart__icon companions-cart__icon--true" src="https://via.placeholder.com/20.83x21.12" alt="На самолете" width="20" height="20">
+            <img class="companions-cart__icon" src="https://via.placeholder.com/17.04x19.2" alt="На автобусе" width="20" height="20">
+            <img class="companions-cart__icon" src="https://via.placeholder.com/23.63x24" alt="На велосипеде" width="20" height="20">
+            <img class="companions-cart__icon" src="https://via.placeholder.com/20.65x23.04" alt="Бегом" width="20" height="20">
           </div>
         </div>
         <a class="companions__button btn" href="catalog.html">Показать всех</a>
@@ -174,15 +174,26 @@
       </section>
       <section class="auth">
         <h2 class="auth__title">Заинтересовались?</h2>
-        <p class="auth__text">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="">авторизуйтесь</a>.</p>
-        <form class="form" action="https://echo.htmlacademy.ru" method="GET">
-          <label class="form__label">
-            <input class="form__control" type="email" name="auth-email" aria-label="Введите электронную почту" placeholder="E-mail" required>
+        <p class="auth__text--1">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="">авторизуйтесь</a>.</p>
+        <form class="index-form" action="https://echo.htmlacademy.ru" method="GET">
+          <label class="index-form__label">
+            <input class="index-form__control" type="email" name="auth-email" aria-label="Введите электронную почту" placeholder="E-mail" required>
           </label>
-          <button class="form__btn" type="submit">
-            <span class="form__btn-text">Регистрация</span>
+          <button class="index-form__btn" type="submit">
+            <span class="index-form__btn-text">Регистрация</span>
           </button>
         </form>
+        <p class="auth__text--2">Остались вопросы? Мы с радостью на них ответим!</p>
+        <div class="auth__feedback">
+          <a href="tel:88005558628" class="auth__tel">8 800 555-86-28</a>
+          <a href="mailto:mail@htmlacademy.ru" class="auth__mail">mail@htmlacademy.ru</a>
+        </div>
+      </section>
+      <section class="maps">
+        <h2 class="maps__address">ул. Большая Конюшенная, 19/8</h2>
+        <button class="maps__btn">Проложить маршрут</button>
+        <!-- Тут будет карта -->
+        <img class="maps__img" src="https://via.placeholder.com/320x424" alt="Карта" width="320" height="424">
       </section>
     </main>
     <footer class="page-footer">
