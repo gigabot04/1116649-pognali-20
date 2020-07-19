@@ -21,7 +21,7 @@
           <a href="form.html" class="header-menu__link">Направления</a>
           <a href="catalog.html" class="header-menu__link">Попутчики</a>
         </div>
-        <a href="" class="header-menu__auth auth">Авторизация</a>
+        <a href="" class="header-menu__auth header-menu__auth--btn">Авторизация</a>
         <div class="feedback">
           <a href="tel:88005558628" class="feedback__tel">8 800 555-86-28</a>
           <a href="mailto:mail@htmlacademy.ru" class="feedback__mail">mail@htmlacademy.ru</a>
@@ -171,6 +171,18 @@
         <p class="rates__item-text">Кастомный цвет карточки</p>
         <p class="rates__item-price">59 руб./мес</p>
         <a class="rates__button" href="">Показать тарифы для бизнеса</a>
+      </section>
+      <section class="auth">
+        <h2 class="auth__title">Заинтересовались?</h2>
+        <p class="auth__text">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="">авторизуйтесь</a>.</p>
+        <form class="form" action="https://echo.htmlacademy.ru" method="GET">
+          <label class="form__label">
+            <input class="form__control" type="email" name="auth-email" aria-label="Введите электронную почту" placeholder="E-mail" required>
+          </label>
+          <button class="form__btn" type="submit">
+            <span class="form__btn-text">Регистрация</span>
+          </button>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
