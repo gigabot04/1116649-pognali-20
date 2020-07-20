@@ -15,215 +15,230 @@
       <h2 class="page-header__title">Направления</h2>
     </header>
     <main class="page-main">
-      <section class="setting">
-        <div class="setting__level">
-          <p class="setting__level-num">80</p>
-          <p class="setting__text">level</p>
-        </div>
-        <img class="setting__photo" src="https://via.placeholder.com/100x100" alt="Моя фотография">
-        <button class="setting__photo-btn">Сменить фото</button>
-        <div class="setting__tags">
-          <h2 class="setting__tags-title">тэги</h2>
-          <textarea class="setting__tags-textarea" name="tags" cols="30" rows="10">#бургер #бар #футбол #концерт #крафт</textarea>
-        </div>
-        <div class="setting__transport">
-          <h2 class="setting__transport-title">транспорт</h2>
-          <!-- Не забыть заменить на SVG -->
-          <img class="setting__transport-item setting__transport-item--active" src="https://via.placeholder.com/20.83x21.12" alt="На самолете" width="20" height="20">
-          <img class="setting__transport-item setting__transport-item--active" src="https://via.placeholder.com/17.04x19.2" alt="На автобусе" width="20" height="20">
-          <img class="setting__transport-item" src="https://via.placeholder.com/23.63x24" alt="На велосипеде" width="20" height="20">
-          <img class="setting__transport-item setting__transport-item--active" src="https://via.placeholder.com/20.65x23.04" alt="Бегом" width="20" height="20">
-        </div>
-      </section>
-      <section class="plans">
-        <div class="plans__cart">
-          <p class="plans__number">1.</p>
-          <h2 class="plans__countries">Франция, Италия</h2>
-          <p class="plans__companions">3 попутчика</p>
-          <p class="plans__date">26 мар — 29 мар</p>
-          <a class="plans__btn" href="">изменить</a>
-        </div>
-        <div class="plans__cart">
-          <p class="plans__number">2.</p>
-          <h2 class="plans__countries">Таиланд, Индонезия</h2>
-          <p class="plans__companions">1 попутчик</p>
-          <p class="plans__date">1 июл — 15 июл</p>
-          <a class="plans__btn" href="">изменить</a>
-        </div>
-      </section>
-      <section class="create-plan">
-        <h2 class="create-plan__title">Добавить план:</h2>
-        <div class="create-plan__points">
-          <span class="create-plan__point create-plan__point--active"></span>
-          <span class="create-plan__point"></span>
-          <span class="create-plan__point"></span>
-        </div>
-        <form class="plan-form" action="https://echo.htmlacademy.ru" method="GET">
-          <fieldset class="plan-form__field">
-            <legend class="plan-form__legend">Шаг 1. Даты&nbspпребывания</legend>
-            <p class="plan-form__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-            <label class="plan-form__label" for="plan-companions">
+      <form class="form-setting" action="https://echo.htmlacademy.ru" method="GET">
+        <section class="form-setting">
+          <div class="form-setting__level">
+            <p class="form-setting__level-num">80</p>
+            <p class="form-setting__text">level</p>
+          </div>
+          <img class="form-setting__photo" src="https://via.placeholder.com/100x100" alt="Моя фотография">
+          <label class="form-setting__photo-btn">
+            Сменить фото
+            <input class="form-setting__photo-file" type="file" name="myPhoto">
+          </label>
+          <div class="form-setting__tags">
+            <h2 class="form-setting__tags-title">тэги</h2>
+            <textarea class="form-setting__tags-textarea" name="tags" cols="30" rows="10">#бургер #бар #футбол #концерт #крафт</textarea>
+          </div>
+          <div class="form-setting__transport">
+            <h2 class="form-setting__transport-title">транспорт</h2>
+            <!-- тут будут свг иконки -->
+            <label class="form-setting__transport-label">
+              <input class="form-setting__transport-control" type="checkbox">
+            </label>
+            <label class="form-setting__transport-label">
+              <input class="form-setting__transport-control" type="checkbox">
+            </label>
+            <label class="form-setting__transport-label">
+              <input class="form-setting__transport-control" type="checkbox">
+            </label>
+            <label class="form-setting__transport-label">
+              <input class="form-setting__transport-control" type="checkbox">
+            </label>
+          </div>
+        </section>
+        <section class="form-setting__plans">
+          <div class="form-setting__plans-cart">
+            <p class="form-setting__plans-number">1.</p>
+            <h2 class="form-setting__plans-countries">Франция, Италия</h2>
+            <p class="form-setting__plans-companions">3 попутчика</p>
+            <p class="form-setting__plans-date">26 мар — 29 мар</p>
+            <a class="form-setting__plans-btn" href="">изменить</a>
+          </div>
+          <div class="form-setting__plans-cart">
+            <p class="form-setting__plans-number">2.</p>
+            <h2 class="form-setting__plans-countries">Таиланд, Индонезия</h2>
+            <p class="form-setting__plans-companions">1 попутчик</p>
+            <p class="form-setting__plans-date">1 июл — 15 июл</p>
+            <a class="form-setting__plans-btn" href="">изменить</a>
+          </div>
+        </section>
+        <section class="form-setting__create-plan">
+          <h2 class="form-setting__title-plan">Добавить план:</h2>
+          <div class="form-setting__points">
+            <span class="form-setting__point create-plan__point--active"></span>
+            <span class="form-setting__point"></span>
+            <span class="form-setting__point"></span>
+          </div>
+          <fieldset class="form-setting__field">
+            <legend class="form-setting__legend">Шаг 1. Даты&nbsp;пребывания</legend>
+            <p class="form-setting__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+            <label class="form-setting__label" for="plan-companions-people">
               ищу попутчиков:
-              <span class="plan-form__label-span">чел.</span>
+              <span class="form-setting__label-span">чел.</span>
             </label>
-            <input class="plan-form__control" type="number" id="plan-companions" min="0" name="plan-companions" value="2">
-            <label class="plan-form__label" for="plan-companions">
+            <button class="form-setting__deduct" aria-label="Убавить попутчиков"></button>
+            <input class="form-setting__control" type="number" id="plan-companions-people" min="0" name="plan-companions-people" value="2">
+            <button class="form-setting__add" aria-label="Добавить попутчиков"></button>
+            <label class="form-setting__label" for="plan-companions-time">
               длительность:
-              <span class="plan-form__label-span">дн.</span>
+              <span class="form-setting__label-span">дн.</span>
             </label>
-            <input class="plan-form__control" type="number" id="plan-companions" min="0" name="plan-companions" value="2">
-            <label class="plan-form__label--checkbox" for="plan-checkbox">Можно с детьми</label>
-            <input class="plan-form__control--checkbox" type="checkbox" name="plan-checkbox" id="plan-checkbox" checked>
-            <table class="plan-form__calendar">
-              <caption class="plan-form__mounth-age">
-                <span class="plan-form__mounth-age--arrow">Март 2019</span>
+            <button class="form-setting__deduct" aria-label="Уменьшить кол-во дней"></button>
+            <input class="form-setting__control" type="number" id="plan-companions-time" min="0" name="plan-companions-time" value="2">
+            <button class="form-setting__add" aria-label="Увеличить кол-во дней"></button>
+            <label class="form-setting__label form-setting__label--checkbox" for="plan-checkbox">Можно с детьми</label>
+            <input class="form-setting__label form-setting__control--checkbox" type="checkbox" name="plan-checkbox" id="plan-checkbox" checked>
+            <table class="form-setting__calendar">
+              <caption class="form-setting__mounth-age form-setting__mounth-age--arrow">
+                Март 2019
               </caption>
-              <thead class="plan-form__week">
+              <thead class="form-setting__week">
                 <tr>
-                  <th class="plan-form__week-day">П</th>
-                  <th class="plan-form__week-day">В</th>
-                  <th class="plan-form__week-day">С</th>
-                  <th class="plan-form__week-day">Ч</th>
-                  <th class="plan-form__week-day">П</th>
-                  <th class="plan-form__week-day plan-form__week-day--output">С</th>
-                  <th class="plan-form__week-day plan-form__week-day--output">В</th>
+                  <th class="form-setting__week-day">П</th>
+                  <th class="form-setting__week-day">В</th>
+                  <th class="form-setting__week-day">С</th>
+                  <th class="form-setting__week-day">Ч</th>
+                  <th class="form-setting__week-day">П</th>
+                  <th class="form-setting__week-day form-setting__week-day--output">С</th>
+                  <th class="form-setting__week-day form-setting__week-day--output">В</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">23</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">24</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">25</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">26</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">27</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">28</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">1</a></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">24</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">23</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">25</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">26</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">27</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">28</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">1</button></td>
                 </tr>
                 <tr>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">2</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">3</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">4</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">5</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">6</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">7</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">8</a></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">2</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">3</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">4</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">5</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">6</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">7</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">8</button></td>
                 </tr>
                 <tr>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">9</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">10</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">11</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">12</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">13</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">14</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">15</a></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">9</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">10</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">11</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">12</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">13</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">14</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">15</button></td>
                 </tr>
                 <tr>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">16</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">17</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">18</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">19</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">20</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">21</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">22</a></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">16</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">17</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">18</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">19</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">20</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">21</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">22</button></td>
                 </tr>
                 <tr>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">23</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">24</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">25</a></td>
-                  <td class="plan-form__day plan-form__week-day--off"><a href="">26</a></td>
-                  <td class="plan-form__day"><a href="">27</a></td>
-                  <td class="plan-form__day"><a href="">28</a></td>
-                  <td class="plan-form__day"><a href="">29</a></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">23</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">24</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">25</button></td>
+                  <td class="form-setting__day form-setting__day--off"><button type="button">26</button></td>
+                  <td class="form-setting__day"><button type="button">27</button></td>
+                  <td class="form-setting__day"><button type="button">28</button></td>
+                  <td class="form-setting__day"><button type="button">29</button></td>
                 </tr>
                 <tr>
-                  <td class="plan-form__day"><a href="">30</a></td>
-                  <td class="plan-form__day"><a href="">31</a></td>
-                  <td class="plan-form__day"><a href="">1</a></td>
-                  <td class="plan-form__day"><a href="">2</a></td>
-                  <td class="plan-form__day"><a href="">3</a></td>
-                  <td class="plan-form__day"><a href="">4</a></td>
-                  <td class="plan-form__day"><a href="">5</a></td>
+                  <td class="form-setting__day"><button type="button">30</button></td>
+                  <td class="form-setting__day"><button type="button">31</button></td>
+                  <td class="form-setting__day"><button type="button">1</button></td>
+                  <td class="form-setting__day"><button type="button">2</button></td>
+                  <td class="form-setting__day"><button type="button">3</button></td>
+                  <td class="form-setting__day"><button type="button">4</button></td>
+                  <td class="form-setting__day"><button type="button">5</button></td>
                 </tr>
               </tbody>
             </table>
-            <a class="plan-form__next plan-form__next--btn" href="">Следующий шаг</a>
+            <a class="form-setting__next form-setting__next--btn" href="">Следующий шаг</a>
           </fieldset>
-          <fieldset class="plan-form__field">
-            <legend class="plan-form__legend">Шаг 2. Маршрут</legend>
-            <p class="plan-form__text">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
-            <div class="plan-form__countries">
-              <buttonp class="plan-form__country">Босния и Герцеговина</buttonp>
-              <button class="plan-form__del" type="button" aria-label="Удалить страну"></button>
+          <fieldset class="form-setting__field">
+            <legend class="form-setting__legend">Шаг 2. Маршрут</legend>
+            <p class="form-setting__text">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+            <div class="form-setting__countries">
+              <button class="form-setting__country">Босния и Герцеговина</button>
+              <button class="form-setting__del" type="button" aria-label="Удалить страну"></button>
             </div>
-            <div class="plan-form__countries">
-              <button class="plan-form__country">Чехия</button>
-              <button class="plan-form__del" type="button" aria-label="Удалить страну"></button>
+            <div class="form-setting__countries">
+              <button class="form-setting__country">Чехия</button>
+              <button class="form-setting__del" type="button" aria-label="Удалить страну"></button>
             </div>
-            <div class="plan-form__choice-countries">
-              <button class="plan-form__choice-text">Выберите страну</button>
-              <button class="plan-form__del" type="button" aria-label="Удалить страну"></button>
-              <div class="plan-form__alphabet">
+            <div class="form-setting__choice-countries">
+              <button class="form-setting__choice-text">Выберите страну</button>
+              <button class="form-setting__del" type="button" aria-label="Удалить страну"></button>
+              <div class="form-setting__alphabet">
                 <h2>Выберите страну</h2>
-                <button class="plan-form__country" aria-label="Закрыть выбор страны"></button>
-                <button class="plan-form__letter">А</button>
-                <button class="plan-form__letter">Б</button>
-                <button class="plan-form__letter">В</button>
-                <button class="plan-form__letter">Г</button>
-                <button class="plan-form__letter">Д</button>
-                <button class="plan-form__letter">Е</button>
-                <button class="plan-form__letter">З</button>
-                <button class="plan-form__letter">И</button>
-                <button class="plan-form__letter">К</button>
-                <button class="plan-form__letter">Л</button>
-                <button class="plan-form__letter">М</button>
-                <button class="plan-form__letter">Н</button>
-                <button class="plan-form__letter">О</button>
-                <button class="plan-form__letter">П</button>
-                <button class="plan-form__letter">Р</button>
-                <button class="plan-form__letter">С</button>
-                <button class="plan-form__letter">Т</button>
-                <button class="plan-form__letter">У</button>
-                <button class="plan-form__letter">Ф</button>
-                <button class="plan-form__letter">Х</button>
-                <button class="plan-form__letter">Ч</button>
-                <button class="plan-form__letter">Ш</button>
-                <button class="plan-form__letter">Э</button>
+                <button class="form-setting__country" aria-label="Закрыть выбор страны"></button>
+                <button class="form-setting__letter">А</button>
+                <button class="form-setting__letter">Б</button>
+                <button class="form-setting__letter">В</button>
+                <button class="form-setting__letter">Г</button>
+                <button class="form-setting__letter">Д</button>
+                <button class="form-setting__letter">Е</button>
+                <button class="form-setting__letter">З</button>
+                <button class="form-setting__letter">И</button>
+                <button class="form-setting__letter">К</button>
+                <button class="form-setting__letter">Л</button>
+                <button class="form-setting__letter">М</button>
+                <button class="form-setting__letter">Н</button>
+                <button class="form-setting__letter">О</button>
+                <button class="form-setting__letter">П</button>
+                <button class="form-setting__letter">Р</button>
+                <button class="form-setting__letter">С</button>
+                <button class="form-setting__letter">Т</button>
+                <button class="form-setting__letter">У</button>
+                <button class="form-setting__letter">Ф</button>
+                <button class="form-setting__letter">Х</button>
+                <button class="form-setting__letter">Ч</button>
+                <button class="form-setting__letter">Ш</button>
+                <button class="form-setting__letter">Э</button>
               </div>
-              <div class="plan-form__states">
-                <a href="" class="plan-form__state">Австралия</a>
-                <a href="" class="plan-form__state">Австрия</a>
-                <a href="" class="plan-form__state">Азербайджан</a>
-                <a href="" class="plan-form__state">Албания</a>
-                <a href="" class="plan-form__state">Алжир</a>
-                <a href="" class="plan-form__state">Ангола</a>
-                <a href="" class="plan-form__state">Андорра</a>
-                <a href="" class="plan-form__state">Антигуа и Барбуда</a>
-                <a href="" class="plan-form__state">Аргентина</a>
-                <a href="" class="plan-form__state">Армения</a>
+              <div class="form-setting__states">
+                <a href="" class="form-setting__state">Австралия</a>
+                <a href="" class="form-setting__state">Австрия</a>
+                <a href="" class="form-setting__state">Азербайджан</a>
+                <a href="" class="form-setting__state">Албания</a>
+                <a href="" class="form-setting__state">Алжир</a>
+                <a href="" class="form-setting__state">Ангола</a>
+                <a href="" class="form-setting__state">Андорра</a>
+                <a href="" class="form-setting__state">Антигуа и Барбуда</a>
+                <a href="" class="form-setting__state">Аргентина</a>
+                <a href="" class="form-setting__state">Армения</a>
               </div>
             </div>
-            <div class="plan-form__add-countries">
-              <button class="plan-form__add-text">добавить страну</button>
+            <div class="form-setting__add-countries">
+              <button class="form-setting__add-text">добавить страну</button>
             </div>
-            <a class="plan-form__next plan-form__next--btn" href="">Следующий шаг</a>
-            <a class="plan-form__back plan-form__back--btn" href="">На шаг назад</a>
+            <a class="form-setting__next form-setting__next--btn" href="">Следующий шаг</a>
+            <a class="form-setting__back form-setting__back--btn" href="">На шаг назад</a>
           </fieldset>
-          <fieldset class="plan-form__field">
-            <legend class="plan-form__legend">Шаг 3. Развлечения</legend>
-            <p class="plan-form__text">Наконец, расскажите о своих планахвремяпровождения. Можно писать в свободной форме и ставить тэги.</p>
-            <div class="plan-form__action-plans">
-              <p class="plan-form__action-plan">Босния и Герцеговина</p>
-              <textarea name="action-plan" id="action-plan" cols="30" rows="10" placeholder="План действий"></textarea>
+          <fieldset class="form-setting__field">
+            <legend class="form-setting__legend">Шаг 3. Развлечения</legend>
+            <p class="form-setting__text">Наконец, расскажите о своих планахвремяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+            <div class="form-setting__action-plans">
+              <p class="form-setting__action-plan">Босния и Герцеговина</p>
+              <textarea name="action-plan-1" id="action-plan-1" cols="30" rows="10" placeholder="План действий"></textarea>
             </div>
-            <div class="plan-form__action-plans">
-              <p class="plan-form__action-plan">Чехия</p>
-              <textarea name="action-plan" id="action-plan" cols="30" rows="10" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+            <div class="form-setting__action-plans">
+              <p class="form-setting__action-plan">Чехия</p>
+              <textarea name="action-plan-2" id="action-plan-2" cols="30" rows="10" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
             </div>
-            <a class="plan-form__back plan-form__back--btn" href="">На шаг назад</a>
+            <a class="form-setting__back form-setting__back--btn" href="">На шаг назад</a>
           </fieldset>
-          <button class="plan-form__next plan-form__next--btn" type="submit">Отправить</button>
-        </form>
-      </section>
+        </section>
+        <button class="form-setting__next form-setting__next--btn" type="submit">Отправить</button>
+      </form>
     </main>
     <footer class="page-footer">
       <a href="" class="page-footer__logo">
