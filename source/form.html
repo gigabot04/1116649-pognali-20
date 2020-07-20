@@ -53,7 +53,11 @@
       </section>
       <section class="create-plan">
         <h2 class="create-plan__title">Добавить план:</h2>
-        <div class="create-plan__point visually-hidden">Поинты</div>
+        <div class="create-plan__points">
+          <span class="create-plan__point create-plan__point--active"></span>
+          <span class="create-plan__point"></span>
+          <span class="create-plan__point"></span>
+        </div>
         <form class="plan-form" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset class="plan-form__field">
             <legend class="plan-form__legend">Шаг 1. Даты&nbspпребывания</legend>
@@ -142,25 +146,67 @@
                 </tr>
               </tbody>
             </table>
-            <button class="plan-form__next plan-form__next--btn" type="button">Следующий шаг</button>
+            <a class="plan-form__next plan-form__next--btn" href="">Следующий шаг</a>
           </fieldset>
           <fieldset class="plan-form__field">
             <legend class="plan-form__legend">Шаг 2. Маршрут</legend>
             <p class="plan-form__text">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
             <div class="plan-form__countries">
-              <p class="plan-form__country">Босния и Герцеговина</p>
+              <buttonp class="plan-form__country">Босния и Герцеговина</buttonp>
+              <button class="plan-form__del" type="button" aria-label="Удалить страну"></button>
             </div>
             <div class="plan-form__countries">
-              <p class="plan-form__country">Чехия</p>
+              <button class="plan-form__country">Чехия</button>
+              <button class="plan-form__del" type="button" aria-label="Удалить страну"></button>
             </div>
             <div class="plan-form__choice-countries">
-              <p class="plan-form__choice-text">Выберите страну</p>
+              <button class="plan-form__choice-text">Выберите страну</button>
+              <button class="plan-form__del" type="button" aria-label="Удалить страну"></button>
+              <div class="plan-form__alphabet">
+                <h2>Выберите страну</h2>
+                <button class="plan-form__country" aria-label="Закрыть выбор страны"></button>
+                <button class="plan-form__letter">А</button>
+                <button class="plan-form__letter">Б</button>
+                <button class="plan-form__letter">В</button>
+                <button class="plan-form__letter">Г</button>
+                <button class="plan-form__letter">Д</button>
+                <button class="plan-form__letter">Е</button>
+                <button class="plan-form__letter">З</button>
+                <button class="plan-form__letter">И</button>
+                <button class="plan-form__letter">К</button>
+                <button class="plan-form__letter">Л</button>
+                <button class="plan-form__letter">М</button>
+                <button class="plan-form__letter">Н</button>
+                <button class="plan-form__letter">О</button>
+                <button class="plan-form__letter">П</button>
+                <button class="plan-form__letter">Р</button>
+                <button class="plan-form__letter">С</button>
+                <button class="plan-form__letter">Т</button>
+                <button class="plan-form__letter">У</button>
+                <button class="plan-form__letter">Ф</button>
+                <button class="plan-form__letter">Х</button>
+                <button class="plan-form__letter">Ч</button>
+                <button class="plan-form__letter">Ш</button>
+                <button class="plan-form__letter">Э</button>
+              </div>
+              <div class="plan-form__states">
+                <a href="" class="plan-form__state">Австралия</a>
+                <a href="" class="plan-form__state">Австрия</a>
+                <a href="" class="plan-form__state">Азербайджан</a>
+                <a href="" class="plan-form__state">Албания</a>
+                <a href="" class="plan-form__state">Алжир</a>
+                <a href="" class="plan-form__state">Ангола</a>
+                <a href="" class="plan-form__state">Андорра</a>
+                <a href="" class="plan-form__state">Антигуа и Барбуда</a>
+                <a href="" class="plan-form__state">Аргентина</a>
+                <a href="" class="plan-form__state">Армения</a>
+              </div>
             </div>
             <div class="plan-form__add-countries">
-              <p class="plan-form__add-text">добавить страну</p>
+              <button class="plan-form__add-text">добавить страну</button>
             </div>
-            <button class="plan-form__next plan-form__next--btn" type="button">Следующий шаг</button>
-            <button class="plan-form__back plan-form__back--btn" type="button">На шаг назад</button>
+            <a class="plan-form__next plan-form__next--btn" href="">Следующий шаг</a>
+            <a class="plan-form__back plan-form__back--btn" href="">На шаг назад</a>
           </fieldset>
           <fieldset class="plan-form__field">
             <legend class="plan-form__legend">Шаг 3. Развлечения</legend>
@@ -173,7 +219,7 @@
               <p class="plan-form__action-plan">Чехия</p>
               <textarea name="action-plan" id="action-plan" cols="30" rows="10" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
             </div>
-            <button class="plan-form__back plan-form__back--btn" type="button">На шаг назад</button>
+            <a class="plan-form__back plan-form__back--btn" href="">На шаг назад</a>
           </fieldset>
           <button class="plan-form__next plan-form__next--btn" type="submit">Отправить</button>
         </form>

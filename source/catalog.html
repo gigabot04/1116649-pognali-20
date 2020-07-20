@@ -17,6 +17,7 @@
     <main class="page-main">
       <section class="filter">
         <h2 class="filter__title">Фильтрация по странам:</h2>
+        <button class="filter__close-btn filter__close-btn--mini" aria-label="Свернуть"></button>
         <div class="filter__parts">
           <a href="/europe" class="filter__part filter__part--active">Европа</a>
           <a href="/asian" class="filter__part">Азия</a>
@@ -63,7 +64,56 @@
           <a href="" class="filter__state">Армения</a>
           <a href="" class="filter__state">Афганистан</a>
         </div>
+        <button class="filter__close-btn filter__close-btn--bottom">Свернуть</button>
       </section>
+      <form class="filter-people" action="https://echo.htmlacademy.ru" method="GET">
+        <legend class="filter-people__title">Подберите идеального попутчика</legend>
+        <div class="filter-people__item">
+          <button class="filter-people__btn">Хобби</button>
+        </div>
+        <div class="filter-people__item">
+          <button class="filter-people__btn">Музыка</button>
+          <div class="filter-people__wrap">
+            <label class="filter-people__music-label" for="hard-rock">Тяжелый рок</label>
+            <input class="filter-people__music-control" type="checkbox" id="hard-rock" name="hard-rock">
+            <label class="filter-people__music-label" for="rus-rap">Русский рэп</label>
+            <input class="filter-people__music-control" type="checkbox" id="rus-rap" name="rus-rap">
+            <label class="filter-people__music-label" for="evrodance">Евроденс</label>
+            <input class="filter-people__music-control" type="checkbox" id="evrodance" name="evrodance">
+          </div>
+        </div>
+        <div class="filter-people__item">
+          <button class="filter-people__btn">Еда</button>
+        </div>
+        <div class="filter-people__item">
+          <button class="filter-people__btn">Транспорт</button>
+          <!-- тут будут свг иконки -->
+          <label class="filter-people__transport-label">
+            <input class="filter-people__transport-control" type="checkbox">
+          </label>
+          <label class="filter-people__transport-label">
+            <input class="filter-people__transport-control" type="checkbox">
+          </label>
+          <label class="filter-people__transport-label">
+            <input class="filter-people__transport-control" type="checkbox">
+          </label>
+          <label class="filter-people__transport-label">
+            <input class="filter-people__transport-control" type="checkbox">
+          </label>
+        </div>
+        <div class="filter-people__item">
+          <button class="filter-people__btn">Левел</button>
+          <input class="filter-people__level-control" type="number" min="0" max="100">
+          <div class="filter-people__range">
+            <div class="filter-people__lane">
+              <div class="filter-people__lane2" ></div>
+              <button class="filter-people__circle1" type="button" ></button>
+              <button class="filter-people__circle2" type="button" ></button>
+            </div>
+          </div>
+        </div>
+        <button class="filter-people__btn-send" type="submit">Показать</button>
+      </form>
       <div class="catalog-cart catalog-cart--online">
         <div class="catalog-cart__item">
           <a class="catalog-cart__name" href="">
