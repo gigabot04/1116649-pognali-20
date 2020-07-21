@@ -9,15 +9,15 @@
       <a href="" class="page-header__logo">
         <img src="https://via.placeholder.com/96x15" alt="Погнали?" width="96" height="15">
       </a>
-      <button class="page-header__toggle page-header__toggle--close">
+      <button class="page-header__toggle page-header__toggle--close" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <h2 class="page-header__title">Попутчики</h2>
+      <h1 class="page-header__title">Попутчики</h1>
     </header>
     <main class="page-main">
       <section class="filter">
         <h2 class="filter__title">Фильтрация по странам:</h2>
-        <button class="filter__close-btn filter__close-btn--mini" aria-label="Свернуть"></button>
+        <button class="filter__close-btn filter__close-btn--mini" aria-label="Свернуть" type="button"></button>
         <div class="filter__parts">
           <a href="/europe" class="filter__part filter__part--active">Европа</a>
           <a href="/asian" class="filter__part">Азия</a>
@@ -25,31 +25,31 @@
           <a href="/islands" class="filter__part">Острова</a>
         </div>
         <div class="filter__alphabet">
-          <button class="filter__letter">А</button>
-          <button class="filter__letter">Б</button>
-          <button class="filter__letter">В</button>
-          <button class="filter__letter">Г</button>
-          <button class="filter__letter">Д</button>
-          <button class="filter__letter">Е</button>
-          <button class="filter__letter">З</button>
-          <button class="filter__letter">И</button>
-          <button class="filter__letter">К</button>
-          <button class="filter__letter">Л</button>
-          <button class="filter__letter">М</button>
-          <button class="filter__letter">Н</button>
-          <button class="filter__letter">О</button>
-          <button class="filter__letter">П</button>
-          <button class="filter__letter">Р</button>
-          <button class="filter__letter">С</button>
-          <button class="filter__letter">Т</button>
-          <button class="filter__letter">У</button>
-          <button class="filter__letter">Ф</button>
-          <button class="filter__letter">Х</button>
-          <button class="filter__letter">Ч</button>
-          <button class="filter__letter">Ш</button>
-          <button class="filter__letter">Э</button>
-          <button class="filter__letter">Ю</button>
-          <button class="filter__letter">Я</button>
+          <button class="filter__letter" type="button">А</button>
+          <button class="filter__letter" type="button">Б</button>
+          <button class="filter__letter" type="button">В</button>
+          <button class="filter__letter" type="button">Г</button>
+          <button class="filter__letter" type="button">Д</button>
+          <button class="filter__letter" type="button">Е</button>
+          <button class="filter__letter" type="button">З</button>
+          <button class="filter__letter" type="button">И</button>
+          <button class="filter__letter" type="button">К</button>
+          <button class="filter__letter" type="button">Л</button>
+          <button class="filter__letter" type="button">М</button>
+          <button class="filter__letter" type="button">Н</button>
+          <button class="filter__letter" type="button">О</button>
+          <button class="filter__letter" type="button">П</button>
+          <button class="filter__letter" type="button">Р</button>
+          <button class="filter__letter" type="button">С</button>
+          <button class="filter__letter" type="button">Т</button>
+          <button class="filter__letter" type="button">У</button>
+          <button class="filter__letter" type="button">Ф</button>
+          <button class="filter__letter" type="button">Х</button>
+          <button class="filter__letter" type="button">Ч</button>
+          <button class="filter__letter" type="button">Ш</button>
+          <button class="filter__letter" type="button">Э</button>
+          <button class="filter__letter" type="button">Ю</button>
+          <button class="filter__letter" type="button">Я</button>
         </div>
         <div class="filter__states">
           <a href="" class="filter__state">Австралия</a>
@@ -64,15 +64,15 @@
           <a href="" class="filter__state">Армения</a>
           <a href="" class="filter__state">Афганистан</a>
         </div>
-        <button class="filter__close-btn filter__close-btn--bottom">Свернуть</button>
+        <button class="filter__close-btn filter__close-btn--bottom" type="button">Свернуть</button>
       </section>
       <form class="filter-people" action="https://echo.htmlacademy.ru" method="GET">
         <h2 class="filter-people__title">Подберите идеального попутчика</h2>
         <div class="filter-people__item">
-          <button class="filter-people__btn">Хобби</button>
+          <button class="filter-people__btn" type="button">Хобби</button>
         </div>
         <div class="filter-people__item">
-          <button class="filter-people__btn">Музыка</button>
+          <button class="filter-people__btn" type="button">Музыка</button>
           <div class="filter-people__wrap">
             <label class="filter-people__music-label" for="hard-rock">Тяжелый рок</label>
             <input class="filter-people__music-control" type="checkbox" id="hard-rock" name="hard-rock">
@@ -83,32 +83,37 @@
           </div>
         </div>
         <div class="filter-people__item">
-          <button class="filter-people__btn">Еда</button>
+          <button class="filter-people__btn" type="button">Еда</button>
         </div>
         <div class="filter-people__item">
-          <button class="filter-people__btn">Транспорт</button>
+          <button class="filter-people__btn" type="button">Транспорт</button>
           <!-- тут будут свг иконки -->
           <label class="filter-people__transport-label">
-            <input class="filter-people__transport-control" type="checkbox">
+            <span class="visually-hidden">На самолете</span>
+            <input class="filter-people__transport-control" type="checkbox" name="самолет">
           </label>
           <label class="filter-people__transport-label">
-            <input class="filter-people__transport-control" type="checkbox">
+            <span class="visually-hidden">На авто</span>
+            <input class="filter-people__transport-control" type="checkbox" name="Авто">
           </label>
           <label class="filter-people__transport-label">
-            <input class="filter-people__transport-control" type="checkbox">
+            <span class="visually-hidden">На велосипеде</span>
+            <input class="filter-people__transport-control" type="checkbox" name="Велосипед">
           </label>
           <label class="filter-people__transport-label">
-            <input class="filter-people__transport-control" type="checkbox">
+            <span class="visually-hidden">На пешком</span>
+            <input class="filter-people__transport-control" type="checkbox" name="Пешком">
           </label>
         </div>
         <div class="filter-people__item">
-          <button class="filter-people__btn">Левел</button>
-          <input class="filter-people__level-control" type="number" min="0" max="100">
+          <button class="filter-people__btn" type="button">Левел</button>
+          <input class="filter-people__level-control" type="number" min="0" name="Левел">
+          <input class="filter-people__level-control" type="number" max="100" name="Левел">
           <div class="filter-people__range">
             <div class="filter-people__lane">
               <div class="filter-people__lane2" ></div>
-              <button class="filter-people__circle1" type="button" ></button>
-              <button class="filter-people__circle2" type="button" ></button>
+              <button class="filter-people__circle filter-people__circle--1" type="button" aria-label="Выбрать минимальное значение"></button>
+              <button class="filter-people__circle filter-people__circle--2" type="button" aria-label="Выбрать максимальное значение"></button>
             </div>
           </div>
         </div>
