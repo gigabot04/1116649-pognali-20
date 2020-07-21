@@ -21,7 +21,7 @@
           <a href="form.html" class="header-menu__link">Направления</a>
           <a href="catalog.html" class="header-menu__link">Попутчики</a>
         </div>
-        <a href="" class="header-menu__auth auth">Авторизация</a>
+        <a href="" class="header-menu__auth header-menu__auth--btn">Авторизация</a>
         <div class="feedback">
           <a href="tel:88005558628" class="feedback__tel">8 800 555-86-28</a>
           <a href="mailto:mail@htmlacademy.ru" class="feedback__mail">mail@htmlacademy.ru</a>
@@ -81,8 +81,8 @@
           <img class="directions-cart__img" src="https://via.placeholder.com/270x110" alt="Картинка Таиланда">
           <h2 class="directions-cart__country">Таиланд</h2>
           <p class="directions-cart__info">
-            <p class="directions-cart__motto">Джунгли зовут!</p>
-            <p class="directions-cart__users">18321</p>
+            <span class="directions-cart__motto">Джунгли зовут!</span>
+            <span class="directions-cart__users">18321</span>
           </p>
         </div>
         <div class="directions-cart directions-cart--france">
@@ -132,10 +132,10 @@
           </p>
           <div class="companions-cart__icons">
             <!-- Не забыть заменить на SVG -->
-            <img class="companions-cart__icon companions-cart__icon--true" src="https://via.placeholder.com/20.83x21.12" alt="На самолете">
-            <img class="companions-cart__icon" src="https://via.placeholder.com/17.04x19.2" alt="На автобусе">
-            <img class="companions-cart__icon" src="https://via.placeholder.com/23.63x24" alt="На велосипеде">
-            <img class="companions-cart__icon" src="https://via.placeholder.com/20.65x23.04" alt="Бегом">
+            <img class="companions-cart__icon companions-cart__icon--true" src="https://via.placeholder.com/20.83x21.12" alt="На самолете" width="20" height="20">
+            <img class="companions-cart__icon" src="https://via.placeholder.com/17.04x19.2" alt="На автобусе" width="20" height="20">
+            <img class="companions-cart__icon" src="https://via.placeholder.com/23.63x24" alt="На велосипеде" width="20" height="20">
+            <img class="companions-cart__icon" src="https://via.placeholder.com/20.65x23.04" alt="Бегом" width="20" height="20">
           </div>
         </div>
         <div class="companions-cart">
@@ -154,10 +154,10 @@
           </p>
           <div class="companions-cart__icons">
             <!-- Не забыть заменить на SVG -->
-            <img class="companions-cart__icon companions-cart__icon--true" src="https://via.placeholder.com/20.83x21.12" alt="На самолете">
-            <img class="companions-cart__icon" src="https://via.placeholder.com/17.04x19.2" alt="На автобусе">
-            <img class="companions-cart__icon" src="https://via.placeholder.com/23.63x24" alt="На велосипеде">
-            <img class="companions-cart__icon" src="https://via.placeholder.com/20.65x23.04" alt="Бегом">
+            <img class="companions-cart__icon companions-cart__icon--true" src="https://via.placeholder.com/20.83x21.12" alt="На самолете" width="20" height="20">
+            <img class="companions-cart__icon" src="https://via.placeholder.com/17.04x19.2" alt="На автобусе" width="20" height="20">
+            <img class="companions-cart__icon" src="https://via.placeholder.com/23.63x24" alt="На велосипеде" width="20" height="20">
+            <img class="companions-cart__icon" src="https://via.placeholder.com/20.65x23.04" alt="Бегом" width="20" height="20">
           </div>
         </div>
         <a class="companions__button btn" href="catalog.html">Показать всех</a>
@@ -171,6 +171,29 @@
         <p class="rates__item-text">Кастомный цвет карточки</p>
         <p class="rates__item-price">59 руб./мес</p>
         <a class="rates__button" href="">Показать тарифы для бизнеса</a>
+      </section>
+      <section class="auth">
+        <h2 class="auth__title">Заинтересовались?</h2>
+        <p class="auth__text auth__text--1">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="">авторизуйтесь</a>.</p>
+        <form class="index-form" action="https://echo.htmlacademy.ru" method="GET">
+          <label class="index-form__label">
+            <input class="index-form__control" type="email" name="auth-email" aria-label="Введите электронную почту" placeholder="E-mail" required>
+          </label>
+          <button class="index-form__btn" type="submit">
+            <span class="index-form__btn-text">Регистрация</span>
+          </button>
+        </form>
+        <p class="auth__text auth__text--2">Остались вопросы? Мы с радостью на них ответим!</p>
+        <div class="auth__feedback">
+          <a href="tel:88005558628" class="auth__tel">8 800 555-86-28</a>
+          <a href="mailto:mail@htmlacademy.ru" class="auth__mail">mail@htmlacademy.ru</a>
+        </div>
+      </section>
+      <section class="maps">
+        <h2 class="maps__address">ул. Большая Конюшенная, 19/8</h2>
+        <a href="" class="maps__btn">Проложить маршрут</a>
+        <!-- Тут будет карта -->
+        <img class="maps__img" src="https://via.placeholder.com/320x424" alt="Карта" width="320" height="424">
       </section>
     </main>
     <footer class="page-footer">
