@@ -1,0 +1,39 @@
+$basic-blue: #161C35;
+$text-blue: #192144;
+$icon-bg: #121936;
+$basic-blue-light: #EDEFF6;
+$basic-yellow: #FFD74B;
+$special-yellow: #FFA530;
+$special-yellow-dark: #FFBD30;
+$special-blue-light: #DFE3F0;
+$special-grey: #444444;
+$basic-blue-light: #1D2E5B;
+$special-red: #F47E7E;
+$special-orange: #FF8D30;
+$basic-white: #FFFFFF;
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Blogger Sans", "Tahoma", sans-serif;
+}
+
+.page-container {
+  width: 320px - 25px -25px;
+  margin: 0 auto;
+  outline: 1px solid black;
+}
