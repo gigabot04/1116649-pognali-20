@@ -1,0 +1,130 @@
+.directions {
+  padding-bottom: 33px;
+}
+
+.directions__page-container {
+position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -25px;
+    right: -25px;
+    bottom: -33px;
+    z-index: -1;
+    background-color: $basic-white-dark;
+    border-radius: 30px;
+  }
+}
+
+.directions__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: $special-orange;
+  padding-top: 69px;
+  padding-left: 26px;
+}
+
+.directions__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $special-grey;
+  display: block;
+  padding-left: 25px;
+  width: 220px;
+  margin-bottom: 46px;
+}
+
+.directions-cart {
+  width: 270px;
+  min-height: 190px;
+  margin-bottom: -4px;
+}
+
+.directions-cart__img {
+  position: relative;
+  bottom: -15px;
+  border-radius: 10px 10px 0 0;
+}
+
+.directions-cart__block {
+  position: relative;
+  z-index: 1;
+  background-color: $basic-white;
+  width: 270px;
+  min-height: 89px;
+  border-radius: 10px;
+  padding-left: 24px;
+  padding-top: 24px;
+}
+
+.directions-cart__country {
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.directions-cart__info {
+  padding: 0;
+  margin: 0;
+}
+
+.directions-cart__motto {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-grey;
+  opacity: .3;
+  display: block;
+  width: 130px;
+}
+
+.directions-cart__users {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-blue;
+  opacity: .3;
+}
+
+.directions__button {
+  position: relative;
+  margin-top: 30px;
+  display: block;
+  text-decoration: none;
+  color: $basic-blue-light;
+  background-color: $basic-yellow;
+  padding-left: 23.1px;
+  padding-top: 22.48px;
+  border-radius: 10px;
+  min-height: 62px;
+
+  &--btn {
+    font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $basic-blue-light;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../../img/triangle-arrow-right.svg);
+    background-repeat: no-repeat;
+    right: 20px;
+    top: 25px;
+    width: 13px;
+    height: 13px;
+  }
+  }
+}
