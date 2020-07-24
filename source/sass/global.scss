@@ -4,8 +4,8 @@ $text-blue-light: #132576;
 $icon-bg: #121936;
 $basic-white-dark: #EDEFF6;
 $special-grey-light: #E6E8F1;
-$basic-gray: #E1E3E9;
-$basic-gray-after: #F2F2F2;
+$basic-grey: #E1E3E9;
+$basic-grey-after: #F2F2F2;
 $basic-yellow: #FFD74B;
 $special-yellow: #FFA530;
 $special-yellow-dark: #FFBD30;
@@ -19,6 +19,9 @@ $basic-white: #FFFFFF;
 $basic-black: #000000;
 $offline: #F97676;
 $online: #81E31E;
+$output: #FF5C23;
+$day-border: #CBCED9;
+$bg-button: #D6DAED;
 
 .visually-hidden {
   position: absolute;
@@ -43,6 +46,7 @@ body {
 .page-container {
   width: 320px;
   padding: 0 25px;
+
   // outline: 1px solid black;
 }
 

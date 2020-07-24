@@ -1,0 +1,94 @@
+.filter__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $text-blue;
+}
+
+.filter__part {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $text-blue;
+  opacity: .3;
+
+  &--active {
+    opacity: 1;
+  }
+}
+
+.filter__letter {
+  border: 1px solid $day-border;
+  background-color: $basic-white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-blue-light;
+}
+
+.filter__state {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $special-grey;
+}
+
+.filter__close-btn--bottom {
+  border: none;
+  background-color: $bg-button;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $text-blue;
+}
+
+.filter-people__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: $basic-blue-light;
+}
+
+.filter-people__btn {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-blue-light;
+  border: none;
+}
+
+.filter-people__music-label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: $basic-black;
+}
+
+.filter-people__btn-send {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-blue-light;
+  border: none;
+}
