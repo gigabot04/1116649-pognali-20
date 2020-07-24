@@ -1,7 +1,11 @@
 $basic-blue: #161C35;
 $text-blue: #192144;
+$text-blue-light: #132576;
 $icon-bg: #121936;
 $basic-white-dark: #EDEFF6;
+$special-grey-light: #E6E8F1;
+$basic-gray: #E1E3E9;
+$basic-gray-after: #F2F2F2;
 $basic-yellow: #FFD74B;
 $special-yellow: #FFA530;
 $special-yellow-dark: #FFBD30;
@@ -12,6 +16,9 @@ $basic-blue-dark: #141B3B;
 $special-red: #F47E7E;
 $special-orange: #FF8D30;
 $basic-white: #FFFFFF;
+$basic-black: #000000;
+$offline: #F97676;
+$online: #81E31E;
 
 .visually-hidden {
   position: absolute;
@@ -34,8 +41,8 @@ body {
 }
 
 .page-container {
-  width: 320px - 25px -25px;
-  margin: 0 auto;
-  outline: 1px solid black;
+  width: 320px;
+  padding: 0 25px;
+  // outline: 1px solid black;
 }
 

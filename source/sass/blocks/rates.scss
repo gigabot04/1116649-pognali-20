@@ -1,0 +1,150 @@
+.rates {
+  position: relative;
+  padding-top: 82px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    bottom: -39px;
+    background-color: $special-grey-light;
+    z-index: -4;
+    border-radius: 0 0 30px 30px;
+  }
+}
+
+.rates__title {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 25px;
+  margin-bottom: 56px;
+  width: 50px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: $special-orange;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -63px;
+    left: 121px;
+    width: 198px;
+    height: 198px;
+    background-image: url(../../img/rates@1x.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    transform: scale(.5);
+  }
+}
+
+.rates__item-text {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 24px;
+  margin-bottom: 7px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  color: $special-grey;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 24px;
+    width: 200px;
+    height: 1px;
+    background-color: $basic-gray;
+  }
+}
+
+.rates__item-price {
+  margin: 0;
+  padding: 0;
+  padding-left: 25px;
+  margin-bottom: 28px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  color: $special-grey;
+}
+
+.rates__button {
+  display: block;
+  padding-top: 15px;
+  padding-left: 25px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: $text-blue-light;
+}
+
+.rates__item-text--1 {
+  &::before {
+    content: "1";
+    text-align: center;
+    padding-top: 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: $basic-white;
+    position: absolute;
+    top: -8px;
+    right: 1px;
+    background-color: $special-orange;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+  }
+}
+
+.rates__item-text--2 {
+  &::before {
+    content: "2";
+    text-align: center;
+    padding-top: 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: $basic-white;
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    background-color: $special-yellow-dark;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+  }
+}
+
+.rates__item-text--3 {
+  &::before {
+    content: "3";
+    text-align: center;
+    padding-top: 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: $basic-white;
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    background-color: $basic-yellow;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+  }
+}

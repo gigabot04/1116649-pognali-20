@@ -4,6 +4,63 @@
   background-color: $basic-blue;
 }
 
+.promo-feedback {
+  position: absolute;
+  top: 407px;
+  width: 270px;
+  min-height: 40px;
+  display: flex;
+  z-index: 1;
+}
+
+.promo-feedback__tel {
+  display: block;
+  background-color: $special-orange;
+  width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  padding: 11px;
+}
+
+.promo-feedback__mail {
+  display: block;
+  background-color: $special-yellow-dark;
+  width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  padding: 11px;
+}
+
+.promo-feedback__auth {
+  text-decoration: none;
+  display: block;
+  background-color: $basic-yellow;
+  width: 190px;
+  min-height: 40px;
+  border-radius: 25px;
+  padding: 10px 0;
+
+  &--btn {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $basic-blue;
+  }
+}
+
+.promo-feedback__svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+.promo-feedback__svg-path {
+  fill: $basic-blue;
+}
+
 .page-promo-img {
   position: relative;
 
@@ -17,10 +74,10 @@
       url(../../img/globe-back-mobile@1x.jpg);
     background-repeat: no-repeat;
     background-position: 
-      80px 223px,
-      0 0;
+      105px 223px,
+      25px 0;
     height: 569px;
-    width: 320px;
+    width: 345px;
     z-index: -1;
   }
 }
@@ -39,11 +96,12 @@
 
 .promo-desc {
   position: absolute;
+  left: 0;
+  right: 0;
   top: 411px;
-  left: -25px;
-  right: -25px;
+  padding-top: 47px;
+  padding-left: 50px;
   background-color: $basic-blue;
-  padding: 47px 51px;
 }
 
 .promo-desc__quote {
