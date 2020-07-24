@@ -1,7 +1,8 @@
 .auth__page-container {
   position: relative;
   padding-top: 109px;
-  margin-bottom: 40px;
+  padding-bottom: 12px;
+  margin-bottom: 62px;
 
   &::after {
     content: "";
@@ -77,7 +78,6 @@
     height: 16px;
     background-image: url(../../img/triangle-arrow-right.svg);
     background-repeat: no-repeat;
-
   }
 }
 
