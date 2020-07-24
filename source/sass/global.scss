@@ -1,27 +1,27 @@
-$basic-blue: #161C35;
+$basic-blue: #161c35;
 $text-blue: #192144;
 $text-blue-light: #132576;
 $icon-bg: #121936;
-$basic-white-dark: #EDEFF6;
-$special-grey-light: #E6E8F1;
-$basic-grey: #E1E3E9;
-$basic-grey-after: #F2F2F2;
-$basic-yellow: #FFD74B;
-$special-yellow: #FFA530;
-$special-yellow-dark: #FFBD30;
-$special-blue-light: #DFE3F0;
+$basic-white-dark: #edeff6;
+$special-grey-light: #e6e8f1;
+$basic-grey: #e1e3e9;
+$basic-grey-after: #f2f2f2;
+$basic-yellow: #ffd74b;
+$special-yellow: #ffa530;
+$special-yellow-dark: #ffbd30;
+$special-blue-light: #dfe3f0;
 $special-grey: #444444;
-$basic-blue-light: #1D2E5B;
-$basic-blue-dark: #141B3B;
-$special-red: #F47E7E;
-$special-orange: #FF8D30;
-$basic-white: #FFFFFF;
+$basic-blue-light: #1d2e5b;
+$basic-blue-dark: #141b3b;
+$special-red: #f47e7e;
+$special-orange: #ff8d30;
+$basic-white: #ffffff;
 $basic-black: #000000;
-$offline: #F97676;
-$online: #81E31E;
-$output: #FF5C23;
-$day-border: #CBCED9;
-$bg-button: #D6DAED;
+$offline: #f97676;
+$online: #81e31e;
+$output: #ff5c23;
+$day-border: #cbced9;
+$bg-button: #d6daed;
 
 .visually-hidden {
   position: absolute;
@@ -35,7 +35,9 @@ $bg-button: #D6DAED;
   overflow: hidden;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -49,4 +51,3 @@ body {
 
   // outline: 1px solid black;
 }
-

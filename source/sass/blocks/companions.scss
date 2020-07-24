@@ -6,8 +6,8 @@
     background-color: $text-blue;
     position: absolute;
     top: -30px;
-    left: 0px;
-    right: 0px;
+    left: 0;
+    right: 0;
     bottom: -31px;
     border-radius: 0 0 30px 30px;
     z-index: -3;
@@ -23,16 +23,16 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     z-index: -2;
-    background-image: 
-      url(../../img/smolov-back-desktop@1x.png),
-      url(../../img/rogovaya-back-mobile@1x.png);
+    background-image:
+      url("../../img/smolov-back-desktop@1x.png"),
+      url("../../img/rogovaya-back-mobile@1x.png");
     background-repeat: no-repeat;
     background-position:
-     127px 69px,
-     -34px 341px;
+      127px 69px,
+      -34px 341px;
   }
 }
 
@@ -57,7 +57,6 @@
 }
 
 .companions__item {
-
   &--1 {
     font-style: normal;
     font-weight: 300;
@@ -65,6 +64,7 @@
     line-height: 22px;
     color: $basic-white;
   }
+
   &--2 {
     font-style: normal;
     font-weight: bold;
@@ -76,7 +76,7 @@
 
 .companions-cart {
   position: relative;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
 }
 
 .companions-cart:not(:last-child) {
@@ -119,7 +119,7 @@
     height: 60px;
     border-radius: 50%;
     background-color: $basic-black;
-    opacity: .3;
+    opacity: 0.3;
   }
 }
 
@@ -157,9 +157,9 @@
     width: 30px;
     height: 1px;
     background-color: $basic-white;
-    opacity: .3;
+    opacity: 0.3;
     top: -2px;
-    left: -2px; 
+    left: -2px;
   }
 }
 
@@ -235,7 +235,7 @@
 
 .companions-cart__icon {
   margin-left: 10px;
-  opacity: .15;
+  opacity: 0.15;
 
   &--true {
     opacity: 1;
@@ -256,20 +256,20 @@
 
   &--btn {
     font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
-  color: $basic-blue-light;
-  
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url(../../img/triangle-arrow-right.svg);
-    background-repeat: no-repeat;
-    right: 20px;
-    top: 25px;
-    width: 13px;
-    height: 13px;
-  }
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: $basic-blue-light;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/triangle-arrow-right.svg");
+      background-repeat: no-repeat;
+      right: 20px;
+      top: 25px;
+      width: 13px;
+      height: 13px;
+    }
   }
 }

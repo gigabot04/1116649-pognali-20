@@ -67,7 +67,7 @@
       width: 35px;
       height: 24px;
       display: block;
-      background-image: url(../../img/flags-back@1x.png);
+      background-image: url("../../img/flags-back@1x.png");
       background-repeat: no-repeat;
     }
   }
@@ -80,7 +80,7 @@
       width: 35px;
       height: 24px;
       display: block;
-      background-image: url(../../img/flags-back@1x.png);
+      background-image: url("../../img/flags-back@1x.png");
       background-repeat: no-repeat;
     }
   }
@@ -93,7 +93,7 @@
       width: 35px;
       height: 24px;
       display: block;
-      background-image: url(../../img/flags-back@1x.png);
+      background-image: url("../../img/flags-back@1x.png");
       background-repeat: no-repeat;
     }
   }
@@ -110,7 +110,7 @@
   font-size: 16px;
   line-height: 18px;
   color: $special-grey;
-  opacity: .3;
+  opacity: 0.3;
   display: block;
   width: 130px;
 }
@@ -121,7 +121,7 @@
   font-size: 16px;
   line-height: 20px;
   color: $basic-blue;
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .directions__button {
@@ -138,20 +138,20 @@
 
   &--btn {
     font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
-  color: $basic-blue-light;
-  
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url(../../img/triangle-arrow-right.svg);
-    background-repeat: no-repeat;
-    right: 20px;
-    top: 25px;
-    width: 13px;
-    height: 13px;
-  }
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: $basic-blue-light;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/triangle-arrow-right.svg");
+      background-repeat: no-repeat;
+      right: 20px;
+      top: 25px;
+      width: 13px;
+      height: 13px;
+    }
   }
 }

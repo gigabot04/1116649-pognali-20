@@ -61,7 +61,7 @@
 .index-form__btn {
   position: absolute;
   top: 14px;
-  right: 0px;
+  right: 0;
   background-color: $basic-yellow;
   border-radius: 10px;
   border: none;
@@ -76,7 +76,7 @@
     position: absolute;
     width: 11px;
     height: 16px;
-    background-image: url(../../img/triangle-arrow-right.svg);
+    background-image: url("../../img/triangle-arrow-right.svg");
     background-repeat: no-repeat;
   }
 }

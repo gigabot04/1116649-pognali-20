@@ -69,11 +69,11 @@
     position: absolute;
     top: -51px;
     left: -25px;
-    background-image: 
-      url(../../img/traveller-illustration-mobile@1x.png),
-      url(../../img/globe-back-mobile@1x.jpg);
+    background-image:
+      url("../../img/traveller-illustration-mobile@1x.png"),
+      url("../../img/globe-back-mobile@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 
+    background-position:
       105px 223px,
       25px 0;
     height: 569px;
@@ -153,7 +153,7 @@
     width: 138px;
     height: 42px;
   }
-  
+
   &--4 {
     display: block;
     width: 125px;
@@ -197,18 +197,21 @@
     background-color: $special-orange;
     border-radius: 10px;
   }
+
   &--2 {
     position: absolute;
     top: 80px * 1;
     background-color: $special-yellow;
     border-radius: 10px;
   }
+
   &--3 {
     position: absolute;
     top: 80px * 2;
     background-color: $special-yellow-dark;
     border-radius: 10px;
   }
+
   &--4 {
     position: absolute;
     top: 80px * 3;
