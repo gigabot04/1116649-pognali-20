@@ -17,7 +17,7 @@
     z-index: -1;
     top: -31px;
     left: -7px;
-    background-image: url("../../img/about-mobile@1x.png");
+    background-image: url("../img/about-mobile@1x.png");
     background-repeat: no-repeat;
     width: 292px;
     height: 353px;
@@ -47,31 +47,4 @@
     height: 132px;
     border-radius: 0 20px 20px 0;
   }
-}
-
-.service-desc {
-  position: relative;
-  z-index: 0;
-}
-
-.service-desc__item:not(:last-child) {
-  padding-bottom: 3px;
-}
-
-.service-desc__item--1 {
-  padding: 0 34px 0 24px;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 22px;
-  color: $basic-white;
-}
-
-.service-desc__item--2 {
-  padding: 0 34px 0 24px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 22px;
-  color: $basic-white;
 }

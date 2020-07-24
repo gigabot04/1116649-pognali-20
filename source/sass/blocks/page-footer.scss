@@ -47,5 +47,51 @@
   display: block;
   width: 27px;
   height: 34px;
-  background-image: url("../../img/htmlacademy.svg");
+  background-image: url("../img/htmlacademy.svg");
+}
+
+
+.page-footer__social-contacts {
+  &--fb {
+    background-image: url("../img/facebook.svg");
+    display: block;
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 21px;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &--vk {
+    background-image: url("../img/vk.svg");
+    background-repeat: no-repeat;
+    display: block;
+    width: 23px;
+    height: 12px;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &--inst {
+    background-image: url("../img/instagram.svg");
+    display: block;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    opacity: 0.5;
+  
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &--active {
+    opacity: 1;
+  }
 }

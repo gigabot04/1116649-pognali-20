@@ -1,3 +1,19 @@
+.form-setting__level-num {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 38px;
+  color: $basic-blue;
+}
+
+.form-setting__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  color: $special-grey;
+}
+
 .form-setting__photo-btn {
   font-style: normal;
   font-weight: 500;
@@ -22,6 +38,7 @@
   font-size: 16px;
   line-height: 18px;
   color: $special-grey;
+  opacity: 0.6;
 }
 
 .form-setting__transport-title {
@@ -268,7 +285,7 @@
   color: $basic-blue-light;
 }
 
-.form-setting__action-plan {
+.form-setting__action-plan-title {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -276,7 +293,7 @@
   color: $basic-blue-light;
 }
 
-.action-plan {
+.form-setting__action-plan {
   &--2 {
     font-style: normal;
     font-weight: normal;

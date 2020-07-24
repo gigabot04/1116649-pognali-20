@@ -18,6 +18,18 @@
   padding-top: 46px;
   position: relative;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 68px;
+    left: 0;
+    width: 113px;
+    height: 132px;
+    z-index: -2;
+    background-color: $basic-blue-dark;
+    border-radius: 0 20px 20px 0;
+  }
+
   &::after {
     content: "";
     width: 100%;
@@ -27,12 +39,12 @@
     left: 0;
     z-index: -2;
     background-image:
-      url("../../img/smolov-back-desktop@1x.png"),
-      url("../../img/rogovaya-back-mobile@1x.png");
+      url("../img/smolov-back-desktop@1x.png"),
+      url("../img/rogovaya-back-mobile@1x.png");
     background-repeat: no-repeat;
     background-position:
-      127px 69px,
-      -34px 341px;
+      152px 69px,
+      -12px 341px;
   }
 }
 
@@ -96,7 +108,7 @@
   left: 17px;
 
   &--99 {
-    background-image: url("../../img/Subtract99.svg");
+    background-image: url("../img/Subtract99.svg");
     background-repeat: no-repeat;
     width: 60px;
     height: 60px;
@@ -104,7 +116,7 @@
   }
 
   &--80 {
-    background-image: url("../../img/Subtract80.svg");
+    background-image: url("../img/Subtract80.svg");
     background-repeat: no-repeat;
     width: 60px;
     height: 60px;
@@ -264,7 +276,7 @@
     &::after {
       content: "";
       position: absolute;
-      background-image: url("../../img/triangle-arrow-right.svg");
+      background-image: url("../img/triangle-arrow-right.svg");
       background-repeat: no-repeat;
       right: 20px;
       top: 25px;

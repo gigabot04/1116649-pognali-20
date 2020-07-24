@@ -4,84 +4,6 @@
   background-color: $basic-blue;
 }
 
-.promo-feedback {
-  position: absolute;
-  top: 407px;
-  width: 270px;
-  min-height: 40px;
-  display: flex;
-  z-index: 1;
-}
-
-.promo-feedback__tel {
-  display: block;
-  background-color: $special-orange;
-  width: 40px;
-  min-height: 40px;
-  border-radius: 50%;
-  padding: 11px;
-}
-
-.promo-feedback__mail {
-  display: block;
-  background-color: $special-yellow-dark;
-  width: 40px;
-  min-height: 40px;
-  border-radius: 50%;
-  padding: 11px;
-}
-
-.promo-feedback__auth {
-  text-decoration: none;
-  display: block;
-  background-color: $basic-yellow;
-  width: 190px;
-  min-height: 40px;
-  border-radius: 25px;
-  padding: 10px 0;
-
-  &--btn {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    color: $basic-blue;
-  }
-}
-
-.promo-feedback__svg {
-  display: block;
-  width: 18px;
-  height: 18px;
-}
-
-.promo-feedback__svg-path {
-  fill: $basic-blue;
-}
-
-.page-promo-img {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: -51px;
-    left: -25px;
-    background-image:
-      url("../../img/traveller-illustration-mobile@1x.png"),
-      url("../../img/globe-back-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position:
-      105px 223px,
-      25px 0;
-    height: 569px;
-    width: 345px;
-    z-index: -1;
-  }
-}
-
 .promo__title {
   margin: 0;
   font-style: normal;
@@ -94,132 +16,23 @@
   margin-bottom: 267px;
 }
 
-.promo-desc {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 411px;
-  padding-top: 47px;
-  padding-left: 50px;
-  background-color: $basic-blue;
-}
-
-.promo-desc__quote {
-  display: block;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 22px;
-  color: $basic-white;
-  width: 151px;
-  height: 44px;
-  margin-bottom: 18px;
-}
-
-.promo-desc__author {
-  display: block;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 22px;
-  color: $basic-white;
-  width: 161px;
-  height: 66px;
-}
-
-.promo-task__item-text {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
-  color: $basic-blue;
-  margin: 0;
-  padding: 0;
-
-  &--1 {
-    display: block;
-    width: 106px;
-    height: 36px;
-  }
-
-  &--2 {
-    display: block;
-    width: 150px;
-    height: 36px;
-  }
-
-  &--3 {
-    display: block;
-    width: 138px;
-    height: 42px;
-  }
-
-  &--4 {
-    display: block;
-    width: 125px;
-    height: 34px;
-  }
-}
-
-.promo-task__item-num {
-  display: block;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
-  color: $basic-white;
-}
-
-.promo-task {
+.promo__img {
   position: relative;
-  min-height: 320px;
-  margin-top: 471px;
 
   &::after {
     content: "";
     position: absolute;
-    z-index: -1;
-    background-color: $text-blue;
-    top: 80px;
+    top: -51px;
     left: -25px;
-    right: -25px;
-    bottom: 0;
+    background-image:
+      url("../img/traveller-illustration-mobile@1x.png"),
+      url("../img/globe-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position:
+      105px 223px,
+      25px 0;
+    height: 569px;
+    width: 345px;
+    z-index: -1;
   }
-}
-
-.promo-task__item {
-  width: 270px;
-  min-height: 160px;
-
-  &--1 {
-    position: absolute;
-    top: 80px * 0;
-    background-color: $special-orange;
-    border-radius: 10px;
-  }
-
-  &--2 {
-    position: absolute;
-    top: 80px * 1;
-    background-color: $special-yellow;
-    border-radius: 10px;
-  }
-
-  &--3 {
-    position: absolute;
-    top: 80px * 2;
-    background-color: $special-yellow-dark;
-    border-radius: 10px;
-  }
-
-  &--4 {
-    position: absolute;
-    top: 80px * 3;
-    background-color: $basic-yellow;
-    border-radius: 10px;
-  }
-}
-
-.promo-task__item:last-child {
-  min-height: 80px;
 }

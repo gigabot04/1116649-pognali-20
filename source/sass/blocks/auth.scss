@@ -1,4 +1,4 @@
-.auth__page-container {
+.auth {
   position: relative;
   padding-top: 109px;
   padding-bottom: 12px;
@@ -45,11 +45,11 @@
   }
 }
 
-.index-form {
+.auth__index-form {
   position: relative;
 }
 
-.index-form__control {
+.auth__control {
   margin-top: 14px;
   width: 225px;
   border: none;
@@ -58,7 +58,7 @@
   padding: 22px 25px;
 }
 
-.index-form__btn {
+.auth__btn {
   position: absolute;
   top: 14px;
   right: 0;
@@ -76,7 +76,7 @@
     position: absolute;
     width: 11px;
     height: 16px;
-    background-image: url("../../img/triangle-arrow-right.svg");
+    background-image: url("../img/triangle-arrow-right.svg");
     background-repeat: no-repeat;
   }
 }

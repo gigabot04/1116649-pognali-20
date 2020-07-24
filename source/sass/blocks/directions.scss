@@ -1,8 +1,17 @@
-.directions__page-container {
+.directions {
   position: relative;
-  border-radius: 0 0 30px 30px;
-  padding-bottom: 34px;
-  background-color: $basic-white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    bottom: -34px;
+    background-color: $basic-white;
+    z-index: -2;
+    border-radius: 0 0 30px 30px;
+  }
 }
 
 .directions__title {
@@ -27,103 +36,6 @@
   margin-bottom: 46px;
 }
 
-.directions-cart {
-  width: 270px;
-  min-height: 190px;
-  margin-bottom: -4px;
-}
-
-.directions-cart__img {
-  position: relative;
-  bottom: -15px;
-  border-radius: 10px 10px 0 0;
-}
-
-.directions-cart__block {
-  position: relative;
-  z-index: 1;
-  background-color: $basic-white;
-  width: 270px;
-  min-height: 89px;
-  border-radius: 10px;
-  padding-left: 24px;
-  padding-top: 24px;
-}
-
-.directions-cart__country {
-  padding: 0;
-  margin: 0;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 21px;
-  position: relative;
-
-  &--thailand {
-    &::after {
-      content: "";
-      position: absolute;
-      top: -36px;
-      width: 35px;
-      height: 24px;
-      display: block;
-      background-image: url("../../img/flags-back@1x.png");
-      background-repeat: no-repeat;
-    }
-  }
-
-  &--france {
-    &::after {
-      content: "";
-      position: absolute;
-      top: -36px;
-      width: 35px;
-      height: 24px;
-      display: block;
-      background-image: url("../../img/flags-back@1x.png");
-      background-repeat: no-repeat;
-    }
-  }
-
-  &--czech {
-    &::after {
-      content: "";
-      position: absolute;
-      top: -36px;
-      width: 35px;
-      height: 24px;
-      display: block;
-      background-image: url("../../img/flags-back@1x.png");
-      background-repeat: no-repeat;
-    }
-  }
-}
-
-.directions-cart__info {
-  padding: 0;
-  margin: 0;
-}
-
-.directions-cart__motto {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  color: $special-grey;
-  opacity: 0.3;
-  display: block;
-  width: 130px;
-}
-
-.directions-cart__users {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: $basic-blue;
-  opacity: 0.3;
-}
-
 .directions__button {
   position: relative;
   margin-top: 30px;
@@ -146,7 +58,7 @@
     &::after {
       content: "";
       position: absolute;
-      background-image: url("../../img/triangle-arrow-right.svg");
+      background-image: url("../img/triangle-arrow-right.svg");
       background-repeat: no-repeat;
       right: 20px;
       top: 25px;
