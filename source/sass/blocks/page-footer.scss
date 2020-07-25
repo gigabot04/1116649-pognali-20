@@ -5,14 +5,6 @@
   position: relative;
 }
 
-.page-footer__social-contacts {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 34px;
-  margin-bottom: 58px;
-}
-
 .page-footer__contact-hover {
   display: flex;
   align-items: center;
@@ -52,6 +44,12 @@
 
 
 .page-footer__social-contacts {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 34px;
+  margin-bottom: 58px;
+
   &--fb {
     background-image: url("../img/facebook.svg");
     display: block;
@@ -85,7 +83,7 @@
     width: 18px;
     height: 18px;
     opacity: 0.5;
-  
+
     &:hover {
       opacity: 1;
     }
