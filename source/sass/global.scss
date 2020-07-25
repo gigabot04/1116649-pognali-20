@@ -1,0 +1,29 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Blogger Sans", "Tahoma", sans-serif;
+}
+
+.page-container {
+  width: 320px;
+  padding: 0 25px;
+  margin: 0 auto;
+
+  // outline: 1px solid black;
+}

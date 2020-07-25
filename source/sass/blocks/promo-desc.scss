@@ -1,0 +1,32 @@
+.promo-desc {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 411px;
+  padding-top: 47px;
+  padding-left: 50px;
+  background-color: $basic-blue;
+}
+
+.promo-desc__quote {
+  display: block;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $basic-white;
+  width: 151px;
+  height: 44px;
+  margin-bottom: 18px;
+}
+
+.promo-desc__author {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: $basic-white;
+  width: 161px;
+  height: 66px;
+}

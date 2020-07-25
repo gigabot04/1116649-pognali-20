@@ -1,0 +1,119 @@
+.companions {
+  position: relative;
+
+  &::after {
+    content: "";
+    background-color: $text-blue;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    bottom: -31px;
+    border-radius: 0 0 30px 30px;
+    z-index: -3;
+  }
+}
+
+.companions__page-container {
+  padding-top: 46px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 68px;
+    left: 0;
+    width: 113px;
+    height: 132px;
+    z-index: -2;
+    background-color: $basic-blue-dark;
+    border-radius: 0 20px 20px 0;
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background-image:
+      url("../img/smolov-back-desktop@1x.png"),
+      url("../img/rogovaya-back-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position:
+      152px 69px,
+      -12px 341px;
+  }
+}
+
+.companions__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: $special-orange;
+  padding-left: 24px;
+}
+
+.companions__items {
+  display: block;
+  width: 240px;
+  padding-left: 24px;
+  margin-bottom: 55px;
+}
+
+.companions__item:not(:last-child) {
+  margin-bottom: 21px;
+}
+
+.companions__item {
+  &--1 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: $basic-white;
+  }
+
+  &--2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: $basic-white;
+  }
+}
+
+.companions__button {
+  position: relative;
+  margin-top: 20px;
+  display: block;
+  text-decoration: none;
+  color: $basic-blue-light;
+  background-color: $basic-yellow;
+  padding-left: 23.1px;
+  padding-top: 22.48px;
+  border-radius: 10px;
+  min-height: 61px;
+
+  &--btn {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: $basic-blue-light;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/triangle-arrow-right.svg");
+      background-repeat: no-repeat;
+      right: 20px;
+      top: 25px;
+      width: 13px;
+      height: 13px;
+    }
+  }
+}

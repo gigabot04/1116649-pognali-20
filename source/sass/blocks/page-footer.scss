@@ -1,0 +1,95 @@
+.page-footer {
+  padding-top: 35px;
+  background-color: $basic-white;
+  border-radius: 30px 30px 0 0;
+  position: relative;
+}
+
+.page-footer__contact-hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $basic-yellow;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.page-footer__htmlacademy-text {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: $special-grey;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -22px;
+    left: 0;
+    width: 270px;
+    height: 1px;
+    background-color: $basic-grey-after;
+  }
+}
+
+.page-footer__htmlacademy-img {
+  display: block;
+  width: 27px;
+  height: 34px;
+  background-image: url("../img/htmlacademy.svg");
+}
+
+
+.page-footer__social-contacts {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 34px;
+  margin-bottom: 58px;
+
+  &--fb {
+    background-image: url("../img/facebook.svg");
+    display: block;
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 21px;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &--vk {
+    background-image: url("../img/vk.svg");
+    background-repeat: no-repeat;
+    display: block;
+    width: 23px;
+    height: 12px;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &--inst {
+    background-image: url("../img/instagram.svg");
+    display: block;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &--active {
+    opacity: 1;
+  }
+}
