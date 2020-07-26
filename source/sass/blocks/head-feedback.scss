@@ -1,36 +1,47 @@
-.promo-feedback {
-  position: absolute;
-  top: 407px;
-  width: 270px;
-  min-height: 40px;
-  display: flex;
-  z-index: 1;
-
+.head-feedback {
+  display: none;
+  grid-column: 3;
+  
   @media (min-width: $tablet-width) {
-    display: none;
+    display: flex;
+    justify-content: flex-end;
   }
-
 }
 
-.promo-feedback__tel {
-  display: block;
+.head-feedback__tel {
   background-color: $special-orange;
   width: 40px;
   min-height: 40px;
   border-radius: 50%;
   padding: 11px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
-.promo-feedback__mail {
+.head-feedback__mail {
   display: block;
   background-color: $special-yellow-dark;
   width: 40px;
   min-height: 40px;
   border-radius: 50%;
   padding: 11px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
-.promo-feedback__auth {
+.head-feedback__auth {
   text-decoration: none;
   display: block;
   background-color: $basic-yellow;
@@ -48,14 +59,14 @@
     text-transform: uppercase;
     color: $basic-blue;
   }
-}
+ }
 
-.promo-feedback__svg {
+.head-feedback__svg {
   display: block;
   width: 18px;
   height: 18px;
 }
 
-.promo-feedback__svg-path {
+.head-feedback__svg-path {
   fill: $basic-blue;
 }

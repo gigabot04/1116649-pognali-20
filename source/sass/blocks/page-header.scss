@@ -7,16 +7,26 @@
 .page-header__container {
   position: relative;
   padding-top: 27px;
+  display: grid;
+  grid-template-columns: 1fr 25px 1fr;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 200px 1fr 288px;
+  }
 }
 
 .page-header__toggle {
-  position: absolute;
-  z-index: 999;
   background-color: transparent;
   border: none;
   width: 25px;
   height: 11px;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .page-header__line1 {
