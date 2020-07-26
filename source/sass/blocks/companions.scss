@@ -46,6 +46,12 @@
       152px 69px,
       -12px 341px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 222px 80px;
+  }
 }
 
 .companions__title {
@@ -62,6 +68,14 @@
   width: 240px;
   padding-left: 24px;
   margin-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 2;
+  }
 }
 
 .companions__item:not(:last-child) {
@@ -115,5 +129,10 @@
       width: 13px;
       height: 13px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row-start: 3;
+    grid-row-end: 4;
   }
 }

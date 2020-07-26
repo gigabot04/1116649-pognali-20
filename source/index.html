@@ -8,8 +8,8 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-container">
-        <div class="page-header__container">
+      <div class="">
+        <div class="page-container page-header__container">
           <a href="" class="main-logo">
             <img src="img/logo-mobile-white@1x.png" alt="Погнали?" width="100" height="19">
           </a>
@@ -66,7 +66,7 @@
     </header>
     <main class="page-main">
       <section class="promo">
-        <div class="page-container promo__img">
+        <div class="promo__img">
           <h2 class="promo__title">В путешествие с&nbsp;крутыми попутчиками!</h2>
           <div class="promo-feedback">
             <a href="tel:88005558628" class="promo-feedback__tel">
@@ -104,7 +104,7 @@
             <span class="promo-desc__quote">«Лучшее приложение, что я видел в жизни!»</span>
             <span class="promo-desc__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</span>
           </p>
-          <div class="promo-task">
+          <div class="page-container promo-task">
             <div class="promo-task__item promo-task__item--1">
               <p class="promo-task__item-text promo-task__item-text--1">Выберите направление</p>
               <span class="promo-task__item-num">1</span>
@@ -125,7 +125,7 @@
         </div>
       </section>
       <section class="service">
-        <div class="page-container service__page-container">
+        <div class="service__page-container">
           <h2 class="service__title">О cервисе</h2>
           <div class="service-desc">
             <p class="service-desc__item service-desc__item--1">Любое путешествие веселее с&nbsp;попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
@@ -137,34 +137,36 @@
         <div class="page-container directions__page-container">
           <h2 class="directions__title">Направления</h2>
           <p class="directions__text">Мы не продаем туры и&nbsp;ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
-          <div class="directions-cart">
-            <img class="directions-cart__img" src="img/thailand-mobile@1x.jpg" alt="Картинка Таиланда">
-            <div class="directions-cart__block">
-              <h2 class="directions-cart__country directions-cart__country--thailand">Таиланд</h2>
-              <p class="directions-cart__info">
-                <span class="directions-cart__motto">Джунгли зовут!</span>
-                <span class="directions-cart__users">18321</span>
-              </p>
+          <div class="directions-cart__wrapper">
+            <div class="directions-cart">
+              <img class="directions-cart__img" src="img/thailand-mobile@1x.jpg" alt="Картинка Таиланда">
+              <div class="directions-cart__block">
+                <h2 class="directions-cart__country directions-cart__country--thailand">Таиланд</h2>
+                <p class="directions-cart__info">
+                  <span class="directions-cart__motto">Джунгли зовут!</span>
+                  <span class="directions-cart__users">18321</span>
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="directions-cart">
-            <img class="directions-cart__img" src="img/france-mobile@1x.jpg" alt="Картинка Франции">
-            <div class="directions-cart__block">
-              <h2 class="directions-cart__country directions-cart__country--france">Франция</h2>
-              <p class="directions-cart__info">
-                <span class="directions-cart__motto">Трэ бьен, манифик!</span>
-                <span class="directions-cart__users">12518</span>
-              </p>
+            <div class="directions-cart">
+              <img class="directions-cart__img" src="img/france-mobile@1x.jpg" alt="Картинка Франции">
+              <div class="directions-cart__block">
+                <h2 class="directions-cart__country directions-cart__country--france">Франция</h2>
+                <p class="directions-cart__info">
+                  <span class="directions-cart__motto">Трэ бьен, манифик!</span>
+                  <span class="directions-cart__users">12518</span>
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="directions-cart">
-            <img class="directions-cart__img" src="img/czech-mobile@1x.jpg" alt="Картинка Чехии">
-            <div class="directions-cart__block">
-              <h2 class="directions-cart__country directions-cart__country--czech">Чехия</h2>
-              <p class="directions-cart__info">
-                <span class="directions-cart__motto">Закоулки старой Европы</span>
-                <span class="directions-cart__users">5326</span>
-              </p>
+            <div class="directions-cart">
+              <img class="directions-cart__img" src="img/czech-mobile@1x.jpg" alt="Картинка Чехии">
+              <div class="directions-cart__block">
+                <h2 class="directions-cart__country directions-cart__country--czech">Чехия</h2>
+                <p class="directions-cart__info">
+                  <span class="directions-cart__motto">Закоулки старой Европы</span>
+                  <span class="directions-cart__users">5326</span>
+                </p>
+              </div>
             </div>
           </div>
           <a class="directions__button directions__button--btn" href="form.html">
@@ -178,77 +180,81 @@
             <p class="companions__item companions__item--1">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
             <p class="companions__item companions__item--2">Теперь можно легко найти единомышленников!</p>
           </div>
-          <div class="companions-cart">
-            <img class="companions-cart__img" src="img/firsova-desktop@1x.jpg" alt="Фото Тани Фирсовой" width="270" height="270">
-            <div class="companions-cart__block">
-              <div class="companions-cart__flags">
-                <p class="companions-cart__flag companions-cart__flag--sri-Lanka">
-                  <span class="visually-hidden">Шри-ланка</span>
+          <div class="companions-cart__flex">
+            <div class="companions-cart">
+              <img class="companions-cart__img" src="img/firsova-desktop@1x.jpg" alt="Фото Тани Фирсовой" width="270" height="270">
+              <div class="companions-cart__block">
+                <div class="companions-cart__flags">
+                  <p class="companions-cart__flag companions-cart__flag--sri-Lanka">
+                    <span class="visually-hidden">Шри-ланка</span>
+                  </p>
+                  <p class="companions-cart__flag companions-cart__flag--thailand">
+                    <span class="visually-hidden">Тайланд</span>
+                  </p>
+                  <p class="companions-cart__flag companions-cart__flag--seychelles">
+                    <span class="visually-hidden">Сейшелы</span>
+                  </p>
+                </div>
+                <div class="companions-cart__level companions-cart__level--99">
+                  <p class="companions-cart__num">99</p>
+                  <p class="companions-cart__text">level</p>
+                </div>
+                <h2 class="companions-cart__name">Таня Фирсова</h2>
+                <p class="companions-cart__info">
+                  #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
                 </p>
-                <p class="companions-cart__flag companions-cart__flag--thailand">
-                  <span class="visually-hidden">Тайланд</span>
-                </p>
-                <p class="companions-cart__flag companions-cart__flag--seychelles">
-                  <span class="visually-hidden">Сейшелы</span>
-                </p>
+                <div class="companions-cart__icons">
+                  <!-- Не забыть заменить на SVG -->
+                  <img class="companions-cart__icon companions-cart__icon--true" src="img/plane.svg" alt="На самолете" width="20" height="20">
+                  <img class="companions-cart__icon" src="img/bus.svg" alt="На автобусе" width="20" height="20">
+                  <img class="companions-cart__icon" src="img/bike.svg" alt="На велосипеде" width="20" height="20">
+                  <img class="companions-cart__icon" src="img/run.svg" alt="Бегом" width="20" height="20">
+                </div>
               </div>
-              <div class="companions-cart__level companions-cart__level--99">
-                <p class="companions-cart__num">99</p>
-                <p class="companions-cart__text">level</p>
-              </div>
-              <h2 class="companions-cart__name">Таня Фирсова</h2>
-              <p class="companions-cart__info">
-                #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
-              </p>
-              <div class="companions-cart__icons">
-                <!-- Не забыть заменить на SVG -->
-                <img class="companions-cart__icon companions-cart__icon--true" src="img/plane.svg" alt="На самолете" width="20" height="20">
-                <img class="companions-cart__icon" src="img/bus.svg" alt="На автобусе" width="20" height="20">
-                <img class="companions-cart__icon" src="img/bike.svg" alt="На велосипеде" width="20" height="20">
-                <img class="companions-cart__icon" src="img/run.svg" alt="Бегом" width="20" height="20">
+            </div>
+            <div class="companions-cart">
+              <img class="companions-cart__img" src="img/demin-desktop@1x.jpg" alt="Фото Пети Демина" width="270" height="270">
+              <div class="companions-cart__block">
+                <div class="companions-cart__flags">
+                  <p class="companions-cart__flag">
+                    <span class="visually-hidden">Бельгия</span>
+                  </p>
+                  <p class="companions-cart__flag">
+                    <span class="visually-hidden">Чехия</span>
+                  </p>
+                </div>
+                <p class="companions-cart__level companions-cart__level--80">
+                  <span class="companions-cart__num">80</span>
+                  <span class="companions-cart__text">level</span>
+                </p>
+                <h2 class="companions-cart__name companions-cart__name--online">Петя Демин</h2>
+                <p class="companions-cart__info">
+                  #бургер #бар #футбол #концерт #крафт
+                </p>
+                <div class="companions-cart__icons">
+                  <!-- Не забыть заменить на SVG -->
+                  <img class="companions-cart__icon companions-cart__icon--true" src="img/plane.svg" alt="На самолете" width="20" height="20">
+                  <img class="companions-cart__icon" src="img/bus.svg" alt="На автобусе" width="20" height="20">
+                  <img class="companions-cart__icon" src="img/bike.svg" alt="На велосипеде" width="20" height="20">
+                  <img class="companions-cart__icon" src="img/run.svg" alt="Бегом" width="20" height="20">
+                </div>
               </div>
             </div>
           </div>
-          <div class="companions-cart">
-            <img class="companions-cart__img" src="img/demin-desktop@1x.jpg" alt="Фото Пети Демина" width="270" height="270">
-            <div class="companions-cart__block">
-              <div class="companions-cart__flags">
-                <p class="companions-cart__flag">
-                  <span class="visually-hidden">Бельгия</span>
-                </p>
-                <p class="companions-cart__flag">
-                  <span class="visually-hidden">Чехия</span>
-                </p>
-              </div>
-              <p class="companions-cart__level companions-cart__level--80">
-                <span class="companions-cart__num">80</span>
-                <span class="companions-cart__text">level</span>
-              </p>
-              <h2 class="companions-cart__name companions-cart__name--online">Петя Демин</h2>
-              <p class="companions-cart__info">
-                #бургер #бар #футбол #концерт #крафт
-              </p>
-              <div class="companions-cart__icons">
-                <!-- Не забыть заменить на SVG -->
-                <img class="companions-cart__icon companions-cart__icon--true" src="img/plane.svg" alt="На самолете" width="20" height="20">
-                <img class="companions-cart__icon" src="img/bus.svg" alt="На автобусе" width="20" height="20">
-                <img class="companions-cart__icon" src="img/bike.svg" alt="На велосипеде" width="20" height="20">
-                <img class="companions-cart__icon" src="img/run.svg" alt="Бегом" width="20" height="20">
-              </div>
-            </div>
-            </div>
           <a class="companions__button companions__button--btn" href="catalog.html">Показать всех</a>
         </div>
       </section>
       <section class="rates">
         <div class="page-container rates__page-container">
           <h2 class="rates__title">Добавьте свой профиль</h2>
-          <p class="rates__item-text rates__item-text--1">Базовое размещение</p>
-          <p class="rates__item-price">Бесплатно</p>
-          <p class="rates__item-text rates__item-text--2">Вывод на первых позициях</p>
-          <p class="rates__item-price">99 руб./мес</p>
-          <p class="rates__item-text rates__item-text--3">Кастомный цвет карточки</p>
-          <p class="rates__item-price">59 руб./мес</p>
+          <div class="rates__grid">
+            <p class="rates__item-text rates__item-text--1">Базовое размещение</p>
+            <p class="rates__item-price">Бесплатно</p>
+            <p class="rates__item-text rates__item-text--2">Вывод на первых позициях</p>
+            <p class="rates__item-price">99 руб./мес</p>
+            <p class="rates__item-text rates__item-text--3">Кастомный цвет карточки</p>
+            <p class="rates__item-price">59 руб./мес</p>
+          </div>
           <a class="rates__button" href="">Показать тарифы для бизнеса</a>
         </div>
       </section>
@@ -257,12 +263,14 @@
           <h2 class="auth__title">Заинтересовались?</h2>
           <p class="auth__text">Зарегистрируйтесь, это&nbsp;быстро&nbsp;и&nbsp;бесплатно! Уже&nbsp;зарегистрированы? Тогда скорее <a class="auth__text auth__text--1" href="">авторизуйтесь</a>.</p>
           <form class="auth__index-form" action="https://echo.htmlacademy.ru" method="GET">
-            <label class="auth__label">
-              <input class="auth__control" type="email" name="auth-email" aria-label="Введите электронную почту" placeholder="E-mail" required>
-            </label>
-            <button class="auth__btn" type="submit">
-              <span class="auth__btn-text visually-hidden">Регистрация</span>
-            </button>
+            <div class="auth__grid">
+              <label class="auth__label">
+                <input class="auth__control" type="email" name="auth-email" aria-label="Введите электронную почту" placeholder="E-mail" required>
+              </label>
+              <button class="auth__btn" type="submit">
+                <span class="auth__btn-text visually-hidden">Регистрация</span>
+              </button>
+            </div>
           </form>
           <p class="auth__text auth__text--2">Остались вопросы? Мы&nbsp;с&nbsp;радостью на них ответим!</p>
           <div class="auth__feedback">
@@ -296,7 +304,7 @@
         </div>
       </section>
       <section class="maps">
-          <div class="page-container maps__page-container">
+          <div class="maps__page-container">
             <h2 class="maps__address">ул. Большая Конюшенная, 19/8
               <svg class="maps__pin" version="1.1" id="maps-pin-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 28 43" style="enable-background:new 0 0 28 43;" xml:space="preserve">
@@ -312,7 +320,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-container page-footer__page-container">
+      <div class="page-footer__page-container">
         <a href="" class="main-logo page-footer__main-logo">
           <img src="img/logo-mobile-blue@1x.png" alt="Погнали?" width="100" height="19">
         </a>

@@ -14,6 +14,14 @@
   }
 }
 
+.directions__page-container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 80px;
+  }
+}
+
 .directions__title {
   font-style: normal;
   font-weight: bold;
@@ -22,6 +30,11 @@
   color: $special-orange;
   padding-top: 49px;
   padding-left: 26px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
 }
 
 .directions__text {
@@ -34,6 +47,11 @@
   padding-left: 25px;
   width: 220px;
   margin-bottom: 46px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
 }
 
 .directions__button {
@@ -65,5 +83,10 @@
       width: 13px;
       height: 13px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
   }
 }
