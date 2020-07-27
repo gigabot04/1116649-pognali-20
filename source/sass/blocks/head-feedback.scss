@@ -1,7 +1,7 @@
 .head-feedback {
   display: none;
   grid-column: 3;
-  
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-end;
@@ -59,7 +59,7 @@
     text-transform: uppercase;
     color: $basic-blue;
   }
- }
+}
 
 .head-feedback__svg {
   display: block;
