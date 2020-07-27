@@ -1,3 +1,10 @@
+.filter-people {
+  @media (min-width: $desktop-width) {
+    grid-row: 1;
+    grid-column: 4 / 5;
+  }
+}
+
 .filter-people__title {
   font-style: normal;
   font-weight: bold;
