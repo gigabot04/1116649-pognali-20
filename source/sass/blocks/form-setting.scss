@@ -130,8 +130,10 @@
 }
 
 .form-setting__photo-span {
-  display: none;
-}
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+ }
 
 .form-setting__tags {
   position: relative;
@@ -295,6 +297,11 @@
   line-height: 24px;
   color: $basic-blue-light;
   margin: 0;
+}
+
+.form-setting__plans-cart {
+  background-color: $basic-white;
+  border-radius: 10px;
 }
 
 .form-setting__plans-number {
