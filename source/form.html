@@ -195,178 +195,197 @@
           </div>
         </section>
         <section class="form-setting__create-plan">
-          <h2 class="form-setting__title-plan">Добавить план:</h2>
-          <div class="form-setting__points">
-            <span class="form-setting__point form-setting__point--active"></span>
-            <span class="form-setting__point"></span>
-            <span class="form-setting__point"></span>
+          <div class="page-container">
+            <h2 class="form-setting__title-plan">Добавить план:</h2>
+            <div class="form-setting__points">
+              <span class="form-setting__point form-setting__point--active"></span>
+              <span class="form-setting__point"></span>
+              <span class="form-setting__point"></span>
+            </div>
+            <fieldset class="form-setting__field">
+              <legend class="form-setting__legend">Шаг 1.<br> Даты&nbsp;пребывания</legend>
+              <p class="form-setting__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+              <label class="form-setting__label" for="plan-companions-people">
+                <span class="form-setting__label-span-title">ищу попутчиков:</span>
+                <span class="form-setting__label-span">чел.</span>
+              </label>
+              <div class="form-setting__container-control">
+                <button class="form-setting__deduct" aria-label="Убавить попутчиков" type="button"></button>
+                <input class="form-setting__control" type="number" id="plan-companions-people" min="0" name="plan-companions-people" value="2">
+                <button class="form-setting__add" aria-label="Добавить попутчиков" type="button"></button>
+              </div>
+              <label class="form-setting__label" for="plan-companions-time">
+                <span class="form-setting__label-span-title">длительность:</span>
+                <span class="form-setting__label-span">дн.</span>
+              </label>
+              <div class="form-setting__container-control">
+                <button class="form-setting__deduct" aria-label="Уменьшить кол-во дней" type="button"></button>
+                <input class="form-setting__control" type="number" id="plan-companions-time" min="0" name="plan-companions-time" value="2">
+                <button class="form-setting__add" aria-label="Увеличить кол-во дней" type="button"></button>
+              </div>
+              <label class="form-setting__label-checkbox" for="plan-checkbox">
+                Можно с детьми
+                <input class="form-setting__control-checkbox" type="checkbox" name="plan-checkbox" id="plan-checkbox" checked>
+                <span class="form-setting__control-checked"></span>
+            </label>
+              <table class="form-setting__calendar">
+                <caption class="form-setting__mounth-age">
+                  <svg class="form-setting__arrow-left" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 18 34" style="enable-background:new 0 0 18 34;" xml:space="preserve">
+                    <path d="M3.6,17l14-14.4c0.6-0.6,0.6-1.6,0-2.1c-0.6-0.6-1.5-0.6-2.1,0L0.4,15.9c-0.6,0.6-0.6,1.6,0,2.1l15.1,15.5
+                      c0.3,0.3,0.7,0.4,1,0.4s0.8-0.1,1-0.4c0.6-0.6,0.6-1.6,0-2.1L3.6,17z"/>
+                  </svg>
+                  Март 2019
+                  <svg class="form-setting__arrow-right" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 18 34" style="enable-background:new 0 0 18 34;" xml:space="preserve">
+                    <path d="M14.4,17L0.4,2.6C-0.1,2-0.1,1,0.4,0.4c0.6-0.6,1.5-0.6,2.1,0l15.1,15.5c0.6,0.6,0.6,1.6,0,2.1L2.5,33.6
+                      c-0.3,0.3-0.7,0.4-1,0.4s-0.8-0.1-1-0.4c-0.6-0.6-0.6-1.6,0-2.1L14.4,17z"/>
+                  </svg>
+                </caption>
+                <thead class="form-setting__week">
+                  <tr>
+                    <th class="form-setting__week-day">П</th>
+                    <th class="form-setting__week-day">В</th>
+                    <th class="form-setting__week-day">С</th>
+                    <th class="form-setting__week-day">Ч</th>
+                    <th class="form-setting__week-day">П</th>
+                    <th class="form-setting__week-day form-setting__week-day--output">С</th>
+                    <th class="form-setting__week-day form-setting__week-day--output">В</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">24</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">23</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">25</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">26</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">27</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">28</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">1</button></td>
+                  </tr>
+                  <tr>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">2</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">3</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">4</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">5</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">6</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">7</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">8</button></td>
+                  </tr>
+                  <tr>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">9</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">10</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">11</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">12</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">13</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">14</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">15</button></td>
+                  </tr>
+                  <tr>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">16</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">17</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">18</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">19</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">20</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">21</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">22</button></td>
+                  </tr>
+                  <tr>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">23</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">24</button></td>
+                    <td><button class="form-setting__day form-setting__day--off" type="button">25</button></td>
+                    <td><button class="form-setting__day" type="button">26</button></td>
+                    <td><button class="form-setting__day" type="button">27</button></td>
+                    <td><button class="form-setting__day" type="button">28</button></td>
+                    <td><button class="form-setting__day" type="button">29</button></td>
+                  </tr>
+                  <tr>
+                    <td><button class="form-setting__day" type="button">30</button></td>
+                    <td><button class="form-setting__day" type="button">31</button></td>
+                    <td><button class="form-setting__day" type="button">1</button></td>
+                    <td><button class="form-setting__day" type="button">2</button></td>
+                    <td><button class="form-setting__day" type="button">3</button></td>
+                    <td><button class="form-setting__day" type="button">4</button></td>
+                    <td><button class="form-setting__day" type="button">5</button></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a class="form-setting__next form-setting__next--btn" href="">Следующий шаг</a>
+            </fieldset>
+            <fieldset class="form-setting__field">
+              <legend class="form-setting__legend">Шаг 2. Маршрут</legend>
+              <p class="form-setting__text">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+              <div class="form-setting__countries">
+                <button class="form-setting__country" type="button">Босния и Герцеговина</button>
+                <button class="form-setting__del" type="button" aria-label="Удалить страну"></button>
+              </div>
+              <div class="form-setting__countries">
+                <button class="form-setting__country" type="button">Чехия</button>
+                <button class="form-setting__del" type="button" aria-label="Удалить страну"></button>
+              </div>
+              <div class="form-setting__choice-countries">
+                <button class="form-setting__choice-text" type="button">Выберите страну</button>
+                <button class="form-setting__del" type="button" aria-label="Удалить страну"></button>
+                <div class="form-setting__alphabet">
+                  <h2 class="form-setting__add-country">Выберите страну</h2>
+                  <button class="form-setting__close-add-country" aria-label="Закрыть выбор страны" type="button"></button>
+                  <button class="form-setting__letter" type="button">А</button>
+                  <button class="form-setting__letter" type="button">Б</button>
+                  <button class="form-setting__letter" type="button">В</button>
+                  <button class="form-setting__letter" type="button">Г</button>
+                  <button class="form-setting__letter" type="button">Д</button>
+                  <button class="form-setting__letter" type="button">Е</button>
+                  <button class="form-setting__letter" type="button">З</button>
+                  <button class="form-setting__letter" type="button">И</button>
+                  <button class="form-setting__letter" type="button">К</button>
+                  <button class="form-setting__letter" type="button">Л</button>
+                  <button class="form-setting__letter" type="button">М</button>
+                  <button class="form-setting__letter" type="button">Н</button>
+                  <button class="form-setting__letter" type="button">О</button>
+                  <button class="form-setting__letter" type="button">П</button>
+                  <button class="form-setting__letter" type="button">Р</button>
+                  <button class="form-setting__letter" type="button">С</button>
+                  <button class="form-setting__letter" type="button">Т</button>
+                  <button class="form-setting__letter" type="button">У</button>
+                  <button class="form-setting__letter" type="button">Ф</button>
+                  <button class="form-setting__letter" type="button">Х</button>
+                  <button class="form-setting__letter" type="button">Ч</button>
+                  <button class="form-setting__letter" type="button">Ш</button>
+                  <button class="form-setting__letter" type="button">Э</button>
+                </div>
+                <div class="form-setting__states">
+                  <button type="button" class="form-setting__state">Австралия</button>
+                  <button type="button" class="form-setting__state">Австрия</button>
+                  <button type="button" class="form-setting__state">Азербайджан</button>
+                  <button type="button" class="form-setting__state">Албания</button>
+                  <button type="button" class="form-setting__state">Алжир</button>
+                  <button type="button" class="form-setting__state">Ангола</button>
+                  <button type="button" class="form-setting__state">Андорра</button>
+                  <button type="button" class="form-setting__state">Антигуа и Барбуда</button>
+                  <button type="button" class="form-setting__state">Аргентина</button>
+                  <button type="button" class="form-setting__state">Армения</button>
+                </div>
+              </div>
+              <div class="form-setting__add-countries">
+                <button class="form-setting__add-text" type="button">добавить страну</button>
+              </div>
+              <a class="form-setting__next form-setting__next--btn" href="">Следующий шаг</a>
+              <a class="form-setting__back form-setting__back--btn" href="">На шаг назад</a>
+            </fieldset>
+            <fieldset class="form-setting__field">
+              <legend class="form-setting__legend">Шаг 3. Развлечения</legend>
+              <p class="form-setting__text">Наконец, расскажите о своих планахвремяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+              <div class="form-setting__action-plans">
+                <p class="form-setting__action-plan-title">Босния и Герцеговина</p>
+                <textarea name="form-setting__action-plan form-setting__action-plan--1" id="action-plan-1" cols="30" rows="10" placeholder="План действий"></textarea>
+              </div>
+              <div class="form-setting__action-plans">
+                <p class="form-setting__action-plan-title">Чехия</p>
+                <textarea class="form-setting__action-plan form-setting__action-plan--2" id="action-plan-2" name="action-plan-2" cols="30" rows="10" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+              </div>
+              <a class="form-setting__back form-setting__back--btn" href="">На шаг назад</a>
+            </fieldset>
           </div>
-          <fieldset class="form-setting__field">
-            <legend class="form-setting__legend">Шаг 1. Даты&nbsp;пребывания</legend>
-            <p class="form-setting__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-            <label class="form-setting__label" for="plan-companions-people">
-              ищу попутчиков:
-              <span class="form-setting__label-span">чел.</span>
-            </label>
-            <button class="form-setting__deduct" aria-label="Убавить попутчиков" type="button"></button>
-            <input class="form-setting__control" type="number" id="plan-companions-people" min="0" name="plan-companions-people" value="2">
-            <button class="form-setting__add" aria-label="Добавить попутчиков" type="button"></button>
-            <label class="form-setting__label" for="plan-companions-time">
-              длительность:
-              <span class="form-setting__label-span">дн.</span>
-            </label>
-            <button class="form-setting__deduct" aria-label="Уменьшить кол-во дней" type="button"></button>
-            <input class="form-setting__control" type="number" id="plan-companions-time" min="0" name="plan-companions-time" value="2">
-            <button class="form-setting__add" aria-label="Увеличить кол-во дней" type="button"></button>
-            <label class="form-setting__label-checkbox" for="plan-checkbox">Можно с детьми</label>
-            <input class="form-setting__control form-setting__control--checkbox" type="checkbox" name="plan-checkbox" id="plan-checkbox" checked>
-            <table class="form-setting__calendar">
-              <caption class="form-setting__mounth-age form-setting__mounth-age--arrow">
-                Март 2019
-              </caption>
-              <thead class="form-setting__week">
-                <tr>
-                  <th class="form-setting__week-day">П</th>
-                  <th class="form-setting__week-day">В</th>
-                  <th class="form-setting__week-day">С</th>
-                  <th class="form-setting__week-day">Ч</th>
-                  <th class="form-setting__week-day">П</th>
-                  <th class="form-setting__week-day form-setting__week-day--output">С</th>
-                  <th class="form-setting__week-day form-setting__week-day--output">В</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">24</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">23</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">25</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">26</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">27</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">28</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">1</button></td>
-                </tr>
-                <tr>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">2</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">3</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">4</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">5</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">6</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">7</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">8</button></td>
-                </tr>
-                <tr>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">9</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">10</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">11</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">12</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">13</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">14</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">15</button></td>
-                </tr>
-                <tr>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">16</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">17</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">18</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">19</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">20</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">21</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">22</button></td>
-                </tr>
-                <tr>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">23</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">24</button></td>
-                  <td><button class="form-setting__day form-setting__day--off" type="button">25</button></td>
-                  <td><button class="form-setting__day" type="button">26</button></td>
-                  <td><button class="form-setting__day" type="button">27</button></td>
-                  <td><button class="form-setting__day" type="button">28</button></td>
-                  <td><button class="form-setting__day" type="button">29</button></td>
-                </tr>
-                <tr>
-                  <td><button class="form-setting__day" type="button">30</button></td>
-                  <td><button class="form-setting__day" type="button">31</button></td>
-                  <td><button class="form-setting__day" type="button">1</button></td>
-                  <td><button class="form-setting__day" type="button">2</button></td>
-                  <td><button class="form-setting__day" type="button">3</button></td>
-                  <td><button class="form-setting__day" type="button">4</button></td>
-                  <td><button class="form-setting__day" type="button">5</button></td>
-                </tr>
-              </tbody>
-            </table>
-            <a class="form-setting__next form-setting__next--btn" href="">Следующий шаг</a>
-          </fieldset>
-          <fieldset class="form-setting__field">
-            <legend class="form-setting__legend">Шаг 2. Маршрут</legend>
-            <p class="form-setting__text">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
-            <div class="form-setting__countries">
-              <button class="form-setting__country" type="button">Босния и Герцеговина</button>
-              <button class="form-setting__del" type="button" aria-label="Удалить страну"></button>
-            </div>
-            <div class="form-setting__countries">
-              <button class="form-setting__country" type="button">Чехия</button>
-              <button class="form-setting__del" type="button" aria-label="Удалить страну"></button>
-            </div>
-            <div class="form-setting__choice-countries">
-              <button class="form-setting__choice-text" type="button">Выберите страну</button>
-              <button class="form-setting__del" type="button" aria-label="Удалить страну"></button>
-              <div class="form-setting__alphabet">
-                <h2 class="form-setting__add-country">Выберите страну</h2>
-                <button class="form-setting__close-add-country" aria-label="Закрыть выбор страны" type="button"></button>
-                <button class="form-setting__letter" type="button">А</button>
-                <button class="form-setting__letter" type="button">Б</button>
-                <button class="form-setting__letter" type="button">В</button>
-                <button class="form-setting__letter" type="button">Г</button>
-                <button class="form-setting__letter" type="button">Д</button>
-                <button class="form-setting__letter" type="button">Е</button>
-                <button class="form-setting__letter" type="button">З</button>
-                <button class="form-setting__letter" type="button">И</button>
-                <button class="form-setting__letter" type="button">К</button>
-                <button class="form-setting__letter" type="button">Л</button>
-                <button class="form-setting__letter" type="button">М</button>
-                <button class="form-setting__letter" type="button">Н</button>
-                <button class="form-setting__letter" type="button">О</button>
-                <button class="form-setting__letter" type="button">П</button>
-                <button class="form-setting__letter" type="button">Р</button>
-                <button class="form-setting__letter" type="button">С</button>
-                <button class="form-setting__letter" type="button">Т</button>
-                <button class="form-setting__letter" type="button">У</button>
-                <button class="form-setting__letter" type="button">Ф</button>
-                <button class="form-setting__letter" type="button">Х</button>
-                <button class="form-setting__letter" type="button">Ч</button>
-                <button class="form-setting__letter" type="button">Ш</button>
-                <button class="form-setting__letter" type="button">Э</button>
-              </div>
-              <div class="form-setting__states">
-                <button type="button" class="form-setting__state">Австралия</button>
-                <button type="button" class="form-setting__state">Австрия</button>
-                <button type="button" class="form-setting__state">Азербайджан</button>
-                <button type="button" class="form-setting__state">Албания</button>
-                <button type="button" class="form-setting__state">Алжир</button>
-                <button type="button" class="form-setting__state">Ангола</button>
-                <button type="button" class="form-setting__state">Андорра</button>
-                <button type="button" class="form-setting__state">Антигуа и Барбуда</button>
-                <button type="button" class="form-setting__state">Аргентина</button>
-                <button type="button" class="form-setting__state">Армения</button>
-              </div>
-            </div>
-            <div class="form-setting__add-countries">
-              <button class="form-setting__add-text" type="button">добавить страну</button>
-            </div>
-            <a class="form-setting__next form-setting__next--btn" href="">Следующий шаг</a>
-            <a class="form-setting__back form-setting__back--btn" href="">На шаг назад</a>
-          </fieldset>
-          <fieldset class="form-setting__field">
-            <legend class="form-setting__legend">Шаг 3. Развлечения</legend>
-            <p class="form-setting__text">Наконец, расскажите о своих планахвремяпровождения. Можно писать в свободной форме и ставить тэги.</p>
-            <div class="form-setting__action-plans">
-              <p class="form-setting__action-plan-title">Босния и Герцеговина</p>
-              <textarea name="form-setting__action-plan form-setting__action-plan--1" id="action-plan-1" cols="30" rows="10" placeholder="План действий"></textarea>
-            </div>
-            <div class="form-setting__action-plans">
-              <p class="form-setting__action-plan-title">Чехия</p>
-              <textarea class="form-setting__action-plan form-setting__action-plan--2" id="action-plan-2" name="action-plan-2" cols="30" rows="10" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
-            </div>
-            <a class="form-setting__back form-setting__back--btn" href="">На шаг назад</a>
-          </fieldset>
         </section>
         <button class="form-setting__next form-setting__next--btn" type="submit">Отправить</button>
       </form>
