@@ -205,29 +205,31 @@
             <fieldset class="form-setting__field">
               <legend class="form-setting__legend">Шаг 1.<br> Даты&nbsp;пребывания</legend>
               <p class="form-setting__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-              <label class="form-setting__label" for="plan-companions-people">
-                <span class="form-setting__label-span-title">ищу попутчиков:</span>
-                <span class="form-setting__label-span">чел.</span>
-              </label>
-              <div class="form-setting__container-control">
-                <button class="form-setting__deduct" aria-label="Убавить попутчиков" type="button"></button>
-                <input class="form-setting__control" type="number" id="plan-companions-people" min="0" name="plan-companions-people" value="2">
-                <button class="form-setting__add" aria-label="Добавить попутчиков" type="button"></button>
+              <div class="form-setting__time-people">
+                <label class="form-setting__label" for="plan-companions-people">
+                  <span class="form-setting__label-span-title">ищу попутчиков:</span>
+                </label>
+                <div class="form-setting__container-control">
+                  <button class="form-setting__deduct" aria-label="Убавить попутчиков" type="button"></button>
+                  <input class="form-setting__control" type="number" id="plan-companions-people" min="0" name="plan-companions-people" value="2">
+                  <button class="form-setting__add" aria-label="Добавить попутчиков" type="button"></button>
+                </div>
+                <span class="form-setting__label-span-people">чел.</span>
+                <label class="form-setting__label" for="plan-companions-time">
+                  <span class="form-setting__label-span-title">длительность:</span>
+                </label>
+                <div class="form-setting__container-control">
+                  <button class="form-setting__deduct" aria-label="Уменьшить кол-во дней" type="button"></button>
+                  <input class="form-setting__control" type="number" id="plan-companions-time" min="0" name="plan-companions-time" value="2">
+                  <button class="form-setting__add" aria-label="Увеличить кол-во дней" type="button"></button>
+                </div>
+                <span class="form-setting__label-span-day">дн.</span>
+                <label class="form-setting__label-checkbox" for="plan-checkbox">
+                  Можно с детьми
+                  <input class="form-setting__control-checkbox" type="checkbox" name="plan-checkbox" id="plan-checkbox" checked>
+                  <span class="form-setting__control-checked"></span>
+                </label>
               </div>
-              <label class="form-setting__label" for="plan-companions-time">
-                <span class="form-setting__label-span-title">длительность:</span>
-                <span class="form-setting__label-span">дн.</span>
-              </label>
-              <div class="form-setting__container-control">
-                <button class="form-setting__deduct" aria-label="Уменьшить кол-во дней" type="button"></button>
-                <input class="form-setting__control" type="number" id="plan-companions-time" min="0" name="plan-companions-time" value="2">
-                <button class="form-setting__add" aria-label="Увеличить кол-во дней" type="button"></button>
-              </div>
-              <label class="form-setting__label-checkbox" for="plan-checkbox">
-                Можно с детьми
-                <input class="form-setting__control-checkbox" type="checkbox" name="plan-checkbox" id="plan-checkbox" checked>
-                <span class="form-setting__control-checked"></span>
-            </label>
               <table class="form-setting__calendar">
                 <caption class="form-setting__mounth-age">
                   <svg class="form-setting__arrow-left" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
