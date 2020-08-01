@@ -91,3 +91,20 @@
     margin: 134px 0 67px 0;
   }
 }
+
+.page-header__back {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic-white;
+    text-transform: uppercase;
+    text-decoration: none;
+    grid-column: 3;
+    text-align: center;
+  }
+}

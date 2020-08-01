@@ -1,4 +1,8 @@
 .filter-people {
+  background-color: $basic-yellow;
+  border-radius: 20px;
+  padding: 26px 24px 22px 25px;
+
   @media (min-width: $desktop-width) {
     grid-row: 1;
     grid-column: 4 / 5;
@@ -6,15 +10,28 @@
 }
 
 .filter-people__title {
+  margin: 0;
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
   line-height: 22px;
   letter-spacing: 0.02em;
   color: $basic-blue-light;
+  margin-bottom: 22px;
+}
+
+.filter-people__item {
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $filter-yellow;
+  }
 }
 
 .filter-people__btn {
+  position: relative;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -22,6 +39,31 @@
   text-transform: uppercase;
   color: $basic-blue-light;
   border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 12px 0;
+  display: block;
+  width: 100%;
+  text-align: start;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 10px;
+    height: 6px;
+    transform: translateY(-50%);
+    background-image: url("../img/dropdown.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--active {
+    &::after {
+      content: "";
+      transform: rotate(180deg);
+    }
+  }
 }
 
 .filter-people__music-label {
@@ -41,4 +83,127 @@
   text-transform: uppercase;
   color: $basic-blue-light;
   border: none;
+}
+
+.filter-people__wrap {
+  display: none;
+
+  &--active {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+.filter-people__control {
+  display: none;
+}
+
+.filter-people__label {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-color: $basic-white;
+    border-radius: 4px;
+  }
+
+  &::before {
+    content: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+    background-image: url("../img/tick.svg");
+    z-index: 1;
+  }
+}
+
+.filter-people__control:checked + .filter-people__label {
+  &::before {
+    content: "";
+  }
+}
+
+.filter-people__transport-container {
+  width: max-content;
+  height: max-content;
+  margin-bottom: 10px;
+}
+
+.filter-people__transport-label {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $basic-white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+}
+
+.filter-people__transport-control {
+  position: relative;
+  margin-right: 17px;
+  display: none;
+}
+
+.filter-people__svg {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 16px;
+  height: 16px;
+  opacity: 0.15;
+
+  & path {
+    fill: $basic-blue-light;
+  }
+}
+
+.filter-people__transport-control:checked + .filter-people__svg {
+  opacity: 1;
+}
+
+.filter-people__level-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.filter-people__level-control {
+  text-align: center;
+  width: 100%;
+  border: 1px solid $day-border;
+
+  &--min {
+    border-radius: 4px 0 0 4px;
+  }
+
+  &--max {
+    border-radius: 0 4px 4px 0;
+  }
+}
+
+.filter-people__btn-send {
+  background-color: $basic-white;
+  border-radius: 25px;
+  width: 100%;
+  height: 41px;
 }
