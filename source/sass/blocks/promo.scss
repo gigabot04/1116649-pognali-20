@@ -5,7 +5,8 @@
 }
 
 .promo__title {
-  margin: 0;
+  display: block;
+  width: 238px;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -13,6 +14,7 @@
   text-align: center;
   color: $basic-white;
   padding-top: 41px;
+  margin: 0 auto;
   margin-bottom: 267px;
 }
 
@@ -23,16 +25,17 @@
     content: "";
     position: absolute;
     top: -51px;
-    left: -25px;
+    left: 50%;
+    transform: translateX(-50%);
     background-image:
       url("../img/traveller-illustration-mobile@1x.png"),
       url("../img/globe-back-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position:
       105px 223px,
-      25px 0;
+      0 0;
     height: 569px;
-    width: 345px;
+    width: 320px;
     z-index: -1;
   }
 }

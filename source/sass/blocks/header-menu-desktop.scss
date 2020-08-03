@@ -1,0 +1,20 @@
+.header-menu-desktop {
+  display: none;
+  grid-column: 2 / 3;
+  grid-row: 1;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.header-menu-desktop__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $basic-white;
+  text-decoration: none;
+  margin-left: 34px;
+}

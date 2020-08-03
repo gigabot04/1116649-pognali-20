@@ -1,3 +1,9 @@
+.directions-cart__wrapper {
+  @media (min-width: $desktop-width) {
+    grid-row: 1 / -1;
+  }
+}
+
 .directions-cart {
   width: 270px;
   min-height: 190px;

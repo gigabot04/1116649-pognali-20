@@ -14,6 +14,18 @@
   }
 }
 
+.maps__page-container {
+  display: grid;
+  grid-template-rows: max-content max-content;
+  justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-row-start: 1;
+    align-items: center;
+  }
+}
+
 .maps__address {
   position: relative;
   left: 86px;
@@ -53,9 +65,6 @@
 }
 
 .maps__btn {
-  margin: 0 auto;
-  margin-top: 33px;
-  margin-bottom: 10px;
   position: relative;
   text-decoration: none;
   display: block;
