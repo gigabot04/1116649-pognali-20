@@ -18,6 +18,27 @@
   letter-spacing: 0.02em;
   color: $basic-blue-light;
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -13px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      display: block;
+      background-color: $filter-yellow;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: none;
+    }
+  }
 }
 
 .filter-people__item {
@@ -27,6 +48,25 @@
     width: 100%;
     height: 1px;
     background-color: $filter-yellow;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 176px 1fr;
+    margin-bottom: 20px;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin: 0;
+
+    &::before {
+      content: "";
+    }
   }
 }
 
@@ -64,6 +104,20 @@
       transform: rotate(180deg);
     }
   }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: "";
+    }
+  }
 }
 
 .filter-people__music-label {
@@ -83,6 +137,26 @@
   text-transform: uppercase;
   color: $basic-blue-light;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -13px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      display: block;
+      background-color: $filter-yellow;
+    }
+  }
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: none;
+    }
+  }
 }
 
 .filter-people__wrap {
@@ -91,6 +165,15 @@
   &--active {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -185,6 +268,10 @@
 .filter-people__level-wrap {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3 / 4;
+  }
 }
 
 .filter-people__level-control {
