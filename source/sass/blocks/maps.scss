@@ -17,7 +17,7 @@
 .maps__page-container {
   display: grid;
   grid-template-rows: max-content max-content;
-  justify-content: center;
+  gap: 33px;
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
@@ -77,6 +77,7 @@
   line-height: 18px;
   padding: 19px;
   width: 270px;
+  justify-self: center;
 
   &::after {
     content: "";
