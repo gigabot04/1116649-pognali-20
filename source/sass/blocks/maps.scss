@@ -1,16 +1,21 @@
 .maps {
   position: relative;
+  padding-top: 100px;
+  padding-bottom: 35px;
+  border-radius: 0 0 30px 30px;
+  background-color: $basic-yellow;
+  z-index: 10;
 
-  &::after {
-    content: "";
-    background-color: $basic-yellow;
-    position: absolute;
-    top: -65px;
-    left: 0;
-    right: 0;
-    bottom: -31px;
-    border-radius: 0 0 30px 30px;
-    z-index: -6;
+  @media (min-width: $tablet-width) {
+    padding-top: 129px;
+    padding-bottom: 84px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 122px;
+    padding-bottom: 0;
+    min-height: 263px;
   }
 }
 
@@ -19,10 +24,16 @@
   grid-template-rows: max-content max-content;
   justify-content: center;
 
+  @media (min-width: $tablet-width) {
+    gap: 65px;
+  }
+
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: max-content max-content;
     grid-row-start: 1;
     align-items: center;
+    gap: 0;
+    padding-left: 397px;
   }
 }
 
@@ -38,6 +49,8 @@
   line-height: 22px;
   color: $basic-blue-light;
   text-transform: uppercase;
+  margin-left: -25px;
+  z-index: 1;
 
   &::after {
     content: "";
@@ -48,6 +61,28 @@
     width: 45px;
     height: 45px;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      top: -19px;
+      left: -94px;
+      width: 68px;
+      height: 68px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -31px;
+      left: -121px;
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+    width: 444px;
+    margin: 0 auto;
+    left: 7px;
   }
 }
 
@@ -58,6 +93,20 @@
   top: 10px;
   left: -49px;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 31px;
+    height: 31px;
+    top: 0px;
+    left: -75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 42px;
+    height: 42px;
+    top: -6px;
+    left: -97px;
+  }
 }
 
 .maps__pin-path {
@@ -77,6 +126,11 @@
   line-height: 18px;
   padding: 19px;
   width: 270px;
+<<<<<<< Updated upstream
+=======
+  justify-self: center;
+  z-index: 1;
+>>>>>>> Stashed changes
 
   &::after {
     content: "";
@@ -87,5 +141,24 @@
     height: 16px;
     background-image: url("../img/triangle-arrow-right.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 30px;
+      right: 33px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 80px;
+    width: 618px;
+    border-radius: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 24px 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 324px;
+    margin-left: 140px;
   }
 }

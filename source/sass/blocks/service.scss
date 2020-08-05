@@ -1,26 +1,54 @@
 .service {
-  padding-top: 70px;
+  padding-top: 20px;
   min-height: 392px;
-  padding-bottom: 30px;
   background-color: $text-blue;
   position: relative;
   z-index: 0;
   border-radius: 0 0 30px 30px;
+  margin-bottom: -102px;
+  z-index: 19;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 89px;
+    border-radius: 0 0 60px 60px;
+    margin-bottom: -102px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 810px;
+  }
 }
 
 .service__page-container {
   position: relative;
+  padding-left: 25px;
+  margin-top: 51px;
 
   &::before {
     content: "";
     position: absolute;
     z-index: -1;
     top: -31px;
-    left: -7px;
+    left: 18px;
     background-image: url("../img/about-mobile@1x.png");
     background-repeat: no-repeat;
     width: 292px;
     height: 353px;
+
+    @media (min-width: $tablet-width) {
+      top: 129px;
+      left: 456px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 63px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 118px;
+    padding-left: 106px;
   }
 }
 
@@ -46,5 +74,71 @@
     width: 113px;
     height: 132px;
     border-radius: 0 20px 20px 0;
+
+    @media (min-width: $tablet-width) {
+      top: -37px;
+      left: -10px;
+      width: 688px;
+      height: 212px;
+      border-radius: 20px;
+      z-index: -2;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -58px;
+      left: -46px;
+      width: 212px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
+}
+
+.service__btn {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-yellow;
+    border-radius: 20px;
+    border: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    color: $basic-blue-light;
+    display: block;
+    height: 80px;
+    width: 276px;
+    text-align: start;
+    margin-top: 53px;
+    margin-left: 24px;
+    padding-left: 33px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 32px;
+      transform: translateY(-50%);
+      background-image: url("../img/triangle-arrow-right.svg");
+      background-repeat: no-repeat;
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 85px;
+    margin-left: 25px;
+    width: 274px;
   }
 }

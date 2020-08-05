@@ -5,12 +5,17 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-end;
+    height: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 50px;
   }
 }
 
 .head-feedback__tel {
   background-color: $special-orange;
-  width: 40px;
+  width: 50px;
   min-height: 40px;
   border-radius: 50%;
   padding: 11px;
@@ -21,13 +26,14 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    padding: 16px;
   }
 }
 
 .head-feedback__mail {
   display: block;
   background-color: $special-yellow-dark;
-  width: 40px;
+  width: 50px;
   min-height: 40px;
   border-radius: 50%;
   padding: 11px;
@@ -38,6 +44,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    padding: 16px;
   }
 }
 
@@ -45,7 +52,7 @@
   text-decoration: none;
   display: block;
   background-color: $basic-yellow;
-  width: 190px;
+  width: 188px;
   min-height: 40px;
   border-radius: 25px;
   padding: 10px 0;
@@ -58,6 +65,15 @@
     text-align: center;
     text-transform: uppercase;
     color: $basic-blue;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 0;
   }
 }
 

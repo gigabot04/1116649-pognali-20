@@ -1,19 +1,22 @@
 .auth {
   position: relative;
-  padding-top: 109px;
-  padding-bottom: 12px;
-  margin-bottom: 62px;
+  padding-top: 157px;
+  padding-bottom: 42px;
+  margin-bottom: -68px;
+  background-color: $text-blue;
+  z-index: 12;
+  border-radius: 0 0 30px 30px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: 0;
-    right: 0;
-    bottom: -30px;
-    background-color: $text-blue;
-    z-index: -5;
-    border-radius: 0 0 30px 30px;
+  @media (min-width: $tablet-width) {
+    padding-top: 159px;
+    padding-bottom: 79px;
+    margin-bottom: -62px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 192px;
+    min-height: 837px;
   }
 }
 
@@ -27,6 +30,16 @@
   line-height: 24px;
   color: $special-orange;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 59px;
+  }
 }
 
 .auth__text {
@@ -39,15 +52,54 @@
   padding-left: 25px;
   padding-right: 25px;
 
+  @media (min-width: $desktop-width) {
+    padding-right: 345px;
+    margin-top: 59px;
+    line-height: 30px;
+    padding-left: 345px;
+  }
+
   &--1 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
     padding: 0;
     color: $basic-yellow;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  &--2 {
+    margin-top: 28px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 57px;
+      line-height: 30px;
+      letter-spacing: 0.01em;
+      padding-left: 33px;
+    }
   }
 }
 
 .auth__index-form {
   display: grid;
   grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 67px;
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 60px;
+    margin-left: 72px;
+    margin-right: 74px;
+  }
 }
 
 .auth__grid {
@@ -63,6 +115,12 @@
   background-color: $basic-white;
   border-radius: 10px;
   padding: 22px 70px 22px 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    height: 80px;
+    border-radius: 20px;
+  }
 }
 
 .auth__btn {
@@ -86,25 +144,59 @@
     background-image: url("../img/triangle-arrow-right.svg");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    width: 80px;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+  }
 }
 
-.auth__text--2 {
-  margin-top: 28px;
+.auth__btn-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 76px;
+    display: inline-block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    color: $basic_blue_light;
+    background-color: $basic-yellow;
+    height: 80px;
+    padding: 28px 75px 27px 36px;
+  }
 }
 
 .auth__feedback {
   margin-top: 32px;
   padding-left: 61px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+    padding-left: 125px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: max-content max-content;
+    gap: 232px;
+    margin-top: 77px;
+    padding-left: 345px;
   }
 }
 
 
 .auth__item:not(:last-child) {
   margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+  }
 }
 
 .auth__item {
@@ -131,6 +223,11 @@
     text-transform: uppercase;
     color: $basic-yellow;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .auth__item-svg {
@@ -142,6 +239,32 @@
   border-radius: 50%;
   width: 45px;
   height: 45px;
+
+  @media (min-width: $tablet-width) {
+    left: -90px;
+    top: -22px;
+    width: 68px;
+    height: 68px;
+    padding: 22px 20.5px;
+
+    & svg {
+      width: 27px;
+      height: 25px;
+
+      @media (min-width: $desktop-width) {
+        width: 36px;
+        height: 34px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -120px;
+    top: -31px;
+    width: 90px;
+    height: 90px;
+    padding: 28px 26.5px;
+  }
 }
 
 .auth__svg-path {

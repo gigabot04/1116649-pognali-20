@@ -2,7 +2,7 @@
   background-color: $basic-blue;
   border-radius: 0 0 30px 30px;
   position: relative;
-  z-index: 1;
+  z-index: 21;
 
   &--index {
     border-radius: 0;
@@ -17,7 +17,12 @@
   justify-content: space-between;
   align-items: center;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+  }
+
   @media (min-width: $desktop-width) {
+    padding-top: 49px;
     grid-template-columns: 200px 1fr 288px;
   }
 }
@@ -33,6 +38,7 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 2;
+    margin-bottom: -3px;
   }
 
   @media (min-width: $desktop-width) {
