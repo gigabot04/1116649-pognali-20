@@ -20,6 +20,11 @@
   }
 }
 
+.page-footer__main-logo {
+  justify-self: center;
+  margin-top: 2px;
+}
+
 .page-footer__contact-hover {
   display: flex;
   align-items: center;
@@ -43,6 +48,7 @@
   line-height: 16px;
   color: $special-grey;
   position: relative;
+  margin-left: 25px;
 
   &::after {
     content: "";
@@ -52,6 +58,10 @@
     width: 270px;
     height: 1px;
     background-color: $basic-grey-after;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -73,6 +83,9 @@
   width: 27px;
   height: 34px;
   background-image: url("../img/htmlacademy.svg");
+  position: absolute;
+  bottom: -10px;
+  right: 25px;
 
   @media (min-width: $tablet-width) {
     grid-column-start: 3;
@@ -91,7 +104,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 34px;
+  margin-top: 32px;
   margin-bottom: 58px;
 
   &--fb {

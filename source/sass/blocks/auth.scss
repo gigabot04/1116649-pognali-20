@@ -82,6 +82,11 @@
       letter-spacing: 0.01em;
       padding-left: 33px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 69px;
+      padding-left: 336px
+    }
   }
 }
 

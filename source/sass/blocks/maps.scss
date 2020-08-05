@@ -22,7 +22,7 @@
 .maps__page-container {
   display: grid;
   grid-template-rows: max-content max-content;
-  justify-content: center;
+  gap: 33px;
 
   @media (min-width: $tablet-width) {
     gap: 65px;
@@ -126,11 +126,8 @@
   line-height: 18px;
   padding: 19px;
   width: 270px;
-<<<<<<< Updated upstream
-=======
   justify-self: center;
   z-index: 1;
->>>>>>> Stashed changes
 
   &::after {
     content: "";

@@ -1,6 +1,8 @@
 .directions-cart__wrapper {
   margin-top: 30px;
-
+  position: relative;
+  z-index: 18;
+  
   @media (min-width: $desktop-width) {
     grid-row: 1 / -1;
     margin-top: 153px;
