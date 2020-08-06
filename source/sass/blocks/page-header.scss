@@ -7,6 +7,10 @@
   &--index {
     border-radius: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .page-header__container {
@@ -96,7 +100,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: 134px 0 67px 0;
+    margin: 134px 0 67px 36px;
+    font-size: 60px;
+    line-height: 60px;
+    grid-column: 1 / -1;
   }
 }
 
