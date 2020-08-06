@@ -3,6 +3,7 @@
   background-color: $basic-white;
   border-radius: 30px 30px 0 0;
   position: relative;
+  min-height: 239px;
 
   @media (min-width: $tablet-width) {
     padding-top: 47px;
@@ -48,7 +49,6 @@
   line-height: 16px;
   color: $special-grey;
   position: relative;
-  margin-left: 25px;
 
   &::after {
     content: "";
@@ -84,7 +84,7 @@
   height: 34px;
   background-image: url("../img/htmlacademy.svg");
   position: absolute;
-  bottom: -10px;
+  bottom: 18px;
   right: 25px;
 
   @media (min-width: $tablet-width) {
