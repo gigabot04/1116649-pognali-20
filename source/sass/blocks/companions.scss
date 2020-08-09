@@ -65,17 +65,17 @@
       152px 69px,
       -12px 341px;
 
-      @media (min-width: $tablet-width) {
-        background-position:
-          40px 483px,
-          -12px 341px;
-      }
+    @media (min-width: $tablet-width) {
+      background-position:
+        40px 483px,
+        -12px 341px;
+    }
 
-      @media (min-width: $desktop-width) {
-        background-position:
-          547px 191px,
-          -12px 341px;
-      }
+    @media (min-width: $desktop-width) {
+      background-position:
+        547px 191px,
+        -12px 341px;
+    }
   }
 
   @media (min-width: $tablet-width) {

@@ -102,6 +102,7 @@
 
   &--4 {
     margin-bottom: 10px;
+
     .filter-people__btn {
       margin-top: 8px;
     }
@@ -166,6 +167,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 21px 0;
+
     &::after {
       content: "";
     }
@@ -213,10 +215,12 @@
       background-color: $filter-yellow;
     }
   }
+
   @media (min-width: $desktop-width) {
     height: 49px;
     margin-top: 66px;
     margin-bottom: 26px;
+
     &::after {
       content: none;
     }
@@ -241,10 +245,8 @@
 
   @media (min-width: $desktop-width) {
     display: none;
-  }
 
-  &--active {
-    @media (min-width: $desktop-width) {
+    &--active {
       display: grid;
       grid-template-rows: 32px;
       grid-template-columns: 1fr;
@@ -449,7 +451,7 @@
 .filter-people__lane2 {
   position: relative;
   height: 2px;
-  background-color:$basic-blue-light;
+  background-color: $basic-blue-light;
 }
 
 .filter-people__circle {

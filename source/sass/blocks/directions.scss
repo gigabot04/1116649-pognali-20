@@ -90,6 +90,7 @@
   width: 220px;
   margin-bottom: 46px;
   z-index: -1;
+
   @media (min-width: $tablet-width) {
     position: relative;
     font-size: 28px;
@@ -154,7 +155,7 @@
       width: 13px;
       height: 13px;
 
-      @media (min-width: $tablet-width){
+      @media (min-width: $tablet-width) {
         right: 29px;
         top: 36px;
       }

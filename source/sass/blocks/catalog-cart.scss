@@ -13,7 +13,7 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     margin-bottom: 39px;
     min-height: 333px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,6 +36,7 @@
   &--photo {
     grid-row: 1 / 4;
     margin-left: 18px;
+
     & img {
       border-radius: 50%;
     }
@@ -206,7 +207,6 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    margin-left: 0;
     grid-column: 4 / 6;
     grid-row: 1 / 3;
     margin-left: 123px;
@@ -248,7 +248,7 @@
     justify-self: end;
     margin-right: 40px;
     align-self: start;
-    margin-top: 0px;
+    margin-top: 0;
     height: 29px;
 
     .catalog-cart__title {
@@ -272,7 +272,7 @@
   font-size: 15px;
   line-height: 16px;
   color: $special-grey;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 22px;
   margin-left: 26px;
 
@@ -428,6 +428,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 9px;
   }
+
   @media (min-width: $desktop-width) {
     grid-column: 1 / 4;
     margin-right: 85px;
