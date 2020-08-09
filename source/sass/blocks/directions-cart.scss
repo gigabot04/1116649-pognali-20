@@ -12,12 +12,18 @@
 }
 
 .directions-cart {
-  width: 100%;
   min-height: 190px;
   margin-bottom: -4px;
 
+  @media (max-width: $mobile-only) {
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
+    width: 100%;
     min-height: 140px;
     margin-bottom: 11px;
     padding-left: 36px;

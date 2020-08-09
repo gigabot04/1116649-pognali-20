@@ -23,6 +23,11 @@
   width: 270px;
   z-index: 18;
 
+  @media (max-width: $mobile-only) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media (min-width: $tablet-width) {
     width: 285px;
   }
@@ -30,7 +35,10 @@
 
 .companions-cart:not(:last-child) {
   margin-bottom: 9px;
-  margin-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-right: 60px;
