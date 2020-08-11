@@ -45,6 +45,11 @@
   position: relative;
   z-index: 18;
 
+  @media (min-width: $mobile-tablet-1) and (max-width: $tablet-width) {
+    text-align: center;
+    padding-left: 0;
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
     font-size: 45px;
@@ -90,6 +95,12 @@
   width: 220px;
   margin-bottom: 46px;
   z-index: -1;
+
+  @media (min-width: $mobile-tablet-1) and (max-width: $tablet-width) {
+    margin: 0 auto;
+    padding-left: 0;
+    width: 270px;
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;

@@ -167,6 +167,11 @@
     letter-spacing: 0.09em;
   }
 
+  @media (min-width: $tablet-desktop-1) and (max-width: $tablet-desktop-2) {
+    width: auto;
+    margin-right: 35px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 3 / 4;
     border-radius: 0 0 10px 10px;
@@ -304,7 +309,7 @@
 .form-setting__transport-container {
   width: max-content;
   height: max-content;
-  margin: 16px auto;
+  margin: 14px auto;
 
   @media (min-width: $tablet-width) {
     margin: 23px auto;
@@ -841,6 +846,10 @@
 
   &--2 {
     margin-bottom: 22px;
+  }
+
+  @media (min-width: $mobile-tablet-1) and (max-width: $mobile-tablet-2) {
+    width: auto;
   }
 
   @media (min-width: $tablet-width) {
@@ -1450,8 +1459,9 @@
 
 .form-setting__countries {
   position: relative;
-  display: flex;
-  width: 220px;
+  display: grid;
+  grid-template-columns: 1fr 53px;
+  margin-right: 11px;
   margin-bottom: 22px;
   margin-left: 11px;
 
@@ -1459,7 +1469,7 @@
     content: "";
     position: absolute;
     bottom: -17px;
-    right: 22%;
+    right: 49px;
     height: 11px;
     width: 7px;
     background-repeat: no-repeat;
@@ -1471,8 +1481,11 @@
   }
 
   @media (min-width: $tablet-width) {
+    display: flex;
     margin-bottom: 16px;
-    width: 490px;
+    width: auto;
+    margin-right: 52px;
+    margin-left: 13px;
   }
 
   @media (min-width: $desktop-width) {
@@ -1495,7 +1508,7 @@
   padding-top: 13px;
   padding-bottom: 13px;
   padding-left: 11px;
-  width: 75%;
+  width: 100%;
   height: 42px;
   white-space: nowrap;
   text-align: start;
@@ -1530,6 +1543,7 @@
 
   @media (min-width: $tablet-width) {
     height: 70px;
+    width: 75%;
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.1em;
@@ -1540,7 +1554,7 @@
 .form-setting__country-flag {
   display: block;
   position: relative;
-  width: 25%;
+  width: 100%;
   height: 42px;
   border: 1px solid $day-border;
   background-color: $basic-white;
@@ -1549,7 +1563,7 @@
   @media (min-width: $tablet-width) {
     border: none;
     height: 53px;
-    right: -51px;
+    right: -10%;
     top: 9px;
     width: 15%;
   }
@@ -1559,7 +1573,7 @@
       content: "";
       position: absolute;
       top: 48%;
-      right: 91px;
+      right: 89px;
       transform: translateY(-50%);
       background-color: $basic-blue-light;
       width: 14px;
@@ -1570,7 +1584,7 @@
 
     @media (min-width: $desktop-width) {
       top: 47%;
-      right: 147px;
+      right: 195px;
     }
   }
 }
@@ -1812,12 +1826,14 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 238px 238px;
+    justify-content: space-between;
     column-gap: 20px;
     height: 80px;
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 412px 343px;
     column-gap: 500px;
   }
 }
@@ -1860,6 +1876,10 @@
     }
   }
 
+  @media (min-width: $mobile-tablet-1) and (max-width: $mobile-tablet-2) {
+    margin: 0 auto;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 24px;
@@ -1890,6 +1910,10 @@
   &--step3 {
     position: relative;
 
+    @media (min-width: $mobile-tablet-1) and (max-width: $mobile-tablet-2) {
+      margin: 0 auto;
+    }
+
     @media (min-width: $tablet-width) {
       margin-top: 23px;
       text-align: start;
@@ -1916,6 +1940,12 @@
     text-align: center;
     align-self: center;
     margin-top: 11px;
+
+    @media (min-width: $tablet-desktop-1) and (max-width: $tablet-desktop-2) {
+      width: 238px;
+      padding: 27px 0px 29px 75px;
+      height: 80px;
+    }
 
     @media (min-width: $tablet-width) {
       font-size: 24px;
@@ -2053,6 +2083,7 @@
 
 .form-setting__action-plan-flag {
   position: absolute;
+  display: none;
   top: -3px;
   right: 243px;
   width: 70px;
@@ -2060,6 +2091,15 @@
   background-color: grey;
   border: none;
   border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    right: 8%;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 243px;
+  }
 }
 
 .form-setting__action-plans {
@@ -2100,6 +2140,10 @@
     font-size: 16px;
     line-height: 22px;
     color: $special-grey;
+  }
+
+  @media (min-width: $mobile-tablet-1) and (max-width: $mobile-tablet-2) {
+    width: 90%;
   }
 
   @media (min-width: $tablet-width) {

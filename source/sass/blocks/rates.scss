@@ -19,19 +19,10 @@
 }
 
 .rates__page-container {
-  background-image: url("../img/rates@1x.png");
-  background-repeat: no-repeat;
-  background-position: 583px 340px;
-  background-size: 100px;
   min-height: 399px;
 
   @media (min-width: $tablet-width) {
     min-height: 441px;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-position: 1109px 184px;
-    background-size: 198px;
   }
 }
 
@@ -262,6 +253,7 @@
 }
 
 .rates__grid {
+  position: relative;
   @media (min-width: $tablet-width) {
     position: relative;
     display: grid;
@@ -287,6 +279,26 @@
         right: -160px;
         width: 446px;
         height: 300px;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -111px;
+      right: 11px;
+      background-image: url("../img/rates@1x.png");
+      background-repeat: no-repeat;
+      background-size: 100px;
+      width: 100px;
+      height: 100px;
+
+      @media (min-width: $desktop-width) {
+        background-size: 198px;
+        width: 198px;
+        height: 198px;
+        bottom: 3%;
+        right: -272px;
       }
     }
   }
