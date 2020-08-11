@@ -97,6 +97,11 @@
     @media (min-width: $tablet-width) {
       bottom: -75px;
     }
+
+    @media (min-width: $desktop-width) {
+      bottom: -73px;
+      height: 7px;
+    }
   }
 
   @media (min-width: $tablet-width) {

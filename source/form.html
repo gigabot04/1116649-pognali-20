@@ -191,14 +191,14 @@
               <p class="form-setting__plans-number">1.</p>
               <h2 class="form-setting__plans-countries">Франция, Италия</h2>
               <p class="form-setting__plans-companions">3 попутчика</p>
-              <p class="form-setting__plans-date">26 мар — 29 мар</p>
+              <p class="form-setting__plans-date">26 мар &#x2015; 29 мар</p>
               <a class="form-setting__plans-btn" href="">изменить</a>
             </div>
             <div class="form-setting__plans-cart">
               <p class="form-setting__plans-number">2.</p>
               <h2 class="form-setting__plans-countries">Таиланд, Индонезия</h2>
               <p class="form-setting__plans-companions">1 попутчик</p>
-              <p class="form-setting__plans-date">1 июл — 15 июл</p>
+              <p class="form-setting__plans-date">1 июл &#x2015; 15 июл</p>
               <a class="form-setting__plans-btn" href="">изменить</a>
             </div>
           </div>
@@ -213,6 +213,17 @@
             </div>
             <fieldset class="form-setting__field">
               <legend class="form-setting__legend">Шаг 1.<br> Даты&nbsp;пребывания</legend>
+              <div class="form-setting__points--desktop">
+                <div class="form-setting__point-text form-setting__point-text--active">Даты
+                  <span class="form-setting__point"></span>
+                </div>
+                <div class="form-setting__point-text">Маршрут
+                  <span class="form-setting__point"></span>
+                </div>
+                <div class="form-setting__point-text">Развлечения
+                  <span class="form-setting__point"></span>
+                </div>
+              </div>
               <p class="form-setting__text">Укажите предпочтительное количество попутчиков, которых <br>вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
               <div class="form-setting__time-people">
                 <label class="form-setting__label" for="plan-companions-people">
@@ -325,6 +336,17 @@
             </fieldset>
             <fieldset class="form-setting__field form-setting__field--2">
               <legend class="form-setting__legend form-setting__legend--2">Шаг 2. Маршрут</legend>
+              <div class="form-setting__points--desktop">
+                <div class="form-setting__point-text">Даты
+                  <span class="form-setting__point"></span>
+                </div>
+                <div class="form-setting__point-text form-setting__point-text--active">Маршрут
+                  <span class="form-setting__point"></span>
+                </div>
+                <div class="form-setting__point-text">Развлечения
+                  <span class="form-setting__point"></span>
+                </div>
+              </div>
               <p class="form-setting__text form-setting__text--2">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
               <div class="from-setting__countries-wrap">
                 <div class="form-setting__countries">
@@ -393,14 +415,29 @@
             </fieldset>
             <fieldset class="form-setting__field form-setting__field--3">
               <legend class="form-setting__legend">Шаг 3. Развлечения</legend>
-              <p class="form-setting__text form-setting__text--3">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
-              <div class="form-setting__action-plans">
-                <p class="form-setting__action-plan-title">Босния и Герцеговина</p>
-                <textarea class="form-setting__action-plan form-setting__action-plan--1" id="action-plan-1" name="action-plan-1" cols="30" rows="10" placeholder="План действий"></textarea>
+              <div class="form-setting__points--desktop">
+                <div class="form-setting__point-text">Даты
+                  <span class="form-setting__point"></span>
+                </div>
+                <div class="form-setting__point-text">Маршрут
+                  <img class="form-setting__point"></img>
+                </div>
+                <div class="form-setting__point-text form-setting__point-text--active">Развлечения
+                  <span class="form-setting__point"></span>
+                </div>
               </div>
-              <div class="form-setting__action-plans form-setting__action-plans--2">
-                <p class="form-setting__action-plan-title form-setting__action-plan-title--2">Чехия</p>
-                <textarea class="form-setting__action-plan form-setting__action-plan--2" id="action-plan-2" name="action-plan-2" cols="30" rows="10" placeholder="План действий">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+              <p class="form-setting__text form-setting__text--3">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+              <div class="form-setting__action-plans-wrap">
+                <div class="form-setting__action-plans">
+                  <p class="form-setting__action-plan-title">Босния и Герцеговина</p>
+                  <img class="form-setting__action-plan-flag" src="" aria-label="Флаг Боснии и Герцеговинии"></img>
+                  <textarea class="form-setting__action-plan form-setting__action-plan--1" id="action-plan-1" name="action-plan-1" cols="30" rows="10" placeholder="План действий"></textarea>
+                </div>
+                <div class="form-setting__action-plans form-setting__action-plans--2">
+                  <p class="form-setting__action-plan-title form-setting__action-plan-title--2">Чехия</p>
+                  <img class="form-setting__action-plan-flag" src="" aria-label="Флаг Чехии"></img>
+                  <textarea class="form-setting__action-plan form-setting__action-plan--2" id="action-plan-2" name="action-plan-2" cols="30" rows="10" placeholder="План действий">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                </div>
               </div>
               <div class="form-setting__btn-wrap">
                 <button class="form-setting__next form-setting__next--btn form-setting__next--step3" type="submit">Отправить</button>
@@ -412,7 +449,7 @@
       </form>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__page-container">
+      <div class="page-footer__page-container page-container">
         <a href="" class="main-logo page-footer__main-logo">
           <img src="img/logo-mobile-blue@1x.png" alt="Погнали?" width="100" height="19">
         </a>

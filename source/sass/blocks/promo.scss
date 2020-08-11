@@ -59,6 +59,7 @@
       url("../img/traveller-illustration-mobile@1x.png"),
       url("../img/globe-back-mobile@1x.jpg");
     background-size: auto, 100vw 569px;
+    object-fit: cover;
     background-repeat: no-repeat;
     background-position:
       62% 223px,
@@ -72,6 +73,7 @@
         url("../img/traveller-illustration-tablet@1x.png"),
         url("../img/globe-back-tablet@1x.jpg");
       background-repeat: no-repeat;
+      background-size: auto;
       background-position:
         72% 366px,
         50% 343px;
