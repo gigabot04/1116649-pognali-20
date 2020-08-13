@@ -74,6 +74,11 @@
     margin-left: 75px;
   }
 
+  @media (min-width: $tablet-desktop-1) and (max-width: $tablet-desktop-2) {
+    text-align: end;
+    padding-right: 40px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-left: 285px;
   }

@@ -127,9 +127,15 @@
     line-height: 18px;
     color: $special-grey;
     opacity: 0.3;
+
+    @media (min-width: $tablet-width) {
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
 
   @media (min-width: $tablet-width) {
+    padding: 22px 70px 22px 36px;
     margin-top: 0;
     height: 80px;
     border-radius: 20px;

@@ -1,5 +1,5 @@
 .page-header {
-  background-color: $basic-blue;
+  background-color: $promo-bg;
   border-radius: 0 0 20px 20px;
   position: relative;
   z-index: 21;
@@ -8,8 +8,17 @@
     border-radius: 0 0 60px 60px;
   }
 
+  @media (min-width: $desktop-width) {
+    background-color: $text-blue;
+  }
+
   &--index {
     border-radius: 0;
+    background-color: $basic-blue;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      background-color: $promo-bg;
+    }
   }
 }
 

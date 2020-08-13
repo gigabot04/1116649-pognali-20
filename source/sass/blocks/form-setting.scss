@@ -728,7 +728,7 @@
   color: $basic-black;
   text-transform: uppercase;
   padding-left: 42px;
-  opacity: 0.3;
+  opacity: 0.6;
 
   &--active {
     opacity: 1;
@@ -1087,12 +1087,14 @@
   width: 100%;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 18px;
   color: $basic-blue-light;
+  font-size: 14.86px;
+  line-height: 14px;
 
   @media (min-width: $tablet-width) {
     height: 70px;
+    font-size: 20px;
+    line-height: 18px;
   }
 }
 
@@ -1295,7 +1297,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 80%;
     margin-top: 56px;
     margin-left: 128px;
   }
@@ -1431,23 +1432,13 @@
   }
 }
 
-.form-setting__day {
-  position: relative;
-  background-color: $basic-white-dark;
-  border: 1px solid $day-border;
-  color: $basic-blue-light;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
+.from-setting__cell {
   height: 31px;
   width: 30px;
+  border: 1px solid $day-border;
 
-  &--off {
-    background-color: $basic-white-dark;
-    border: 1px solid $day-border;
-    color: $special-grey;
-    opacity: 0.3;
+  &--today {
+    border: 4px solid $output;
   }
 
   @media (min-width: $tablet-width) {
@@ -1456,10 +1447,33 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 71px;
+    min-width: 143px;
+  }
+}
+
+.form-setting__day {
+  position: relative;
+  background-color: $basic-white-dark;
+  border: none;
+  color: $basic-blue-light;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  height: 100%;
+  width: 100%;
+
+  &--off {
+    background-color: $basic-white-dark;
+    color: $special-grey;
+    opacity: 0.3;
+  }
+
+
+  @media (min-width: $desktop-width) {
     text-align: start;
     padding-left: 14px;
-    height: 71px;
-    width: 142px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -1486,8 +1500,8 @@
   }
 }
 
-.from-setting__day-today,
-.from-setting__day-then {
+.from-setting__day-today-text,
+.from-setting__day-then-text {
   display: none;
   font-style: normal;
   font-weight: normal;
@@ -2134,7 +2148,7 @@
     top: 11px;
     left: -24px;
     height: 283px;
-    border: 2px solid $basic-blue-ligh;
+    border: 2px solid $basic-blue-light;
     border-right: 2px solid $basic-white;
     width: 13px;
 
@@ -2168,6 +2182,30 @@
   .form-setting__action-plan-title {
     &::before {
       content: none;
+    }
+  }
+}
+
+.form-setting__action-plans-wrap {
+  position: relative;
+
+  &::before {
+    content: none;
+    height: 1px;
+    position: absolute;
+    background-color: $basic-grey;
+
+    @media (min-width: $tablet-width) {
+      content: "";
+      width: 96%;
+      top: -35px;
+      left: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 80%;
+      top: -80px;
+      left: 125px;
     }
   }
 }
