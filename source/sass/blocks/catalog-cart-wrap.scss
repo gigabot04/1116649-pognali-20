@@ -1,0 +1,8 @@
+.catalog-cart-wrap {
+  grid-row: 1 / -1;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 4;
+    margin-right: 85px;
+  }
+}

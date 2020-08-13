@@ -6,6 +6,11 @@
   display: flex;
   z-index: 1;
 
+  @media (max-width: $mobile-only) {
+    left: 50%;
+    margin-left: -135px;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }

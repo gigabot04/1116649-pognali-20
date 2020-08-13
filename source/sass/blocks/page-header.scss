@@ -1,11 +1,24 @@
 .page-header {
-  background-color: $basic-blue;
-  border-radius: 0 0 30px 30px;
+  background-color: $promo-bg;
+  border-radius: 0 0 20px 20px;
   position: relative;
-  z-index: 1;
+  z-index: 21;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 60px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $text-blue;
+  }
 
   &--index {
     border-radius: 0;
+    background-color: $basic-blue;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      background-color: $promo-bg;
+    }
   }
 }
 
@@ -17,7 +30,12 @@
   justify-content: space-between;
   align-items: center;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+  }
+
   @media (min-width: $desktop-width) {
+    padding-top: 49px;
     grid-template-columns: 200px 1fr 288px;
   }
 }
@@ -30,9 +48,11 @@
   padding: 0;
   grid-column: 3;
   margin-left: auto;
+  margin-bottom: 5px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2;
+    margin-bottom: -3px;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,25 +90,38 @@
   line-height: 36px;
   color: $basic-white;
   width: max-content;
-  margin: 20px 0;
+  margin: 15px 0;
+  margin-top: 42px;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -24px;
+    bottom: -17px;
     left: 0;
     background-color: $special-orange;
     border-radius: 4px;
     width: 100%;
-    height: 8px;
+    height: 5px;
 
     @media (min-width: $tablet-width) {
-      bottom: -71px;
+      bottom: -75px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: -73px;
+      height: 7px;
     }
   }
 
   @media (min-width: $tablet-width) {
-    margin: 134px 0 67px 0;
+    margin: 129px 0 72px 34px;
+    font-size: 60px;
+    line-height: 60px;
+    grid-column: 1 / -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 122px 0 70px 65px;
   }
 }
 
@@ -96,6 +129,7 @@
   display: none;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     display: block;
     font-style: normal;
     font-weight: bold;
@@ -105,6 +139,25 @@
     text-transform: uppercase;
     text-decoration: none;
     grid-column: 3;
-    text-align: center;
+    grid-row: 2;
+    margin-top: 86px;
+    margin-right: 94px;
+    text-align: end;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      right: -60px;
+      width: 32px;
+      height: 16px;
+      background-image: url("../img/return.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 56px;
+    margin-right: 123px;
   }
 }

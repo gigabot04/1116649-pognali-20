@@ -1,11 +1,33 @@
 .filter-people {
   background-color: $basic-yellow;
   border-radius: 20px;
-  padding: 26px 24px 22px 25px;
+  padding: 24px 20px 22px 20px;
+
+  @media (max-width: $mobile-only) {
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 41px;
+    padding: 24px 36px 22px 35px;
+    margin-bottom: 42px;
+  }
 
   @media (min-width: $desktop-width) {
+    margin-top: 1px;
     grid-row: 1 / 2;
     grid-column: 4 / 5;
+    padding: 24px 43px 22px 49px;
+  }
+}
+
+.filter-people__container {
+  padding-left: 5px;
+  padding-right: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -21,13 +43,18 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    letter-spacing: 0.001em;
+    margin-bottom: 66px;
 
     &::after {
       content: "";
       position: absolute;
-      bottom: -13px;
-      left: 0;
-      width: 100%;
+      bottom: -41px;
+      left: 10px;
+      right: 10px;
       height: 1px;
       display: block;
       background-color: $filter-yellow;
@@ -35,6 +62,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 21px;
+    letter-spacing: 0.001em;
+    margin-bottom: 35px;
+
     &::after {
       content: none;
     }
@@ -52,8 +83,8 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 176px 1fr;
-    margin-bottom: 20px;
+    grid-template-columns: 126px 1fr;
+    margin-bottom: 6px;
 
     &::before {
       content: none;
@@ -65,7 +96,25 @@
     margin: 0;
 
     &::before {
-      content: "";
+      content: none;
+    }
+  }
+
+  &--4 {
+    margin-bottom: 10px;
+
+    .filter-people__btn {
+      margin-top: 8px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--5 {
+    .filter-people__btn {
+      margin-top: 11px;
     }
   }
 }
@@ -102,11 +151,14 @@
     &::after {
       content: "";
       transform: rotate(180deg);
+      top: 3px;
     }
   }
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
+    font-size: 20px;
+    line-height: 20px;
 
     &::after {
       content: none;
@@ -114,6 +166,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 21px 0;
+
     &::after {
       content: "";
     }
@@ -137,22 +191,36 @@
   text-transform: uppercase;
   color: $basic-blue-light;
   border: none;
+  width: 100%;
+  background-color: $basic-white;
+  border-radius: 25px;
+  height: 41px;
 
   @media (min-width: $tablet-width) {
     position: relative;
+    height: 50px;
+    margin-top: 66px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 20px;
 
     &::after {
       content: "";
       position: absolute;
-      top: -13px;
-      left: 0;
-      width: 100%;
+      top: -37px;
+      left: 17px;
+      right: 17px;
       height: 1px;
       display: block;
       background-color: $filter-yellow;
     }
   }
+
   @media (min-width: $desktop-width) {
+    height: 49px;
+    margin-top: 66px;
+    margin-bottom: 26px;
+
     &::after {
       content: none;
     }
@@ -165,15 +233,25 @@
   &--active {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 8px;
   }
 
   @media (min-width: $tablet-width) {
     display: grid;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     display: none;
+
+    &--active {
+      display: grid;
+      grid-template-rows: 32px;
+      grid-template-columns: 1fr;
+      margin-top: 33px;
+    }
   }
 }
 
@@ -183,8 +261,12 @@
 
 .filter-people__label {
   position: relative;
-  padding-left: 20px;
+  padding-left: 27px;
   margin-bottom: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
 
   &::after {
     content: "";
@@ -195,6 +277,12 @@
     height: 18px;
     background-color: $basic-white;
     border-radius: 4px;
+
+    @media (min-width: $tablet-width) {
+      width: 24px;
+      height: 24px;
+      top: -2px;
+    }
   }
 
   &::before {
@@ -206,6 +294,30 @@
     height: 8px;
     background-image: url("../img/tick.svg");
     z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      width: 11px;
+      height: 12px;
+      top: 4px;
+      left: 7px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    min-width: 170px;
+    align-self: center;
+    padding-left: 36px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 22px;
+
+    &:last-child {
+      margin-bottom: 11px;
+    }
   }
 }
 
@@ -218,7 +330,11 @@
 .filter-people__transport-container {
   width: max-content;
   height: max-content;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .filter-people__transport-label {
@@ -226,6 +342,9 @@
   display: inline-block;
   width: 32px;
   height: 32px;
+  margin-right: -4px;
+  margin-top: 4px;
+  margin-bottom: 5px;
 
   &::after {
     content: "";
@@ -236,6 +355,24 @@
     width: 32px;
     height: 32px;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    left: -5px;
+    width: 44px;
+    height: 44px;
+    margin-right: -6px;
+    margin-top: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -2px;
+    margin-top: -2px;
   }
 }
 
@@ -259,6 +396,11 @@
   & path {
     fill: $basic-blue-light;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 22px;
+  }
 }
 
 .filter-people__transport-control:checked + .filter-people__svg {
@@ -268,9 +410,67 @@
 .filter-people__level-wrap {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  height: 35px;
 
   @media (min-width: $tablet-width) {
     grid-column: 3 / 4;
+    width: 148px;
+    height: 46px;
+    margin-top: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 193px;
+  }
+}
+
+.filter-people__range {
+  margin-top: 24px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 82%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 36px;
+    margin-bottom: -22px;
+    width: 94%;
+  }
+}
+
+.filter-people__lane {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: rgba($basic-blue-light, 0.2);
+}
+
+.filter-people__lane2 {
+  position: relative;
+  height: 2px;
+  background-color: $basic-blue-light;
+}
+
+.filter-people__circle {
+  position: absolute;
+  top: -4px;
+  transform: translateX(-100%);
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: $basic-blue-light;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 13px;
+    height: 13px;
+    top: -5px;
   }
 }
 
@@ -286,11 +486,4 @@
   &--max {
     border-radius: 0 4px 4px 0;
   }
-}
-
-.filter-people__btn-send {
-  background-color: $basic-white;
-  border-radius: 25px;
-  width: 100%;
-  height: 41px;
 }
