@@ -12,7 +12,7 @@
         <a href="" class="main-logo main-logo__header">
           <img src="img/logo-mobile-white@1x.png" alt="Погнали?" width="100" height="19">
         </a>
-        <button class="page-header__toggle page-header__toggle--close" type="button" aria-label="Открыть меню">
+        <button class="page-header__toggle" type="button" aria-label="Открыть меню">
           <span class="page-header__line1"></span>
           <span class="page-header__line2"></span>
         </button>
@@ -62,9 +62,9 @@
           <a href="form.html" class="header-menu-desktop__link">Направления</a>
           <a href="catalog.html" class="header-menu-desktop__link">Попутчики</a>
         </div>
-        <div class="header-menu">
+        <div class="header-menu header-menu--active">
           <a class="header-menu__logo">
-            <img src="img/logo-mobile-blue@1x.png" alt="Погнали?" width="96" height="15">
+            <img src="img/logo-mobile-blue@1x.png" alt="Погнали?" width="100" height="19">
           </a>
           <div class="header-menu__title">
             <a href="" class="header-menu__link">О сервисе</a>
@@ -289,20 +289,32 @@
           <a class="companions__button companions__button--btn" href="catalog.html">Показать всех</a>
         </div>
       </section>
-      <section class="rates">
-        <div class="page-container rates__page-container">
-          <h2 class="rates__title">Добавьте свой профиль</h2>
-          <div class="rates__grid">
-            <p class="rates__item-text rates__item-text--1">Базовое размещение</p>
-            <p class="rates__item-price">Бесплатно</p>
-            <p class="rates__item-text rates__item-text--2">Вывод на первых позициях</p>
-            <p class="rates__item-price">99 руб./мес</p>
-            <p class="rates__item-text rates__item-text--3">Кастомный цвет карточки</p>
-            <p class="rates__item-price">59 руб./мес</p>
+      <div class="page-main__rates-wrap">
+        <section class="rates">
+          <div class="page-container rates__page-container">
+            <h2 class="rates__title">Добавьте свой профиль</h2>
+            <div class="rates__grid">
+              <p class="rates__item-text rates__item-text--1">Базовое размещение</p>
+              <p class="rates__item-price">Бесплатно</p>
+              <p class="rates__item-text rates__item-text--2">Вывод на первых позициях</p>
+              <p class="rates__item-price">99 руб./мес</p>
+              <p class="rates__item-text rates__item-text--3">Кастомный цвет карточки</p>
+              <p class="rates__item-price">59 руб./мес</p>
+            </div>
+            <a class="rates__button" href="">Показать тарифы для бизнеса</a>
           </div>
-          <a class="rates__button" href="">Показать тарифы для бизнеса</a>
-        </div>
-      </section>
+        </section>
+        <section class="rates-menu rates-menu--active">
+          <div class="rates-menu__wrap">
+            <h2 class="rates-menu__title">Бизнес-тарифы</h2>
+            <p class="rates-menu__text">Реклама у блоггера <span class="rates-menu__price">300 000 руб./пост</span></p>
+            <p class="rates-menu__text">Накрутка подписчиков <span class="rates-menu__price">от 1 руб./шт.</span></p>
+            <p class="rates-menu__text">Лайки от ботов <span class="rates-menu__price">от 20 коп./лайк</span></p>
+            <p class="rates-menu__text">Ваш продакт-плейсмент <span class="rates-menu__price">Индивидуально</span></p>
+          </div>
+          <button class="rates-menu__btn">Закрыть окно</button>
+        </section>
+      </div>
       <section class="auth">
         <div class="page-container auth__page-container">
           <h2 class="auth__title">Заинтересовались?</h2>
@@ -384,5 +396,7 @@
         <a class="page-footer__htmlacademy-img" href="https://htmlacademy.ru/intensive/adaptive" aria-label="html academy"></a>
       </div>
     </footer>
+    <script src="js/header-menu.js"></script>
+    <script src="js/rates-menu.js"></script>
   </body>
 </html>

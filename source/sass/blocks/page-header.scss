@@ -44,19 +44,32 @@
   background-color: transparent;
   border: none;
   width: 25px;
-  height: 11px;
+  height: 18px;
   padding: 0;
   grid-column: 3;
   margin-left: auto;
   margin-bottom: 5px;
+  z-index: 3;
 
   @media (min-width: $tablet-width) {
     grid-column: 2;
     margin-bottom: -3px;
+    height: 39px;
   }
 
   @media (min-width: $desktop-width) {
     display: none;
+  }
+
+  &--close {
+    .page-header__line1 {
+      transform: rotate(45deg);
+      margin-bottom: -2px;
+    }
+
+    .page-header__line2 {
+      transform: rotate(-45deg);
+    }
   }
 }
 

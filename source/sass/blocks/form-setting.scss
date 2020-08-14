@@ -896,7 +896,7 @@
   position: relative;
   width: 100%;
 
-  & div {
+  & > div {
     position: relative;
 
     &::before {
@@ -1458,17 +1458,12 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
-
-  height: 31px;
+  height: 29px;
   width: 30px;
-  @media (min-width: $tablet-width) {
-    height: 69px;
-    width: 76px;
-  }
 
-  @media (min-width: $desktop-width) {
-    height: 71px;
-    min-width: 143px;
+  @media (min-width: $tablet-width) {
+    height: 67px;
+    width: 74px;
   }
 
   @media (min-width: $desktop-width) {
@@ -1476,6 +1471,8 @@
     padding-left: 14px;
     display: flex;
     flex-wrap: wrap;
+    height: 69px;
+    min-width: 141px;
   }
 }
 
@@ -1693,7 +1690,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   text-transform: uppercase;
   color: $basic-blue-light;
   border: 1px solid $day-border;
@@ -1723,6 +1720,37 @@
     }
   }
 
+  &--active {
+    position: relative;
+    padding-left: 17px;
+    background-color: $basic-blue-light;
+    color: $basic-white;
+    border-radius: 4px 4px 0 0;
+    border: none;
+    border-bottom: 1px solid $basic-blue-light;
+    letter-spacing: 0.02em;
+    z-index: 1;
+
+    &::before {
+      background-size: 7px;
+      right: 8px;
+      opacity: 1;
+      background-image: url("data:image/svg+xml,%0A%3Csvg fill='white' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 9 9' style='enable-background:new 0 0 9 9;' xml:space='preserve'%3E%3Cpath class='pz0' d='M5.2,4.5l3.7-3.7C9,0.6,9,0.3,8.9,0.1S8.4,0,8.2,0.1L4.5,3.8L0.8,0.1C0.6,0,0.3,0,0.1,0.1S0,0.6,0.1,0.8l3.7,3.7L0.1,8.2 C0,8.4,0,8.7,0.1,8.9C0.2,9,0.4,9,0.5,9s0.2,0,0.3-0.1l3.7-3.7l3.7,3.7C8.3,9,8.4,9,8.5,9s0.2,0,0.3-0.1C9,8.7,9,8.4,8.9,8.2 L5.2,4.5z'/%3E%3C/svg%3E%0A");
+
+      @media (min-width: $tablet-width) {
+        background-size: 15px;
+        right: 26px;
+        height: 18px;
+      }
+
+      @media (min-width: $desktop-width) {
+        background-size: 16px;
+        right: 30px;
+        height: 26px;
+      }
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: 75%;
     height: 69px;
@@ -1743,6 +1771,10 @@
   background-color: $basic-white-dark;
   border-radius: 50%;
   transform: translate(50%, -50%);
+
+  &--disabled {
+    display: none;
+  }
 
   &::after {
     content: "";
@@ -1790,7 +1822,36 @@
 }
 
 .form-setting__chice-countries-wrap {
+  position: absolute;
+  top: 41px;
+  left: 0;
   display: none;
+  width: 100%;
+  min-height: 544px;
+  background-color: $basic-white;
+  box-shadow: 0px 2px 16px rgba($bg-plan, 0.25);
+  z-index: 4;
+
+  &--active {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 68px;
+    width: 575px;
+    min-height: 414px;
+    box-shadow: 0px 8px 16px rgba($shadow, 0.18);
+
+    &--active {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+    min-height: 478px;
+  }
 }
 
 .form-setting__add-countries {
@@ -1820,6 +1881,20 @@
   border: none;
 }
 
+.form-setting__alphabet {
+  width: 220px;
+
+  @media (min-width: $tablet-width) {
+    width: 262px;
+    margin-top: 35px;
+    margin-left: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 382px;
+  }
+}
+
 .form-setting__letter {
   font-style: normal;
   font-weight: 500;
@@ -1830,6 +1905,49 @@
   color: $basic-blue-light;
   background-color: $basic-white;
   border: 1px solid $day-border;
+  width: 45px;
+  height: 42px;
+  padding: 0;
+  margin-bottom: -1px;
+  margin-right: -6px;
+
+  &--active {
+    color: $basic-white;
+    background-color: $basic-blue-light;
+    border: 1px solid $basic-blue-light;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 53px;
+    height: 70px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 60px;
+    height: 71px;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 13px;
+  }
+}
+
+.form-setting__states {
+  border: 1px solid $day-border;
+  border-radius: 0 0 4px 4px;
+  padding: 16px 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 35px 25px;
+    min-width: 207px;
+    border: none;
+    border-left: 1px solid rgba($special-grey-dark, 0.5);
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 241px;
+  }
 }
 
 .form-setting__state {
@@ -1840,6 +1958,15 @@
   font-size: 16px;
   line-height: 22px;
   color: $special-grey;
+  display: block;
+  padding: 0;
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
 }
 
 .form-setting__add-text {
