@@ -408,9 +408,47 @@
 }
 
 .filter-people__level-wrap {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 35px;
+  border: 1px solid $day-border;
+  border-radius: 4px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: $day-border;
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 11px;
+    background-color: $day-border;
+    border-top: 5px solid $basic-white;
+    border-bottom: 5px solid $basic-white;
+    z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      top: 30%;
+      height: 17px;
+      border-top: 8px solid $basic-white;
+      border-bottom: 8px solid $basic-white;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     grid-column: 3 / 4;
@@ -475,15 +513,8 @@
 }
 
 .filter-people__level-control {
+  position: relative;
   text-align: center;
   width: 100%;
-  border: 1px solid $day-border;
-
-  &--min {
-    border-radius: 4px 0 0 4px;
-  }
-
-  &--max {
-    border-radius: 0 4px 4px 0;
-  }
+  border: none;
 }

@@ -1309,7 +1309,7 @@
   font-size: 20px;
   line-height: 20px;
   color: $basic-blue-light;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
 
   &::after {
     content: "";
@@ -1328,25 +1328,29 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: -12px;
+    bottom: 14px;
     left: 0;
     height: 1px;
     width: 100%;
     background-color: $special-grey-dark;
 
     @media (min-width: $tablet-width) {
-      bottom: -26px;
+      bottom: 31px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: -2px;
     }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 57px;
+    padding-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 23px;
+    padding-bottom: 23px;
   }
 }
 
@@ -1433,14 +1437,30 @@
 }
 
 .from-setting__cell {
-  height: 31px;
-  width: 30px;
   border: 1px solid $day-border;
+  background-color: $basic-white-dark;
 
   &--today {
     border: 4px solid $output;
   }
 
+  &--off {
+    opacity: 0.3;
+    color: $special-grey;
+  }
+}
+
+.form-setting__day {
+  position: relative;
+  border: none;
+  color: $basic-blue-light;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+
+  height: 31px;
+  width: 30px;
   @media (min-width: $tablet-width) {
     height: 69px;
     width: 76px;
@@ -1450,26 +1470,6 @@
     height: 71px;
     min-width: 143px;
   }
-}
-
-.form-setting__day {
-  position: relative;
-  background-color: $basic-white-dark;
-  border: none;
-  color: $basic-blue-light;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  height: 100%;
-  width: 100%;
-
-  &--off {
-    background-color: $basic-white-dark;
-    color: $special-grey;
-    opacity: 0.3;
-  }
-
 
   @media (min-width: $desktop-width) {
     text-align: start;
