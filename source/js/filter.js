@@ -7,19 +7,29 @@ var filterBtn = filter.querySelector(".filter__close-btn");
 var filterBtnAlph = filter.querySelectorAll(".filter__letter");
 var filterWrap = filter.querySelectorAll(".filter__states-wrap");
 var filterBtnBot = filter.querySelector(".filter__close-btn-bottom");
+var filterTitle = filterBtn.querySelectorAll(".filter__close-btn-title");
 
 filterBtn.addEventListener("click", function (evt) {
+  let filterTitleActive = filterBtn.querySelector(".filter__close-btn-title--active")
   evt.preventDefault();
   if (filter.classList.contains("filter--active")) {
     filter.classList.remove("filter--active");
     filterParts.classList.remove("filter__parts--active");
     filterAlphabet.classList.remove("filter__alphabet--active");
-    filterBtnBot.classList.remove("filter__close-btn-bottom--active")
+    filterBtnBot.classList.remove("filter__close-btn-bottom--active");
+    filterBtn.classList.remove("filter__close-btn--close");
+    filterBtn.classList.add("filter__close-btn--open");
+    filterTitle[1].classList.remove("filter__close-btn-title--active");
+    filterTitle[0].classList.add("filter__close-btn-title--active");
   } else {
     filter.classList.add("filter--active");
     filterParts.classList.add("filter__parts--active");
     filterAlphabet.classList.add("filter__alphabet--active");
     filterBtnBot.classList.add("filter__close-btn-bottom--active")
+    filterBtn.classList.add("filter__close-btn--close");
+    filterBtn.classList.remove("filter__close-btn--open");
+    filterTitle[1].classList.add("filter__close-btn-title--active");
+    filterTitle[0].classList.remove("filter__close-btn-title--active");
   }
 });
 

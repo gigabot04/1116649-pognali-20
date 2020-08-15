@@ -1,5 +1,6 @@
 .filter {
   background-color: $bg-grey;
+  margin-bottom: -60px;
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
@@ -141,23 +142,57 @@
   color: $text-blue;
   background-color: transparent;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 3px;
-    height: 3px;
-    background-color: $text-blue;
-    border-radius: 50%;
-    box-shadow: 7px 0 0 0 $text-blue, 14px 0 0 0 $text-blue;
+  &--open {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 3px;
+      height: 3px;
+      background-color: $text-blue;
+      border-radius: 50%;
+      box-shadow: 7px 0 0 0 $text-blue, 14px 0 0 0 $text-blue;
 
-    @media (min-width: $tablet-width) {
-      width: 6px;
-      height: 6px;
-      left: 161px;
-      box-shadow: 12px 0 0 0 $text-blue, 24px 0 0 0 $text-blue;
+      @media (min-width: $tablet-width) {
+        width: 6px;
+        height: 6px;
+        top: 60%;
+        left: 161px;
+        box-shadow: 12px 0 0 0 $text-blue, 24px 0 0 0 $text-blue;
+      }
+    }
+    &::before {
+      content: none;
+    }
+  }
+
+
+  &--close {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%) rotate(43deg);
+      width: 25px;
+      height: 2px;
+      border-radius: 2px;
+      background-color: $text-blue;
+    }
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%) rotate(-43deg);
+      width: 25px;
+      height: 2px;
+      border-radius: 2px;
+      background-color: $text-blue;
     }
   }
 
@@ -185,7 +220,13 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: inline;
+    &--close {
+      padding-left: 10px;
+    }
+
+    &--active {
+      display: inline;
+    }
   }
 }
 
