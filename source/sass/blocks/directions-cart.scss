@@ -89,7 +89,9 @@
       width: 35px;
       height: 24px;
       display: block;
-      background-image: url("../img/flags-back@1x.png");
+      background-image: url("../img/flags.svg");
+      background-size: 153px;
+      background-position-x: -79px;
       background-repeat: no-repeat;
 
       @media (min-width: $tablet-width) {
@@ -97,6 +99,8 @@
         right: -37px;
         width: 70px;
         height: 47px;
+        background-size: auto;
+        background-position-x: -160px;
       }
 
       @media (min-width: $desktop-width) {
@@ -114,7 +118,9 @@
       width: 35px;
       height: 24px;
       display: block;
-      background-image: url("../img/flags-back@1x.png");
+      background-image: url("../img/flags.svg");
+      background-size: 153px;
+      background-position: -118px -28px;
       background-repeat: no-repeat;
 
       @media (min-width: $tablet-width) {
@@ -122,6 +128,8 @@
         right: -37px;
         width: 70px;
         height: 47px;
+        background-size: auto;
+        background-position: -240px -57px;
       }
 
       @media (min-width: $desktop-width) {
@@ -139,7 +147,9 @@
       width: 35px;
       height: 24px;
       display: block;
-      background-image: url("../img/flags-back@1x.png");
+      background-image: url("../img/flags.svg");
+      background-size: 153px;
+      background-position: -40px -28px;
       background-repeat: no-repeat;
 
       @media (min-width: $tablet-width) {
@@ -147,6 +157,8 @@
         right: -37px;
         width: 70px;
         height: 47px;
+        background-size: auto;
+        background-position: -80px -57px;
       }
 
       @media (min-width: $desktop-width) {

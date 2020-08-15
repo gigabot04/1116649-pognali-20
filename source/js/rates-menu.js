@@ -1,13 +1,13 @@
-var menu = document.querySelector(".rates-menu");
-var btnClose = menu.querySelector(".rates-menu__btn");
-var btnOpen = document.querySelector(".rates__button");
+var ratesMenu = document.querySelector(".rates-menu");
+var ratesBtnClose = ratesMenu.querySelector(".rates-menu__btn");
+var ratesBtnOpen = document.querySelector(".rates__button");
 
-btnOpen.addEventListener("click", function (evt) {
+ratesBtnOpen.addEventListener("click", function (evt) {
   evt.preventDefault();
-  menu.classList.add("rates-menu--active");
+  ratesMenu.classList.add("rates-menu--active");
 })
 
-btnClose.addEventListener("click", function (evt) {
+ratesBtnClose.addEventListener("click", function (evt) {
   evt.preventDefault();
-  menu.classList.remove("rates-menu--active");
+  ratesMenu.classList.remove("rates-menu--active");
 })

@@ -32,4 +32,8 @@
   text-decoration: none;
   margin-left: 34px;
   z-index: 2;
+
+  &:hover {
+    color: $basic-yellow;
+  }
 }

@@ -1829,7 +1829,7 @@
   width: 100%;
   min-height: 544px;
   background-color: $basic-white;
-  box-shadow: 0px 2px 16px rgba($bg-plan, 0.25);
+  box-shadow: 0 2px 16px rgba($bg-plan, 0.25);
   z-index: 4;
 
   &--active {
@@ -1840,7 +1840,7 @@
     top: 68px;
     width: 575px;
     min-height: 414px;
-    box-shadow: 0px 8px 16px rgba($shadow, 0.18);
+    box-shadow: 0 8px 16px rgba($shadow, 0.18);
 
     &--active {
       display: flex;
