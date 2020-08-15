@@ -361,6 +361,7 @@
 }
 
 .catalog-cart__country {
+  position: relative;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -370,6 +371,131 @@
   margin-left: 65px;
   margin-top: 2px;
   margin-bottom: 11px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: -40px;
+    width: 28px;
+    height: 18px;
+    background-size: 117px;
+    background-repeat: no-repeat;
+    background-image: url("../img/flags.svg");
+
+    @media (min-width: $tablet-width) {
+      background-size: 153px;
+      top: -2px;
+      left: -46px;
+      width: 35px;
+      height: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -3px;
+      left: -54px;
+    }
+  }
+
+  &--srilanka {
+    &::after {
+      background-position: -60px -43px;
+
+      @media (min-width: $tablet-width) {
+        background-position: -79px -56px;
+      }
+    }
+  }
+
+  &--thailand {
+    &::after {
+      background-position: -60px 0;
+
+      @media (min-width: $tablet-width) {
+        background-position: -79px 0;
+      }
+    }
+  }
+
+  &--seychelles {
+    &::after {
+      background-position: 0 0;
+
+      @media (min-width: $tablet-width) {
+        background-position: 0 0;
+      }
+    }
+  }
+
+  &--belgium {
+    &::after {
+      background-position: -30px -43px;
+
+      @media (min-width: $tablet-width) {
+        background-position: -39px -56px;
+      }
+    }
+  }
+
+  &--czech {
+    &::after {
+      background-position: -30px -22px;
+
+      @media (min-width: $tablet-width) {
+        background-position: -39px -27px;
+      }
+    }
+  }
+
+  &--usa {
+    &::after {
+      background-position: -90px 0;
+
+      @media (min-width: $tablet-width) {
+        background-position: -118px 0;
+      }
+    }
+  }
+
+  &--australia {
+    &::after {
+      background-position: 0 -22px;
+
+      @media (min-width: $tablet-width) {
+        background-position: 0 -27px;
+      }
+    }
+  }
+
+  &--dominica {
+    &::after {
+      background-position: -30px 0;
+
+      @media (min-width: $tablet-width) {
+        background-position: -39px 0;
+      }
+    }
+  }
+
+  &--britain {
+    &::after {
+      background-position: 0 -43px;
+
+      @media (min-width: $tablet-width) {
+        background-position: 0 -56px;
+      }
+    }
+  }
+
+  &--germany {
+    &::after {
+      background-position: -60px -22px;
+
+      @media (min-width: $tablet-width) {
+        background-position: -79px -27px;
+      }
+    }
+  }
 
   @media (min-width: $tablet-width) {
     grid-row: 2 / 3;

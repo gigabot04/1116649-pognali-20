@@ -43,7 +43,6 @@
   background-image: url("../img/Subtract80-form.svg");
   background-repeat: no-repeat;
   justify-self: center;
-  z-index: 21;
 
   @media (min-width: $tablet-width) {
     margin-left: 31px;
@@ -59,6 +58,7 @@
     margin-right: -127px;
     background-position: 3px 2px;
     background-size: 95px;
+    z-index: 21;
   }
 }
 
@@ -120,7 +120,6 @@
 .form-setting__photo {
   border-radius: 50%;
   justify-self: center;
-  z-index: 21;
 
   @media (min-width: $tablet-width) {
     grid-column: 3 / 4;
@@ -135,6 +134,7 @@
     height: 190px;
     border-radius: 10px 10px 0 0;
     margin-right: -73px;
+    z-index: 21;
   }
 }
 
@@ -1638,6 +1638,68 @@
   background-color: $basic-white;
   border-radius: 4px;
 
+  &--bosnia {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: 6px;
+      width: 35px;
+      height: 24px;
+      background-image: url("../img/flags.svg");
+      background-repeat: no-repeat;
+      background-position: -118px -56px;
+      background-size: 153px;
+
+      @media (min-width: $tablet-width) {
+        width: 70px;
+        height: 47px;
+        right: -7px;
+        left: auto;
+        background-size: auto;
+        background-position: -240px -114px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 3px;
+        left: -15px;
+        width: 70px;
+        height: 47px;
+      }
+    }
+  }
+
+  &--czech {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: 6px;
+      width: 35px;
+      height: 24px;
+      background-image: url("../img/flags.svg");
+      background-repeat: no-repeat;
+      background-position: -39px -27px;
+      background-size: 153px;
+
+      @media (min-width: $tablet-width) {
+        width: 70px;
+        height: 47px;
+        right: -7px;
+        left: auto;
+        background-size: auto;
+        background-position: -79px -59px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 3px;
+        left: -15px;
+        width: 70px;
+        height: 47px;
+      }
+    }
+  }
+
   @media (min-width: $tablet-width) {
     border: none;
     height: 53px;
@@ -2344,9 +2406,31 @@
   right: 11px;
   width: 36px;
   height: 26px;
-  background-color: grey;
   border: none;
   border-radius: 6px;
+  background-repeat: no-repeat;
+
+  &--bosnia {
+    background-position: -118px -56px;
+    background-image: url("../img/flags.svg");
+    background-size: 153px;
+
+    @media (min-width: $tablet-width) {
+      background-position: -240px -114px;
+      background-size: auto;
+    }
+  }
+
+  &--czech {
+    background-position: -39px -27px;
+    background-size: 153px;
+    background-image: url("../img/flags.svg");
+
+    @media (min-width: $tablet-width) {
+      background-position: -79px -57px;
+      background-size: auto;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     right: 8%;
