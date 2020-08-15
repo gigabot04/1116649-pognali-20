@@ -6,6 +6,7 @@ var filterStates = filter.querySelectorAll(".filter__states");
 var filterBtn = filter.querySelector(".filter__close-btn");
 var filterBtnAlph = filter.querySelectorAll(".filter__letter");
 var filterWrap = filter.querySelectorAll(".filter__states-wrap");
+var filterBtnBot = filter.querySelector(".filter__close-btn-bottom");
 
 filterBtn.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -13,12 +14,22 @@ filterBtn.addEventListener("click", function (evt) {
     filter.classList.remove("filter--active");
     filterParts.classList.remove("filter__parts--active");
     filterAlphabet.classList.remove("filter__alphabet--active");
+    filterBtnBot.classList.remove("filter__close-btn-bottom--active")
   } else {
     filter.classList.add("filter--active");
     filterParts.classList.add("filter__parts--active");
     filterAlphabet.classList.add("filter__alphabet--active");
+    filterBtnBot.classList.add("filter__close-btn-bottom--active")
   }
 });
+
+filterBtnBot.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  filter.classList.remove("filter--active");
+  filterParts.classList.remove("filter__parts--active");
+  filterAlphabet.classList.remove("filter__alphabet--active");
+  filterBtnBot.classList.remove("filter__close-btn-bottom--active")
+})
 
 
 for (let i = 0; i < filterPart.length; i++) {

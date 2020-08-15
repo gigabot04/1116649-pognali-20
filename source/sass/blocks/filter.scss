@@ -1,5 +1,9 @@
 .filter {
   background-color: $bg-grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
 }
 
 .filter__wrap {
@@ -25,6 +29,7 @@
     top: 0;
     padding-bottom: 59px;
     margin-bottom: 20px;
+    background-color: transparent;
   }
 
   &--active {
@@ -82,6 +87,50 @@
   }
 }
 
+.filter__close-btn-bottom {
+  display: none;
+  position: relative;
+  bottom: -271px;
+  left: 46%;
+  transform: translateX(-50%);
+  border: none;
+  background-color: $bg-button;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $text-blue;
+  z-index: 2;
+  width: 270px;
+  min-height: 39px;
+  border-radius: 20px;
+  padding-left: 31px;
+
+  &--active {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    bottom: 59px;
+    left: 48%;
+    width: 615px;
+    min-height: 100px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 51px;
+    letter-spacing: 0.004em;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1320px;
+    left: 49%;
+    bottom: -53px;
+    padding-left: 42px;
+  }
+}
+
 .filter__close-btn {
   position: absolute;
   top: 49px;
@@ -91,19 +140,6 @@
   border: none;
   color: $text-blue;
   background-color: transparent;
-
-  &--bottom {
-    border: none;
-    background-color: $bg-button;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: $text-blue;
-    display: none;
-  }
 
   &::after {
     content: "";
@@ -178,6 +214,7 @@
     top: 47px;
     left: 295px;
     width: 392px;
+    background-color: transparent;
   }
 }
 
@@ -221,13 +258,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 635px;
+    min-height: 535px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 66px;
     flex-wrap: wrap;
     padding-left: 4px;
+    background-color: transparent;
   }
 }
 
@@ -523,6 +561,7 @@
     position: static;
     padding-left: 6px;
     margin-top: 27px;
+    background-color: transparent;
   }
 }
 
