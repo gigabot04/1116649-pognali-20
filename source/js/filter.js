@@ -67,6 +67,3 @@ for (let j = 0; j < filterBtnAlph.length; j++) {
     filterWrap[j].classList.add("filter__states-wrap--active");
   })
 }
-
-
-

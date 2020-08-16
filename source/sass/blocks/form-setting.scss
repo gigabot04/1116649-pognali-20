@@ -351,7 +351,7 @@
   height: 32px;
 
   &:hover {
-    filter: drop-shadow(0px 2px 6px rgba(22, 28, 53, 0.17));
+    filter: drop-shadow(0 2px 6px rgba(22, 28, 53, 0.17));
 
     .from-setting__svg {
       opacity: 1;
@@ -1149,13 +1149,13 @@
   font-size: 14.86px;
   line-height: 14px;
 
-  &[type='number'] {
-    -moz-appearance:textfield;
+  &[type="number"] {
+    appearance: textfield;
   }
 
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
-      -webkit-appearance: none;
+    appearance: none;
   }
 
   @media (min-width: $tablet-width) {
@@ -1268,6 +1268,7 @@
     &::after {
       background-color: $hover-add;
     }
+
     &::before {
       background-color: $hover-add;
     }
@@ -1277,6 +1278,7 @@
     &::after {
       background-color: $special-bg-grey;
     }
+
     &::before {
       background-color: $special-bg-grey;
     }
@@ -2236,9 +2238,11 @@
 
   &:hover {
     background-color: $special-blue-light;
+
     &::after {
       opacity: 0.3;
     }
+
     &::before {
       opacity: 0.3;
     }
@@ -2248,6 +2252,7 @@
     &::after {
       opacity: 0.1;
     }
+
     &::before {
       opacity: 0.1;
     }

@@ -205,7 +205,7 @@
   height: 41px;
 
   &:hover {
-    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.14));
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.14));
   }
 
   &:active {
@@ -373,11 +373,12 @@
   margin-bottom: 5px;
 
   &:hover {
-    filter: drop-shadow(0px 2px 6px rgba(22, 28, 53, 0.17));
+    filter: drop-shadow(0 2px 6px rgba(22, 28, 53, 0.17));
   }
 
   &:active {
     filter: none;
+
     &::after {
       background-color: $active-transport;
     }
@@ -549,7 +550,7 @@
   }
 
   &:active {
-    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.24);
   }
 
   @media (min-width: $tablet-width) {
@@ -575,9 +576,10 @@
 
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+    appearance: none;
   }
-  &[type=number] {
-    -moz-appearance:textfield;
+
+  &[type="number"] {
+    appearance: textfield;
   }
 }

@@ -110,6 +110,7 @@
 
   &:active {
     color: rgba($basic-blue-light, 0.3);
+
     &::after {
       opacity: 0.3;
     }
