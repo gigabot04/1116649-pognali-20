@@ -148,6 +148,17 @@
   min-height: 62px;
   z-index: 20;
 
+  &:hover {
+    background-color: $special-yellow-dark;
+  }
+
+  &:active {
+    color: rgba($basic-blue-light, 0.3);
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
   &--btn {
     font-style: normal;
     font-weight: bold;

@@ -36,9 +36,32 @@
   height: 45px;
   border-radius: 50%;
 
+  &:hover {
+    background-color: $special-yellow-dark;
+  }
+
+  &:active {
+    .page-footer__social {
+      opacity: 0.3;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: 61px;
     height: 61px;
+  }
+}
+
+.page-footer__htmlacademy-wrap {
+  text-decoration: none;
+  align-self: center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -102,7 +125,7 @@
 
   @media (min-width: $desktop-width) {
     right: 60px;
-    bottom: 7px;
+    bottom: 12px;
   }
 }
 

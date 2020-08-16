@@ -23,6 +23,7 @@
 
 .header-menu-desktop__link {
   position: relative;
+  overflow: hidden;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -34,6 +35,26 @@
   z-index: 2;
 
   &:hover {
+    .header-menu-desktop__link-span {
+      transform: translateY(-100%);
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.header-menu-desktop__link-span {
+	position: relative;
+	display: inline-block;
+	transition: transform 0.3s;
+
+  &::before {
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+    transform: translate3d(0,0,0);
     color: $basic-yellow;
   }
 }

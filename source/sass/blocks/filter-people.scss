@@ -135,6 +135,14 @@
   width: 100%;
   text-align: start;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -195,6 +203,16 @@
   background-color: $basic-white;
   border-radius: 25px;
   height: 41px;
+
+  &:hover {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.14));
+  }
+
+  &:active {
+    filter: none;
+    background-color: $filter-yellow;
+    color: rgba($basic-blue-light, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -267,6 +285,14 @@
   font-weight: normal;
   font-size: 15px;
   line-height: 20px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &::after {
     content: "";
@@ -345,6 +371,17 @@
   margin-right: -4px;
   margin-top: 4px;
   margin-bottom: 5px;
+
+  &:hover {
+    filter: drop-shadow(0px 2px 6px rgba(22, 28, 53, 0.17));
+  }
+
+  &:active {
+    filter: none;
+    &::after {
+      background-color: $active-transport;
+    }
+  }
 
   &::after {
     content: "";
@@ -504,6 +541,17 @@
   background-color: $basic-blue-light;
   cursor: pointer;
 
+  &:hover {
+    top: -8px;
+    transform: translateX(-85%);
+    width: 19px;
+    height: 19px;
+  }
+
+  &:active {
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.24);
+  }
+
   @media (min-width: $tablet-width) {
     width: 13px;
     height: 13px;
@@ -516,4 +564,20 @@
   text-align: center;
   width: 100%;
   border: none;
+
+  &:hover {
+    border: 1px solid $hover-people;
+  }
+
+  &:focus {
+    border: 1px solid $basic-blue;
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  &[type=number] {
+    -moz-appearance:textfield;
+  }
 }
