@@ -1586,13 +1586,24 @@
   border: 1px solid $day-border;
   background-color: $basic-white-dark;
 
-  &:hover {
-    border: 4px solid $output;
-  }
-
   &--off {
     opacity: 0.3;
     color: $special-grey;
+  }
+
+  &:hover {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      box-shadow: 0 0 0 5px #ff5c23;
+      z-index: 3;
+      opacity: 1;
+    }
   }
 }
 

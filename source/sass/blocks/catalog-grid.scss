@@ -1,16 +1,16 @@
 .catalog-grid {
-  margin-top: 95px;
+  margin-top: 35px;
   padding-top: 41px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 159px;
+    margin-top: 99px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 286px;
     grid-template-rows: max-content 1fr;
-    margin-top: 104px;
+    margin-top: 44px;
     padding-top: 100px;
   }
 }

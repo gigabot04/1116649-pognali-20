@@ -3,6 +3,8 @@ var line1 = document.querySelector(".page-header__line1");
 var line2 = document.querySelector(".page-header__line2");
 var headerBtn = document.querySelector(".page-header__toggle");
 
+headerMenu.classList.remove("header-menu--jsnone");
+
 if (headerMenu.classList.contains("header-menu--active")) {
   line1.style.backgroundColor = "#cccccc";
   line2.style.backgroundColor = "#cccccc";

@@ -1,6 +1,5 @@
 .header-menu {
   display: none;
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -13,6 +12,13 @@
 
   &--active {
     display: block;
+    position: absolute;
+  }
+
+  &--jsnone {
+    display: block;
+    grid-column: 1 / -1;
+    position: relative;
   }
 
   @media (min-width: $tablet-width) {
