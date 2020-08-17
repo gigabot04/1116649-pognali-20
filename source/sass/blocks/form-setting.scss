@@ -954,7 +954,7 @@
   position: relative;
   width: 100%;
 
-  & > div {
+  .form-setting__circle {
     position: relative;
 
     &::before {
@@ -972,7 +972,7 @@
         z-index: 2;
 
         @media (min-width: $desktop-width) {
-          right: 193px;
+          right: 194px;
         }
       }
     }
@@ -1024,6 +1024,12 @@
     margin-left: 116px;
     width: auto;
     margin-right: 107px;
+  }
+}
+
+.form-setting__circle--select {
+  &::before {
+    background-color: $basic-blue-light !important;
   }
 }
 
@@ -1868,26 +1874,6 @@
     top: 9px;
     width: 15%;
   }
-
-  &::before {
-    @media (min-width: $tablet-width) {
-      content: "";
-      position: absolute;
-      top: 48%;
-      right: 89px;
-      transform: translateY(-50%);
-      background-color: $basic-blue-light;
-      width: 14px;
-      height: 14px;
-      border-radius: 50%;
-      z-index: 2;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 47%;
-      right: 195px;
-    }
-  }
 }
 
 .form-setting__choice-countries {
@@ -2726,10 +2712,6 @@
   &:focus {
     border: 1px solid $basic-blue;
     color: $special-grey;
-  }
-
-  &:invalid {
-    border: 1px solid $special-red;
   }
 
   &--2 {

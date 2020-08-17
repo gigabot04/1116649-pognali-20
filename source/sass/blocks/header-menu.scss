@@ -18,7 +18,7 @@
   &--jsnone {
     display: block;
     grid-column: 1 / -1;
-    position: relative;
+    position: static;
   }
 
   @media (min-width: $tablet-width) {
