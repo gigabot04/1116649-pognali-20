@@ -118,6 +118,7 @@
 .auth__grid {
   position: relative;
   width: 100%;
+  margin-top: 14px;
 }
 
 .auth__control-shake {
@@ -126,7 +127,6 @@
 
 .auth__control {
   position: relative;
-  margin-top: 14px;
   width: 100%;
   border: none;
   background-color: $basic-white;
@@ -174,13 +174,13 @@
 
 .auth__btn {
   position: absolute;
-  top: 14px;
+  top: 0;
   right: 0;
   background-color: $basic-yellow;
   border-radius: 10px;
   border: none;
   width: 60px;
-  height: 72px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,7 +218,6 @@
   @media (min-width: $tablet-width) {
     top: 0;
     width: 80px;
-    height: 100%;
     border-radius: 0 20px 20px 0;
   }
 }
