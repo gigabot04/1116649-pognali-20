@@ -87,6 +87,7 @@
   border: none;
   color: $text-blue;
   background-color: transparent;
+  cursor: pointer;
 
   &::after {
     content: "";
@@ -121,23 +122,32 @@
 
 .filter__btn-text-1 {
   display: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $text-blue;
 }
 
 .filter__btn-text-2 {
   display: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $text-blue;
+}
 
+.filter__btn-text-active {
   @media (min-width: $tablet-width) {
     display: inline;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: $text-blue;
   }
 }
 
 .filter__parts {
+  display: none;
   margin: 0;
   padding: 0;
   margin-top: 34px;
@@ -147,6 +157,10 @@
     list-style: none;
   }
 
+  &--active {
+    display: block;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     margin-top: 127px;
@@ -154,11 +168,19 @@
     justify-content: space-between;
     width: 368px;
     flex-wrap: wrap;
+
+    &--active {
+      display: flex;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-top: -21px;
     margin-left: 343px;
+
+    &--active {
+      display: flex;
+    }
   }
 }
 
@@ -186,13 +208,24 @@
 }
 
 .filter__grid {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+
   @media (min-width: $tablet-width) {
-    display: grid;
     grid-template-columns: 1fr 1fr;
+
+    &--active {
+      display: grid;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
+    &--active {
+      display: block;
+    }
   }
 }
 
@@ -337,6 +370,7 @@
 }
 
 .filter__btn-down {
+  display: none;
   position: relative;
   font-style: normal;
   font-weight: bold;
@@ -404,5 +438,9 @@
   @media (min-width: $desktop-width) {
     width: 100%;
     margin-bottom: 43px;
+  }
+
+  &--active {
+    display: block;
   }
 }
