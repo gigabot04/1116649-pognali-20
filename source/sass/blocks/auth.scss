@@ -120,6 +120,10 @@
   width: 100%;
 }
 
+.auth__control-shake {
+  animation: shake 0.6s;
+}
+
 .auth__control {
   position: relative;
   margin-top: 14px;
@@ -143,7 +147,7 @@
     color: $basic-white;
   }
 
-  &:invalid {
+  &--invalid {
     color: $basic-red;
   }
 

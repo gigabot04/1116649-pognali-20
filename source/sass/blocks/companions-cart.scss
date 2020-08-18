@@ -24,6 +24,11 @@
   width: 270px;
   z-index: 18;
   margin-bottom: 9px;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.01);
+  }
 
   @media (min-width: $tablet-width) {
     width: 285px;
@@ -165,6 +170,17 @@
   }
 }
 
+.companions-cart__flag-wrap {
+  position: relative;
+  display: inline-block;
+
+  &:hover {
+    .tooltip {
+      display: block;
+    }
+  }
+}
+
 .companions-cart__flag {
   padding: 0;
   margin: 0;
@@ -172,6 +188,12 @@
   height: 24px;
   margin-right: 20px;
   margin-bottom: 5px;
+
+  &:hover {
+    .tooltip {
+      display: block;
+    }
+  }
 
   &--sri-Lanka {
     background-image: url("../img/flags.svg");
@@ -286,5 +308,16 @@
 
   &--true {
     opacity: 1;
+  }
+}
+
+.companions-cart__icons-wrap {
+  position: relative;
+  display: inline-block;
+
+  &:hover {
+    .tooltip {
+      display: block;
+    }
   }
 }
