@@ -402,6 +402,8 @@
 }
 
 .form-setting__transport-control:checked + .from-setting__svg-wrap {
+  opacity: 1;
+
   &:hover {
     opacity: 0.7;
   }
@@ -452,7 +454,7 @@
   transform: translate(-50%, -50%);
   z-index: 1;
   width: 16px;
-  height: 16px;;
+  height: 16px;
 
   & .from-setting__svg-path {
     fill: $basic-blue-light;
@@ -472,10 +474,6 @@
   position: relative;
   margin-right: 17px;
   display: none;
-}
-
-.form-setting__transport-control:checked + .from-setting__svg-wrap {
-  opacity: 1;
 }
 
 .form-setting__plans {
@@ -1044,7 +1042,7 @@
 
 .form-setting__circle--select {
   &::before {
-    background-color: $basic-blue-light !important;
+    background-color: $basic-blue-light;
   }
 }
 
@@ -1614,6 +1612,7 @@
 
   &:hover {
     position: relative;
+
     &::after {
       content: "";
       position: absolute;
@@ -2845,4 +2844,3 @@
     transform: translateX(10px);
   }
 }
-

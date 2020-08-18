@@ -12,4 +12,3 @@ authBtn.addEventListener("click", function (evt) {
     authWrap.classList.add("auth__control-shake");
   }
 })
-

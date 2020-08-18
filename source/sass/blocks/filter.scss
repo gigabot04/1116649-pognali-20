@@ -179,6 +179,7 @@
 .filter__btn-text-active {
   display: inline;
   font-size: 0;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }

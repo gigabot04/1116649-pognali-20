@@ -63,4 +63,3 @@ filterBtn.addEventListener("click", function () {
     filterBtnText2.classList.add("filter__btn-text-active");
   }
 })
-
