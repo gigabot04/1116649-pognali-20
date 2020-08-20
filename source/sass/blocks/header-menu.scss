@@ -195,17 +195,20 @@
 }
 
 .header-menu__social-contact {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &--fb {
     background-image: url("../img/facebook.svg");
     display: block;
     background-repeat: no-repeat;
     width: 11px;
     height: 21px;
-    opacity: 0.5;
-
-    &:hover {
-      opacity: 1;
-    }
 
     @media (min-width: $tablet-width) {
       width: 15px;
@@ -219,11 +222,6 @@
     display: block;
     width: 23px;
     height: 12px;
-    opacity: 0.5;
-
-    &:hover {
-      opacity: 1;
-    }
 
     @media (min-width: $tablet-width) {
       width: 29px;
@@ -237,19 +235,10 @@
     background-repeat: no-repeat;
     width: 18px;
     height: 18px;
-    opacity: 0.5;
-
-    &:hover {
-      opacity: 1;
-    }
 
     @media (min-width: $tablet-width) {
       width: 22px;
       height: 22px;
     }
-  }
-
-  &--active {
-    opacity: 1;
   }
 }

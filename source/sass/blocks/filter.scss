@@ -476,6 +476,22 @@
     }
   }
 
+  &:hover {
+    background-color: $filter-btn;
+  }
+
+  &:active {
+    color: rgba($text-blue, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;

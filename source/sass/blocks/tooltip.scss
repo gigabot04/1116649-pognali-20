@@ -4,6 +4,7 @@
   transform: translateX(-50%);
   font-size: 0;
   display: none;
+  z-index: 1;
 
   &::before {
     content: attr(data-tooltip);

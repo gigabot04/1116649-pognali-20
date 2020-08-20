@@ -7,6 +7,7 @@ authBtn.addEventListener("click", function (evt) {
   evt.preventDefault();
   if ( !authControl.value ) {
     authControl.classList.add("auth__control--invalid");
+    authControl.placeholder = "Введите e-mail";
     authWrap.classList.remove("auth__control-shake");
     authControl.offsetWidth = authControl.offsetWidth;
     authWrap.classList.add("auth__control-shake");

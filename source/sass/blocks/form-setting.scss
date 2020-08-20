@@ -990,6 +990,12 @@
       }
     }
 
+    &--select {
+      &::before {
+        background-color: $basic-blue-light;
+      }
+    }
+
     &:last-child {
       &::before {
         @media (min-width: $tablet-width) {
@@ -1037,12 +1043,6 @@
     margin-left: 116px;
     width: auto;
     margin-right: 107px;
-  }
-}
-
-.form-setting__circle--select {
-  &::before {
-    background-color: $basic-blue-light;
   }
 }
 
@@ -1194,11 +1194,63 @@
     .form-setting__control {
       border: 1px solid $hover-people;
     }
+
+    .form-setting__deduct {
+      &::after {
+        background-color: $hover-people;
+      }
+    }
+
+    .form-setting__add {
+      &::after {
+        background-color: $hover-people;
+      }
+
+      &::before {
+        background-color: $hover-people;
+      }
+    }
   }
 
   &:focus {
     .form-setting__control {
       border: 1px solid $basic-blue;
+    }
+
+    .form-setting__deduct {
+      &::after {
+        background-color: $basic-blue;
+      }
+    }
+
+    .form-setting__add {
+      &::after {
+        background-color: $basic-blue;
+      }
+
+      &::before {
+        background-color: $basic-blue;
+      }
+    }
+  }
+
+  .form-setting__deduct {
+    &:active {
+      &::after {
+        background-color: $special-bg-grey;
+      }
+    }
+  }
+
+  .form-setting__add {
+    &:active {
+      &::after {
+        background-color: $special-bg-grey;
+      }
+
+      &::before {
+        background-color: $special-bg-grey;
+      }
     }
   }
 
@@ -1245,18 +1297,6 @@
   background-color: transparent;
   cursor: pointer;
 
-  &:hover {
-    &::after {
-      background-color: $hover-add;
-    }
-  }
-
-  &:active {
-    &::after {
-      background-color: $special-bg-grey;
-    }
-  }
-
   &::after {
     content: "";
     display: block;
@@ -1282,26 +1322,6 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-
-  &:hover {
-    &::after {
-      background-color: $hover-add;
-    }
-
-    &::before {
-      background-color: $hover-add;
-    }
-  }
-
-  &:active {
-    &::after {
-      background-color: $special-bg-grey;
-    }
-
-    &::before {
-      background-color: $special-bg-grey;
-    }
-  }
 
   &::after {
     content: "";
@@ -1605,11 +1625,6 @@
   border: 1px solid $day-border;
   background-color: $basic-white-dark;
 
-  &--off {
-    opacity: 0.3;
-    color: $special-grey;
-  }
-
   &:hover {
     position: relative;
 
@@ -1623,6 +1638,17 @@
       box-shadow: 0 0 0 5px #ff5c23;
       z-index: 3;
       opacity: 1;
+    }
+  }
+
+  &--off {
+    opacity: 0.3;
+    color: $special-grey;
+
+    &:hover {
+      &::after {
+        content: none;
+      }
     }
   }
 }
@@ -1959,6 +1985,8 @@
     z-index: 1;
 
     &:hover {
+      border: none;
+
       &::before {
         opacity: 1;
       }
@@ -2754,7 +2782,6 @@
   color: rgba($special-grey, 0.3);
 
   &:focus {
-    border: 1px solid $basic-blue;
     color: $special-grey;
   }
 

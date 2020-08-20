@@ -164,6 +164,13 @@
     }
   }
 
+  &--invalid {
+    &::placeholder {
+      color: $basic-red;
+      opacity: 1;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding: 22px 70px 22px 36px;
     margin-top: 0;
