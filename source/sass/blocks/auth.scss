@@ -162,6 +162,7 @@
 
   &--invalid {
     color: $basic-red;
+
     &::placeholder {
       color: $basic-red;
       opacity: 1;
