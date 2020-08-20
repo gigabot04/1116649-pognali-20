@@ -23,7 +23,13 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
   width: 270px;
   z-index: 18;
-  margin-right: 20px;
+  margin-bottom: 9px;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.01);
+    z-index: 19;
+  }
 
   @media (min-width: $tablet-width) {
     width: 285px;
@@ -31,10 +37,12 @@
 }
 
 .companions-cart:not(:last-child) {
-  margin-bottom: 9px;
+  @media (min-width: $mobile-tablet-1) and (max-width: $mobile-tablet-2) {
+    margin-right: 10px;
+  }
 
   @media (min-width: $tablet-width) {
-    margin-right: 25px;
+    margin-right: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -146,9 +154,77 @@
   }
 }
 
+.companions-cart__flags {
+  position: absolute;
+  top: 258px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 18;
+
+  @media (min-width: $tablet-width) {
+    top: 272px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 275px;
+  }
+}
+
+.companions-cart__flag-wrap {
+  position: relative;
+  display: inline-block;
+
+  &:hover {
+    .tooltip {
+      display: block;
+    }
+  }
+}
+
 .companions-cart__flag {
   padding: 0;
   margin: 0;
+  width: 35px;
+  height: 24px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+
+  &:hover {
+    .tooltip {
+      display: block;
+    }
+  }
+
+  &--sri-Lanka {
+    background-image: url("../img/flags.svg");
+    background-size: 153px;
+    background-position: -79px -55px;
+  }
+
+  &--thailand {
+    background-image: url("../img/flags.svg");
+    background-size: 153px;
+    background-position: -79px 0;
+  }
+
+  &--seychelles {
+    background-image: url("../img/flags.svg");
+    background-size: 153px;
+    background-position: 0 0;
+  }
+
+  &--belgium {
+    background-image: url("../img/flags.svg");
+    background-size: 153px;
+    background-position: -39px -55px;
+  }
+
+  &--czech {
+    background-image: url("../img/flags.svg");
+    background-size: 153px;
+    background-position: -39px -28px;
+  }
 }
 
 .companions-cart__name {
@@ -233,5 +309,16 @@
 
   &--true {
     opacity: 1;
+  }
+}
+
+.companions-cart__icons-wrap {
+  position: relative;
+  display: inline-block;
+
+  &:hover {
+    .tooltip {
+      display: block;
+    }
   }
 }

@@ -1,7 +1,17 @@
 .catalog-grid {
+  margin-top: 35px;
+  padding-top: 41px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 80px;
+    padding-top: 61px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 286px;
     grid-template-rows: max-content 1fr;
+    margin-top: -64px;
+    padding-top: 200px;
   }
 }

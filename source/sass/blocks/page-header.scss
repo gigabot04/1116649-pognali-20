@@ -16,7 +16,7 @@
     border-radius: 0;
     background-color: $basic-blue;
 
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media (min-width: $tablet-width) and (max-width: $tablet-desktop-2) {
       background-color: $promo-bg;
     }
   }
@@ -44,19 +44,32 @@
   background-color: transparent;
   border: none;
   width: 25px;
-  height: 11px;
+  height: 18px;
   padding: 0;
   grid-column: 3;
   margin-left: auto;
   margin-bottom: 5px;
+  z-index: 3;
 
   @media (min-width: $tablet-width) {
     grid-column: 2;
     margin-bottom: -3px;
+    height: 39px;
   }
 
   @media (min-width: $desktop-width) {
     display: none;
+  }
+
+  &--close {
+    .page-header__line1 {
+      transform: rotate(45deg);
+      margin-bottom: -2px;
+    }
+
+    .page-header__line2 {
+      transform: rotate(-45deg);
+    }
   }
 }
 
@@ -128,6 +141,14 @@
 .page-header__back {
   display: none;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
     display: block;
@@ -140,7 +161,7 @@
     text-decoration: none;
     grid-column: 3;
     grid-row: 2;
-    margin-top: 86px;
+    margin-top: 67px;
     margin-right: 94px;
     text-align: end;
 

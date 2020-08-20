@@ -58,16 +58,22 @@
           <a class="head-feedback__auth head-feedback__auth--btn" href="">Авторизация</a>
         </div>
         <div class="header-menu-desktop">
-          <a href="" class="header-menu-desktop__link">О сервисе</a>
-          <a href="form.html" class="header-menu-desktop__link">Направления</a>
-          <a href="catalog.html" class="header-menu-desktop__link">Попутчики</a>
+          <a href="index.html" class="header-menu-desktop__link">
+            <span class="header-menu-desktop__link-span" data-hover="О сервисе">О сервисе</span>
+          </a>
+          <a href="form.html" class="header-menu-desktop__link">
+            <span class="header-menu-desktop__link-span" data-hover="Направления">Направления</span>
+          </a>
+          <a href="catalog.html" class="header-menu-desktop__link">
+            <span class="header-menu-desktop__link-span" data-hover="Попутчики">Попутчики</span>
+          </a>
         </div>
-        <div class="header-menu">
+        <div class="header-menu header-menu--active header-menu--jsnone">
           <a class="header-menu__logo">
-            <img src="img/logo-mobile-blue@1x.png" alt="Погнали?" width="96" height="15">
+            <img src="img/logo-mobile-blue@1x.png" alt="Погнали?" width="100" height="19">
           </a>
           <div class="header-menu__title">
-            <a href="" class="header-menu__link">О сервисе</a>
+            <a class="header-menu__link">О сервисе</a>
             <a href="form.html" class="header-menu__link">Направления</a>
             <a href="catalog.html" class="header-menu__link">Попутчики</a>
           </div>
@@ -101,8 +107,8 @@
             </a>
           </div>
           <div class="header-menu__social-contacts">
-            <a href="" class="header-menu__social-contact header-menu__social-contact--fb header-menu__social-contact--active"></a>
-            <a href="" class="header-menu__social-contact header-menu__social-contact--vk header-menu__social-contact--active"></a>
+            <a href="" class="header-menu__social-contact header-menu__social-contact--fb "></a>
+            <a href="" class="header-menu__social-contact header-menu__social-contact--vk "></a>
             <a href="" class="header-menu__social-contact header-menu__social-contact--inst"></a>
           </div>
         </div>
@@ -110,7 +116,7 @@
     </header>
     <main class="page-main">
       <section class="promo">
-        <div class="page-container promo__img">
+        <div class="page-container">
           <h2 class="promo__title">В путешествие с&nbsp;крутыми попутчиками!</h2>
           <div class="promo-feedback">
             <a href="tel:88005558628" class="promo-feedback__tel">
@@ -230,15 +236,24 @@
               <img class="companions-cart__img" src="img/firsova-desktop@1x.jpg" alt="Фото Тани Фирсовой" width="270" height="270">
               <div class="companions-cart__block">
                 <div class="companions-cart__flags">
-                  <p class="companions-cart__flag companions-cart__flag--sri-Lanka">
-                    <span class="visually-hidden">Шри-ланка</span>
-                  </p>
-                  <p class="companions-cart__flag companions-cart__flag--thailand">
-                    <span class="visually-hidden">Тайланд</span>
-                  </p>
-                  <p class="companions-cart__flag companions-cart__flag--seychelles">
-                    <span class="visually-hidden">Сейшелы</span>
-                  </p>
+                  <div class="companions-cart__flag-wrap">
+                    <p class="companions-cart__flag companions-cart__flag--sri-Lanka">
+                      <span class="visually-hidden">Шри-ланка</span>
+                    </p>
+                    <p class="tooltip" data-tooltip="Шри-ланка">Тултип</p>
+                  </div>
+                  <div class="companions-cart__flag-wrap">
+                    <p class="companions-cart__flag companions-cart__flag--thailand">
+                      <span class="visually-hidden">Тайланд</span>
+                    </p>
+                    <p class="tooltip" data-tooltip="Тайланд">Тултип</p>
+                  </div>
+                  <div class="companions-cart__flag-wrap">
+                    <p class="companions-cart__flag companions-cart__flag--seychelles">
+                      <span class="visually-hidden">Сейшелы</span>
+                    </p>
+                    <p class="tooltip" data-tooltip="Сейшелы">Тултип</p>
+                  </div>
                 </div>
                 <div class="companions-cart__level">
                   <p class="companions-cart__num companions-cart__num--99">99</p>
@@ -249,11 +264,55 @@
                   #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
                 </p>
                 <div class="companions-cart__icons">
-                  <!-- Не забыть заменить на SVG -->
-                  <img class="companions-cart__icon companions-cart__icon--true" src="img/plane.svg" alt="На самолете" width="20" height="20">
-                  <img class="companions-cart__icon" src="img/bus.svg" alt="На автобусе" width="20" height="20">
-                  <img class="companions-cart__icon" src="img/bike.svg" alt="На велосипеде" width="20" height="20">
-                  <img class="companions-cart__icon" src="img/run.svg" alt="Бегом" width="20" height="20">
+                  <div class="companions-cart__icons-wrap">
+                    <svg class="companions-cart__icon companions-cart__icon--true" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                      <path fill="#192144" d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                        c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                        C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                        c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                        c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                        c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                        c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
+                    </svg>
+                    <p class="tooltip" data-tooltip="Авиаперелет">Тултип</p>
+                  </div>
+                  <div class="companions-cart__icons-wrap">
+                    <svg class="companions-cart__icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                      <path fill="#192144" d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                        c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                        C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                        M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                        H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                    </svg>
+                    <p class="tooltip" data-tooltip="Автотранспорт">Тултип</p>
+                  </div>
+                  <div class="companions-cart__icons-wrap">
+                    <svg class="companions-cart__icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                      <path fill="#192144" d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                        S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                        l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                        l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                        s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                    </svg>
+                    <p class="tooltip" data-tooltip="Велосипед">Тултип</p>
+                  </div>
+                  <div class="companions-cart__icons-wrap">
+                    <svg class="companions-cart__icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                      <g fill="#192144">
+                        <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
+                        <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                          C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                          c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                          c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                          z"/>
+                      </g>
+                    </svg>
+                    <p class="tooltip" data-tooltip="Пешком">Тултип</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -261,12 +320,18 @@
               <img class="companions-cart__img" src="img/demin-desktop@1x.jpg" alt="Фото Пети Демина" width="270" height="270">
               <div class="companions-cart__block">
                 <div class="companions-cart__flags">
-                  <p class="companions-cart__flag">
-                    <span class="visually-hidden">Бельгия</span>
-                  </p>
-                  <p class="companions-cart__flag">
-                    <span class="visually-hidden">Чехия</span>
-                  </p>
+                  <div class="companions-cart__flag-wrap">
+                    <p class="companions-cart__flag companions-cart__flag--belgium">
+                      <span class="visually-hidden">Бельгия</span>
+                    </p>
+                    <p class="tooltip" data-tooltip="Бельгия">Тултип</p>
+                  </div>
+                  <div class="companions-cart__flag-wrap">
+                    <p class="companions-cart__flag companions-cart__flag--czech">
+                      <span class="visually-hidden">Чехия</span>
+                    </p>
+                    <p class="tooltip" data-tooltip="Чехия">Тултип</p>
+                  </div>
                 </div>
                 <p class="companions-cart__level">
                   <span class="companions-cart__num companions-cart__num--80">80</span>
@@ -277,11 +342,55 @@
                   #бургер #бар #футбол #концерт #крафт
                 </p>
                 <div class="companions-cart__icons">
-                  <!-- Не забыть заменить на SVG -->
-                  <img class="companions-cart__icon companions-cart__icon--true" src="img/plane.svg" alt="На самолете" width="20" height="20">
-                  <img class="companions-cart__icon" src="img/bus.svg" alt="На автобусе" width="20" height="20">
-                  <img class="companions-cart__icon" src="img/bike.svg" alt="На велосипеде" width="20" height="20">
-                  <img class="companions-cart__icon" src="img/run.svg" alt="Бегом" width="20" height="20">
+                  <div class="companions-cart__icons-wrap">
+                    <svg class="companions-cart__icon companions-cart__icon--true" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                      <path fill="#192144" d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                        c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                        C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                        c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                        c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                        c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                        c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
+                    </svg>
+                    <p class="tooltip" data-tooltip="Авиаперелет">Тултип</p>
+                  </div>
+                  <div class="companions-cart__icons-wrap">
+                    <svg class="companions-cart__icon companions-cart__icon--true" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                      <path fill="#192144" d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                        c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                        C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                        M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                        H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                    </svg>
+                    <p class="tooltip" data-tooltip="Автотранспорт">Тултип</p>
+                  </div>
+                  <div class="companions-cart__icons-wrap">
+                    <svg class="companions-cart__icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                      <path fill="#192144" d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                        S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                        l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                        l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                        s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                    </svg>
+                    <p class="tooltip" data-tooltip="Велосипед">Тултип</p>
+                  </div>
+                  <div class="companions-cart__icons-wrap">
+                    <svg class="companions-cart__icon companions-cart__icon--true" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                      <g fill="#192144">
+                        <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
+                        <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                          C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                          c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                          c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                          z"/>
+                      </g>
+                    </svg>
+                    <p class="tooltip" data-tooltip="Пешком">Тултип</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -289,20 +398,32 @@
           <a class="companions__button companions__button--btn" href="catalog.html">Показать всех</a>
         </div>
       </section>
-      <section class="rates">
-        <div class="page-container rates__page-container">
-          <h2 class="rates__title">Добавьте свой профиль</h2>
-          <div class="rates__grid">
-            <p class="rates__item-text rates__item-text--1">Базовое размещение</p>
-            <p class="rates__item-price">Бесплатно</p>
-            <p class="rates__item-text rates__item-text--2">Вывод на первых позициях</p>
-            <p class="rates__item-price">99 руб./мес</p>
-            <p class="rates__item-text rates__item-text--3">Кастомный цвет карточки</p>
-            <p class="rates__item-price">59 руб./мес</p>
+      <div class="page-main__rates-wrap">
+        <section class="rates">
+          <div class="page-container rates__page-container">
+            <h2 class="rates__title">Добавьте свой профиль</h2>
+            <div class="rates__grid">
+              <p class="rates__item-text rates__item-text--1">Базовое размещение</p>
+              <p class="rates__item-price">Бесплатно</p>
+              <p class="rates__item-text rates__item-text--2">Вывод на первых позициях</p>
+              <p class="rates__item-price">99 руб./мес</p>
+              <p class="rates__item-text rates__item-text--3">Кастомный цвет карточки</p>
+              <p class="rates__item-price">59 руб./мес</p>
+            </div>
+            <a class="rates__button" href="">Показать тарифы для бизнеса</a>
           </div>
-          <a class="rates__button" href="">Показать тарифы для бизнеса</a>
-        </div>
-      </section>
+        </section>
+        <section class="rates-menu rates-menu--active">
+          <div class="rates-menu__wrap">
+            <h2 class="rates-menu__title">Бизнес-тарифы</h2>
+            <p class="rates-menu__text">Реклама у блоггера <span class="rates-menu__price">300 000 руб./пост</span></p>
+            <p class="rates-menu__text">Накрутка подписчиков <span class="rates-menu__price">от 1 руб./шт.</span></p>
+            <p class="rates-menu__text">Лайки от ботов <span class="rates-menu__price">от 20 коп./лайк</span></p>
+            <p class="rates-menu__text">Ваш продакт-плейсмент <span class="rates-menu__price">Индивидуально</span></p>
+          </div>
+          <button class="rates-menu__btn">Закрыть окно</button>
+        </section>
+      </div>
       <section class="auth">
         <div class="page-container auth__page-container">
           <h2 class="auth__title">Заинтересовались?</h2>
@@ -380,9 +501,14 @@
             <a href="" class="page-footer__social-contacts--inst page-footer__social page-footer__social-contacts--active"></a>
           </div>
         </div>
-        <p class="page-footer__htmlacademy-text">Разработано</p>
-        <a class="page-footer__htmlacademy-img" href="https://htmlacademy.ru/intensive/adaptive" aria-label="html academy"></a>
+        <a class="page-footer__htmlacademy-wrap" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="page-footer__htmlacademy-text">Разработано</span>
+          <span class="page-footer__htmlacademy-img" aria-label="html academy"></span>
+        </a>
       </div>
     </footer>
+    <script src="js/header-menu.js"></script>
+    <script src="js/rates-menu.js"></script>
+    <script src="js/auth.js"></script>
   </body>
 </html>

@@ -45,7 +45,7 @@
   position: relative;
   z-index: 18;
 
-  @media (min-width: $mobile-tablet-1) and (max-width: $tablet-width) {
+  @media (min-width: $mobile-tablet-1) and (max-width: $mobile-tablet-2) {
     text-align: center;
     padding-left: 0;
   }
@@ -96,7 +96,7 @@
   margin-bottom: 46px;
   z-index: -1;
 
-  @media (min-width: $mobile-tablet-1) and (max-width: $tablet-width) {
+  @media (min-width: $mobile-tablet-1) and (max-width: $mobile-tablet-2) {
     margin: 0 auto;
     padding-left: 0;
     width: 270px;
@@ -147,6 +147,18 @@
   border-radius: 10px;
   min-height: 62px;
   z-index: 20;
+
+  &:hover {
+    background-color: $special-yellow-dark;
+  }
+
+  &:active {
+    color: rgba($basic-blue-light, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
 
   &--btn {
     font-style: normal;

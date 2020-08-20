@@ -58,18 +58,24 @@
           <a class="head-feedback__auth head-feedback__auth--btn" href="">Авторизация</a>
         </div>
         <div class="header-menu-desktop">
-          <a href="index.html" class="header-menu-desktop__link">О сервисе</a>
-          <a href="form.html" class="header-menu-desktop__link">Направления</a>
-          <a href="" class="header-menu-desktop__link">Попутчики</a>
+          <a href="index.html" class="header-menu-desktop__link">
+            <span class="header-menu-desktop__link-span" data-hover="О сервисе">О сервисе</span>
+          </a>
+          <a href="form.html" class="header-menu-desktop__link">
+            <span class="header-menu-desktop__link-span" data-hover="Направления">Направления</span>
+          </a>
+          <a href="catalog.html" class="header-menu-desktop__link">
+            <span class="header-menu-desktop__link-span" data-hover="Попутчики">Попутчики</span>
+          </a>
         </div>
-        <div class="header-menu">
+        <div class="header-menu header-menu--active header-menu--jsnone">
           <a class="header-menu__logo">
-            <img src="img/logo-mobile-blue@1x.png" alt="Погнали?" width="96" height="15">
+            <img src="img/logo-mobile-blue@1x.png" alt="Погнали?" width="100" height="19">
           </a>
           <div class="header-menu__title">
             <a href="index.html" class="header-menu__link">О сервисе</a>
             <a href="form.html" class="header-menu__link">Направления</a>
-            <a href="" class="header-menu__link">Попутчики</a>
+            <a class="header-menu__link">Попутчики</a>
           </div>
           <a href="" class="header-menu__auth header-menu__auth--btn">Авторизация</a>
           <div class="header-menu__feedback">
@@ -111,419 +117,351 @@
       </div>
     </header>
     <main class="page-main page-main--catalog">
-      <section class="filter page-container">
-        <h2 class="filter__title">Фильтрация по странам<span class="filter__title-add">:</span></h2>
-        <button class="filter__close-btn filter__close-btn--mini" type="button">
-          <span class="filter__close-btn-title">Показать все</span>
-        </button>
-        <div class="filter__parts">
-          <a href="/europe" class="filter__part filter__part--active">Европа</a>
-          <a href="/asian" class="filter__part">Азия</a>
-          <a href="/america" class="filter__part">Америка</a>
-          <a href="/islands" class="filter__part">Острова</a>
-        </div>
-        <div class="filter__alphabet">
-          <div class="filter__states">
-            <button class="filter__letter filter__letter--active" type="button">А</button>
-            <div class="filter__states-wrap filter__states-wrap--active">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
+      <section class="filter">
+        <div class="filter__wrap page-container">
+          <h2 class="filter__title">Фильтрация по странам<span class="filter__title-add">:</span></h2>
+          <button class="filter__btn-up" type="button">
+            <span class="filter__btn-text-1">Свернуть</span>
+            <span class="filter__btn-text-2 filter__btn-text-active">Показать все</span>
+          </button>
+          <ul class="filter__parts">
+            <li><a class="filter__part filter__part--active" href="/europe">Европа</a></li>
+            <li><a class="filter__part" href="/asian">Азия</a></li>
+            <li><a class="filter__part" href="/america">Америка</a></li>
+            <li><a class="filter__part" href="/islands">Острова</a></li>
+          </ul>
+          <div class="filter__grid">
+            <table class="filter__table">
+              <tbody>
+                <tr>
+                  <td class="filter__word-wrap filter__word-wrap--active"><button class="filter__word filter__word--active" type="button">А</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Б</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">В</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Г</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Д</button></td>
+                </tr>
+                <tr>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Е</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">З</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">И</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">К</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Л</button></td>
+                </tr>
+                <tr>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">М</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Н</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">О</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">П</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Р</button></td>
+                </tr>
+                <tr>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">С</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Т</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">У</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Ф</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Х</button></td>
+                </tr>
+                <tr>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Ч</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Ш</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Э</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Ю</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Я</button></td>
+                </tr>
+              </tbody>
+            </table>
+            <ul class="filter__countries">
+              <li class="filter__countries-wrap filter__countries-wrap--active">
+                <span class="filter__word-list">А</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Австралия</a></li>
+                  <li><a href="" class="filter__country">Австрия</a></li>
+                  <li><a href="" class="filter__country">Азербайджан</a></li>
+                  <li><a href="" class="filter__country">Албания</a></li>
+                  <li><a href="" class="filter__country">Алжир</a></li>
+                  <li><a href="" class="filter__country">Ангола</a></li>
+                  <li><a href="" class="filter__country">Андорра</a></li>
+                  <li><a href="" class="filter__country">Антигуа и Барбуда</a></li>
+                  <li><a href="" class="filter__country">Аргентина</a></li>
+                  <li><a href="" class="filter__country">Армения</a></li>
+                  <li><a href="" class="filter__country">Афганистан</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Б</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Багамские Острова</a></li>
+                  <li><a href="" class="filter__country">Бангладеш</a></li>
+                  <li><a href="" class="filter__country">Барбадос</a></li>
+                  <li><a href="" class="filter__country">Бахрейн</a></li>
+                  <li><a href="" class="filter__country">Белоруссия</a></li>
+                  <li><a href="" class="filter__country">Белиз</a></li>
+                  <li><a href="" class="filter__country">Бельгия</a></li>
+                  <li><a href="" class="filter__country">Бенин</a></li>
+                  <li><a href="" class="filter__country">Болгария</a></li>
+                  <li><a href="" class="filter__country">Боливия</a></li>
+                  <li><a href="" class="filter__country">Босния и Герцеговина</a></li>
+                  <li><a href="" class="filter__country">Ботсвана</a></li>
+                  <li><a href="" class="filter__country">Бразилия</a></li>
+                  <li><a href="" class="filter__country">Бруней</a></li>
+                  <li><a href="" class="filter__country">Буркина-Фасо</a></li>
+                  <li><a href="" class="filter__country">Бурунди</a></li>
+                  <li><a href="" class="filter__country">Бутан</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">В</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Вануату</a></li>
+                  <li><a href="" class="filter__country">Великобритания</a></li>
+                  <li><a href="" class="filter__country">Венгрия</a></li>
+                  <li><a href="" class="filter__country">Венесуэла</a></li>
+                  <li><a href="" class="filter__country">Восточный Тимор</a></li>
+                  <li><a href="" class="filter__country">Вьетнам</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Г</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Габон</a></li>
+                  <li><a href="" class="filter__country">Гаити</a></li>
+                  <li><a href="" class="filter__country">Гайана</a></li>
+                  <li><a href="" class="filter__country">Гамбия</a></li>
+                  <li><a href="" class="filter__country">Гана</a></li>
+                  <li><a href="" class="filter__country">Гватемала</a></li>
+                  <li><a href="" class="filter__country">Гвинея</a></li>
+                  <li><a href="" class="filter__country">Гвинея-Бисау</a></li>
+                  <li><a href="" class="filter__country">Германия</a></li>
+                  <li><a href="" class="filter__country">Гондурас</a></li>
+                  <li><a href="" class="filter__country">Гренада</a></li>
+                  <li><a href="" class="filter__country">Греция</a></li>
+                  <li><a href="" class="filter__country">Грузия</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Д</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Дания</a></li>
+                  <li><a href="" class="filter__country">Джибути</a></li>
+                  <li><a href="" class="filter__country">Доминика</a></li>
+                  <li><a href="" class="filter__country">Доминикана</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Е</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Египет</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">З</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Замбия</a></li>
+                  <li><a href="" class="filter__country">Зимбабве</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">И</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Израиль</a></li>
+                  <li><a href="" class="filter__country">Индия</a></li>
+                  <li><a href="" class="filter__country">Индонезия</a></li>
+                  <li><a href="" class="filter__country">Иордания</a></li>
+                  <li><a href="" class="filter__country">Ирак</a></li>
+                  <li><a href="" class="filter__country">Иран</a></li>
+                  <li><a href="" class="filter__country">Ирландия</a></li>
+                  <li><a href="" class="filter__country">Исландия</a></li>
+                  <li><a href="" class="filter__country">Испания</a></li>
+                  <li><a href="" class="filter__country">Италия</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">К</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Кабо-Верде</a></li>
+                  <li><a href="" class="filter__country">Казахстан</a></li>
+                  <li><a href="" class="filter__country">Камбоджа</a></li>
+                  <li><a href="" class="filter__country">Камерун</a></li>
+                  <li><a href="" class="filter__country">Канада</a></li>
+                  <li><a href="" class="filter__country">Катар</a></li>
+                  <li><a href="" class="filter__country">Кения</a></li>
+                  <li><a href="" class="filter__country">Кипр</a></li>
+                  <li><a href="" class="filter__country">Киргизия</a></li>
+                  <li><a href="" class="filter__country">Кирибати</a></li>
+                  <li><a href="" class="filter__country">Китай</a></li>
+                  <li><a href="" class="filter__country">Колумбия</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Л</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Лаос</a></li>
+                  <li><a href="" class="filter__country">Латвия</a></li>
+                  <li><a href="" class="filter__country">Лесото</a></li>
+                  <li><a href="" class="filter__country">Либерия</a></li>
+                  <li><a href="" class="filter__country">Ливан</a></li>
+                  <li><a href="" class="filter__country">Ливия</a></li>
+                  <li><a href="" class="filter__country">Литва</a></li>
+                  <li><a href="" class="filter__country">Лихтенштейн</a></li>
+                  <li><a href="" class="filter__country">Люксембург</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">М</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Маврикий</a></li>
+                  <li><a href="" class="filter__country">Мавритания</a></li>
+                  <li><a href="" class="filter__country">Мадагаскар</a></li>
+                  <li><a href="" class="filter__country">Малави</a></li>
+                  <li><a href="" class="filter__country">Малайзия</a></li>
+                  <li><a href="" class="filter__country">Мали</a></li>
+                  <li><a href="" class="filter__country">Мальдивы</a></li>
+                  <li><a href="" class="filter__country">Мальта</a></li>
+                  <li><a href="" class="filter__country">Марокко</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Н</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Намибия</a></li>
+                  <li><a href="" class="filter__country">Науру</a></li>
+                  <li><a href="" class="filter__country">Непал</a></li>
+                  <li><a href="" class="filter__country">Нигер</a></li>
+                  <li><a href="" class="filter__country">Нигерия</a></li>
+                  <li><a href="" class="filter__country">Нидерланды</a></li>
+                  <li><a href="" class="filter__country">Никарагуа</a></li>
+                  <li><a href="" class="filter__country">Новая Зеландия</a></li>
+                  <li><a href="" class="filter__country">Норвегия</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">О</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">ОАЭ</a></li>
+                  <li><a href="" class="filter__country">Оман</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">П</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Пакистан</a></li>
+                  <li><a href="" class="filter__country">Палау</a></li>
+                  <li><a href="" class="filter__country">Панама</a></li>
+                  <li><a href="" class="filter__country">Папуа - Новая Гвинея</a></li>
+                  <li><a href="" class="filter__country">Парагвай</a></li>
+                  <li><a href="" class="filter__country">Перу</a></li>
+                  <li><a href="" class="filter__country">Польша</a></li>
+                  <li><a href="" class="filter__country">Португалия</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Р</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Руанда</a></li>
+                  <li><a href="" class="filter__country">Румыния</a></li>
+                  <li><a href="" class="filter__country">Россия</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">С</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Сальвадор</a></li>
+                  <li><a href="" class="filter__country">Самоа</a></li>
+                  <li><a href="" class="filter__country">Сан-Марино</a></li>
+                  <li><a href="" class="filter__country">Саудовская</a></li>
+                  <li><a href="" class="filter__country">Сейшелы</a></li>
+                  <li><a href="" class="filter__country">Сенегал</a></li>
+                  <li><a href="" class="filter__country">Сербия</a></li>
+                  <li><a href="" class="filter__country">Сингапур</a></li>
+                  <li><a href="" class="filter__country">Сирия</a></li>
+                  <li><a href="" class="filter__country">Словакия</a></li>
+                  <li><a href="" class="filter__country">Словения</a></li>
+                  <li><a href="" class="filter__country">США</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Т</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Таджикистан</a></li>
+                  <li><a href="" class="filter__country">Таиланд</a></li>
+                  <li><a href="" class="filter__country">Танзания</a></li>
+                  <li><a href="" class="filter__country">Того</a></li>
+                  <li><a href="" class="filter__country">Тонга</a></li>
+                  <li><a href="" class="filter__country">Тринидад и Тобаго</a></li>
+                  <li><a href="" class="filter__country">Тувалу</a></li>
+                  <li><a href="" class="filter__country">Тунис</a></li>
+                  <li><a href="" class="filter__country">Туркмения</a></li>
+                  <li><a href="" class="filter__country">Турция</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">У</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Уганда</a></li>
+                  <li><a href="" class="filter__country">Узбекистан</a></li>
+                  <li><a href="" class="filter__country">Украина</a></li>
+                  <li><a href="" class="filter__country">Уругвай</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Ф</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Фиджи</a></li>
+                  <li><a href="" class="filter__country">Филиппины</a></li>
+                  <li><a href="" class="filter__country">Финляндия</a></li>
+                  <li><a href="" class="filter__country">Франция</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Х</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Хорватия</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Ч</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Чад</a></li>
+                  <li><a href="" class="filter__country">Черногория</a></li>
+                  <li><a href="" class="filter__country">Чехия</a></li>
+                  <li><a href="" class="filter__country">Чили</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Ш</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Швейцария</a></li>
+                  <li><a href="" class="filter__country">Швеция</a></li>
+                  <li><a href="" class="filter__country">Шри-Ланка</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Э</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Эквадор</a></li>
+                  <li><a href="" class="filter__country">Эритрея</a></li>
+                  <li><a href="" class="filter__country">Эсватини</a></li>
+                  <li><a href="" class="filter__country">Эстония</a></li>
+                  <li><a href="" class="filter__country">Эфиопия</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Ю</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">ЮАР</a></li>
+                  <li><a href="" class="filter__country">Южный Судан</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Я</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Южный</a></li>
+                  <li><a href="" class="filter__country">Судан</a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
-          <div class="filter__states">
-            <button class="filter__letter" type="button">Б</button>
-            <div class="filter__states-wrap">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
-          </div>
-          <div class="filter__states">
-            <button class="filter__letter" type="button">В</button>
-            <div class="filter__states-wrap">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
-          </div>
-          <div class="filter__states">
-            <button class="filter__letter" type="button">Г</button>
-            <div class="filter__states-wrap">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
-          </div>
-          <div class="filter__states">
-            <button class="filter__letter" type="button">Д</button>
-            <div class="filter__states-wrap">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
-          </div>
-          <div class="filter__states">
-            <button class="filter__letter" type="button">Е</button>
-            <div class="filter__states-wrap">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
-          </div>
-          <div class="filter__states">
-            <button class="filter__letter" type="button">З</button>
-            <div class="filter__states-wrap">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
-          </div>
-          <div class="filter__states">
-            <button class="filter__letter" type="button">И</button>
-            <div class="filter__states-wrap">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
-          </div>
-          <div class="filter__states">
-            <button class="filter__letter" type="button">К</button>
-            <div class="filter__states-wrap">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
-          </div>
-          <div class="filter__states">
-            <button class="filter__letter" type="button">Л</button>
-            <div class="filter__states-wrap">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
-          </div>
-          <div class="filter__states">
-            <button class="filter__letter" type="button">М</button>
-            <div class="filter__states-wrap">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
-          </div>
-          <div class="filter__states">
-            <button class="filter__letter" type="button">Н</button>
-            <div class="filter__states-wrap">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
-          </div>
-          <div class="filter__states">
-            <button class="filter__letter" type="button">О</button>
-            <div class="filter__states-wrap">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
-          </div>
-          <div class="filter__states">
-            <button class="filter__letter" type="button">П</button>
-            <div class="filter__states-wrap">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
-          </div>
-          <div class="filter__states">
-            <button class="filter__letter" type="button">Р</button>
-            <div class="filter__states-wrap">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
-          </div>
-          <div class="filter__states">
-            <button class="filter__letter" type="button">С</button>
-            <div class="filter__states-wrap">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
-          </div>
-          <div class="filter__states">
-            <button class="filter__letter" type="button">Т</button>
-            <div class="filter__states-wrap">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
-          </div>
-          <div class="filter__states">
-            <button class="filter__letter" type="button">У</button>
-            <div class="filter__states-wrap">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
-          </div>
-          <div class="filter__states">
-            <button class="filter__letter" type="button">Ф</button>
-            <div class="filter__states-wrap">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
-          </div>
-          <div class="filter__states">
-            <button class="filter__letter" type="button">Х</button>
-            <div class="filter__states-wrap">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
-          </div>
-          <div class="filter__states">
-            <button class="filter__letter" type="button">Ч</button>
-            <div class="filter__states-wrap">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
-          </div>
-          <div class="filter__states">
-            <button class="filter__letter" type="button">Ш</button>
-            <div class="filter__states-wrap">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
-          </div>
-          <div class="filter__states">
-            <button class="filter__letter" type="button">Э</button>
-            <div class="filter__states-wrap">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
-          </div>
-          <div class="filter__states">
-            <button class="filter__letter" type="button">Ю</button>
-            <div class="filter__states-wrap">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
-          </div>
-          <div class="filter__states">
-            <button class="filter__letter" type="button">Я</button>
-            <div class="filter__states-wrap">
-              <a href="" class="filter__state">Австрия</a>
-              <a href="" class="filter__state">Австралия</a>
-              <a href="" class="filter__state">Азербайджан</a>
-              <a href="" class="filter__state">Албания</a>
-              <a href="" class="filter__state">Алжир</a>
-              <a href="" class="filter__state">Ангола</a>
-              <a href="" class="filter__state">Андорра</a>
-              <a href="" class="filter__state">Антигуа и Барбуда</a>
-              <a href="" class="filter__state">Аргентина</a>
-              <a href="" class="filter__state">Армения</a>
-              <a href="" class="filter__state">Афганистан</a>
-            </div>
-          </div>
-          <button class="filter__close-btn filter__close-btn--bottom" type="button">Свернуть</button>
+          <button class="filter__btn-down">Свернуть</button>
         </div>
       </section>
       <div class="catalog-grid page-container">
@@ -531,8 +469,8 @@
           <div class="filter-people__container">
             <h2 class="filter-people__title">Подберите идеального попутчика</h2>
             <div class="filter-people__item filter-people__item--1">
-              <button class="filter-people__btn" type="button">Хобби</button>
-              <div class="filter-people__wrap ">
+              <button class="filter-people__btn filter-people__btn--active" type="button">Хобби</button>
+              <div class="filter-people__wrap filter-people__wrap--active">
                 <input class="filter-people__control filter-people__hobby-control" type="checkbox" id="sport" name="sport">
                 <label class="filter-people__label filter-people__hobby-label" for="sport">Спортзал</label>
                 <input class="filter-people__control filter-people__hobby-control" type="checkbox" id="hookah" name="hookah">
@@ -553,8 +491,8 @@
               </div>
             </div>
             <div class="filter-people__item filter-people__item--3">
-              <button class="filter-people__btn" type="button">Еда</button>
-              <div class="filter-people__wrap ">
+              <button class="filter-people__btn filter-people__btn--active" type="button">Еда</button>
+              <div class="filter-people__wrap filter-people__wrap--active">
                 <input class="filter-people__control filter-people__control--food" type="checkbox" id="meat" name="meat">
                 <label class="filter-people__label filter-people__label--food" for="meat">Мясоед</label>
                 <input class="filter-people__control filter-people__control--food" type="checkbox" id="good" name="good">
@@ -569,63 +507,75 @@
                 <label class="filter-people__transport-label">
                   <span class="visually-hidden">На самолете</span>
                   <input class="filter-people__transport-control filter-people__transport-control--plane" type="checkbox" name="самолет">
-                  <svg class="filter-people__svg" version="1.1" width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
-                    <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
-                      c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
-                      C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
-                      c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
-                      c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
-                      c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
-                      c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
-                  </svg>
+                  <div class="filter-people__svg-wrap">
+                    <svg class="filter-people__svg" version="1.1" width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                      <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                        c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                        C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                        c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                        c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                        c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                        c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
+                    </svg>
+                  </div>
+                  <p class="tooltip" data-tooltip="Авиаперелет">Тултип</p>
                 </label>
                 <label class="filter-people__transport-label">
                   <span class="visually-hidden">На авто</span>
                   <input class="filter-people__transport-control filter-people__transport-control--car" type="checkbox" name="Авто">
-                  <svg class="filter-people__svg" version="1.1" width="17" height="17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
-                    <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
-                      c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
-                      C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
-                      M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
-                      H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
-                  </svg>
+                  <div class="filter-people__svg-wrap">
+                    <svg class="filter-people__svg" version="1.1" width="17" height="17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                      <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                        c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                        C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                        M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                        H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                    </svg>
+                  </div>
+                  <p class="tooltip" data-tooltip="Автотранспорт">Тултип</p>
                 </label>
                 <label class="filter-people__transport-label">
                   <span class="visually-hidden">На велосипеде</span>
                   <input class="filter-people__transport-control filter-people__transport-control--bike" type="checkbox" name="Велосипед">
-                  <svg class="filter-people__svg" version="1.1" width="17" height="17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
-                    <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
-                      S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
-                      l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
-                      l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
-                      s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
-                  </svg>
+                  <div class="filter-people__svg-wrap">
+                    <svg class="filter-people__svg" version="1.1" width="17" height="17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                      <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                        S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                        l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                        l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                        s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                    </svg>
+                  </div>
+                  <p class="tooltip" data-tooltip="Велосипед">Тултип</p>
                 </label>
                 <label class="filter-people__transport-label">
                   <span class="visually-hidden">На пешком</span>
                   <input class="filter-people__transport-control filter-people__transport-control--run" type="checkbox" name="Пешком">
-                  <svg class="filter-people__svg" version="1.1" width="17" height="17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
-                    <g>
-                      <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
-                      <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
-                        C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
-                        c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
-                        c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
-                        z"/>
-                    </g>
-                  </svg>
+                  <div class="filter-people__svg-wrap">
+                    <svg class="filter-people__svg" version="1.1" width="17" height="17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                      <g>
+                        <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
+                        <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                          C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                          c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                          c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                          z"/>
+                      </g>
+                    </svg>
+                  </div>
+                  <p class="tooltip" data-tooltip="Пешком">Тултип</p>
                 </label>
               </div>
             </div>
             <div class="filter-people__item filter-people__item--5">
               <button class="filter-people__btn" type="button">Левел</button>
               <div class="filter-people__level-wrap">
-                <input class="filter-people__level-control filter-people__level-control--min" type="number" min="0" name="Левел">
-                <input class="filter-people__level-control filter-people__level-control--max" type="number" max="100" name="Левел">
+                <input class="filter-people__level-control" type="number" min="0" name="Левел">
+                <input class="filter-people__level-control" type="number" max="100" name="Левел">
               </div>
               <div class="filter-people__range">
                 <div class="filter-people__lane">
@@ -639,7 +589,7 @@
           <button class="filter-people__btn-send" type="submit">Показать</button>
         </form>
         <div class="catalog-cart-wrap">
-          <div class="catalog-cart catalog-cart--online">
+          <div class="catalog-cart">
             <a class="catalog-cart__item catalog-cart__item--photo" href="">
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg">
@@ -654,57 +604,52 @@
             <p class="catalog-cart__tags" >#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
             <div class="catalog-cart__visit">
               <h2 class="catalog-cart__title">хочет посетить:</h2>
-              <p class="catalog-cart__country catalog-cart__country--1">Шри-ланка</p>
-              <p class="catalog-cart__country catalog-cart__country--2">Тайланд</p>
-              <p class="catalog-cart__country catalog-cart__country--3">Сейшелы</p>
+              <p class="catalog-cart__country catalog-cart__country--srilanka">Шри-ланка</p>
+              <p class="catalog-cart__country catalog-cart__country--thailand">Тайланд</p>
+              <p class="catalog-cart__country catalog-cart__country--seychelles">Сейшелы</p>
             </div>
             <div class="catalog-cart__transport">
               <h2 class="catalog-cart__title">транспорт:</h2>
               <div class="catalog-cart__transport-container">
-                <label class="catalog-cart__transport-label">
-                  <span class="visually-hidden">На самолете</span>
-                  <input class="catalog-cart__transport-control catalog-cart__transport-control--plane" type="checkbox" name="самолет">
-                  <svg class="catalog-cart__svg" version="1.1" width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
-                    <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
-                      c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
-                      C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
-                      c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
-                      c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
-                      c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
-                      c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                  <path fill="#192144" d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                    c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                    C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                    c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                    c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                    c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                    c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
                   </svg>
-                </label>
-                <label class="catalog-cart__transport-label">
-                  <span class="visually-hidden">На авто</span>
-                  <input class="catalog-cart__transport-control catalog-cart__transport-control--car" type="checkbox" name="Авто">
-                  <svg class="catalog-cart__svg" version="1.1" width="17" height="17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
-                    <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
-                      c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
-                      C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
-                      M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
-                      H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                  <p class="tooltip" data-tooltip="Авиаперелет">Тултип</p>
+                </div>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg catalog-cart__transport-svg--off" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                  <path fill="#192144" d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                    c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                    C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                    M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                    H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
                   </svg>
-                </label>
-                <label class="catalog-cart__transport-label">
-                  <span class="visually-hidden">На велосипеде</span>
-                  <input class="catalog-cart__transport-control catalog-cart__transport-control--bike" type="checkbox" name="Велосипед">
-                  <svg class="catalog-cart__svg" version="1.1" width="17" height="17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
-                    <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
-                      S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
-                      l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
-                      l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
-                      s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                  <p class="tooltip" data-tooltip="Автотранспорт">Тултип</p>
+                </div>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg catalog-cart__transport-svg--off" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                  <path fill="#192144" d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                    S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                    l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                    l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                    s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
                   </svg>
-                </label>
-                <label class="catalog-cart__transport-label">
-                  <span class="visually-hidden">На пешком</span>
-                  <input class="catalog-cart__transport-control catalog-cart__transport-control--run" type="checkbox" name="Пешком">
-                  <svg class="catalog-cart__svg" version="1.1" width="17" height="17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
-                    <g>
+                  <p class="tooltip" data-tooltip="Велосипед">Тултип</p>
+                </div>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg catalog-cart__transport-svg--off" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                    <g fill="#192144">
                       <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
                       <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
                         C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
@@ -713,7 +658,8 @@
                         z"/>
                     </g>
                   </svg>
-                </label>
+                  <p class="tooltip" data-tooltip="Пешком">Тултип</p>
+                </div>
               </div>
             </div>
             <div class="catalog-cart__level">
@@ -723,7 +669,7 @@
             </div>
             <a class="catalog-cart__button" href="">Позвать!</a>
           </div>
-          <div class="catalog-cart catalog-cart--online">
+          <div class="catalog-cart">
             <a class="catalog-cart__item catalog-cart__item--photo" href="">
               <picture>
                 <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg">
@@ -737,56 +683,51 @@
             <p class="catalog-cart__tags" >#бургер #бар #футбол #концерт #крафт</p>
             <div class="catalog-cart__visit">
               <h2 class="catalog-cart__title">хочет посетить:</h2>
-              <p class="catalog-cart__country cart-visit__country--1">Бельгия</p>
-              <p class="catalog-cart__country cart-visit__country--2">Чехия</p>
+              <p class="catalog-cart__country catalog-cart__country--belgium">Бельгия</p>
+              <p class="catalog-cart__country catalog-cart__country--czech">Чехия</p>
             </div>
             <div class="catalog-cart__transport">
               <h2 class="catalog-cart__title">транспорт:</h2>
               <div class="catalog-cart__transport-container">
-                <label class="catalog-cart__transport-label">
-                  <span class="visually-hidden">На самолете</span>
-                  <input class="catalog-cart__transport-control catalog-cart__transport-control--plane" type="checkbox" name="самолет">
-                  <svg class="catalog-cart__svg" version="1.1" width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
-                    <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
-                      c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
-                      C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
-                      c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
-                      c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
-                      c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
-                      c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                  <path fill="#192144" d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                    c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                    C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                    c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                    c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                    c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                    c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
                   </svg>
-                </label>
-                <label class="catalog-cart__transport-label">
-                  <span class="visually-hidden">На авто</span>
-                  <input class="catalog-cart__transport-control catalog-cart__transport-control--car" type="checkbox" name="Авто">
-                  <svg class="catalog-cart__svg" version="1.1" width="17" height="17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
-                    <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
-                      c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
-                      C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
-                      M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
-                      H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                  <p class="tooltip" data-tooltip="Авиаперелет">Тултип</p>
+                </div>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                  <path fill="#192144" d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                    c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                    C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                    M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                    H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
                   </svg>
-                </label>
-                <label class="catalog-cart__transport-label">
-                  <span class="visually-hidden">На велосипеде</span>
-                  <input class="catalog-cart__transport-control catalog-cart__transport-control--bike" type="checkbox" name="Велосипед">
-                  <svg class="catalog-cart__svg" version="1.1" width="17" height="17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
-                    <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
-                      S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
-                      l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
-                      l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
-                      s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                  <p class="tooltip" data-tooltip="Автотранспорт">Тултип</p>
+                </div>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg catalog-cart__transport-svg--off" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                  <path fill="#192144" d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                    S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                    l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                    l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                    s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
                   </svg>
-                </label>
-                <label class="catalog-cart__transport-label">
-                  <span class="visually-hidden">На пешком</span>
-                  <input class="catalog-cart__transport-control catalog-cart__transport-control--run" type="checkbox" name="Пешком">
-                  <svg class="catalog-cart__svg" version="1.1" width="17" height="17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
-                    <g>
+                  <p class="tooltip" data-tooltip="Велосипед">Тултип</p>
+                </div>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                    <g fill="#192144">
                       <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
                       <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
                         C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
@@ -795,7 +736,8 @@
                         z"/>
                     </g>
                   </svg>
-                </label>
+                  <p class="tooltip" data-tooltip="Пешком">Тултип</p>
+                </div>
               </div>
             </div>
             <div class="catalog-cart__level">
@@ -805,7 +747,7 @@
             </div>
             <a class="catalog-cart__button" href="">Позвать!</a>
           </div>
-          <div class="catalog-cart catalog-cart--online">
+          <div class="catalog-cart">
             <a class="catalog-cart__item catalog-cart__item--photo" href="">
               <picture>
                 <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg">
@@ -819,57 +761,52 @@
             <p class="catalog-cart__tags" >#рэп #тату #хайпбист #кроссовки #суприм</p>
             <div class="catalog-cart__visit">
               <h2 class="catalog-cart__title">хочет посетить:</h2>
-              <p class="catalog-cart__country cart-visit__country--1">США</p>
-              <p class="catalog-cart__country cart-visit__country--2">Австралия</p>
-              <p class="catalog-cart__country cart-visit__country--3">Доминика</p>
+              <p class="catalog-cart__country catalog-cart__country--usa">США</p>
+              <p class="catalog-cart__country catalog-cart__country--australia">Австралия</p>
+              <p class="catalog-cart__country catalog-cart__country--dominica">Доминика</p>
             </div>
             <div class="catalog-cart__transport">
               <h2 class="catalog-cart__title">транспорт:</h2>
               <div class="catalog-cart__transport-container">
-                <label class="catalog-cart__transport-label">
-                  <span class="visually-hidden">На самолете</span>
-                  <input class="catalog-cart__transport-control catalog-cart__transport-control--plane" type="checkbox" name="самолет">
-                  <svg class="catalog-cart__svg" version="1.1" width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
-                    <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
-                      c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
-                      C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
-                      c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
-                      c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
-                      c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
-                      c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                  <path fill="#192144" d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                    c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                    C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                    c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                    c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                    c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                    c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
                   </svg>
-                </label>
-                <label class="catalog-cart__transport-label">
-                  <span class="visually-hidden">На авто</span>
-                  <input class="catalog-cart__transport-control catalog-cart__transport-control--car" type="checkbox" name="Авто">
-                  <svg class="catalog-cart__svg" version="1.1" width="17" height="17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
-                    <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
-                      c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
-                      C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
-                      M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
-                      H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                  <p class="tooltip" data-tooltip="Авиаперелет">Тултип</p>
+                </div>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg catalog-cart__transport-svg--off" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                  <path fill="#192144" d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                    c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                    C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                    M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                    H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
                   </svg>
-                </label>
-                <label class="catalog-cart__transport-label">
-                  <span class="visually-hidden">На велосипеде</span>
-                  <input class="catalog-cart__transport-control catalog-cart__transport-control--bike" type="checkbox" name="Велосипед">
-                  <svg class="catalog-cart__svg" version="1.1" width="17" height="17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
-                    <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
-                      S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
-                      l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
-                      l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
-                      s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                  <p class="tooltip" data-tooltip="Автотранспорт">Тултип</p>
+                </div>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                  <path fill="#192144" d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                    S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                    l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                    l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                    s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
                   </svg>
-                </label>
-                <label class="catalog-cart__transport-label">
-                  <span class="visually-hidden">На пешком</span>
-                  <input class="catalog-cart__transport-control catalog-cart__transport-control--run" type="checkbox" name="Пешком">
-                  <svg class="catalog-cart__svg" version="1.1" width="17" height="17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
-                    <g>
+                  <p class="tooltip" data-tooltip="Велосипед">Тултип</p>
+                </div>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg catalog-cart__transport-svg--off" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                    <g fill="#192144">
                       <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
                       <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
                         C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
@@ -878,7 +815,8 @@
                         z"/>
                     </g>
                   </svg>
-                </label>
+                  <p class="tooltip" data-tooltip="Пешком">Тултип</p>
+                </div>
               </div>
             </div>
             <div class="catalog-cart__level">
@@ -888,70 +826,65 @@
             </div>
             <a class="catalog-cart__button" href="">Позвать!</a>
           </div>
-          <div class="catalog-cart catalog-cart--online">
+          <div class="catalog-cart">
             <a class="catalog-cart__item catalog-cart__item--photo" href="">
               <picture>
                 <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg">
                 <img src="img/rogovaya-mobile@1x.jpg" alt="Фото Ларисы Роговой">
               </picture>
             </a>
-            <a class="catalog-cart__name" href="">
+            <a class="catalog-cart__name catalog-cart__name--online" href="">
               Лариса Роговая
             </a>
             <button class="catalog-cart__like" >23</button>
             <p class="catalog-cart__tags" >#образование #карьера #учеба #линкедин</p>
             <div class="catalog-cart__visit">
               <h2 class="catalog-cart__title">хочет посетить:</h2>
-              <p class="catalog-cart__country cart-visit__country--1">Великобритания</p>
-              <p class="catalog-cart__country cart-visit__country--2">Германия</p>
+              <p class="catalog-cart__country catalog-cart__country--britain">Великобритания</p>
+              <p class="catalog-cart__country catalog-cart__country--germany">Германия</p>
             </div>
             <div class="catalog-cart__transport">
               <h2 class="catalog-cart__title">транспорт:</h2>
               <div class="catalog-cart__transport-container">
-                <label class="catalog-cart__transport-label">
-                  <span class="visually-hidden">На самолете</span>
-                  <input class="catalog-cart__transport-control catalog-cart__transport-control--plane" type="checkbox" name="самолет">
-                  <svg class="catalog-cart__svg" version="1.1" width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
-                    <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
-                      c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
-                      C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
-                      c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
-                      c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
-                      c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
-                      c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                  <path fill="#192144" d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                    c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                    C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                    c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                    c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                    c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                    c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
                   </svg>
-                </label>
-                <label class="catalog-cart__transport-label">
-                  <span class="visually-hidden">На авто</span>
-                  <input class="catalog-cart__transport-control catalog-cart__transport-control--car" type="checkbox" name="Авто">
-                  <svg class="catalog-cart__svg" version="1.1" width="17" height="17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
-                    <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
-                      c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
-                      C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
-                      M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
-                      H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                  <p class="tooltip" data-tooltip="Авиаперелет">Тултип</p>
+                </div>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                  <path fill="#192144" d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                    c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                    C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                    M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                    H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
                   </svg>
-                </label>
-                <label class="catalog-cart__transport-label">
-                  <span class="visually-hidden">На велосипеде</span>
-                  <input class="catalog-cart__transport-control catalog-cart__transport-control--bike" type="checkbox" name="Велосипед">
-                  <svg class="catalog-cart__svg" version="1.1" width="17" height="17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
-                    <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
-                      S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
-                      l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
-                      l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
-                      s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                  <p class="tooltip" data-tooltip="Автотранспорт">Тултип</p>
+                </div>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg catalog-cart__transport-svg--off" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                  <path fill="#192144" d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                    S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                    l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                    l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                    s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
                   </svg>
-                </label>
-                <label class="catalog-cart__transport-label">
-                  <span class="visually-hidden">На пешком</span>
-                  <input class="catalog-cart__transport-control catalog-cart__transport-control--run" type="checkbox" name="Пешком">
-                  <svg class="catalog-cart__svg" version="1.1" width="17" height="17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
-                    <g>
+                  <p class="tooltip" data-tooltip="Велосипед">Тултип</p>
+                </div>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg catalog-cart__transport-svg--off" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                    <g fill="#192144">
                       <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
                       <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
                         C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
@@ -960,7 +893,8 @@
                         z"/>
                     </g>
                   </svg>
-                </label>
+                  <p class="tooltip" data-tooltip="Пешком">Тултип</p>
+                </div>
               </div>
             </div>
             <div class="catalog-cart__level">
@@ -1010,9 +944,13 @@
             <a href="" class="page-footer__social-contacts--inst page-footer__social page-footer__social-contacts--active"></a>
           </div>
         </div>
-        <p class="page-footer__htmlacademy-text">Разработано</p>
-        <a class="page-footer__htmlacademy-img" href="https://htmlacademy.ru/intensive/adaptive" aria-label="html academy"></a>
+        <a class="page-footer__htmlacademy-wrap" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="page-footer__htmlacademy-text">Разработано</span>
+          <span class="page-footer__htmlacademy-img" aria-label="html academy"></span>
+        </a>
       </div>
     </footer>
+    <script src="js/header-menu.js"></script>
+    <script src="js/filter.js"></script>
   </body>
 </html>

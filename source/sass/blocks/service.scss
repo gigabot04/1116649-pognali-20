@@ -104,6 +104,18 @@
 .service__btn {
   display: none;
 
+  &:hover {
+    background-color: $special-yellow-dark;
+  }
+
+  &:active {
+    color: rgba($basic-blue-light, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     background-color: $basic-yellow;
     border-radius: 20px;
