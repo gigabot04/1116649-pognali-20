@@ -92,7 +92,6 @@
   &::after {
     content: "";
     position: absolute;
-    z-index: -1;
     top: -31px;
     left: -25px;
     background-color: $basic-blue-dark;
