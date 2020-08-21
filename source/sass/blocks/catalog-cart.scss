@@ -464,12 +464,10 @@
     left: -40px;
     width: 28px;
     height: 18px;
-    background-size: 117px;
+    background-size: 35px;
     background-repeat: no-repeat;
-    background-image: url("../img/flags.svg");
 
     @media (min-width: $tablet-width) {
-      background-size: 153px;
       top: -2px;
       left: -46px;
       width: 35px;
@@ -484,101 +482,61 @@
 
   &--srilanka {
     &::after {
-      background-position: -60px -43px;
-
-      @media (min-width: $tablet-width) {
-        background-position: -79px -56px;
-      }
+      background-image: url("../img/flag-sri-lanka.svg");
     }
   }
 
   &--thailand {
     &::after {
-      background-position: -60px 0;
-
-      @media (min-width: $tablet-width) {
-        background-position: -79px 0;
-      }
+      background-image: url("../img/flag-thailand.svg");
     }
   }
 
   &--seychelles {
     &::after {
-      background-position: 0 0;
-
-      @media (min-width: $tablet-width) {
-        background-position: 0 0;
-      }
+      background-image: url("../img/flag-seychelles.svg");
     }
   }
 
   &--belgium {
     &::after {
-      background-position: -30px -43px;
-
-      @media (min-width: $tablet-width) {
-        background-position: -39px -56px;
-      }
+      background-image: url("../img/flag-belgium.svg");
     }
   }
 
   &--czech {
     &::after {
-      background-position: -30px -22px;
-
-      @media (min-width: $tablet-width) {
-        background-position: -39px -27px;
-      }
+      background-image: url("../img/flag-czech.svg");
     }
   }
 
   &--usa {
     &::after {
-      background-position: -90px 0;
-
-      @media (min-width: $tablet-width) {
-        background-position: -118px 0;
-      }
+      background-image: url("../img/flag-usa.svg");
     }
   }
 
   &--australia {
     &::after {
-      background-position: 0 -22px;
-
-      @media (min-width: $tablet-width) {
-        background-position: 0 -27px;
-      }
+      background-image: url("../img/flag-australia.svg");
     }
   }
 
   &--dominica {
     &::after {
-      background-position: -30px 0;
-
-      @media (min-width: $tablet-width) {
-        background-position: -39px 0;
-      }
+      background-image: url("../img/flag-dominica.svg");
     }
   }
 
   &--britain {
     &::after {
-      background-position: 0 -43px;
-
-      @media (min-width: $tablet-width) {
-        background-position: 0 -56px;
-      }
+      background-image: url("../img/flag-united-kingdom.svg");
     }
   }
 
   &--germany {
     &::after {
-      background-position: -60px -22px;
-
-      @media (min-width: $tablet-width) {
-        background-position: -79px -27px;
-      }
+      background-image: url("../img/flag-germany.svg");
     }
   }
 

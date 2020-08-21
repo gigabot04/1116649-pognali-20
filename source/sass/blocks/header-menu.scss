@@ -41,7 +41,7 @@
     width: 300px;
     text-align: start;
     margin: 0;
-    margin-top: 130px;
+    margin-top: 90px;
     margin-left: 72px;
   }
 
@@ -143,6 +143,15 @@
     @media (min-width: $tablet-width) {
       font-size: 28px;
       line-height: 28px;
+    }
+  }
+}
+
+.header-menu__logo {
+  & img {
+    @media (min-width: $tablet-width) {
+      margin-top: 17px;
+      margin-left: 16px;
     }
   }
 }

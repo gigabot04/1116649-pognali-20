@@ -64,6 +64,11 @@
     background-position: 0 0;
     transform: scale(0.5);
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/rates@2x.png");
+      background-size: 198px;
+    }
+
     @media (min-width: $tablet-width) {
       content: none;
     }
@@ -309,6 +314,10 @@
       background-size: 100px;
       width: 100px;
       height: 100px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/rates@2x.png");
+      }
 
       @media (min-width: $desktop-width) {
         background-size: 198px;

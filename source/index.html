@@ -10,7 +10,11 @@
     <header class="page-header page-header--index">
       <div class="page-container page-header__container">
         <a href="" class="main-logo main-logo__header">
-          <img src="img/logo-mobile-white@1x.png" alt="Погнали?" width="100" height="19">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
+            <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Погнали?">
+          </picture>
         </a>
         <button class="page-header__toggle page-header__toggle--close" type="button" aria-label="Открыть меню">
           <span class="page-header__line1"></span>
@@ -70,7 +74,11 @@
         </div>
         <div class="header-menu header-menu--active header-menu--jsnone">
           <a class="header-menu__logo">
-            <img src="img/logo-mobile-blue@1x.png" alt="Погнали?" width="100" height="19">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+              <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Погнали?">
+            </picture>
           </a>
           <div class="header-menu__title">
             <a class="header-menu__link">О сервисе</a>
@@ -190,7 +198,10 @@
           <p class="directions__text">Мы не продаем туры и&nbsp;ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
           <div class="directions-cart__wrapper">
             <div class="directions-cart">
-              <img class="directions-cart__img" src="img/thailand-mobile@1x.jpg" alt="Картинка Таиланда">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
+                <img class="directions-cart__img" src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x" alt="Картинка Таиланда" >
+              </picture>
               <div class="directions-cart__block">
                 <h2 class="directions-cart__country directions-cart__country--thailand">Таиланд</h2>
                 <p class="directions-cart__info">
@@ -200,7 +211,10 @@
               </div>
             </div>
             <div class="directions-cart">
-              <img class="directions-cart__img" src="img/france-mobile@1x.jpg" alt="Картинка Франции">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
+                <img class="directions-cart__img" src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x" alt="Картинка Франции">
+              </picture>
               <div class="directions-cart__block">
                 <h2 class="directions-cart__country directions-cart__country--france">Франция</h2>
                 <p class="directions-cart__info">
@@ -210,7 +224,10 @@
               </div>
             </div>
             <div class="directions-cart">
-              <img class="directions-cart__img" src="img/czech-mobile@1x.jpg" alt="Картинка Чехии">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
+                <img class="directions-cart__img" src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x" alt="Картинка Чехии">
+              </picture>
               <div class="directions-cart__block">
                 <h2 class="directions-cart__country directions-cart__country--czech">Чехия</h2>
                 <p class="directions-cart__info">
@@ -233,7 +250,7 @@
           </div>
           <div class="companions-cart__flex">
             <div class="companions-cart">
-              <img class="companions-cart__img" src="img/firsova-desktop@1x.jpg" alt="Фото Тани Фирсовой" width="270" height="270">
+              <img class="companions-cart__img" src="img/firsova-desktop@1x.jpg" srcset="img/firsova-desktop@2x.jpg 2x" alt="Фото Тани Фирсовой" width="270" height="270">
               <div class="companions-cart__block">
                 <div class="companions-cart__flags">
                   <div class="companions-cart__flag-wrap">
@@ -317,7 +334,7 @@
               </div>
             </div>
             <div class="companions-cart">
-              <img class="companions-cart__img" src="img/demin-desktop@1x.jpg" alt="Фото Пети Демина" width="270" height="270">
+              <img class="companions-cart__img" src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg 2x" alt="Фото Пети Демина" width="270" height="270">
               <div class="companions-cart__block">
                 <div class="companions-cart__flags">
                   <div class="companions-cart__flag-wrap">
@@ -482,13 +499,23 @@
             </h2>
             <a href="" class="maps__btn">Проложить маршрут</a>
           </div>
-          <!-- <img class="maps__img" src="https://via.placeholder.com/320x424" alt="Карта" width="320" height="424"> -->
       </section>
     </main>
+    <div class="map-img">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+        <img class="map-img__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта" width="320" height="424">
+      </picture>
+    </div>
     <footer class="page-footer">
       <div class="page-footer__page-container page-container">
         <a href="" class="main-logo page-footer__main-logo">
-          <img src="img/logo-mobile-blue@1x.png" alt="Погнали?" width="100" height="19">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+            <img class="page-footer__img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Погнали?" width="100" height="19">
+          </picture>
         </a>
         <div class="page-footer__social-contacts">
           <div class="page-footer__contact-hover">
