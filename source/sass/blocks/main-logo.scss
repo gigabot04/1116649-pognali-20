@@ -1,3 +1,7 @@
 .main-logo {
   text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    margin-top: -6px;
+  }
 }

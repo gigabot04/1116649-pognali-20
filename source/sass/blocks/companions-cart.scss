@@ -99,14 +99,14 @@
   color: $basic-white;
 
   &--99 {
-    background-image: url("../img/Subtract99.svg");
+    background-image: url("../img/subtract99.svg");
     background-repeat: no-repeat;
     width: 60px;
     height: 60px;
   }
 
   &--80 {
-    background-image: url("../img/Subtract80.svg");
+    background-image: url("../img/subtract80.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
     width: 60px;
@@ -174,6 +174,11 @@
 .companions-cart__flag-wrap {
   position: relative;
   display: inline-block;
+  margin-bottom: 5px;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
 
   &:hover {
     .tooltip {
@@ -187,8 +192,6 @@
   margin: 0;
   width: 35px;
   height: 24px;
-  margin-right: 20px;
-  margin-bottom: 5px;
 
   &:hover {
     .tooltip {
@@ -197,33 +200,28 @@
   }
 
   &--sri-Lanka {
-    background-image: url("../img/flags.svg");
-    background-size: 153px;
-    background-position: -79px -55px;
+    background-image: url("../img/flag-sri-lanka.svg");
+    background-size: 35px;
   }
 
   &--thailand {
-    background-image: url("../img/flags.svg");
-    background-size: 153px;
-    background-position: -79px 0;
+    background-image: url("../img/flag-thailand.svg");
+    background-size: 35px;
   }
 
   &--seychelles {
-    background-image: url("../img/flags.svg");
-    background-size: 153px;
-    background-position: 0 0;
+    background-image: url("../img/flag-seychelles.svg");
+    background-size: 35px;
   }
 
   &--belgium {
-    background-image: url("../img/flags.svg");
-    background-size: 153px;
-    background-position: -39px -55px;
+    background-image: url("../img/flag-belgium.svg");
+    background-size: 35px;
   }
 
   &--czech {
-    background-image: url("../img/flags.svg");
-    background-size: 153px;
-    background-position: -39px -28px;
+    background-image: url("../img/flag-czech.svg");
+    background-size: 35px;
   }
 }
 

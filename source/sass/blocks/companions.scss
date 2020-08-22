@@ -6,6 +6,52 @@
   margin-bottom: -31px;
   z-index: 17;
 
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 17;
+    background-image:
+      url("../img/smolov-back@1x.png"),
+      url("../img/rogovaya-back-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position:
+      152px 69px,
+      -12px 341px;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../img/smolov-back@2x.png"),
+        url("../img/rogovaya-back-mobile@2x.png");
+      background-size: 143px auto, 71px auto;
+    }
+
+    @media (min-width: $tablet-width) {
+      background-position:
+        40px 483px,
+        409px 137px;
+      background-image:
+        url("../img/smolov-back@1x.png"),
+        url("../img/rogovaya-back-desktop@1x.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image:
+          url("../img/smolov-back@2x.png"),
+          url("../img/rogovaya-back-desktop@2x.png");
+        background-size: 143px auto, 285px auto;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position:
+        547px 191px,
+        189px 443px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding-bottom: 87px;
     bottom: -87px;
@@ -46,35 +92,6 @@
       width: 212px;
       height: 212px;
       border-radius: 20px;
-    }
-  }
-
-  &::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 17;
-    background-image:
-      url("../img/smolov-back-desktop@1x.png"),
-      url("../img/rogovaya-back-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-position:
-      152px 69px,
-      -12px 341px;
-
-    @media (min-width: $tablet-width) {
-      background-position:
-        40px 483px,
-        -12px 341px;
-    }
-
-    @media (min-width: $desktop-width) {
-      background-position:
-        547px 191px,
-        -12px 341px;
     }
   }
 
@@ -200,7 +217,7 @@
 
 .companions__button {
   position: relative;
-  margin-top: 20px;
+  margin-top: 11px;
   display: block;
   text-decoration: none;
   color: $basic-blue-light;

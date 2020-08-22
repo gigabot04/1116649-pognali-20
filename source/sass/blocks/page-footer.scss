@@ -25,6 +25,23 @@
 .page-footer__main-logo {
   justify-self: center;
   margin-top: 2px;
+
+  @media (min-width: $tablet-width) {
+    justify-self: self-start;
+    align-self: center;
+  }
+}
+
+.page-footer__img {
+  @media (min-width: $tablet-width) {
+    width: 166px;
+    height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 52px;
+  }
 }
 
 .page-footer__contact-hover {

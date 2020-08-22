@@ -22,7 +22,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 102px;
-    padding-bottom: 80px;
+    padding-bottom: 78px;
     margin-bottom: -45px;
   }
 
@@ -68,6 +68,11 @@
       background-repeat: no-repeat;
       width: 288px;
       height: 574px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/flags-back@2x.png");
+        background-size: 289px auto;
+      }
 
       @media (min-width: $desktop-width) {
         top: -74px;
