@@ -12,6 +12,7 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const uglify = require("gulp-uglify");
 const del = require("del");
+const concat = require('gulp-concat');
 
 // Styles
 
@@ -26,7 +27,7 @@ const styles = () => {
     .pipe(csso())
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
@@ -43,7 +44,7 @@ const cssDef = () => {
       autoprefixer()
     ]))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
 }
 
 exports.csso = cssDef;
@@ -66,7 +67,7 @@ exports.images = images;
 const createWebp = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img"))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.webp = createWebp;
@@ -77,7 +78,7 @@ const sprite = () => {
   return gulp.src("source/img/icon/**/*.svg")
     .pipe(svgstore())
     .pipe(rename("sptire.svg"))
-    .pipe(gulp.dest("source/img"))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.sprite = sprite;
@@ -86,6 +87,7 @@ exports.sprite = sprite;
 
 const js = () => {
   return gulp.src("source/js/**/*.js")
+  .pipe(concat("allCode.js"))
     .pipe(uglify())
     .pipe(gulp.dest("build/js"))
 }
@@ -97,7 +99,7 @@ exports.uglify = js;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: "source"
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -122,8 +124,6 @@ const copy = () => {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**/*",
     "source/*.ico",
-    "source/*.html",
-    "source/css/**/*"
   ], {
     base: "source"
   })
@@ -138,8 +138,13 @@ const clean = () => {
   return del("build");
 }
 
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(gulp.dest("./build"))
+    .pipe(sync.stream());
+}
 
-exports.build = gulp.series(
+const build = gulp.series(
   clean,
   cssDef,
   styles,
@@ -147,14 +152,10 @@ exports.build = gulp.series(
   createWebp,
   sprite,
   copy,
+  html,
   js
-)
-
-exports.start = gulp.series(
-  cssDef,
-  styles,
-  createWebp,
-  sprite,
-  server,
-  watcher
 );
+
+exports.build = build;
+
+exports.start = gulp.series(build, server, watcher);
