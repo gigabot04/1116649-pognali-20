@@ -40,7 +40,7 @@
   width: 100px;
   height: 100px;
   background-color: transparent;
-  background-image: url("../img/subtract80-form.svg");
+  background-image: url("../img/icon/subtract80-form.svg");
   background-repeat: no-repeat;
   justify-self: center;
 
@@ -1443,7 +1443,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url("../img/tick.svg");
+    background-image: url("../img/icon/tick.svg");
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
@@ -1866,7 +1866,7 @@
       left: 6px;
       width: 35px;
       height: 24px;
-      background-image: url("../img/flag-bosnia.svg");
+      background-image: url("../img/icon/flag-bosnia.svg");
       background-repeat: no-repeat;
       background-size: 35px;
 
@@ -1895,7 +1895,7 @@
       left: 6px;
       width: 35px;
       height: 24px;
-      background-image: url("../img/flag-czech.svg");
+      background-image: url("../img/icon/flag-czech.svg");
       background-repeat: no-repeat;
       background-size: 35px;
 
@@ -2412,7 +2412,7 @@
         transform: translateY(-50%);
         width: 14px;
         height: 14px;
-        background-image: url("../img/triangle-arrow-right.svg");
+        background-image: url("../img/icon/triangle-arrow-right.svg");
         background-repeat: no-repeat;
       }
     }
@@ -2523,7 +2523,7 @@
         transform: translateY(-50%);
         width: 14px;
         height: 14px;
-        background-image: url("../img/triangle-arrow-left.svg");
+        background-image: url("../img/icon/triangle-arrow-left.svg");
         background-repeat: no-repeat;
       }
 
@@ -2559,7 +2559,7 @@
         transform: translateY(-50%);
         width: 14px;
         height: 14px;
-        background-image: url("../img/triangle-arrow-left.svg");
+        background-image: url("../img/icon/triangle-arrow-left.svg");
         background-repeat: no-repeat;
       }
 
@@ -2691,7 +2691,7 @@
   background-repeat: no-repeat;
 
   &--bosnia {
-    background-image: url("../img/flag-bosnia.svg");
+    background-image: url("../img/icon/flag-bosnia.svg");
     background-size: 35px;
 
     @media (min-width: $tablet-width) {
@@ -2701,7 +2701,7 @@
 
   &--czech {
     background-size: 35px;
-    background-image: url("../img/flag-czech.svg");
+    background-image: url("../img/icon/flag-czech.svg");
 
     @media (min-width: $tablet-width) {
       background-size: auto;

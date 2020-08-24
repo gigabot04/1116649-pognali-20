@@ -4,6 +4,7 @@ var line2 = document.querySelector(".page-header__line2");
 var headerBtn = document.querySelector(".page-header__toggle");
 
 headerMenu.classList.remove("header-menu--jsnone");
+headerBtn.classList.remove("page-header__toggle--nojs");
 
 if (headerMenu.classList.contains("header-menu--active")) {
   line1.style.backgroundColor = "#cccccc";

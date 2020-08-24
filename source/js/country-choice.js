@@ -17,10 +17,10 @@ formBtnOpen.addEventListener("click", function (evt) {
   }
 })
 
-for (let i = 0; i < formLetter.length; i++) {
+for (var i = 0; i < formLetter.length; i++) {
   formLetter[i].addEventListener("click", function (evt) {
     evt.preventDefault();
-    let letterActive = formCountry.querySelector(".form-setting__letter--active");
+    var letterActive = formCountry.querySelector(".form-setting__letter--active");
     letterActive.classList.remove("form-setting__letter--active");
     formLetter[i].classList.add("form-setting__letter--active");
   });

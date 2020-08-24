@@ -4,7 +4,7 @@ var formTextarea = document.querySelectorAll(".form-setting__action-plan");
 var formSpan = document.querySelectorAll(".form-setting__invalid");
 
 
-for (let i = 0; i < formTextarea.length; i++) {
+for (var i = 0; i < formTextarea.length; i++) {
   formBtn.addEventListener("click", function (evt) {
     formSpan[i].classList.remove("form-setting__invalid--active");
     formTextareaWrap[i].classList.remove("form-setting__action-plan-wrap--invalid");

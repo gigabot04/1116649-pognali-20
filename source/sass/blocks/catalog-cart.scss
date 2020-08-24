@@ -115,7 +115,7 @@
     width: 31px;
     height: 31px;
     background-color: $hover-head;
-    background-image: url("../img/heart.svg");
+    background-image: url("../img/icon/heart.svg");
     background-size: 13px;
     background-position: 10px 10px;
     background-repeat: no-repeat;
@@ -125,7 +125,7 @@
   &--active {
     &::after {
       background-color: $catalog-like;
-      background-image: url("../img/heart-active.svg");
+      background-image: url("../img/icon/heart-active.svg");
     }
 
     &:hover {
@@ -383,7 +383,7 @@
     left: 50%;
     transform: translateX(-50%);
     background-repeat: no-repeat;
-    background-image: url("../img/subtract80.svg");
+    background-image: url("../img/icon/subtract80.svg");
     background-size: 45px;
     width: 46px;
     height: 45px;
@@ -404,13 +404,13 @@
 
   &--99 {
     &::after {
-      background-image: url("../img/subtract99.svg");
+      background-image: url("../img/icon/subtract99.svg");
     }
   }
 
   &--80 {
     &::after {
-      background-image: url("../img/subtract80.svg");
+      background-image: url("../img/icon/subtract80.svg");
     }
   }
 
@@ -494,61 +494,61 @@
 
   &--srilanka {
     &::after {
-      background-image: url("../img/flag-sri-lanka.svg");
+      background-image: url("../img/icon/flag-sri-lanka.svg");
     }
   }
 
   &--thailand {
     &::after {
-      background-image: url("../img/flag-thailand.svg");
+      background-image: url("../img/icon/flag-thailand.svg");
     }
   }
 
   &--seychelles {
     &::after {
-      background-image: url("../img/flag-seychelles.svg");
+      background-image: url("../img/icon/flag-seychelles.svg");
     }
   }
 
   &--belgium {
     &::after {
-      background-image: url("../img/flag-belgium.svg");
+      background-image: url("../img/icon/flag-belgium.svg");
     }
   }
 
   &--czech {
     &::after {
-      background-image: url("../img/flag-czech.svg");
+      background-image: url("../img/icon/flag-czech.svg");
     }
   }
 
   &--usa {
     &::after {
-      background-image: url("../img/flag-usa.svg");
+      background-image: url("../img/icon/flag-usa.svg");
     }
   }
 
   &--australia {
     &::after {
-      background-image: url("../img/flag-australia.svg");
+      background-image: url("../img/icon/flag-australia.svg");
     }
   }
 
   &--dominica {
     &::after {
-      background-image: url("../img/flag-dominica.svg");
+      background-image: url("../img/icon/flag-dominica.svg");
     }
   }
 
   &--britain {
     &::after {
-      background-image: url("../img/flag-united-kingdom.svg");
+      background-image: url("../img/icon/flag-united-kingdom.svg");
     }
   }
 
   &--germany {
     &::after {
-      background-image: url("../img/flag-germany.svg");
+      background-image: url("../img/icon/flag-germany.svg");
     }
   }
 
@@ -772,7 +772,7 @@
   &--left {
     grid-column: 2 / 3;
     border-radius: 20px 0 0 20px;
-    background-image: url("../img/triangle-arrow-left.svg");
+    background-image: url("../img/icon/triangle-arrow-left.svg");
     background-repeat: no-repeat;
     background-size: 10px;
     background-position: 50%;
@@ -785,7 +785,7 @@
   &--right {
     grid-column: 3 / 4;
     border-radius: 0 20px 20px 0;
-    background-image: url("../img/triangle-arrow-right.svg");
+    background-image: url("../img/icon/triangle-arrow-right.svg");
     background-repeat: no-repeat;
     background-size: 10px;
     background-position: 50%;

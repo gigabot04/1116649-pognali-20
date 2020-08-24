@@ -172,7 +172,7 @@
       right: -60px;
       width: 32px;
       height: 16px;
-      background-image: url("../img/return.svg");
+      background-image: url("../img/icon/return.svg");
       background-repeat: no-repeat;
     }
   }
@@ -181,4 +181,8 @@
     margin-top: 56px;
     margin-right: 123px;
   }
+}
+
+.page-header__toggle--nojs {
+  display: none;
 }
