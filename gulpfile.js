@@ -12,7 +12,6 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const uglify = require("gulp-uglify");
 const del = require("del");
-const concat = require('gulp-concat');
 
 // Styles
 
@@ -87,7 +86,6 @@ exports.sprite = sprite;
 
 const js = () => {
   return gulp.src("source/js/**/*.js")
-  .pipe(concat("allCode.js"))
     .pipe(uglify())
     .pipe(gulp.dest("build/js"))
 }
