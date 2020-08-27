@@ -71,6 +71,15 @@
       transform: rotate(-45deg);
     }
   }
+
+  &--nojs {
+    display: none;
+  }
+
+  &--fixed {
+    position: fixed;
+    right: 25px;
+  }
 }
 
 .page-header__line1 {
@@ -181,8 +190,4 @@
     margin-top: 56px;
     margin-right: 123px;
   }
-}
-
-.page-header__toggle--nojs {
-  display: none;
 }

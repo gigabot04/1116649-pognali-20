@@ -96,6 +96,7 @@
   top: 10px;
   left: -49px;
   z-index: 1;
+  fill: $basic-yellow;
 
   @media (min-width: $tablet-width) {
     width: 31px;
@@ -110,10 +111,6 @@
     top: -6px;
     left: -97px;
   }
-}
-
-.maps__pin-path {
-  fill: $basic-yellow;
 }
 
 .maps__btn {
