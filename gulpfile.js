@@ -85,7 +85,9 @@ exports.sprite = sprite;
 // Uglify
 
 const js = () => {
-  return gulp.src("source/js/**/*.js")
+  return gulp.src(
+    "source/js/**/*.js",
+  )
     .pipe(uglify())
     .pipe(gulp.dest("build/js"))
 }

@@ -3,7 +3,6 @@ var formBtn = document.querySelector(".form-setting__next--step3");
 var formTextarea = document.querySelectorAll(".form-setting__action-plan");
 var formSpan = document.querySelectorAll(".form-setting__invalid");
 
-
 for (var i = 0; i < formTextarea.length; i++) {
   formBtn.addEventListener("click", function (evt) {
     formSpan[i].classList.remove("form-setting__invalid--active");
