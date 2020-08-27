@@ -39,9 +39,11 @@ window.addEventListener("scroll", function () {
   if (pagePx > 500) {
     headerBtn.classList.add("page-header__toggle--fixed");
     headerMenu.classList.add("header-menu--scrollMenu");
+    headerMenu.classList.remove("header-menu--none");
   } else {
     headerBtn.classList.remove("page-header__toggle--fixed");
     headerMenu.classList.remove("header-menu--scrollMenu");
+    headerMenu.classList.add("header-menu--none");
   }
 })
 
