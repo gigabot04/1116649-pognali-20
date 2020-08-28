@@ -438,9 +438,9 @@
   width: 100%;
   min-height: 39px;
   border-radius: 20px;
-  margin-top: 13px;
+  margin-top: 29px;
   padding-left: 32px;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
 
   &::after {
     content: "";
@@ -496,7 +496,7 @@
     font-size: 20px;
     line-height: 20px;
     min-height: 100px;
-    margin-top: 57px;
+    margin-top: 102px;
     padding-left: 47px;
     letter-spacing: 0.001em;
     width: 90%;
@@ -507,7 +507,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    margin-bottom: 43px;
+    margin-bottom: 14px;
   }
 
   &--active {

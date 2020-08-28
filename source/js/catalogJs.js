@@ -10,42 +10,29 @@ var headerSocial = document.querySelector(".header-menu__social-contacts");
 headerMenu.classList.remove("header-menu--jsnone");
 headerBtn.classList.remove("page-header__toggle--nojs");
 
-if (headerMenu.classList.contains("header-menu--active")) {
-  line1.style.backgroundColor = "#cccccc";
-  line2.style.backgroundColor = "#cccccc";
-}
-
 headerBtn.addEventListener("click", function () {
   if (headerMenu.classList.contains("header-menu--active")) {
     headerMenu.classList.remove("header-menu--active");
     headerBtn.classList.remove("page-header__toggle--close");
-    headerTitle.classList.add("header-menu__title--none");
-    headerAuth.classList.add("header-menu__auth--none");
-    headerFeedback.classList.add("header-menu__feedback--none");
-    headerSocial.classList.add("header-menu__social-contacts--none");
+    line1.style.backgroundColor = "#fff";
+    line2.style.backgroundColor = "#fff";
   } else {
     headerMenu.classList.add("header-menu--active");
     headerBtn.classList.add("page-header__toggle--close");
-    headerTitle.classList.remove("header-menu__title--none");
-    headerAuth.classList.remove("header-menu__auth--none");
-    headerFeedback.classList.remove("header-menu__feedback--none");
-    headerSocial.classList.remove("header-menu__social-contacts--none");
+    line1.style.backgroundColor = "#ccc";
+    line2.style.backgroundColor = "#ccc";
   }
 })
 
-window.addEventListener("scroll", function () {
-  var pagePx = window.pageYOffset;
+// window.addEventListener("scroll", function () {
+//   var pagePx = window.pageYOffset;
 
-  if (pagePx > 500) {
-    headerBtn.classList.add("page-header__toggle--fixed");
-    headerMenu.classList.add("header-menu--scrollMenu");
-    headerMenu.classList.remove("header-menu--none");
-  } else {
-    headerBtn.classList.remove("page-header__toggle--fixed");
-    headerMenu.classList.remove("header-menu--scrollMenu");
-    headerMenu.classList.add("header-menu--none");
-  }
-})
+//   if (pagePx > 500) {
+
+//   } else {
+
+//   }
+// })
 
 var filterPart = document.querySelectorAll(".filter__part");
 var filterBtn = document.querySelector(".filter__btn-up");
