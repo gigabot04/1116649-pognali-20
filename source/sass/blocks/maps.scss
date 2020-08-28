@@ -96,6 +96,7 @@
   top: 10px;
   left: -49px;
   z-index: 1;
+  fill: $basic-yellow;
 
   @media (min-width: $tablet-width) {
     width: 31px;
@@ -110,10 +111,6 @@
     top: -6px;
     left: -97px;
   }
-}
-
-.maps__pin-path {
-  fill: $basic-yellow;
 }
 
 .maps__btn {
@@ -156,7 +153,7 @@
     right: 20px;
     width: 11px;
     height: 16px;
-    background-image: url("../img/triangle-arrow-right.svg");
+    background-image: url("../img/icon/triangle-arrow-right.svg");
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {

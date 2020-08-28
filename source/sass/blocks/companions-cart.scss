@@ -99,14 +99,14 @@
   color: $basic-white;
 
   &--99 {
-    background-image: url("../img/subtract99.svg");
+    background-image: url("../img/icon/subtract99.svg");
     background-repeat: no-repeat;
     width: 60px;
     height: 60px;
   }
 
   &--80 {
-    background-image: url("../img/subtract80.svg");
+    background-image: url("../img/icon/subtract80.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
     width: 60px;
@@ -200,27 +200,27 @@
   }
 
   &--sri-Lanka {
-    background-image: url("../img/flag-sri-lanka.svg");
+    background-image: url("../img/icon/flag-sri-lanka.svg");
     background-size: 35px;
   }
 
   &--thailand {
-    background-image: url("../img/flag-thailand.svg");
+    background-image: url("../img/icon/flag-thailand.svg");
     background-size: 35px;
   }
 
   &--seychelles {
-    background-image: url("../img/flag-seychelles.svg");
+    background-image: url("../img/icon/flag-seychelles.svg");
     background-size: 35px;
   }
 
   &--belgium {
-    background-image: url("../img/flag-belgium.svg");
+    background-image: url("../img/icon/flag-belgium.svg");
     background-size: 35px;
   }
 
   &--czech {
-    background-image: url("../img/flag-czech.svg");
+    background-image: url("../img/icon/flag-czech.svg");
     background-size: 35px;
   }
 }

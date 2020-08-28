@@ -21,12 +21,31 @@
     position: static;
   }
 
+  &--scrollMenu {
+    display: block;
+    position: fixed;
+    min-height: 73px;
+    top: 0;
+    background-color: $basic-white;
+  }
+
   @media (min-width: $tablet-width) {
-    min-height: 910px;
+    min-height: 132px;
   }
 
   @media (min-width: $desktop-width) {
-    display: none;
+    display: grid;
+    grid-template-columns: 200px 1fr 100px 188px;
+    padding: 0;
+    padding-left: 46px;
+    padding-right: 60px;
+    min-height: 90px;
+  }
+
+  &--none {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
   }
 }
 
@@ -36,6 +55,10 @@
   text-align: center;
   margin: 0 auto;
   margin-top: 64px;
+
+  &--none {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     width: 300px;
@@ -52,6 +75,27 @@
     text-align: center;
     width: 389px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 390px;
+    margin: 0 0 0 159px;
+    z-index: 2;
+    min-height: 90px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -89px;
+      width: 44px;
+      height: 2px;
+      background-color: $text-blue;
+    }
+  }
 }
 
 .header-menu__link {
@@ -66,6 +110,11 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -88,8 +137,21 @@
     padding-top: 9px;
   }
 
+  &--none {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4;
+    grid-row: 1;
+    margin: 0;
+    display: block;
+    height: 50px;
+    align-self: center;
   }
 }
 
@@ -97,9 +159,22 @@
   margin-top: 66px;
   margin-left: 61px;
 
+  &--none {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 155px;
     margin-left: 163px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3;
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    margin: 0;
+    align-self: center;
   }
 }
 
@@ -124,6 +199,15 @@
     line-height: 18px;
     color: $text-blue;
 
+    .header-menu__item-svg {
+      @media (min-width: $desktop-width) {
+        background-color: $special-orange;
+        top: 0;
+        right: 50px;
+        left: auto;
+      }
+    }
+
     @media (min-width: $tablet-width) {
       font-size: 28px;
       line-height: 28px;
@@ -140,10 +224,23 @@
     text-transform: uppercase;
     color: $text-blue;
 
+    .header-menu__item-svg {
+      @media (min-width: $desktop-width) {
+        background-color: $special-yellow-dark;
+        top: 0;
+        right: 0;
+        left: auto;
+      }
+    }
+
     @media (min-width: $tablet-width) {
       font-size: 28px;
       line-height: 28px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 0;
   }
 }
 
@@ -173,17 +270,33 @@
     top: -23px;
     padding: 23px 20.5px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 50px;
+    height: 50px;
+    padding: 16px 17px;
+  }
 }
 
 .header-menu__svg {
+  fill: $basic-yellow;
+
   @media (min-width: $tablet-width) {
     width: 28px;
     height: 25px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
-.header-menu__svg-path {
-  fill: $basic-yellow;
+.header-menu__item-svg-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
 }
 
 .header-menu__social-contacts {
@@ -194,12 +307,22 @@
   min-height: 21px;
   margin: 0 auto;
   margin-top: 53px;
+  margin-bottom: 40px;
+
+  &--none {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-top: 146px;
     margin-left: 97px;
+    margin-bottom: 95px;
     width: 140px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -213,7 +336,7 @@
   }
 
   &--fb {
-    background-image: url("../img/facebook.svg");
+    background-image: url("../img/icon/facebook.svg");
     display: block;
     background-repeat: no-repeat;
     width: 11px;
@@ -226,7 +349,7 @@
   }
 
   &--vk {
-    background-image: url("../img/vk.svg");
+    background-image: url("../img/icon/vk.svg");
     background-repeat: no-repeat;
     display: block;
     width: 23px;
@@ -239,7 +362,7 @@
   }
 
   &--inst {
-    background-image: url("../img/instagram.svg");
+    background-image: url("../img/icon/instagram.svg");
     display: block;
     background-repeat: no-repeat;
     width: 18px;

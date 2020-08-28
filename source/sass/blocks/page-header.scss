@@ -71,6 +71,15 @@
       transform: rotate(-45deg);
     }
   }
+
+  &--nojs {
+    display: none;
+  }
+
+  &--fixed {
+    position: fixed;
+    right: 25px;
+  }
 }
 
 .page-header__line1 {
@@ -172,7 +181,7 @@
       right: -60px;
       width: 32px;
       height: 16px;
-      background-image: url("../img/return.svg");
+      background-image: url("../img/icon/return.svg");
       background-repeat: no-repeat;
     }
   }

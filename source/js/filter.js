@@ -9,7 +9,7 @@ var filterWord = document.querySelectorAll(".filter__word");
 var filterWordWrap = document.querySelectorAll(".filter__word-wrap ");
 var filterListCountry = document.querySelectorAll(".filter__countries-wrap");
 
-for (let i = 0; i < filterPart.length; i++) {
+for (var i = 0; i < filterPart.length; i++) {
   filterPart[i].addEventListener("click", function (evt) {
     evt.preventDefault();
     var filterPartAct = document.querySelector(".filter__part--active");
@@ -38,7 +38,7 @@ filterBtnDown.addEventListener("click", function (evt) {
   filterBtnDown.classList.remove("filter__btn-down--active");
 })
 
-for (let i = 0; i < filterWord.length; i++) {
+for (var i = 0; i < filterWord.length; i++) {
   filterWord[i].addEventListener("click", function (evt) {
     evt.preventDefault();
     var filterWordAct = document.querySelector(".filter__word--active");

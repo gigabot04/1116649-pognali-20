@@ -151,7 +151,7 @@
     width: 10px;
     height: 6px;
     transform: translateY(-50%);
-    background-image: url("../img/dropdown.svg");
+    background-image: url("../img/icon/dropdown.svg");
     background-repeat: no-repeat;
   }
 
@@ -318,7 +318,7 @@
     left: 5px;
     width: 8px;
     height: 8px;
-    background-image: url("../img/tick.svg");
+    background-image: url("../img/icon/tick.svg");
     z-index: 1;
 
     @media (min-width: $tablet-width) {
