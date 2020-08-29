@@ -18,6 +18,14 @@
       height: 2px;
       background-color: $basic-white;
     }
+
+    &--blue {
+      &::after {
+        background-color: $text-blue;
+        left: -56px;
+        width: 44px;
+      }
+    }
   }
 }
 
@@ -33,6 +41,10 @@
   text-decoration: none;
   margin-left: 34px;
   z-index: 2;
+
+  &--blue {
+    color: $text-blue;
+  }
 
   &:hover {
     .header-menu-desktop__link-span {
