@@ -194,7 +194,7 @@
               <span class="form-setting__point"></span>
               <span class="form-setting__point"></span>
             </div>
-            <fieldset class="form-setting__field">
+            <fieldset class="form-setting__field" id="step1">
               <legend class="form-setting__legend">Шаг 1.<br> Даты&nbsp;пребывания</legend>
               <div class="form-setting__points--desktop">
                 <div class="form-setting__point-text form-setting__point-text--active">Даты
@@ -487,9 +487,9 @@
                   </tr>
                 </tbody>
               </table>
-              <a class="form-setting__next form-setting__next--btn" href="">Следующий шаг</a>
+              <a class="form-setting__next form-setting__next--btn" href="#step2" id="step1">Следующий шаг</a>
             </fieldset>
-            <fieldset class="form-setting__field form-setting__field--2">
+            <fieldset class="form-setting__field form-setting__field--2" id="step2">
               <legend class="form-setting__legend form-setting__legend--2">Шаг 2. Маршрут</legend>
               <div class="form-setting__points--desktop">
                 <div class="form-setting__point-text">Даты
@@ -564,11 +564,11 @@
                 </div>
               </div>
               <div class="form-setting__btn-wrap">
-                <a class="form-setting__next form-setting__next--btn form-setting__next--step2" href="">Следующий шаг</a>
-                <a class="form-setting__back form-setting__back--btn form-setting__back--step2" href="">На шаг назад</a>
+                <a class="form-setting__next form-setting__next--btn form-setting__next--step2" href="#step3">Следующий шаг</a>
+                <a class="form-setting__back form-setting__back--btn form-setting__back--step2" href="#step1">На шаг назад</a>
               </div>
             </fieldset>
-            <fieldset class="form-setting__field form-setting__field--3">
+            <fieldset class="form-setting__field form-setting__field--3" id="step3">
               <legend class="form-setting__legend">Шаг 3. Развлечения</legend>
               <div class="form-setting__points--desktop">
                 <div class="form-setting__point-text">Даты
@@ -602,7 +602,7 @@
               </div>
               <div class="form-setting__btn-wrap">
                 <button class="form-setting__next form-setting__next--btn form-setting__next--step3" type="submit">Отправить</button>
-                <a class="form-setting__back form-setting__back--btn form-setting__back--step3" href="">На шаг назад</a>
+                <a class="form-setting__back form-setting__back--btn form-setting__back--step3" href="#step2">На шаг назад</a>
               </div>
             </fieldset>
           </div>

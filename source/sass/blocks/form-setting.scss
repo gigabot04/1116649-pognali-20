@@ -805,6 +805,12 @@
   }
 }
 
+@-moz-document url-prefix() {
+  .form-setting__points--desktop {
+    top: -45px;
+  }
+}
+
 .form-setting__point-text {
   position: relative;
   display: inline-block;
