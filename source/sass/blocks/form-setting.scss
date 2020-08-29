@@ -792,6 +792,11 @@
     grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
 
+
+    @-moz-document url-prefix() {
+      top: -45px;
+    }
+
     .form-setting__point {
       position: absolute;
       top: 11px;
@@ -802,12 +807,6 @@
     @media (min-width: $desktop-width) {
       display: grid;
     }
-  }
-}
-
-@-moz-document url-prefix() {
-  .form-setting__points--desktop {
-    top: -45px;
   }
 }
 
