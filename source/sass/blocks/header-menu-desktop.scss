@@ -6,7 +6,9 @@
   @media (min-width: $desktop-width) {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     margin-left: 112px;
+    margin-bottom: 10px;
     z-index: 2;
 
     &::after {
