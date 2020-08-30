@@ -1,4 +1,5 @@
 .map-img {
+  position: relative;
   width: 100%;
   margin-bottom: -110px;
 
@@ -66,4 +67,11 @@
     width: 1440px;
     height: 584px;
   }
+}
+
+.map-img__img-yandex {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
 }

@@ -102,6 +102,8 @@
 
   &--4 {
     margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
 
     .filter-people__btn {
       margin-top: 8px;
@@ -217,7 +219,7 @@
   @media (min-width: $tablet-width) {
     position: relative;
     height: 50px;
-    margin-top: 66px;
+    margin-top: 70px;
     margin-bottom: 15px;
     font-size: 20px;
     line-height: 20px;
@@ -595,6 +597,12 @@
   text-align: center;
   width: 100%;
   border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: $basic-blue-light;
 
   &:hover {
     border: 1px solid $hover-people;

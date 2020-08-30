@@ -8,49 +8,19 @@
   </head>
   <body class="page__body">
     <header class="page-header page-header--index">
-      <div class="page-container page-header__container">
-        <a href="" class="main-logo main-logo__header">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x" type="image/webp">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x" type="image/webp">
-            <source srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x" type="image/webp">
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
-            <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Погнали?">
-          </picture>
-        </a>
-        <button class="page-header__toggle page-header__toggle--close page-header__toggle--nojs" type="button" aria-label="Открыть меню">
-          <span class="page-header__line1"></span>
-          <span class="page-header__line2"></span>
-        </button>
-        <div class="head-feedback">
-          <a href="tel:88005558628" class="head-feedback__tel">
-            <span class="visually-hidden">Позвонить по номеру 8 800 555-86-28</span>
-            <svg class="head-feedback__svg" width="18" height="18">
-              <use xlink:href="img/sptire.svg#topmenu-phone"></use>
-            </svg>
+      <div class="page-header__fix--js">
+        <div class="page-header__wrap page-container">
+          <a href="index.html" class="main-logo main-logo__header-add main-logo__header-add--up">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x" type="image/webp">
+              <source srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
+              <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Погнали?">
+            </picture>
           </a>
-          <a href="mailto:mail@htmlacademy.ru" class="head-feedback__mail">
-            <span class="visually-hidden">Написать письмо на почту mail@htmlacademy.ru</span>
-            <svg class="head-feedback__svg" width="18" height="18">
-              <use xlink:href="img/sptire.svg#topmenu-mail"></use>
-            </svg>
-          </a>
-          <a class="head-feedback__auth head-feedback__auth--btn" href="">Авторизация</a>
-        </div>
-        <div class="header-menu-desktop">
-          <a href="index.html" class="header-menu-desktop__link">
-            <span class="header-menu-desktop__link-span" data-hover="О сервисе">О сервисе</span>
-          </a>
-          <a href="form.html" class="header-menu-desktop__link">
-            <span class="header-menu-desktop__link-span" data-hover="Направления">Направления</span>
-          </a>
-          <a href="catalog.html" class="header-menu-desktop__link">
-            <span class="header-menu-desktop__link-span" data-hover="Попутчики">Попутчики</span>
-          </a>
-        </div>
-        <div class="header-menu header-menu--none header-menu--active header-menu--jsnone">
-          <a class="header-menu__logo">
+          <a href="index.html" class="main-logo main-logo__header-add ">
             <picture>
               <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x" type="image/webp">
               <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x" type="image/webp">
@@ -60,8 +30,40 @@
               <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Погнали?">
             </picture>
           </a>
+          <button class="page-header__toggle page-header__toggle--nojs" type="button" aria-label="Открыть меню">
+            <span class="page-header__line1"></span>
+            <span class="page-header__line2"></span>
+          </button>
+          <div class="head-feedback">
+            <a href="tel:88005558628" class="head-feedback__tel">
+              <span class="visually-hidden">Позвонить по номеру 8 800 555-86-28</span>
+              <svg class="head-feedback__svg" width="18" height="18">
+                <use xlink:href="img/sptire.svg#topmenu-phone"></use>
+              </svg>
+            </a>
+            <a href="mailto:mail@htmlacademy.ru" class="head-feedback__mail">
+              <span class="visually-hidden">Написать письмо на почту mail@htmlacademy.ru</span>
+              <svg class="head-feedback__svg" width="18" height="18">
+                <use xlink:href="img/sptire.svg#topmenu-mail"></use>
+              </svg>
+            </a>
+            <a class="head-feedback__auth head-feedback__auth--btn" href="">Авторизация</a>
+          </div>
+          <div class="header-menu-desktop">
+            <a href="index.html" class="header-menu-desktop__link">
+              <span class="header-menu-desktop__link-span" data-hover="О сервисе">О сервисе</span>
+            </a>
+            <a href="form.html" class="header-menu-desktop__link">
+              <span class="header-menu-desktop__link-span" data-hover="Направления">Направления</span>
+            </a>
+            <a href="catalog.html" class="header-menu-desktop__link">
+              <span class="header-menu-desktop__link-span" data-hover="Попутчики">Попутчики</span>
+            </a>
+          </div>
+        </div>
+        <div class="header-menu header-menu--none header-menu--jsnone">
           <div class="header-menu__title">
-            <a class="header-menu__link">О сервисе</a>
+            <a href="index.html" class="header-menu__link">О сервисе</a>
             <a href="form.html" class="header-menu__link">Направления</a>
             <a href="catalog.html" class="header-menu__link">Попутчики</a>
           </div>
@@ -72,18 +74,12 @@
                 <svg class="header-menu__svg" width="18" height="17">
                   <use xlink:href="img/sptire.svg#contacts-phone"></use>
                 </svg>
-                <svg class="header-menu__item-svg-desktop" width="18" height="18">
-                  <use xlink:href="img/sptire.svg#topmenu-phone"></use>
-                </svg>
               </div>
             </a>
             <a href="mailto:mail@htmlacademy.ru" class="header-menu__item header-menu__item--mail">mail@htmlacademy.ru
               <div class="header-menu__item-svg">
                 <svg class="header-menu__svg" width="18" height="17">
                   <use xlink:href="img/sptire.svg#contacts-mail"></use>
-                </svg>
-                <svg class="header-menu__item-svg-desktop" width="18" height="18">
-                  <use xlink:href="img/sptire.svg#topmenu-mail"></use>
                 </svg>
               </div>
             </a>
@@ -408,7 +404,7 @@
                 <use xlink:href="img/sptire.svg#contacts-location"></use>
               </svg>
             </h2>
-            <a href="" class="maps__btn">Проложить маршрут</a>
+            <a href="https://yandex.ru/maps/-/CCQdzZCCpD" class="maps__btn">Проложить маршрут</a>
           </div>
       </section>
     </main>
@@ -422,6 +418,9 @@
           <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
           <img class="map-img__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта" width="320" height="424">
         </picture>
+      </div>
+      <div class="map-img__img-yandex">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aac724e8efed245a438e4f750b5f1623c3126a43e0b090b3f42cce1078d84782c&amp;width=100%25&amp;height=584&amp;lang=ru_RU&amp;scroll=true"></script>
       </div>
     </div>
     <footer class="page-footer">

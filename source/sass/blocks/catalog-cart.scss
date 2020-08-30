@@ -30,7 +30,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 180px 140px 1fr 108px;
+    grid-template-columns: 285px 180px 140px 1fr 108px;
     grid-template-rows: 1fr 1fr 1fr;
     padding: 0;
     margin-bottom: 31px;
@@ -71,6 +71,7 @@
       overflow: hidden;
 
       & img {
+        border-radius: 0;
         width: 285px;
         height: 285px;
       }

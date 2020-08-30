@@ -23,6 +23,7 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
@@ -31,22 +32,6 @@ const styles = () => {
 }
 
 exports.styles = styles;
-
-// Csso
-
-const cssDef = () => {
-  return gulp.src("source/sass/style.scss")
-    .pipe(plumber())
-    .pipe(sourcemap.init())
-    .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
-}
-
-exports.csso = cssDef;
 
 // ImageMin
 
@@ -149,7 +134,6 @@ exports.html = html;
 
 const build = gulp.series(
   clean,
-  cssDef,
   styles,
   images,
   createWebp,
