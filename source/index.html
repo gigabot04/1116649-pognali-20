@@ -8,7 +8,8 @@
   </head>
   <body class="page__body">
     <header class="page-header page-header--index">
-      <div class="page-header__fix--js">
+      <h1 class="visually-hidden">Главная страница</h1>
+      <div class="page-header__fix-js">
         <div class="page-header__wrap page-container">
           <a href="index.html" class="main-logo main-logo__header-add main-logo__header-add--up">
             <picture>
@@ -142,14 +143,16 @@
             <p class="service-desc__item service-desc__item--1">Любое путешествие веселее с&nbsp;попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий <br>и черпайте вдохновение в чужих.</p>
             <p class="service-desc__item service-desc__item--2">А если найдете кого-то близкого по духу - <br>скорее зовите в совместный трип!</p>
           </div>
-          <button class="service__btn">Подробнее</button>
+            <a href="" class="service__btn">
+              <span class="service__btn-span">Подробнее</span>
+            </a>
         </div>
       </section>
       <section class="directions">
         <div class="page-container directions__page-container">
           <h2 class="directions__title">Направления</h2>
           <p class="directions__text">Мы не продаем туры и&nbsp;ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
-          <div class="directions-cart__wrapper">
+          <div class="directions__wrapper">
             <div class="directions-cart">
               <picture>
                 <source media="(min-width: 768px)" srcset="img/thailand-desktop@1x.webp 1x, img/thailand-desktop@2x.webp 2x" type="image/webp">
@@ -196,8 +199,7 @@
               </div>
             </div>
           </div>
-          <a class="directions__button directions__button--btn" href="form.html">
-            Показать все</a>
+          <a class="directions__button directions__button--btn" href="form.html">Показать все</a>
         </div>
       </section>
       <section class="companions">
@@ -207,15 +209,15 @@
             <p class="companions__item companions__item--1">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, <br>а другому маршрут для хайкинга.</p>
             <p class="companions__item companions__item--2">Теперь можно легко <br>найти единомышленников!</p>
           </div>
-          <div class="companions-cart__flex">
+          <div class="companions__flex">
             <div class="companions-cart">
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x" type="image/webp">
-                <source srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x" type="image/webp">
+                <source srcset="img/firsova-mobile-new@1x.webp 1x, img/firsova-mobile-new@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
-                <img class="companions-cart__img" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Фото Тани Фирсовой" width="270" height="270">
+                <img class="companions-cart__img" src="img/firsova-mobile-new@1x.jpg" srcset="img/firsova-mobile-new@2x.jpg 2x" alt="Фото Тани Фирсовой" width="270" height="270">
               </picture>
               <div class="companions-cart__block">
                 <div class="companions-cart__flags">
@@ -278,10 +280,10 @@
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x" type="image/webp">
-                <source srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x" type="image/webp">
+                <source srcset="img/demin-mobile-new@1x.webp 1x, img/demin-mobile-new@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
-                <img class="companions-cart__img" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" alt="Фото Пети Демина" width="270" height="270">
+                <img class="companions-cart__img" src="img/demin-mobile-new@1x.jpg" srcset="img/demin-mobile-new@2x.jpg 2x" alt="Фото Пети Демина" width="270" height="270">
               </picture>
               <div class="companions-cart__block">
                 <div class="companions-cart__flags">
@@ -400,7 +402,7 @@
       <section class="maps">
           <div class="maps__page-container page-container">
             <h2 class="maps__address">ул. Большая Конюшенная, 19/8
-              <svg class="maps__pin">
+              <svg class="maps__pin" widht="21" height="21">
                 <use xlink:href="img/sptire.svg#contacts-location"></use>
               </svg>
             </h2>
@@ -436,15 +438,15 @@
           </picture>
         </a>
         <div class="page-footer__social-contacts">
-          <div class="page-footer__contact-hover">
-            <a href="" class="page-footer__social-contacts--fb page-footer__social page-footer__social-contacts--active"></a>
-          </div>
-          <div class="page-footer__contact-hover">
-            <a href="" class="page-footer__social-contacts--vk page-footer__social page-footer__social-contacts--active"></a>
-          </div>
-          <div class="page-footer__contact-hover">
-            <a href="" class="page-footer__social-contacts--inst page-footer__social page-footer__social-contacts--active"></a>
-          </div>
+          <a href="" class="page-footer__contact-hover">
+            <span class="page-footer__social-contact--fb page-footer__social-contact page-footer__social-contact--active"></span>
+          </a>
+          <a href="" class="page-footer__contact-hover">
+            <span class="page-footer__social-contact--vk page-footer__social-contact page-footer__social-contact--active"></span>
+          </a>
+          <a href="" class="page-footer__contact-hover">
+            <span class="page-footer__social-contact--inst page-footer__social-contact page-footer__social-contact--active"></span>
+          </a>
         </div>
         <a class="page-footer__htmlacademy-wrap" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="page-footer__htmlacademy-text">Разработано</span>

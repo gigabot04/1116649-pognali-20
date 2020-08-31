@@ -71,7 +71,11 @@
 
 .map-img__img-yandex {
   position: absolute;
-  top: 0;
+  top: -85px;
   right: 0;
   left: 0;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+  }
 }

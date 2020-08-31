@@ -3,8 +3,8 @@ var formBtn = document.querySelector(".form-setting__next--step3");
 var formTextarea = document.querySelectorAll(".form-setting__action-plan");
 var formSpan = document.querySelectorAll(".form-setting__invalid");
 
-for (var i = 0; i < formTextarea.length; i++) {
-  formBtn.addEventListener("click", function (evt) {
+formBtn.addEventListener("click", function (evt) {
+  for (var i = 0; i < formTextarea.length; i++) {
     formSpan[i].classList.remove("form-setting__invalid--active");
     formTextareaWrap[i].classList.remove("form-setting__action-plan-wrap--invalid");
     if ( !formTextarea[i].value ) {
@@ -17,5 +17,5 @@ for (var i = 0; i < formTextarea.length; i++) {
         formTextareaWrap[i].classList.add("form-setting__animate-shake");
       }
     }
-  })
-}
+  }
+})

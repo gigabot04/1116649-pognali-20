@@ -63,6 +63,26 @@
   }
 }
 
+.companions__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 34px;
+    margin-right: 34px;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    margin: 0;
+    margin-top: 34px;
+  }
+}
+
 .companions__page-container {
   padding-top: 80px;
   position: relative;
@@ -102,7 +122,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 1fr 80px;
+    grid-template-rows: 100px 1fr max-content;
   }
 }
 

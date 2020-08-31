@@ -18,7 +18,7 @@
   grid-template-rows: max-content max-content max-content;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 200px 1fr 200px;
   }
 }
 
@@ -58,7 +58,7 @@
   }
 
   &:active {
-    .page-footer__social {
+    .page-footer__social-contact {
       opacity: 0.3;
     }
   }
@@ -111,16 +111,12 @@
     font-size: 20px;
     line-height: 20px;
     align-self: center;
-    margin-left: 75px;
+    margin-left: 46px;
   }
 
   @media (min-width: $tablet-desktop-1) and (max-width: $tablet-desktop-2) {
     text-align: end;
     padding-right: 40px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 285px;
   }
 }
 
@@ -149,11 +145,18 @@
 
 .page-footer__social-contacts {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
+  width: 288px;
   margin-top: 32px;
   margin-bottom: 58px;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
+}
+
+.page-footer__social-contact {
   &--fb {
     background-image: url("../img/icon/facebook.svg");
     display: block;
@@ -195,9 +198,5 @@
 
   &--active {
     opacity: 1;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
   }
 }

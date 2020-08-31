@@ -61,7 +61,6 @@
             </a>
           </div>
         </div>
-
         <div class="header-menu header-menu--none header-menu--jsnone">
           <div class="header-menu__title">
             <a href="index.html" class="header-menu__link">О сервисе</a>
@@ -96,7 +95,6 @@
         <h1 class="page-header__title">Попутчики</h1>
         <a href="index.html" class="page-header__back">На главную</a>
       </div>
-    </div>
     </header>
     <main class="page-main page-main--catalog">
       <section class="filter">
@@ -531,8 +529,8 @@
             <div class="filter-people__item filter-people__item--5">
               <button class="filter-people__btn" type="button">Левел</button>
               <div class="filter-people__level-wrap">
-                <input class="filter-people__level-control" type="number" min="0" name="Левел" value="30">
-                <input class="filter-people__level-control" type="number" max="100" name="Левел" value="100">
+                <input class="filter-people__level-control" type="number" min="0" name="ЛевелМинимум" value="30">
+                <input class="filter-people__level-control" type="number" max="100" name="ЛевелМаксимум" value="100">
               </div>
               <div class="filter-people__range">
                 <div class="filter-people__lane">
@@ -777,32 +775,32 @@
             <a class="catalog-cart__button" href="">Позвать!</a>
           </div>
         </div>
-        <div class="catalog-cart__show-more">
-          <a class="catalog-cart__companions" href="">Показать еще</a>
-          <div class="catalog-cart__arrow-wrap">
-            <div class="catalog-cart__number-site-wrap">
-              <div class="catalog-cart__number-site catalog-cart__number-site--active">
-                <span class="catalog-cart__number-span">1</span>
+        <div class="catalog-grid__show-more">
+          <a class="catalog-grid__companions" href="">Показать еще</a>
+          <div class="catalog-grid__arrow-wrap">
+            <div class="catalog-grid__number-site-wrap">
+              <div class="catalog-grid__number-site catalog-grid__number-site--active">
+                <a class="catalog-grid__number-span">1</a>
               </div>
-              <div class="catalog-cart__number-site">
-                <span class="catalog-cart__number-span">2</span>
+              <div class="catalog-grid__number-site">
+                <a class="catalog-grid__number-span">2</a>
               </div>
-              <div class="catalog-cart__number-site">
-                <span class="catalog-cart__number-span">3</span>
+              <div class="catalog-grid__number-site">
+                <a class="catalog-grid__number-span">3</a>
               </div>
-              <div class="catalog-cart__number-site">
-                <span class="catalog-cart__number-span">4</span>
+              <div class="catalog-grid__number-site">
+                <a class="catalog-grid__number-span">4</a>
               </div>
             </div>
-            <a class="catalog-cart__arrow catalog-cart__arrow--left" href="" aria-label="Стрелка влево"></a>
-            <a class="catalog-cart__arrow catalog-cart__arrow--right" href="" aria-label="Стрелка вправо"></a>
+            <a class="catalog-grid__arrow catalog-grid__arrow--left" href="" aria-label="Стрелка влево"></a>
+            <a class="catalog-grid__arrow catalog-grid__arrow--right" href="" aria-label="Стрелка вправо"></a>
           </div>
         </div>
       </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__page-container page-container">
-        <a href="" class="main-logo page-footer__main-logo">
+        <a href="index.html" class="main-logo page-footer__main-logo">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x" type="image/webp">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x" type="image/webp">
@@ -813,15 +811,15 @@
           </picture>
         </a>
         <div class="page-footer__social-contacts">
-          <div class="page-footer__contact-hover">
-            <a href="" class="page-footer__social-contacts--fb page-footer__social page-footer__social-contacts--active"></a>
-          </div>
-          <div class="page-footer__contact-hover">
-            <a href="" class="page-footer__social-contacts--vk page-footer__social page-footer__social-contacts--active"></a>
-          </div>
-          <div class="page-footer__contact-hover">
-            <a href="" class="page-footer__social-contacts--inst page-footer__social page-footer__social-contacts--active"></a>
-          </div>
+          <a href="" class="page-footer__contact-hover">
+            <span class="page-footer__social-contact--fb page-footer__social-contact page-footer__social-contact--active"></span>
+          </a>
+          <a href="" class="page-footer__contact-hover">
+            <span class="page-footer__social-contact--vk page-footer__social-contact page-footer__social-contact--active"></span>
+          </a>
+          <a href="" class="page-footer__contact-hover">
+            <span class="page-footer__social-contact--inst page-footer__social-contact page-footer__social-contact--active"></span>
+          </a>
         </div>
         <a class="page-footer__htmlacademy-wrap" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="page-footer__htmlacademy-text">Разработано</span>

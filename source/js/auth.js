@@ -6,30 +6,37 @@ var headerTitle = document.querySelector(".header-menu__title");
 var headerAuth = document.querySelector(".header-menu__auth");
 var headerFeedback = document.querySelector(".header-menu__feedback");
 var headerSocial = document.querySelector(".header-menu__social-contacts");
+var headerFix = document.querySelector(".page-header__fix-js");
+var headerLogo = document.querySelectorAll(".main-logo");
+var headerWrap = document.querySelector(".page-header__wrap");
+var headerLink = document.querySelectorAll(".header-menu-desktop__link");
+var headerLinkWrap = document.querySelector(".header-menu-desktop");
+var headerBody = document.querySelector("body");
 
 headerMenu.classList.remove("header-menu--jsnone");
 headerBtn.classList.remove("page-header__toggle--nojs");
-
-if (headerMenu.classList.contains("header-menu--active")) {
-  line1.style.backgroundColor = "#cccccc";
-  line2.style.backgroundColor = "#cccccc";
-}
 
 headerBtn.addEventListener("click", function () {
   if (headerMenu.classList.contains("header-menu--active")) {
     headerMenu.classList.remove("header-menu--active");
     headerBtn.classList.remove("page-header__toggle--close");
-    headerTitle.classList.add("header-menu__title--none");
-    headerAuth.classList.add("header-menu__auth--none");
-    headerFeedback.classList.add("header-menu__feedback--none");
-    headerSocial.classList.add("header-menu__social-contacts--none");
+    headerBody.style.overflow = "visible";
   } else {
     headerMenu.classList.add("header-menu--active");
     headerBtn.classList.add("page-header__toggle--close");
-    headerTitle.classList.remove("header-menu__title--none");
-    headerAuth.classList.remove("header-menu__auth--none");
-    headerFeedback.classList.remove("header-menu__feedback--none");
-    headerSocial.classList.remove("header-menu__social-contacts--none");
+    headerBody.style.overflow = "hidden";
+  }
+
+  if (headerMenu.classList.contains("header-menu--active") || headerFix.classList.contains("page-header__fix")) {
+    line1.style.backgroundColor = "#ccc";
+    line2.style.backgroundColor = "#ccc";
+    headerLogo[1].classList.add("main-logo__header-add--up");
+    headerLogo[0].classList.remove("main-logo__header-add--up");
+  } else {
+    line1.style.backgroundColor = "#fff";
+    line2.style.backgroundColor = "#fff";
+    headerLogo[0].classList.add("main-logo__header-add--up");
+    headerLogo[1].classList.remove("main-logo__header-add--up");
   }
 })
 
@@ -37,12 +44,40 @@ window.addEventListener("scroll", function () {
   var pagePx = window.pageYOffset;
 
   if (pagePx > 500) {
-    headerBtn.classList.add("page-header__toggle--fixed");
-    headerMenu.classList.add("header-menu--scrollMenu");
-    headerMenu.classList.remove("header-menu--none");
+    headerFix.classList.add("page-header__fix");
+    headerLogo[1].classList.add("main-logo__header-add--up");
+    headerLogo[0].classList.remove("main-logo__header-add--up");
+    line1.style.backgroundColor = "#ccc";
+    line2.style.backgroundColor = "#ccc";
+    headerWrap.classList.add("page-header__wrap--paddingNone");
+    headerLinkWrap.classList.add("header-menu-desktop--blue");
+
+    for (var i = 0; i < headerLink.length; i++) {
+      headerLink[i].classList.add("header-menu-desktop__link--blue");
+    }
   } else {
-    headerBtn.classList.remove("page-header__toggle--fixed");
-    headerMenu.classList.remove("header-menu--scrollMenu");
-    headerMenu.classList.add("header-menu--none");
+    headerFix.classList.remove("page-header__fix");
+    headerLogo[0].classList.add("main-logo__header-add--up");
+    headerLogo[1].classList.remove("main-logo__header-add--up");
+    line1.style.backgroundColor = "#fff";
+    line2.style.backgroundColor = "#fff";
+    headerWrap.classList.remove("page-header__wrap--paddingNone");
+    headerLinkWrap.classList.remove("header-menu-desktop--blue");
+
+    for (var i = 0; i < headerLink.length; i++) {
+      headerLink[i].classList.remove("header-menu-desktop__link--blue");
+    }
+
+    if (headerMenu.classList.contains("header-menu--active")) {
+      line1.style.backgroundColor = "#ccc";
+      line2.style.backgroundColor = "#ccc";
+      headerLogo[1].classList.add("main-logo__header-add--up");
+      headerLogo[0].classList.remove("main-logo__header-add--up");
+    } else {
+      line1.style.backgroundColor = "#fff";
+      line2.style.backgroundColor = "#fff";
+      headerLogo[0].classList.add("main-logo__header-add--up");
+      headerLogo[1].classList.remove("main-logo__header-add--up");
+    }
   }
 })

@@ -17,6 +17,19 @@
   }
 }
 
+.directions__wrapper {
+  margin-top: 30px;
+  position: relative;
+  z-index: 18;
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1 / -1;
+    margin-top: 153px;
+    z-index: 20;
+    margin-left: 34px;
+  }
+}
+
 .directions__page-container {
   padding-top: 102px;
 
@@ -30,7 +43,7 @@
     display: grid;
     padding-top: 110px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 1fr 62px;
+    grid-template-rows: 100px 1fr max-content;
   }
 }
 

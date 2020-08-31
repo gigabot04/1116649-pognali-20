@@ -403,7 +403,7 @@
   }
 }
 
-.from-setting__svg-wrap {
+.form-setting__svg-wrap {
   position: relative;
   display: block;
   margin: 0;
@@ -414,7 +414,7 @@
   z-index: 1;
 }
 
-.form-setting__transport-control:checked + .from-setting__svg-wrap {
+.form-setting__transport-control:checked + .form-setting__svg-wrap {
   opacity: 1;
 
   &:hover {
@@ -426,7 +426,7 @@
   }
 }
 
-.form-setting__transport-control:not(:checked) + .from-setting__svg-wrap {
+.form-setting__transport-control:not(:checked) + .form-setting__svg-wrap {
   &:hover {
     opacity: 0.4;
   }
@@ -459,7 +459,7 @@
   }
 }
 
-.from-setting__svg {
+.form-setting__svg {
   position: absolute;
   display: block;
   top: 50%;
@@ -469,7 +469,7 @@
   width: 16px;
   height: 16px;
 
-  & .from-setting__svg-path {
+  & .form-setting__svg-path {
     fill: $basic-blue-light;
   }
 
@@ -780,33 +780,33 @@
     right: 73px;
     width: 76px;
   }
+}
 
-  &--desktop {
-    display: none;
+.form-setting__points-desktop {
+  display: none;
+  position: absolute;
+  top: 231px;
+  right: 207px;
+  width: 181px;
+  min-height: 132px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+
+
+  @-moz-document url-prefix() {
+    top: -45px;
+  }
+
+  .form-setting__point {
     position: absolute;
-    top: 231px;
-    right: 207px;
-    width: 181px;
-    min-height: 132px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    align-items: center;
+    top: 11px;
+    left: 0;
+    opacity: 1;
+  }
 
-
-    @-moz-document url-prefix() {
-      top: -45px;
-    }
-
-    .form-setting__point {
-      position: absolute;
-      top: 11px;
-      left: 0;
-      opacity: 1;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: grid;
-    }
+  @media (min-width: $desktop-width) {
+    display: grid;
   }
 }
 
@@ -985,7 +985,7 @@
   }
 }
 
-.from-setting__countries-wrap {
+.form-setting__countries-wrap {
   position: relative;
   width: 100%;
 
@@ -1540,74 +1540,68 @@
 }
 
 .form-setting__arrow-left {
+  background-color: transparent;
+  border: 0;
   position: absolute;
   top: 0;
   left: 0;
-  width: 20px;
-  height: 18px;
-  cursor: pointer;
 
-  & path {
+  & svg {
+    width: 20px;
+    height: 18px;
     fill: rgba($basic-black, 0.3);
-  }
 
-  &:hover {
-    & path {
+    &:hover {
       fill: rgba($basic-black, 0.5);
     }
-  }
 
-  &:active {
-    & path {
+    &:active {
       fill: rgba($basic-black, 0.1);
     }
-  }
 
-  @media (min-width: $tablet-width) {
-    width: 18px;
-    height: 34px;
-    top: 2px;
-    left: 16px;
-  }
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 34px;
+      top: 2px;
+      left: 16px;
+    }
 
-  @media (min-width: $desktop-width) {
-    left: 0;
+    @media (min-width: $desktop-width) {
+      left: 0;
+    }
   }
 }
 
 .form-setting__arrow-right {
+  background-color: transparent;
+  border: 0;
   position: absolute;
   top: 0;
   right: 0;
-  width: 9px;
-  height: 18px;
-  cursor: pointer;
 
-  & path {
+  & svg {
+    width: 9px;
+    height: 18px;
     fill: rgba($basic-black, 0.3);
-  }
 
-  &:hover {
-    & path {
+    &:hover {
       fill: rgba($basic-black, 0.5);
     }
-  }
 
-  &:active {
-    & path {
+    &:active {
       fill: rgba($basic-black, 0.1);
     }
-  }
 
-  @media (min-width: $tablet-width) {
-    width: 18px;
-    height: 34px;
-    top: 2px;
-    right: 15px;
-  }
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 34px;
+      top: 2px;
+      right: 15px;
+    }
 
-  @media (min-width: $desktop-width) {
-    right: 6px;
+    @media (min-width: $desktop-width) {
+      right: 6px;
+    }
   }
 }
 
@@ -1643,7 +1637,7 @@
   }
 }
 
-.from-setting__cell {
+.form-setting__cell {
   border: 1px solid $day-border;
   background-color: $basic-white-dark;
 
@@ -1701,7 +1695,7 @@
   }
 }
 
-.from-setting__day--on {
+.form-setting__day--on {
   background-color: $basic-blue-light;
   color: $basic-white;
 }
@@ -1722,8 +1716,8 @@
   }
 }
 
-.from-setting__day-today-text,
-.from-setting__day-then-text {
+.form-setting__day-today-text,
+.form-setting__day-then-text {
   display: none;
   font-style: normal;
   font-weight: normal;

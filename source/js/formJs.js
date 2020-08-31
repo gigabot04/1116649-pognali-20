@@ -115,19 +115,21 @@ var formBtn = document.querySelector(".form-setting__next--step3");
 var formTextarea = document.querySelectorAll(".form-setting__action-plan");
 var formSpan = document.querySelectorAll(".form-setting__invalid");
 
-for (var i = 0; i < formTextarea.length; i++) {
-  formBtn.addEventListener("click", function (evt) {
-    formSpan[i].classList.remove("form-setting__invalid--active");
-    formTextareaWrap[i].classList.remove("form-setting__action-plan-wrap--invalid");
-    if ( !formTextarea[i].value ) {
-      evt.preventDefault();
-      formSpan[i].classList.add("form-setting__invalid--active");
-      formTextareaWrap[i].classList.add("form-setting__action-plan-wrap--invalid");
-      if (formTextareaWrap[i].classList.contains("form-setting__action-plan-wrap--invalid")) {
-        formTextareaWrap[i].classList.remove("form-setting__animate-shake");
-        formTextareaWrap[i].offsetWidth = formTextareaWrap[i].offsetWidth;
-        formTextareaWrap[i].classList.add("form-setting__animate-shake");
+formBtn.addEventListener("click", function (evt) {
+  for (var j = 0; j < formTextarea.length; j++) {
+    evt.preventDefault();
+    if (formSpan[j].classList.contains("form-setting__invalid--active") || formTextareaWrap[j].classList.contains("form-setting__action-plan-wrap--invalid")) {
+      formSpan[j].classList.remove("form-setting__invalid--active");
+      formTextareaWrap[j].classList.remove("form-setting__action-plan-wrap--invalid");
+    }
+    if (!formTextarea[j].value) {
+      formSpan[0].classList.add("form-setting__invalid--active");
+      formTextareaWrap[j].classList.add("form-setting__action-plan-wrap--invalid");
+      if (formTextareaWrap[j].classList.contains("form-setting__action-plan-wrap--invalid")) {
+        formTextareaWrap[j].classList.remove("form-setting__animate-shake");
+        formTextareaWrap[j].offsetWidth = formTextareaWrap[j].offsetWidth;
+        formTextareaWrap[j].classList.add("form-setting__animate-shake");
       }
     }
-  })
-}
+  }
+})

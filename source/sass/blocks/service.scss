@@ -151,14 +151,16 @@
     font-size: 24px;
     line-height: 24px;
     color: $basic-blue-light;
-    display: block;
-    height: 80px;
+    display: inline-block;
+    min-height: 80px;
     width: 276px;
     text-align: start;
     margin-top: 53px;
     margin-left: 24px;
     padding-left: 33px;
     position: relative;
+    padding-top: 25px;
+    text-decoration: none;
 
     &::after {
       content: "";
