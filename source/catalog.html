@@ -5,6 +5,7 @@
     <title>HTML Academy: Погнали</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="preload" href="fonts/*.woff2" as="font">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -85,9 +86,9 @@
             </a>
           </div>
           <div class="header-menu__social-contacts">
-            <a href="" class="header-menu__social-contact header-menu__social-contact--fb "></a>
-            <a href="" class="header-menu__social-contact header-menu__social-contact--vk "></a>
-            <a href="" class="header-menu__social-contact header-menu__social-contact--inst"></a>
+            <a href="" class="header-menu__social-contact header-menu__social-contact--fb" aria-label="Фейсбук"></a>
+            <a href="" class="header-menu__social-contact header-menu__social-contact--vk" aria-label="Вконтакте"></a>
+            <a href="" class="header-menu__social-contact header-menu__social-contact--inst" aria-label="Инстаграм"></a>
           </div>
         </div>
       </div>
@@ -451,33 +452,33 @@
             <div class="filter-people__item filter-people__item--1">
               <button class="filter-people__btn filter-people__btn--active" type="button">Хобби</button>
               <div class="filter-people__wrap filter-people__wrap--active">
-                <input class="filter-people__control filter-people__hobby-control" type="checkbox" id="sport" name="sport">
+                <input class="visually-hidden filter-people__control filter-people__hobby-control" type="checkbox" id="sport" name="sport">
                 <label class="filter-people__label filter-people__hobby-label" for="sport">Спортзал</label>
-                <input class="filter-people__control filter-people__hobby-control" type="checkbox" id="hookah" name="hookah">
+                <input class="visually-hidden filter-people__control filter-people__hobby-control" type="checkbox" id="hookah" name="hookah">
                 <label class="filter-people__label filter-people__hobby-label" for="hookah">Кальян</label>
-                <input class="filter-people__control filter-people__hobby-control" type="checkbox" id="sofa" name="sofa">
+                <input class="visually-hidden filter-people__control filter-people__hobby-control" type="checkbox" id="sofa" name="sofa">
                 <label class="filter-people__label filter-people__hobby-label" for="sofa">Диван</label>
               </div>
             </div>
             <div class="filter-people__item filter-people__item--2">
               <button class="filter-people__btn filter-people__btn--active" type="button">Музыка</button>
               <div class="filter-people__wrap filter-people__wrap--active">
-                <input class="filter-people__control filter-people__control--music" type="checkbox" id="hard-rock" name="hard-rock">
+                <input class="visually-hidden filter-people__control filter-people__control--music" type="checkbox" id="hard-rock" name="hard-rock">
                 <label class="filter-people__label filter-people__label--music" for="hard-rock">Тяжелый рок</label>
-                <input class="filter-people__control filter-people__control--music" type="checkbox" id="rus-rap" name="rus-rap">
+                <input class="visually-hidden filter-people__control filter-people__control--music" type="checkbox" id="rus-rap" name="rus-rap">
                 <label class="filter-people__label filter-people__label--music" for="rus-rap">Русский рэп</label>
-                <input class="filter-people__control filter-people__control--music" type="checkbox" id="evrodance" name="evrodance">
+                <input class="visually-hidden filter-people__control filter-people__control--music" type="checkbox" id="evrodance" name="evrodance">
                 <label class="filter-people__label filter-people__label--music" for="evrodance">Евроденс</label>
               </div>
             </div>
             <div class="filter-people__item filter-people__item--3">
               <button class="filter-people__btn filter-people__btn--active" type="button">Еда</button>
               <div class="filter-people__wrap filter-people__wrap--active">
-                <input class="filter-people__control filter-people__control--food" type="checkbox" id="meat" name="meat">
+                <input class="visually-hidden filter-people__control filter-people__control--food" type="checkbox" id="meat" name="meat">
                 <label class="filter-people__label filter-people__label--food" for="meat">Мясоед</label>
-                <input class="filter-people__control filter-people__control--food" type="checkbox" id="good" name="good">
+                <input class="visually-hidden filter-people__control filter-people__control--food" type="checkbox" id="good" name="good">
                 <label class="filter-people__label filter-people__label--food" for="good">Сидит на ПП</label>
-                <input class="filter-people__control filter-people__control--food" type="checkbox" id="vegan" name="vegan">
+                <input class="visually-hidden filter-people__control filter-people__control--food" type="checkbox" id="vegan" name="vegan">
                 <label class="filter-people__label filter-people__label--food" for="vegan">Веган-сыроед</label>
               </div>
             </div>
@@ -486,7 +487,7 @@
               <div class="filter-people__transport-container">
                 <label class="filter-people__transport-label">
                   <span class="visually-hidden">На самолете</span>
-                  <input class="filter-people__transport-control filter-people__transport-control--plane" type="checkbox" name="самолет">
+                  <input class="visually-hidden filter-people__transport-control filter-people__transport-control--plane" type="checkbox" name="самолет">
                   <span class="filter-people__svg-wrap">
                     <svg class="filter-people__svg" width="32" height="32">
                       <use xlink:href="img/sptire.svg#plane"></use>
@@ -496,7 +497,7 @@
                 </label>
                 <label class="filter-people__transport-label">
                   <span class="visually-hidden">На авто</span>
-                  <input class="filter-people__transport-control filter-people__transport-control--car" type="checkbox" name="Авто">
+                  <input class="visually-hidden filter-people__transport-control filter-people__transport-control--car" type="checkbox" name="Авто">
                   <span class="filter-people__svg-wrap">
                     <svg class="filter-people__svg" width="17" height="17">
                       <use xlink:href="img/sptire.svg#bus"></use>
@@ -506,7 +507,7 @@
                 </label>
                 <label class="filter-people__transport-label">
                   <span class="visually-hidden">На велосипеде</span>
-                  <input class="filter-people__transport-control filter-people__transport-control--bike" type="checkbox" name="Велосипед">
+                  <input class="visually-hidden filter-people__transport-control filter-people__transport-control--bike" type="checkbox" name="Велосипед">
                   <span class="filter-people__svg-wrap">
                     <svg class="filter-people__svg" width="17" height="17">
                       <use xlink:href="img/sptire.svg#bike"></use>
@@ -516,7 +517,7 @@
                 </label>
                 <label class="filter-people__transport-label">
                   <span class="visually-hidden">На пешком</span>
-                  <input class="filter-people__transport-control filter-people__transport-control--run" type="checkbox" name="Пешком">
+                  <input class="visually-hidden filter-people__transport-control filter-people__transport-control--run" type="checkbox" name="Пешком">
                   <span class="filter-people__svg-wrap">
                     <svg class="filter-people__svg" width="17" height="17">
                       <use xlink:href="img/sptire.svg#run"></use>
@@ -780,16 +781,16 @@
           <div class="catalog-grid__arrow-wrap">
             <div class="catalog-grid__number-site-wrap">
               <div class="catalog-grid__number-site catalog-grid__number-site--active">
-                <a class="catalog-grid__number-span">1</a>
+                <a class="catalog-grid__number-span" tabindex="0">1</a>
               </div>
               <div class="catalog-grid__number-site">
-                <a class="catalog-grid__number-span">2</a>
+                <a href="" class="catalog-grid__number-span" tabindex="0">2</a>
               </div>
               <div class="catalog-grid__number-site">
-                <a class="catalog-grid__number-span">3</a>
+                <a href="" class="catalog-grid__number-span" tabindex="0">3</a>
               </div>
               <div class="catalog-grid__number-site">
-                <a class="catalog-grid__number-span">4</a>
+                <a href="" class="catalog-grid__number-span" tabindex="0">4</a>
               </div>
             </div>
             <a class="catalog-grid__arrow catalog-grid__arrow--left" href="" aria-label="Стрелка влево"></a>
@@ -812,13 +813,13 @@
         </a>
         <div class="page-footer__social-contacts">
           <a href="" class="page-footer__contact-hover">
-            <span class="page-footer__social-contact--fb page-footer__social-contact page-footer__social-contact--active"></span>
+            <span class="page-footer__social-contact--fb page-footer__social-contact page-footer__social-contact--active" aria-label="Фейсбук"></span>
           </a>
           <a href="" class="page-footer__contact-hover">
-            <span class="page-footer__social-contact--vk page-footer__social-contact page-footer__social-contact--active"></span>
+            <span class="page-footer__social-contact--vk page-footer__social-contact page-footer__social-contact--active" aria-label="Вконтакте"></span>
           </a>
           <a href="" class="page-footer__contact-hover">
-            <span class="page-footer__social-contact--inst page-footer__social-contact page-footer__social-contact--active"></span>
+            <span class="page-footer__social-contact--inst page-footer__social-contact page-footer__social-contact--active" aria-label="Инстаграм"></span>
           </a>
         </div>
         <a class="page-footer__htmlacademy-wrap" href="https://htmlacademy.ru/intensive/adaptive">

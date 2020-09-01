@@ -155,10 +155,12 @@
     font-size: 60px;
     line-height: 60px;
     grid-column: 1 / -1;
+    max-width: 440px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 77px 0 70px 65px;
+    max-width: 600px;
   }
 }
 

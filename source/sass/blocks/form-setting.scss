@@ -405,6 +405,7 @@
 
 .form-setting__svg-wrap {
   position: relative;
+  top: -18px;
   display: block;
   margin: 0;
   padding: 0;
@@ -424,6 +425,10 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:focus {
+    opacity: 0.7;
+  }
 }
 
 .form-setting__transport-control:not(:checked) + .form-setting__svg-wrap {
@@ -433,6 +438,10 @@
 
   &:active {
     opacity: 0.1;
+  }
+
+  &:focus {
+    opacity: 0.4;
   }
 }
 
@@ -486,7 +495,13 @@
 .form-setting__transport-control {
   position: relative;
   margin-right: 17px;
-  display: none;
+  height: 0;
+
+  &:focus {
+    & + .form-setting__svg-wrap {
+      opacity: 0.4;
+    }
+  }
 }
 
 .form-setting__plans {
@@ -1440,7 +1455,11 @@
 }
 
 .form-setting__control-checkbox {
-  display: none;
+  &:focus {
+    & + .form-setting__control-checked {
+      outline: 1px solid black;
+    }
+  }
 }
 
 .form-setting__control-checkbox:checked + .form-setting__control-checked {

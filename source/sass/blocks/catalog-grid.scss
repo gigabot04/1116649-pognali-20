@@ -274,6 +274,8 @@
   @media (min-width: $tablet-width) {
     display: inline;
     position: relative;
+    text-decoration: none;
+    color: $basic-blue-light;
     z-index: 2;
   }
 }
