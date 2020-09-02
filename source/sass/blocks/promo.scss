@@ -18,7 +18,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: -51px;
+    top: -74px;
     left: 50%;
     transform: translateX(-50%);
     background-image:
@@ -71,6 +71,7 @@
         50% -47px;
       height: 702px;
       width: 100%;
+      top: -54px;
 
       @media (min-resolution: 2dppx) {
         background-image:
@@ -91,7 +92,7 @@
   line-height: 40px;
   text-align: center;
   color: $basic-white;
-  padding-top: 41px;
+  padding-top: 18px;
   margin: 0 auto;
   margin-bottom: 267px;
 

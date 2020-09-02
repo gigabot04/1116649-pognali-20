@@ -1,14 +1,15 @@
 .page-header {
-  background-color: $promo-bg;
-  border-radius: 0 0 20px 20px;
   position: relative;
   z-index: 21;
+  background-color: $promo-bg;
+  border-radius: 0 0 20px 20px;
 
   @media (min-width: $tablet-width) {
     border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 4px;
     background-color: $text-blue;
   }
 
@@ -44,7 +45,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding-top: 27px;
+  padding-top: 21px;
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
@@ -129,6 +130,7 @@
   color: $basic-white;
   width: max-content;
   margin: 15px 0;
+  margin-top: -2px;
 
   &::after {
     content: "";
@@ -151,7 +153,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: 89px 0 72px 34px;
+    margin: 47px 0 72px 34px;
     font-size: 60px;
     line-height: 60px;
     grid-column: 1 / -1;
@@ -159,7 +161,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 77px 0 70px 65px;
+    margin: 72px 0 70px 65px;
     max-width: 600px;
   }
 }
@@ -187,7 +189,7 @@
     text-decoration: none;
     grid-column: 3;
     grid-row: 2;
-    margin-top: 26px;
+    margin-top: -17px;
     margin-right: 94px;
     text-align: end;
 
