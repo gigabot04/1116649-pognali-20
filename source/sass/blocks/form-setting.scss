@@ -357,7 +357,7 @@
 .form-setting__transport-label {
   position: relative;
   display: inline-block;
-  width: 32px;
+  width: 28px;
   height: 32px;
 
   &:hover {
@@ -472,19 +472,17 @@
   position: absolute;
   display: block;
   top: 50%;
-  left: 50%;
+  left: 57%;
   transform: translate(-50%, -50%);
   z-index: 1;
   width: 16px;
   height: 16px;
-
-  & .form-setting__svg-path {
-    fill: $basic-blue-light;
-  }
+  fill: $basic-blue-light;
 
   @media (min-width: $tablet-width) {
     width: 23px;
     height: 22px;
+    left: 50%;
   }
 
   @media (min-width: $desktop-width) {
@@ -935,7 +933,7 @@
     }
     width: 100%;
     padding-left: 125px;
-    padding-top: 237px;
+    padding-top: 233px;
   }
 }
 
@@ -989,13 +987,15 @@
 
     &--2 {
       width: 406px;
-      margin-bottom: 117px;
+      margin-bottom: 120px;
+      margin-top: 31px;
     }
   }
 
   &--3 {
     @media (min-width: $desktop-width) {
       width: 521px;
+      margin-top: 32px;
     }
   }
 }
@@ -1563,7 +1563,7 @@
   border: 0;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -10px;
 
   & svg {
     width: 20px;
@@ -1589,6 +1589,14 @@
       left: 0;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    left: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -7px;
+  }
 }
 
 .form-setting__arrow-right {
@@ -1596,7 +1604,7 @@
   border: 0;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -5px;
 
   & svg {
     width: 9px;
@@ -1621,6 +1629,18 @@
     @media (min-width: $desktop-width) {
       right: 6px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: -9px;
   }
 }
 
@@ -1941,9 +1961,14 @@
   @media (min-width: $tablet-width) {
     border: none;
     height: 53px;
-    right: -10%;
-    top: 9px;
+    right: -8.5%;
+    top: 2px;
     width: 15%;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -10%;
+    top: 8px;
   }
 }
 

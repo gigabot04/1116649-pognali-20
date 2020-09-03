@@ -99,8 +99,8 @@
 
   @media (min-width: $tablet-width) {
     width: 217px;
-    top: -3px;
-    right: 93px;
+    top: -1px;
+    right: 85px;
   }
 
   @media (min-width: $desktop-width) {
@@ -167,7 +167,7 @@
       width: 6px;
       height: 6px;
       box-shadow: 12px 0 0 0 $text-blue, 24px 0 0 0 $text-blue;
-      right: 4px;
+      right: 12px;
     }
 
     @media (min-width: $desktop-width) {
