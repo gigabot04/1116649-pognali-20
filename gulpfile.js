@@ -23,11 +23,11 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("docs/css"))
     .pipe(csso())
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("docs/css"))
     .pipe(sync.stream());
 }
 
@@ -51,7 +51,7 @@ exports.images = images;
 const createWebp = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("docs/img"))
 }
 
 exports.webp = createWebp;
@@ -62,7 +62,7 @@ const sprite = () => {
   return gulp.src("source/img/icon/**/*.svg")
     .pipe(svgstore())
     .pipe(rename("sptire.svg"))
-    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("docs/img"))
 }
 
 exports.sprite = sprite;
@@ -74,7 +74,7 @@ const js = () => {
     "source/js/**/*.js",
   )
     // .pipe(uglify())
-    .pipe(gulp.dest("build/js"))
+    .pipe(gulp.dest("docs/js"))
 }
 
 exports.uglify = js;
@@ -84,7 +84,7 @@ exports.uglify = js;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: "build"
+      baseDir: "docs"
     },
     cors: true,
     notify: false,
@@ -114,7 +114,7 @@ const copy = () => {
   ], {
     base: "source"
   })
-  .pipe(gulp.dest("build"))
+  .pipe(gulp.dest("docs"))
 }
 
 exports.copy = copy;
@@ -122,12 +122,12 @@ exports.copy = copy;
 // clean
 
 const clean = () => {
-  return del("build");
+  return del("docs");
 }
 
 const html = () => {
   return gulp.src("source/*.html")
-    .pipe(gulp.dest("build"))
+    .pipe(gulp.dest("docs"))
     .pipe(sync.stream());
 }
 
