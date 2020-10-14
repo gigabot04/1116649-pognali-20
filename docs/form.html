@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Погнали</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-bolditalic.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-italic.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-light.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-lightitalic.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-mediumitalic.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans.woff2" as="font">
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <div class="page__header">
+        <div class="page-header__fix-js">
+          <div class="page-header__wrap page-container">
+            <a href="index.html" class="main-logo main-logo__header-add main-logo__header-add--up">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x" type="image/webp">
+                <source srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
+                <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Погнали?">
+              </picture>
+            </a>
+            <a href="index.html" class="main-logo main-logo__header-add">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x" type="image/webp">
+                <source srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+                <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Погнали?">
+              </picture>
+            </a>
+            <button class="page-header__toggle page-header__toggle--nojs" type="button" aria-label="Открыть меню">
+              <span class="page-header__line1"></span>
+              <span class="page-header__line2"></span>
+            </button>
+            <div class="head-feedback">
+              <a href="tel:88005558628" class="head-feedback__tel">
+                <span class="visually-hidden">Позвонить по номеру 8 800 555-86-28</span>
+                <svg class="head-feedback__svg" width="18" height="18">
+                  <use xlink:href="img/sptire.svg#topmenu-phone"></use>
+                </svg>
+              </a>
+              <a href="mailto:mail@htmlacademy.ru" class="head-feedback__mail">
+                <span class="visually-hidden">Написать письмо на почту mail@htmlacademy.ru</span>
+                <svg class="head-feedback__svg" width="18" height="18">
+                  <use xlink:href="img/sptire.svg#topmenu-mail"></use>
+                </svg>
+              </a>
+              <a class="head-feedback__auth head-feedback__auth--btn" href="">Авторизация</a>
+            </div>
+            <div class="header-menu-desktop">
+              <a href="index.html" class="header-menu-desktop__link">
+                <span class="header-menu-desktop__link-span" data-hover="О сервисе">О сервисе</span>
+              </a>
+              <a href="form.html" class="header-menu-desktop__link">
+                <span class="header-menu-desktop__link-span" data-hover="Направления">Направления</span>
+              </a>
+              <a href="catalog.html" class="header-menu-desktop__link">
+                <span class="header-menu-desktop__link-span" data-hover="Попутчики">Попутчики</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="header-menu header-menu--none header-menu--jsnone">
+            <div class="header-menu__title">
+              <a href="index.html" class="header-menu__link">О сервисе</a>
+              <a href="form.html" class="header-menu__link">Направления</a>
+              <a href="catalog.html" class="header-menu__link">Попутчики</a>
+            </div>
+            <a href="" class="header-menu__auth header-menu__auth--btn">Авторизация</a>
+            <div class="header-menu__feedback">
+              <a href="tel:88005558628" class="header-menu__item header-menu__item--tel">8 800 555-86-28
+                <div class="header-menu__item-svg">
+                  <svg class="header-menu__svg" width="18" height="17">
+                    <use xlink:href="img/sptire.svg#contacts-phone"></use>
+                  </svg>
+                </div>
+              </a>
+              <a href="mailto:mail@htmlacademy.ru" class="header-menu__item header-menu__item--mail">mail@htmlacademy.ru
+                <div class="header-menu__item-svg">
+                  <svg class="header-menu__svg" width="18" height="17">
+                    <use xlink:href="img/sptire.svg#contacts-mail"></use>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="header-menu__social-contacts">
+              <a href="" class="header-menu__social-contact header-menu__social-contact--fb" aria-label="Фейсбук"></a>
+              <a href="" class="header-menu__social-contact header-menu__social-contact--vk" aria-label="Вконтакте"></a>
+              <a href="" class="header-menu__social-contact header-menu__social-contact--inst" aria-label="Инстаграм"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-header__wrap page-container">
+        <h1 class="page-header__title">Направления</h1>
+      </div>
+    </header>
+    <main class="page-main">
+      <form class="form-setting" action="https://echo.htmlacademy.ru" method="GET">
+        <section class="form-setting__about page-container">
+          <div class="form-setting__level">
+            <p class="form-setting__level-num">80</p>
+            <p class="form-setting__level-text">level</p>
+          </div>
+          <div class="form-setting__photo">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x" type="image/webp">
+              <source srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+              <img src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="100" height="100" alt="Моя фотография">
+            </picture>
+          </div>
+          <label class="form-setting__photo-btn">
+            <span class="form-setting__photo-span">Сменить </span>фото
+            <input class="form-setting__photo-file" type="file" name="myPhoto">
+          </label>
+          <div class="form-setting__tags">
+            <h2 class="form-setting__tags-title">тэги</h2>
+            <textarea class="form-setting__tags-textarea" name="tags" cols="30" rows="10">#бургер #бар #футбол #концерт #крафт</textarea>
+          </div>
+          <div class="form-setting__transport">
+            <h2 class="form-setting__transport-title">транспорт</h2>
+            <div class="form-setting__transport-container">
+              <label class="form-setting__transport-label">
+                <span class="visually-hidden">На самолете</span>
+                <input class="form-setting__transport-control form-setting__transport-control--plane visually-hidden" type="checkbox" name="самолет">
+                <span class="form-setting__svg-wrap">
+                  <svg class="form-setting__svg" width="32" height="32">
+                    <use xlink:href="img/sptire.svg#plane"></use>
+                  </svg>
+                </span>
+                <span class="tooltip" data-tooltip="Авиаперелет">Тултип</span>
+              </label>
+              <label class="form-setting__transport-label" >
+                <span class="visually-hidden">На авто</span>
+                <input class="form-setting__transport-control form-setting__transport-control--car visually-hidden" type="checkbox" name="Авто">
+                <span class="form-setting__svg-wrap">
+                  <svg class="form-setting__svg" width="17" height="17">
+                    <use xlink:href="img/sptire.svg#bus"></use>
+                  </svg>
+                </span>
+                <span class="tooltip" data-tooltip="Автотранспорт">Тултип</span>
+              </label>
+              <label class="form-setting__transport-label">
+                <span class="visually-hidden">На велосипеде</span>
+                <input class="form-setting__transport-control form-setting__transport-control--bike visually-hidden" type="checkbox" name="Велосипед">
+                <span class="form-setting__svg-wrap">
+                  <svg class="form-setting__svg" width="17" height="17">
+                    <use xlink:href="img/sptire.svg#bike"></use>
+                  </svg>
+                </span>
+                <span class="tooltip" data-tooltip="Велосипед">Тултип</span>
+              </label>
+              <label class="form-setting__transport-label">
+                <span class="visually-hidden">На пешком</span>
+                <input class="form-setting__transport-control form-setting__transport-control--run visually-hidden" type="checkbox" name="Пешком">
+                <span class="form-setting__svg-wrap">
+                  <svg class="form-setting__svg" width="17" height="17">
+                    <use xlink:href="img/sptire.svg#run"></use>
+                  </svg>
+                </span>
+                <span class="tooltip" data-tooltip="Пешком">Тултип</span>
+              </label>
+            </div>
+          </div>
+        </section>
+        <section class="form-setting__plans">
+          <div class="page-container">
+            <h2 class="form-setting__title">Мои планы:</h2>
+            <div class="form-setting__plans-cart">
+              <p class="form-setting__plans-number">1.</p>
+              <h2 class="form-setting__plans-countries">Франция, Италия</h2>
+              <p class="form-setting__plans-companions">3 попутчика</p>
+              <p class="form-setting__plans-date">26 мар &#x2015; 29 мар</p>
+              <a class="form-setting__plans-btn" href="">изменить</a>
+            </div>
+            <div class="form-setting__plans-cart">
+              <p class="form-setting__plans-number">2.</p>
+              <h2 class="form-setting__plans-countries">Таиланд, Индонезия</h2>
+              <p class="form-setting__plans-companions">1 попутчик</p>
+              <p class="form-setting__plans-date">1 июл &#x2015; 15 июл</p>
+              <a class="form-setting__plans-btn" href="">изменить</a>
+            </div>
+          </div>
+        </section>
+        <section class="form-setting__create-plan">
+          <div class="form-setting__page-container page-container">
+            <h2 class="form-setting__title-plan">Добавить план:</h2>
+            <div class="form-setting__points">
+              <span class="form-setting__point form-setting__point--active"></span>
+              <span class="form-setting__point"></span>
+              <span class="form-setting__point"></span>
+            </div>
+            <fieldset class="form-setting__field" id="step1">
+              <legend class="form-setting__legend">Шаг 1.<br> Даты&nbsp;пребывания</legend>
+              <div class="form-setting__points-desktop">
+                <div class="form-setting__point-text form-setting__point-text--active">Даты
+                  <span class="form-setting__point"></span>
+                </div>
+                <div class="form-setting__point-text">Маршрут
+                  <span class="form-setting__point"></span>
+                </div>
+                <div class="form-setting__point-text">Развлечения
+                  <span class="form-setting__point"></span>
+                </div>
+              </div>
+              <p class="form-setting__text">Укажите предпочтительное количество попутчиков, которых <br>вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+              <div class="form-setting__time-people">
+                <label class="form-setting__label" for="plan-companions-people">
+                  <span class="form-setting__label-span-title">ищу попутчиков:</span>
+                </label>
+                <div class="form-setting__container-control">
+                  <button class="form-setting__deduct" aria-label="Убавить попутчиков" type="button"></button>
+                  <input class="form-setting__control" type="number" id="plan-companions-people" min="0" name="plan-companions-people" value="2">
+                  <button class="form-setting__add" aria-label="Добавить попутчиков" type="button"></button>
+                </div>
+                <span class="form-setting__label-span-people">чел.</span>
+                <label class="form-setting__label" for="plan-companions-time">
+                  <span class="form-setting__label-span-title">длительность:</span>
+                </label>
+                <div class="form-setting__container-control">
+                  <button class="form-setting__deduct" aria-label="Уменьшить кол-во дней" type="button"></button>
+                  <input class="form-setting__control" type="number" id="plan-companions-time" min="0" name="plan-companions-time" value="2">
+                  <button class="form-setting__add" aria-label="Увеличить кол-во дней" type="button"></button>
+                </div>
+                <span class="form-setting__label-span-day">дн.</span>
+                <label class="form-setting__label-checkbox" for="plan-checkbox">
+                  Можно с детьми
+                  <input class="form-setting__control-checkbox visually-hidden" type="checkbox" name="plan-checkbox" id="plan-checkbox" checked>
+                  <span class="form-setting__control-checked"></span>
+                </label>
+              </div>
+              <table class="form-setting__calendar">
+                <caption class="form-setting__mounth-age">
+                  <button class="form-setting__arrow-left" type="button">
+                    <svg width="20" height="18">
+                      <use xlink:href="img/sptire.svg#month-arrow-left"></use>
+                  </svg>
+                  </button>
+                  Март 2019
+                  <button class="form-setting__arrow-right" type="button">
+                    <svg width="20" height="18">
+                      <use xlink:href="img/sptire.svg#month-arrow-right"></use>
+                    </svg>
+                  </button>
+                </caption>
+                <thead class="form-setting__week">
+                  <tr>
+                    <th class="form-setting__week-day">П<span class="day-abb">н</span></th>
+                    <th class="form-setting__week-day">В<span class="day-abb">т</span></th>
+                    <th class="form-setting__week-day">С<span class="day-abb">р</span></th>
+                    <th class="form-setting__week-day">Ч<span class="day-abb">т</span></th>
+                    <th class="form-setting__week-day">П<span class="day-abb">т</span></th>
+                    <th class="form-setting__week-day form-setting__week-day--output">С<span class="day-abb">б</span></th>
+                    <th class="form-setting__week-day form-setting__week-day--output">В<span class="day-abb">с</span></th>
+                  </tr>
+                </thead>
+                <tbody class="form-setting__tbody">
+                  <tr>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">23</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">24</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">25</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">26</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">27</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">28</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">1</span>
+                        <span class="form-setting__day-mounth">мар</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">2</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">3</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">4</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">5</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">6</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">7</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">8</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">9</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">10</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">11</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">12</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">13</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">14</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">15</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">16</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">17</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">18</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">19</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">20</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">21</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">22</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">23</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">24</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--off">
+                      <button class="form-setting__day" type="button" disabled>
+                        <span class="form-setting__day-text">25</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell form-setting__cell--today">
+                      <button class="form-setting__day form-setting__day--on" type="button">
+                        <span class="form-setting__day-text">26</span>
+                        <span class="form-setting__day-today-text">Заезд</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell">
+                      <button class="form-setting__day form-setting__day--on" type="button">
+                        <span class="form-setting__day-text">27</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell">
+                      <button class="form-setting__day form-setting__day--on" type="button">
+                        <span class="form-setting__day-text">28</span>
+                        <span class="form-setting__day-then-text">Выезд</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell">
+                      <button class="form-setting__day" type="button">
+                        <span class="form-setting__day-text">29</span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="form-setting__cell">
+                      <button class="form-setting__day" type="button">
+                        <span class="form-setting__day-text">30</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell">
+                      <button class="form-setting__day" type="button">
+                        <span class="form-setting__day-text">31</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell">
+                      <button class="form-setting__day" type="button">
+                        <span class="form-setting__day-text">1</span>
+                        <span class="form-setting__day-mounth">апр</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell">
+                      <button class="form-setting__day" type="button">
+                        <span class="form-setting__day-text">2</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell">
+                      <button class="form-setting__day" type="button">
+                        <span class="form-setting__day-text">3</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell">
+                      <button class="form-setting__day" type="button">
+                        <span class="form-setting__day-text">4</span>
+                      </button>
+                    </td>
+                    <td class="form-setting__cell">
+                      <button class="form-setting__day" type="button">
+                        <span class="form-setting__day-text">5</span>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <a class="form-setting__next form-setting__next--btn" href="#step2">Следующий шаг</a>
+            </fieldset>
+            <fieldset class="form-setting__field form-setting__field--2" id="step2">
+              <legend class="form-setting__legend form-setting__legend--2">Шаг 2. Маршрут</legend>
+              <div class="form-setting__points-desktop">
+                <div class="form-setting__point-text">Даты
+                  <span class="form-setting__point"></span>
+                </div>
+                <div class="form-setting__point-text form-setting__point-text--active">Маршрут
+                  <span class="form-setting__point"></span>
+                </div>
+                <div class="form-setting__point-text">Развлечения
+                  <span class="form-setting__point"></span>
+                </div>
+              </div>
+              <p class="form-setting__text form-setting__text--2">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+              <div class="form-setting__countries-wrap">
+                <div class="form-setting__circle form-setting__countries form-setting__circle--select">
+                  <button class="form-setting__country" type="button">Босния и Герцеговина</button>
+                  <span class="form-setting__country-flag form-setting__country-flag--bosnia"></span>
+                  <button class="form-setting__del" type="button" aria-label="Удалить страну"></button>
+                </div>
+                <div class="form-setting__circle form-setting__countries form-setting__circle--select">
+                  <button class="form-setting__country" type="button">Чехия</button>
+                  <span class="form-setting__country-flag form-setting__country-flag--czech"></span>
+                  <button class="form-setting__del" type="button" aria-label="Удалить страну"></button>
+                </div>
+                <div class="form-setting__circle form-setting__choice-countries">
+                  <button class="form-setting__choice-text" type="button">Выберите страну</button>
+                  <button class="form-setting__del" type="button" aria-label="Удалить страну"></button>
+                  <div class="form-setting__chice-countries-wrap">
+                    <div class="form-setting__alphabet">
+                      <button class="form-setting__letter form-setting__letter--active" type="button">А</button>
+                      <button class="form-setting__letter" type="button">Б</button>
+                      <button class="form-setting__letter" type="button">В</button>
+                      <button class="form-setting__letter" type="button">Г</button>
+                      <button class="form-setting__letter" type="button">Д</button>
+                      <button class="form-setting__letter" type="button">Е</button>
+                      <button class="form-setting__letter" type="button">З</button>
+                      <button class="form-setting__letter" type="button">И</button>
+                      <button class="form-setting__letter" type="button">К</button>
+                      <button class="form-setting__letter" type="button">Л</button>
+                      <button class="form-setting__letter" type="button">М</button>
+                      <button class="form-setting__letter" type="button">Н</button>
+                      <button class="form-setting__letter" type="button">О</button>
+                      <button class="form-setting__letter" type="button">П</button>
+                      <button class="form-setting__letter" type="button">Р</button>
+                      <button class="form-setting__letter" type="button">С</button>
+                      <button class="form-setting__letter" type="button">Т</button>
+                      <button class="form-setting__letter" type="button">У</button>
+                      <button class="form-setting__letter" type="button">Ф</button>
+                      <button class="form-setting__letter" type="button">Х</button>
+                      <button class="form-setting__letter" type="button">Ч</button>
+                      <button class="form-setting__letter" type="button">Ш</button>
+                      <button class="form-setting__letter" type="button">Э</button>
+                      <button class="form-setting__letter" type="button">Ю</button>
+                      <button class="form-setting__letter" type="button">Я</button>
+                    </div>
+                    <div class="form-setting__states">
+                      <button type="button" class="form-setting__state">Австралия</button>
+                      <button type="button" class="form-setting__state">Австрия</button>
+                      <button type="button" class="form-setting__state">Азербайджан</button>
+                      <button type="button" class="form-setting__state">Албания</button>
+                      <button type="button" class="form-setting__state">Алжир</button>
+                      <button type="button" class="form-setting__state">Ангола</button>
+                      <button type="button" class="form-setting__state">Андорра</button>
+                      <button type="button" class="form-setting__state">Антигуа и Барбуда</button>
+                      <button type="button" class="form-setting__state">Аргентина</button>
+                      <button type="button" class="form-setting__state">Армения</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-setting__circle form-setting__add-countries">
+                  <button class="form-setting__add-text" type="button">добавить страну</button>
+                </div>
+              </div>
+              <div class="form-setting__btn-wrap">
+                <a class="form-setting__next form-setting__next--btn form-setting__next--step2" href="#step3">Следующий шаг</a>
+                <a class="form-setting__back form-setting__back--btn form-setting__back--step2" href="#step1">На шаг назад</a>
+              </div>
+            </fieldset>
+            <fieldset class="form-setting__field form-setting__field--3" id="step3">
+              <legend class="form-setting__legend">Шаг 3. Развлечения</legend>
+              <div class="form-setting__points-desktop">
+                <div class="form-setting__point-text">Даты
+                  <span class="form-setting__point"></span>
+                </div>
+                <div class="form-setting__point-text">Маршрут
+                  <span class="form-setting__point"></span>
+                </div>
+                <div class="form-setting__point-text form-setting__point-text--active">Развлечения
+                  <span class="form-setting__point"></span>
+                </div>
+              </div>
+              <p class="form-setting__text form-setting__text--3">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+              <div class="form-setting__action-plans-wrap">
+                <div class="form-setting__action-plans">
+                  <p class="form-setting__action-plan-title">Босния и Герцеговина</p>
+                  <span class="form-setting__action-plan-flag form-setting__action-plan-flag--bosnia" aria-label="Флаг Боснии и Герцеговинии"></span>
+                  <div class="form-setting__action-plan-wrap">
+                    <textarea class="form-setting__action-plan form-setting__action-plan--1" id="action-plan-1" name="action-plan-1" cols="30" rows="10" placeholder="План действий" required></textarea>
+                    <span class="form-setting__invalid">Это поле должно быть заполнено</span>
+                  </div>
+                </div>
+                <div class="form-setting__action-plans form-setting__action-plans--2">
+                  <p class="form-setting__action-plan-title form-setting__action-plan-title--2">Чехия</p>
+                  <span class="form-setting__action-plan-flag form-setting__action-plan-flag--czech" aria-label="Флаг Чехии"></span>
+                  <div class="form-setting__action-plan-wrap">
+                    <textarea class="form-setting__action-plan form-setting__action-plan--2" id="action-plan-2" name="action-plan-2" cols="30" rows="10" placeholder="План действий" required>Пить пиво и лазить по&nbsp;старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                    <span class="form-setting__invalid">Это поле должно быть заполнено</span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-setting__btn-wrap">
+                <button class="form-setting__next form-setting__next--btn form-setting__next--step3" type="submit">Отправить</button>
+                <a class="form-setting__back form-setting__back--btn form-setting__back--step3" href="#step2">На шаг назад</a>
+              </div>
+            </fieldset>
+          </div>
+        </section>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__page-container page-container">
+        <a href="index.html" class="main-logo page-footer__main-logo">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x" type="image/webp">
+            <source srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+            <img class="page-footer__img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Погнали?" width="100" height="19">
+          </picture>
+        </a>
+        <div class="page-footer__social-contacts">
+          <a href="" class="page-footer__contact-hover">
+            <span class="page-footer__social-contact--fb page-footer__social-contact page-footer__social-contact--active" aria-label="Фейсбук"></span>
+          </a>
+          <a href="" class="page-footer__contact-hover">
+            <span class="page-footer__social-contact--vk page-footer__social-contact page-footer__social-contact--active" aria-label="Вконтакте"></span>
+          </a>
+          <a href="" class="page-footer__contact-hover">
+            <span class="page-footer__social-contact--inst page-footer__social-contact page-footer__social-contact--active" aria-label="Инстаграм"></span>
+          </a>
+        </div>
+        <a class="page-footer__htmlacademy-wrap" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="page-footer__htmlacademy-text">Разработано</span>
+          <span class="page-footer__htmlacademy-img" aria-label="html academy"></span>
+        </a>
+      </div>
+    </footer>
+    <script src="js/formJs.js"></script>
+  </body>
+</html>

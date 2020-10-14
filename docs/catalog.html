@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Погнали</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-bolditalic.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-italic.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-light.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-lightitalic.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-mediumitalic.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans.woff2" as="font">
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <div class="page__header">
+        <div class="page-header__fix-js">
+          <div class="page-header__wrap page-container">
+            <a href="index.html" class="main-logo main-logo__header-add main-logo__header-add--up">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x" type="image/webp">
+                <source srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
+                <img src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" alt="Погнали?">
+              </picture>
+            </a>
+            <a href="index.html" class="main-logo main-logo__header-add">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x" type="image/webp">
+                <source srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+                <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Погнали?">
+              </picture>
+            </a>
+            <button class="page-header__toggle page-header__toggle--nojs" type="button" aria-label="Открыть меню">
+              <span class="page-header__line1"></span>
+              <span class="page-header__line2"></span>
+            </button>
+            <div class="head-feedback">
+              <a href="tel:88005558628" class="head-feedback__tel">
+                <span class="visually-hidden">Позвонить по номеру 8 800 555-86-28</span>
+                <svg class="head-feedback__svg" width="18" height="18">
+                  <use xlink:href="img/sptire.svg#topmenu-phone"></use>
+                </svg>
+              </a>
+              <a href="mailto:mail@htmlacademy.ru" class="head-feedback__mail">
+                <span class="visually-hidden">Написать письмо на почту mail@htmlacademy.ru</span>
+                <svg class="head-feedback__svg" width="18" height="18">
+                  <use xlink:href="img/sptire.svg#topmenu-mail"></use>
+                </svg>
+              </a>
+              <a class="head-feedback__auth head-feedback__auth--btn" href="">Авторизация</a>
+            </div>
+            <div class="header-menu-desktop">
+              <a href="index.html" class="header-menu-desktop__link">
+                <span class="header-menu-desktop__link-span" data-hover="О сервисе">О сервисе</span>
+              </a>
+              <a href="form.html" class="header-menu-desktop__link">
+                <span class="header-menu-desktop__link-span" data-hover="Направления">Направления</span>
+              </a>
+              <a href="catalog.html" class="header-menu-desktop__link">
+                <span class="header-menu-desktop__link-span" data-hover="Попутчики">Попутчики</span>
+              </a>
+            </div>
+          </div>
+          <div class="header-menu header-menu--none header-menu--jsnone">
+            <div class="header-menu__title">
+              <a href="index.html" class="header-menu__link">О сервисе</a>
+              <a href="form.html" class="header-menu__link">Направления</a>
+              <a href="catalog.html" class="header-menu__link">Попутчики</a>
+            </div>
+            <a href="" class="header-menu__auth header-menu__auth--btn">Авторизация</a>
+            <div class="header-menu__feedback">
+              <a href="tel:88005558628" class="header-menu__item header-menu__item--tel">8 800 555-86-28
+                <div class="header-menu__item-svg">
+                  <svg class="header-menu__svg" width="18" height="17">
+                    <use xlink:href="img/sptire.svg#contacts-phone"></use>
+                  </svg>
+                </div>
+              </a>
+              <a href="mailto:mail@htmlacademy.ru" class="header-menu__item header-menu__item--mail">mail@htmlacademy.ru
+                <div class="header-menu__item-svg">
+                  <svg class="header-menu__svg" width="18" height="17">
+                    <use xlink:href="img/sptire.svg#contacts-mail"></use>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="header-menu__social-contacts">
+              <a href="" class="header-menu__social-contact header-menu__social-contact--fb" aria-label="Фейсбук"></a>
+              <a href="" class="header-menu__social-contact header-menu__social-contact--vk" aria-label="Вконтакте"></a>
+              <a href="" class="header-menu__social-contact header-menu__social-contact--inst" aria-label="Инстаграм"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-header__wrap page-container">
+        <h1 class="page-header__title">Попутчики</h1>
+        <a href="index.html" class="page-header__back">На главную</a>
+      </div>
+    </header>
+    <main class="page-main page-main--catalog">
+      <section class="filter">
+        <div class="filter__wrap page-container">
+          <h2 class="filter__title">Фильтрация по странам<span class="filter__title-add">:</span></h2>
+          <button class="filter__btn-up" type="button">
+            <span class="filter__btn-text-1">Свернуть</span>
+            <span class="filter__btn-text-2 filter__btn-text-active">Показать все</span>
+          </button>
+          <ul class="filter__parts filter__parts--active">
+            <li><a class="filter__part filter__part--active" href="/europe">Европа</a></li>
+            <li><a class="filter__part" href="/asian">Азия</a></li>
+            <li><a class="filter__part" href="/america">Америка</a></li>
+            <li><a class="filter__part" href="/islands">Острова</a></li>
+          </ul>
+          <div class="filter__grid filter__grid--active">
+            <table class="filter__table">
+              <tbody>
+                <tr>
+                  <td class="filter__word-wrap filter__word-wrap--active"><button class="filter__word filter__word--active" type="button">А</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Б</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">В</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Г</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Д</button></td>
+                </tr>
+                <tr>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Е</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">З</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">И</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">К</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Л</button></td>
+                </tr>
+                <tr>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">М</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Н</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">О</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">П</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Р</button></td>
+                </tr>
+                <tr>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">С</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Т</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">У</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Ф</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Х</button></td>
+                </tr>
+                <tr>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Ч</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Ш</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Э</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Ю</button></td>
+                  <td class="filter__word-wrap"><button class="filter__word" type="button">Я</button></td>
+                </tr>
+              </tbody>
+            </table>
+            <ul class="filter__countries">
+              <li class="filter__countries-wrap filter__countries-wrap--active">
+                <span class="filter__word-list">А</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Австралия</a></li>
+                  <li><a href="" class="filter__country">Австрия</a></li>
+                  <li><a href="" class="filter__country">Азербайджан</a></li>
+                  <li><a href="" class="filter__country">Албания</a></li>
+                  <li><a href="" class="filter__country">Алжир</a></li>
+                  <li><a href="" class="filter__country">Ангола</a></li>
+                  <li><a href="" class="filter__country">Андорра</a></li>
+                  <li><a href="" class="filter__country">Антигуа и Барбуда</a></li>
+                  <li><a href="" class="filter__country">Аргентина</a></li>
+                  <li><a href="" class="filter__country">Армения</a></li>
+                  <li><a href="" class="filter__country">Афганистан</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Б</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Багамские Острова</a></li>
+                  <li><a href="" class="filter__country">Бангладеш</a></li>
+                  <li><a href="" class="filter__country">Барбадос</a></li>
+                  <li><a href="" class="filter__country">Бахрейн</a></li>
+                  <li><a href="" class="filter__country">Белоруссия</a></li>
+                  <li><a href="" class="filter__country">Белиз</a></li>
+                  <li><a href="" class="filter__country">Бельгия</a></li>
+                  <li><a href="" class="filter__country">Бенин</a></li>
+                  <li><a href="" class="filter__country">Болгария</a></li>
+                  <li><a href="" class="filter__country">Боливия</a></li>
+                  <li><a href="" class="filter__country">Босния и Герцеговина</a></li>
+                  <li><a href="" class="filter__country">Ботсвана</a></li>
+                  <li><a href="" class="filter__country">Бразилия</a></li>
+                  <li><a href="" class="filter__country">Бруней</a></li>
+                  <li><a href="" class="filter__country">Буркина-Фасо</a></li>
+                  <li><a href="" class="filter__country">Бурунди</a></li>
+                  <li><a href="" class="filter__country">Бутан</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">В</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Вануату</a></li>
+                  <li><a href="" class="filter__country">Великобритания</a></li>
+                  <li><a href="" class="filter__country">Венгрия</a></li>
+                  <li><a href="" class="filter__country">Венесуэла</a></li>
+                  <li><a href="" class="filter__country">Восточный Тимор</a></li>
+                  <li><a href="" class="filter__country">Вьетнам</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Г</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Габон</a></li>
+                  <li><a href="" class="filter__country">Гаити</a></li>
+                  <li><a href="" class="filter__country">Гайана</a></li>
+                  <li><a href="" class="filter__country">Гамбия</a></li>
+                  <li><a href="" class="filter__country">Гана</a></li>
+                  <li><a href="" class="filter__country">Гватемала</a></li>
+                  <li><a href="" class="filter__country">Гвинея</a></li>
+                  <li><a href="" class="filter__country">Гвинея-Бисау</a></li>
+                  <li><a href="" class="filter__country">Германия</a></li>
+                  <li><a href="" class="filter__country">Гондурас</a></li>
+                  <li><a href="" class="filter__country">Гренада</a></li>
+                  <li><a href="" class="filter__country">Греция</a></li>
+                  <li><a href="" class="filter__country">Грузия</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Д</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Дания</a></li>
+                  <li><a href="" class="filter__country">Джибути</a></li>
+                  <li><a href="" class="filter__country">Доминика</a></li>
+                  <li><a href="" class="filter__country">Доминикана</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Е</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Египет</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">З</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Замбия</a></li>
+                  <li><a href="" class="filter__country">Зимбабве</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">И</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Израиль</a></li>
+                  <li><a href="" class="filter__country">Индия</a></li>
+                  <li><a href="" class="filter__country">Индонезия</a></li>
+                  <li><a href="" class="filter__country">Иордания</a></li>
+                  <li><a href="" class="filter__country">Ирак</a></li>
+                  <li><a href="" class="filter__country">Иран</a></li>
+                  <li><a href="" class="filter__country">Ирландия</a></li>
+                  <li><a href="" class="filter__country">Исландия</a></li>
+                  <li><a href="" class="filter__country">Испания</a></li>
+                  <li><a href="" class="filter__country">Италия</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">К</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Кабо-Верде</a></li>
+                  <li><a href="" class="filter__country">Казахстан</a></li>
+                  <li><a href="" class="filter__country">Камбоджа</a></li>
+                  <li><a href="" class="filter__country">Камерун</a></li>
+                  <li><a href="" class="filter__country">Канада</a></li>
+                  <li><a href="" class="filter__country">Катар</a></li>
+                  <li><a href="" class="filter__country">Кения</a></li>
+                  <li><a href="" class="filter__country">Кипр</a></li>
+                  <li><a href="" class="filter__country">Киргизия</a></li>
+                  <li><a href="" class="filter__country">Кирибати</a></li>
+                  <li><a href="" class="filter__country">Китай</a></li>
+                  <li><a href="" class="filter__country">Колумбия</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Л</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Лаос</a></li>
+                  <li><a href="" class="filter__country">Латвия</a></li>
+                  <li><a href="" class="filter__country">Лесото</a></li>
+                  <li><a href="" class="filter__country">Либерия</a></li>
+                  <li><a href="" class="filter__country">Ливан</a></li>
+                  <li><a href="" class="filter__country">Ливия</a></li>
+                  <li><a href="" class="filter__country">Литва</a></li>
+                  <li><a href="" class="filter__country">Лихтенштейн</a></li>
+                  <li><a href="" class="filter__country">Люксембург</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">М</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Маврикий</a></li>
+                  <li><a href="" class="filter__country">Мавритания</a></li>
+                  <li><a href="" class="filter__country">Мадагаскар</a></li>
+                  <li><a href="" class="filter__country">Малави</a></li>
+                  <li><a href="" class="filter__country">Малайзия</a></li>
+                  <li><a href="" class="filter__country">Мали</a></li>
+                  <li><a href="" class="filter__country">Мальдивы</a></li>
+                  <li><a href="" class="filter__country">Мальта</a></li>
+                  <li><a href="" class="filter__country">Марокко</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Н</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Намибия</a></li>
+                  <li><a href="" class="filter__country">Науру</a></li>
+                  <li><a href="" class="filter__country">Непал</a></li>
+                  <li><a href="" class="filter__country">Нигер</a></li>
+                  <li><a href="" class="filter__country">Нигерия</a></li>
+                  <li><a href="" class="filter__country">Нидерланды</a></li>
+                  <li><a href="" class="filter__country">Никарагуа</a></li>
+                  <li><a href="" class="filter__country">Новая Зеландия</a></li>
+                  <li><a href="" class="filter__country">Норвегия</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">О</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">ОАЭ</a></li>
+                  <li><a href="" class="filter__country">Оман</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">П</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Пакистан</a></li>
+                  <li><a href="" class="filter__country">Палау</a></li>
+                  <li><a href="" class="filter__country">Панама</a></li>
+                  <li><a href="" class="filter__country">Папуа - Новая Гвинея</a></li>
+                  <li><a href="" class="filter__country">Парагвай</a></li>
+                  <li><a href="" class="filter__country">Перу</a></li>
+                  <li><a href="" class="filter__country">Польша</a></li>
+                  <li><a href="" class="filter__country">Португалия</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Р</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Руанда</a></li>
+                  <li><a href="" class="filter__country">Румыния</a></li>
+                  <li><a href="" class="filter__country">Россия</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">С</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Сальвадор</a></li>
+                  <li><a href="" class="filter__country">Самоа</a></li>
+                  <li><a href="" class="filter__country">Сан-Марино</a></li>
+                  <li><a href="" class="filter__country">Саудовская</a></li>
+                  <li><a href="" class="filter__country">Сейшелы</a></li>
+                  <li><a href="" class="filter__country">Сенегал</a></li>
+                  <li><a href="" class="filter__country">Сербия</a></li>
+                  <li><a href="" class="filter__country">Сингапур</a></li>
+                  <li><a href="" class="filter__country">Сирия</a></li>
+                  <li><a href="" class="filter__country">Словакия</a></li>
+                  <li><a href="" class="filter__country">Словения</a></li>
+                  <li><a href="" class="filter__country">США</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Т</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Таджикистан</a></li>
+                  <li><a href="" class="filter__country">Таиланд</a></li>
+                  <li><a href="" class="filter__country">Танзания</a></li>
+                  <li><a href="" class="filter__country">Того</a></li>
+                  <li><a href="" class="filter__country">Тонга</a></li>
+                  <li><a href="" class="filter__country">Тринидад и Тобаго</a></li>
+                  <li><a href="" class="filter__country">Тувалу</a></li>
+                  <li><a href="" class="filter__country">Тунис</a></li>
+                  <li><a href="" class="filter__country">Туркмения</a></li>
+                  <li><a href="" class="filter__country">Турция</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">У</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Уганда</a></li>
+                  <li><a href="" class="filter__country">Узбекистан</a></li>
+                  <li><a href="" class="filter__country">Украина</a></li>
+                  <li><a href="" class="filter__country">Уругвай</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Ф</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Фиджи</a></li>
+                  <li><a href="" class="filter__country">Филиппины</a></li>
+                  <li><a href="" class="filter__country">Финляндия</a></li>
+                  <li><a href="" class="filter__country">Франция</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Х</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Хорватия</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Ч</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Чад</a></li>
+                  <li><a href="" class="filter__country">Черногория</a></li>
+                  <li><a href="" class="filter__country">Чехия</a></li>
+                  <li><a href="" class="filter__country">Чили</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Ш</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Швейцария</a></li>
+                  <li><a href="" class="filter__country">Швеция</a></li>
+                  <li><a href="" class="filter__country">Шри-Ланка</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Э</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Эквадор</a></li>
+                  <li><a href="" class="filter__country">Эритрея</a></li>
+                  <li><a href="" class="filter__country">Эсватини</a></li>
+                  <li><a href="" class="filter__country">Эстония</a></li>
+                  <li><a href="" class="filter__country">Эфиопия</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Ю</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">ЮАР</a></li>
+                  <li><a href="" class="filter__country">Южный Судан</a></li>
+                </ul>
+              </li>
+              <li class="filter__countries-wrap">
+                <span class="filter__word-list">Я</span>
+                <ul class="filter__country-wrap">
+                  <li><a href="" class="filter__country">Южный</a></li>
+                  <li><a href="" class="filter__country">Судан</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <button class="filter__btn-down filter__btn-down--active">Свернуть</button>
+        </div>
+      </section>
+      <div class="catalog-grid page-container">
+        <form class="filter-people" action="https://echo.htmlacademy.ru" method="GET">
+          <div class="filter-people__container">
+            <h2 class="filter-people__title">Подберите идеального попутчика</h2>
+            <div class="filter-people__item filter-people__item--1">
+              <button class="filter-people__btn filter-people__btn--active" type="button">Хобби</button>
+              <div class="filter-people__wrap filter-people__wrap--active">
+                <input class="visually-hidden filter-people__control filter-people__hobby-control" type="checkbox" id="sport" name="sport">
+                <label class="filter-people__label filter-people__hobby-label" for="sport">Спортзал</label>
+                <input class="visually-hidden filter-people__control filter-people__hobby-control" type="checkbox" id="hookah" name="hookah">
+                <label class="filter-people__label filter-people__hobby-label" for="hookah">Кальян</label>
+                <input class="visually-hidden filter-people__control filter-people__hobby-control" type="checkbox" id="sofa" name="sofa">
+                <label class="filter-people__label filter-people__hobby-label" for="sofa">Диван</label>
+              </div>
+            </div>
+            <div class="filter-people__item filter-people__item--2">
+              <button class="filter-people__btn filter-people__btn--active" type="button">Музыка</button>
+              <div class="filter-people__wrap filter-people__wrap--active">
+                <input class="visually-hidden filter-people__control filter-people__control--music" type="checkbox" id="hard-rock" name="hard-rock">
+                <label class="filter-people__label filter-people__label--music" for="hard-rock">Тяжелый рок</label>
+                <input class="visually-hidden filter-people__control filter-people__control--music" type="checkbox" id="rus-rap" name="rus-rap">
+                <label class="filter-people__label filter-people__label--music" for="rus-rap">Русский рэп</label>
+                <input class="visually-hidden filter-people__control filter-people__control--music" type="checkbox" id="evrodance" name="evrodance">
+                <label class="filter-people__label filter-people__label--music" for="evrodance">Евроденс</label>
+              </div>
+            </div>
+            <div class="filter-people__item filter-people__item--3">
+              <button class="filter-people__btn filter-people__btn--active" type="button">Еда</button>
+              <div class="filter-people__wrap filter-people__wrap--active">
+                <input class="visually-hidden filter-people__control filter-people__control--food" type="checkbox" id="meat" name="meat">
+                <label class="filter-people__label filter-people__label--food" for="meat">Мясоед</label>
+                <input class="visually-hidden filter-people__control filter-people__control--food" type="checkbox" id="good" name="good">
+                <label class="filter-people__label filter-people__label--food" for="good">Сидит на ПП</label>
+                <input class="visually-hidden filter-people__control filter-people__control--food" type="checkbox" id="vegan" name="vegan">
+                <label class="filter-people__label filter-people__label--food" for="vegan">Веган-сыроед</label>
+              </div>
+            </div>
+            <div class="filter-people__item filter-people__item--4">
+              <button class="filter-people__btn filter-people__btn--active" type="button">Транспорт</button>
+              <div class="filter-people__transport-container">
+                <label class="filter-people__transport-label">
+                  <span class="visually-hidden">На самолете</span>
+                  <input class="visually-hidden filter-people__transport-control filter-people__transport-control--plane" type="checkbox" name="самолет">
+                  <span class="filter-people__svg-wrap">
+                    <svg class="filter-people__svg" width="32" height="32">
+                      <use xlink:href="img/sptire.svg#plane"></use>
+                    </svg>
+                  </span>
+                  <span class="tooltip" data-tooltip="Авиаперелет">Тултип</span>
+                </label>
+                <label class="filter-people__transport-label">
+                  <span class="visually-hidden">На авто</span>
+                  <input class="visually-hidden filter-people__transport-control filter-people__transport-control--car" type="checkbox" name="Авто">
+                  <span class="filter-people__svg-wrap">
+                    <svg class="filter-people__svg" width="17" height="17">
+                      <use xlink:href="img/sptire.svg#bus"></use>
+                    </svg>
+                  </span>
+                  <span class="tooltip" data-tooltip="Автотранспорт">Тултип</span>
+                </label>
+                <label class="filter-people__transport-label">
+                  <span class="visually-hidden">На велосипеде</span>
+                  <input class="visually-hidden filter-people__transport-control filter-people__transport-control--bike" type="checkbox" name="Велосипед">
+                  <span class="filter-people__svg-wrap">
+                    <svg class="filter-people__svg" width="17" height="17">
+                      <use xlink:href="img/sptire.svg#bike"></use>
+                    </svg>
+                  </span>
+                  <span class="tooltip" data-tooltip="Велосипед">Тултип</span>
+                </label>
+                <label class="filter-people__transport-label">
+                  <span class="visually-hidden">На пешком</span>
+                  <input class="visually-hidden filter-people__transport-control filter-people__transport-control--run" type="checkbox" name="Пешком">
+                  <span class="filter-people__svg-wrap">
+                    <svg class="filter-people__svg" width="17" height="17">
+                      <use xlink:href="img/sptire.svg#run"></use>
+                    </svg>
+                  </span>
+                  <span class="tooltip" data-tooltip="Пешком">Тултип</span>
+                </label>
+              </div>
+            </div>
+            <div class="filter-people__item filter-people__item--5">
+              <button class="filter-people__btn" type="button">Левел</button>
+              <div class="filter-people__level-wrap">
+                <input class="filter-people__level-control" type="number" min="0" name="ЛевелМинимум" value="30">
+                <input class="filter-people__level-control" type="number" max="100" name="ЛевелМаксимум" value="100">
+              </div>
+              <div class="filter-people__range">
+                <div class="filter-people__lane">
+                  <div class="filter-people__lane2" style="left: 35%; width: 65%;"></div>
+                  <button class="filter-people__circle filter-people__circle--1" style="left: 35%;" type="button" aria-label="Выбрать минимальное значение"></button>
+                  <button class="filter-people__circle filter-people__circle--2" style="left: 100%;" type="button" aria-label="Выбрать максимальное значение"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="filter-people__btn-send" type="submit">Показать</button>
+        </form>
+        <div class="catalog-cart-wrap">
+          <div class="catalog-cart">
+            <a class="catalog-cart__item catalog-cart__item--photo" href="">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x" type="image/webp">
+                <source srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+                <img src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Фото Тани Фирсовой" width="70" height="70">
+              </picture>
+            </a>
+            <a class="catalog-cart__name" href="">
+              Таня Фирсова
+            </a>
+            <button class="catalog-cart__like catalog-cart__like--active" >1,5 М</button>
+            <p class="catalog-cart__tags" >#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+            <div class="catalog-cart__visit">
+              <h2 class="catalog-cart__title">хочет посетить:</h2>
+              <p class="catalog-cart__country catalog-cart__country--srilanka">Шри-ланка</p>
+              <p class="catalog-cart__country catalog-cart__country--thailand">Тайланд</p>
+              <p class="catalog-cart__country catalog-cart__country--seychelles">Сейшелы</p>
+            </div>
+            <div class="catalog-cart__transport">
+              <h2 class="catalog-cart__title">транспорт:</h2>
+              <div class="catalog-cart__transport-container">
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg" width="20" height="20">
+                    <use xlink:href="img/sptire.svg#plane"></use>
+                  </svg>
+                  <p class="tooltip" data-tooltip="Авиаперелет">Тултип</p>
+                </div>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg catalog-cart__transport-svg--off" width="20" height="20">
+                    <use xlink:href="img/sptire.svg#bus"></use>
+                  </svg>
+                  <p class="tooltip" data-tooltip="Автотранспорт">Тултип</p>
+                </div>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg catalog-cart__transport-svg--off" width="20" height="20">
+                    <use xlink:href="img/sptire.svg#bike"></use>
+                  </svg>
+                  <p class="tooltip" data-tooltip="Велосипед">Тултип</p>
+                </div>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg catalog-cart__transport-svg--off" width="20" height="20">
+                    <use xlink:href="img/sptire.svg#run"></use>
+                  </svg>
+                  <p class="tooltip" data-tooltip="Пешком">Тултип</p>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-cart__level">
+              <h2 class="catalog-cart__title">левел:</h2>
+              <p class="catalog-cart__num catalog-cart__num--99">99</p>
+              <p class="catalog-cart__text">level</p>
+            </div>
+            <a class="catalog-cart__button" href="">Позвать!</a>
+          </div>
+          <div class="catalog-cart">
+            <a class="catalog-cart__item catalog-cart__item--photo" href="">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x" type="image/webp">
+                <source srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                <img src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" alt="Фото Пети Демина">
+              </picture>
+            </a>
+            <a class="catalog-cart__name" href="">
+              Петя Демин
+            </a>
+            <button class="catalog-cart__like" >1500</button>
+            <p class="catalog-cart__tags" >#бургер #бар #футбол #концерт #крафт</p>
+            <div class="catalog-cart__visit">
+              <h2 class="catalog-cart__title">хочет посетить:</h2>
+              <p class="catalog-cart__country catalog-cart__country--belgium">Бельгия</p>
+              <p class="catalog-cart__country catalog-cart__country--czech">Чехия</p>
+            </div>
+            <div class="catalog-cart__transport">
+              <h2 class="catalog-cart__title">транспорт:</h2>
+              <div class="catalog-cart__transport-container">
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg" width="20" height="20">
+                    <use xlink:href="img/sptire.svg#plane"></use>
+                  </svg>
+                  <p class="tooltip" data-tooltip="Авиаперелет">Тултип</p>
+                </div>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg catalog-cart__transport-svg--off" width="20" height="20">
+                    <use xlink:href="img/sptire.svg#bus"></use>
+                  </svg>
+                  <p class="tooltip" data-tooltip="Автотранспорт">Тултип</p>
+                </div>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg catalog-cart__transport-svg--off" width="20" height="20">
+                    <use xlink:href="img/sptire.svg#bike"></use>
+                  </svg>
+                  <p class="tooltip" data-tooltip="Велосипед">Тултип</p>
+                </div>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg catalog-cart__transport-svg--off" width="20" height="20">
+                    <use xlink:href="img/sptire.svg#run"></use>
+                  </svg>
+                  <p class="tooltip" data-tooltip="Пешком">Тултип</p>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-cart__level">
+              <h2 class="catalog-cart__title">левел:</h2>
+              <p class="catalog-cart__num catalog-cart__num--80">80</p>
+              <p class="catalog-cart__text">level</p>
+            </div>
+            <a class="catalog-cart__button" href="">Позвать!</a>
+          </div>
+          <div class="catalog-cart">
+            <a class="catalog-cart__item catalog-cart__item--photo" href="">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x" type="image/webp">
+                <source srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
+                <img src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" alt="Фото Марка Смолова" width="70" height="70">
+              </picture>
+            </a>
+            <a class="catalog-cart__name" href="">
+              Марк Смолов
+            </a>
+            <button class="catalog-cart__like" >170</button>
+            <p class="catalog-cart__tags" >#рэп #тату #хайпбист #кроссовки #суприм</p>
+            <div class="catalog-cart__visit">
+              <h2 class="catalog-cart__title">хочет посетить:</h2>
+              <p class="catalog-cart__country catalog-cart__country--usa">США</p>
+              <p class="catalog-cart__country catalog-cart__country--australia">Австралия</p>
+              <p class="catalog-cart__country catalog-cart__country--dominica">Доминика</p>
+            </div>
+            <div class="catalog-cart__transport">
+              <h2 class="catalog-cart__title">транспорт:</h2>
+              <div class="catalog-cart__transport-container">
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg" width="20" height="20">
+                    <use xlink:href="img/sptire.svg#plane"></use>
+                  </svg>
+                  <p class="tooltip" data-tooltip="Авиаперелет">Тултип</p>
+                </div>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg catalog-cart__transport-svg--off" width="20" height="20">
+                    <use xlink:href="img/sptire.svg#bus"></use>
+                  </svg>
+                  <p class="tooltip" data-tooltip="Автотранспорт">Тултип</p>
+                </div>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg catalog-cart__transport-svg--off" width="20" height="20">
+                    <use xlink:href="img/sptire.svg#bike"></use>
+                  </svg>
+                  <p class="tooltip" data-tooltip="Велосипед">Тултип</p>
+                </div>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg catalog-cart__transport-svg--off" width="20" height="20">
+                    <use xlink:href="img/sptire.svg#run"></use>
+                  </svg>
+                  <p class="tooltip" data-tooltip="Пешком">Тултип</p>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-cart__level">
+              <h2 class="catalog-cart__title">левел:</h2>
+              <p class="catalog-cart__num">25</p>
+              <p class="catalog-cart__text">level</p>
+            </div>
+            <a class="catalog-cart__button" href="">Позвать!</a>
+          </div>
+          <div class="catalog-cart">
+            <a class="catalog-cart__item catalog-cart__item--photo" href="">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x" type="image/webp">
+                <source srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
+                <img src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" alt="Фото Ларисы Роговой">
+              </picture>
+            </a>
+            <a class="catalog-cart__name catalog-cart__name--online" href="">
+              Лариса Роговая
+            </a>
+            <button class="catalog-cart__like" >23</button>
+            <p class="catalog-cart__tags" >#образование #карьера #учеба #линкедин</p>
+            <div class="catalog-cart__visit">
+              <h2 class="catalog-cart__title">хочет посетить:</h2>
+              <p class="catalog-cart__country catalog-cart__country--britain">Великобритания</p>
+              <p class="catalog-cart__country catalog-cart__country--germany">Германия</p>
+            </div>
+            <div class="catalog-cart__transport">
+              <h2 class="catalog-cart__title">транспорт:</h2>
+              <div class="catalog-cart__transport-container">
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg" width="20" height="20">
+                    <use xlink:href="img/sptire.svg#plane"></use>
+                  </svg>
+                  <p class="tooltip" data-tooltip="Авиаперелет">Тултип</p>
+                </div>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg catalog-cart__transport-svg--off" width="20" height="20">
+                    <use xlink:href="img/sptire.svg#bus"></use>
+                  </svg>
+                  <p class="tooltip" data-tooltip="Автотранспорт">Тултип</p>
+                </div>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg catalog-cart__transport-svg--off" width="20" height="20">
+                    <use xlink:href="img/sptire.svg#bike"></use>
+                  </svg>
+                  <p class="tooltip" data-tooltip="Велосипед">Тултип</p>
+                </div>
+                <div class="catalog-cart__transport-wrap">
+                  <svg class="catalog-cart__transport-svg catalog-cart__transport-svg--off" width="20" height="20">
+                    <use xlink:href="img/sptire.svg#run"></use>
+                  </svg>
+                  <p class="tooltip" data-tooltip="Пешком">Тултип</p>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-cart__level">
+              <h2 class="catalog-cart__title">левел:</h2>
+              <p class="catalog-cart__num">50</p>
+              <p class="catalog-cart__text">level</p>
+            </div>
+            <a class="catalog-cart__button" href="">Позвать!</a>
+          </div>
+        </div>
+        <div class="catalog-grid__show-more">
+          <a class="catalog-grid__companions" href="">Показать еще</a>
+          <div class="catalog-grid__arrow-wrap">
+            <div class="catalog-grid__number-site-wrap">
+              <div class="catalog-grid__number-site catalog-grid__number-site--active">
+                <a class="catalog-grid__number-span" tabindex="0">1</a>
+              </div>
+              <div class="catalog-grid__number-site">
+                <a href="" class="catalog-grid__number-span" tabindex="0">2</a>
+              </div>
+              <div class="catalog-grid__number-site">
+                <a href="" class="catalog-grid__number-span" tabindex="0">3</a>
+              </div>
+              <div class="catalog-grid__number-site">
+                <a href="" class="catalog-grid__number-span" tabindex="0">4</a>
+              </div>
+            </div>
+            <a class="catalog-grid__arrow catalog-grid__arrow--left" href="" aria-label="Стрелка влево"></a>
+            <a class="catalog-grid__arrow catalog-grid__arrow--right" href="" aria-label="Стрелка вправо"></a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__page-container page-container">
+        <a href="index.html" class="main-logo page-footer__main-logo">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x" type="image/webp">
+            <source srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+            <img class="page-footer__img" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Погнали?" width="100" height="19">
+          </picture>
+        </a>
+        <div class="page-footer__social-contacts">
+          <a href="" class="page-footer__contact-hover">
+            <span class="page-footer__social-contact--fb page-footer__social-contact page-footer__social-contact--active" aria-label="Фейсбук"></span>
+          </a>
+          <a href="" class="page-footer__contact-hover">
+            <span class="page-footer__social-contact--vk page-footer__social-contact page-footer__social-contact--active" aria-label="Вконтакте"></span>
+          </a>
+          <a href="" class="page-footer__contact-hover">
+            <span class="page-footer__social-contact--inst page-footer__social-contact page-footer__social-contact--active" aria-label="Инстаграм"></span>
+          </a>
+        </div>
+        <a class="page-footer__htmlacademy-wrap" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="page-footer__htmlacademy-text">Разработано</span>
+          <span class="page-footer__htmlacademy-img" aria-label="html academy"></span>
+        </a>
+      </div>
+    </footer>
+    <script src="js/catalogJs.js"></script>
+  </body>
+</html>
